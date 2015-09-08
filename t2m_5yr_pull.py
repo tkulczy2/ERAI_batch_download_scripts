@@ -22,7 +22,7 @@ server = ECMWFDataServer()
 startYear = 1979
 endYear = 1984
 startDate = str(startYear) + '-01-01'
-if year==2015:
+if endYear==2015:
     endDate = str(endYear) + '-06-30'
 else:
     endDate = str(endYear) + '-12-31'
@@ -38,5 +38,5 @@ server.retrieve({
     'type'      : "an",
     'class'     : "ei",
     'format'    : "netcdf",
-    'target'    : "{}era-i_{}to{}_00061218.nc"%(outputDir, startDate, endDate)
+    'target'    : "{}era-i_{}to{}_00061218.nc".format(outputDir, startDate, endDate)
 })
