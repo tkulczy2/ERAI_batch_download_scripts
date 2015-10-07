@@ -1,13 +1,15 @@
 #!/usr/bin/env python
 __author__ = 'theodorkulczycki'
 
-import os
+import os, sys
 from ecmwfapi import ECMWFDataServer
 
 # To run this example, you need an API key
 # available from https://api.ecmwf.int/v1/key/
 
-name = '2014'
+year = sys.argv[1]
+name = str(year)
+# name = '2014'
 
 fields = ['param','step','time','type']
 parameters = ['2t','mx2t','mn2t','tp']
