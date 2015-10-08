@@ -21,12 +21,17 @@ except OSError:
 
 server = ECMWFDataServer()
 
-startDate = year + '-01-01'
-if year==2015:
+if year!='1979':
+    startDate = str(int(year)-1) + '-12-31'
+else:
+    startDate = year + '-01-01'
+
+if year=='2015':
     endDate = year + '-06-30'
 else:
     endDate = year + '-12-31'
 
+targetFile = "ERAI_mx2t_mn2t_tp_{}to{}.nc".format(startDate, endDate)
 
 server.retrieve({
     'stream'    : "oper",
@@ -40,5 +45,13 @@ server.retrieve({
     'type'      : "fc",
     'class'     : "ei",
     'format'    : "netcdf",
-    'target'    : "{}ERAI_mx2t_mn2t_tp_{}to{}.nc".format(outputDir, startDate, endDate)
+    'target'    : outputDir+targetFile
 })
+
+fileHandle = open(outputDir+'currentFile.txt','w')
+fileHandle.write(targetFile)
+fileHandle.close()
+
+fileHandle = open(outputDir+'currentYear.txt','w')
+fileHandle.write(year)
+fileHandle.close()
