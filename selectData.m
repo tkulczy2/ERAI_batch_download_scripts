@@ -79,8 +79,24 @@ for lon = 0:45:135
         tmax = yearMax;
         tmin = yearMin;
         precip = yearTP;
+        
+        Y = ncread(file, 'latitude');
+        X = ncread(file, 'longitude');
+        T = mDates;
     else
         tmax = cat(1,tmax,yearMax);
         tmin = cat(1,tmin,yearMin);
         precip = cat(1,precip,yearTP);
+    end
+
+    
+
 end
+
+s = struct('tmax',tmax,'tmin',tmin,'precip',precip,'T',T,'Y',Y,'X',X);
+
+keep s;
+
+save('ERAI_1979_formatted.mat');
+
+clear;
