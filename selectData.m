@@ -1,7 +1,7 @@
 file = deblank(fileread('currentFile.txt'));
 y = str2num(fileread('currentYear.txt'));
 
-for lon = 0:45:135
+for lon = 0:45:315
 
 %     latitudes = ncread(file, 'latitude');
 %     longitudes = ncread(file, 'longitude');
@@ -95,7 +95,7 @@ end
 
 tavg = (tmax + tmin)/2;
 s = struct('tmax',tmax,'tmin',tmin,'tavg',tavg,'precip',precip,'T',T,'Y',Y,'X',X);
-clearvars -except s;
+% clearvars -except s y;
 
 save(strcat('ERAI_daily_',num2str(y),'_formatted.mat'),'-v7.3');
 

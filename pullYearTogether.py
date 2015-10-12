@@ -48,10 +48,10 @@ server.retrieve({
     'target'    : outputDir+targetFile
 })
 
-fileHandle = open(outputDir+'currentFile.txt','w')
-fileHandle.write(targetFile)
-fileHandle.close()
+#fileHandle = open(outputDir+'currentFile.txt','w')
+#fileHandle.write(targetFile)
+#fileHandle.close()
 
-fileHandle = open(outputDir+'currentYear.txt','w')
-fileHandle.write(year)
-fileHandle.close()
+#fileHandle = open(outputDir+'currentYear.txt','w')
+#fileHandle.write(year)
+#fileHandle.close()
