@@ -100,9 +100,9 @@ tmin = struct('tmin',allMin,'T',T,'Y',Y,'X',X);
 tavg = struct('tavg',allAvg,'T',T,'Y',Y,'X',X);
 precip = struct('precip',allTP,'T',T,'Y',Y,'X',X);
 
-save(strcat('/home/theodor/norgay/data/sources/ERAI/DAILY/TMAX/ERAI_DAILY_TMAX_',num2str(y),'.mat'),'tmax','-v7.3');
-save(strcat('/home/theodor/norgay/data/sources/ERAI/DAILY/TMIN/ERAI_DAILY_TMIN_',num2str(y),'.mat'),'tmin','-v7.3');
-save(strcat('/home/theodor/norgay/data/sources/ERAI/DAILY/TAVG/ERAI_DAILY_TAVG_',num2str(y),'.mat'),'tavg','-v7.3');
-save(strcat('/home/theodor/norgay/data/sources/ERAI/DAILY/PRECIP/ERAI_DAILY_PRECIP_',num2str(y),'.mat'),'precip','-v7.3');
+save(strcat('/home/tkulczycki/norgay/data/sources/ERAI/DAILY/TMAX/ERAI_DAILY_TMAX_',num2str(y),'.mat'),'tmax','-v7.3');
+save(strcat('/home/tkulczycki/norgay/data/sources/ERAI/DAILY/TMIN/ERAI_DAILY_TMIN_',num2str(y),'.mat'),'tmin','-v7.3');
+save(strcat('/home/tkulczycki/norgay/data/sources/ERAI/DAILY/TAVG/ERAI_DAILY_TAVG_',num2str(y),'.mat'),'tavg','-v7.3');
+save(strcat('/home/tkulczycki/norgay/data/sources/ERAI/DAILY/PRECIP/ERAI_DAILY_PRECIP_',num2str(y),'.mat'),'precip','-v7.3');
 
 clear;

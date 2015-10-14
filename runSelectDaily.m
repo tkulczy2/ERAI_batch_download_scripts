@@ -1,12 +1,12 @@
-cd /home/theodor/norgay/data/sources/ERAI
+cd /home/tkulczycki/norgay/data/sources/ERAI
 
 files = dir('3HOURLY/*.nc');
 
-mkdir('/home/theodor/norgay/data/sources/ERAI','DAILY');
-mkdir('/home/theodor/norgay/data/sources/ERAI/DAILY','TMAX');
-mkdir('/home/theodor/norgay/data/sources/ERAI/DAILY','TMIN');
-mkdir('/home/theodor/norgay/data/sources/ERAI/DAILY','TAVG');
-mkdir('/home/theodor/norgay/data/sources/ERAI/DAILY','PRECIP');
+mkdir('/home/tkulczycki/norgay/data/sources/ERAI','DAILY');
+mkdir('/home/tkulczycki/norgay/data/sources/ERAI/DAILY','TMAX');
+mkdir('/home/tkulczycki/norgay/data/sources/ERAI/DAILY','TMIN');
+mkdir('/home/tkulczycki/norgay/data/sources/ERAI/DAILY','TAVG');
+mkdir('/home/tkulczycki/norgay/data/sources/ERAI/DAILY','PRECIP');
 
 for fInfo = files'
     file = fInfo.name
