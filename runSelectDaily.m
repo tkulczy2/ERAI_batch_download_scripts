@@ -1,6 +1,6 @@
 cd /home/theodor/norgay/data/sources/ERAI
 
-files = dir('raw/*.nc');
+files = dir('3HOURLY/*.nc');
 
 mkdir('/home/theodor/norgay/data/sources/ERAI','DAILY');
 mkdir('/home/theodor/norgay/data/sources/ERAI/DAILY','TMAX');
