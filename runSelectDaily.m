@@ -9,9 +9,9 @@ mkdir('/home/tkulczycki/norgay/data/sources/ERAI/DAILY','TAVG');
 mkdir('/home/tkulczycki/norgay/data/sources/ERAI/DAILY','PRECIP');
 
 for fInfo = files'
-    file = fInfo.name
-    y = str2num(file(end-12:end-9))
+    f = fInfo.name;
+    y = str2num(f(end-12:end-9));
     if y~=2015
-        selectData
+        selectDaily(f, y);
     end
 end

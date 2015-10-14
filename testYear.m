@@ -1,11 +1,13 @@
-% file = deblank(fileread('currentFile.txt'));
+function testYear(f, y)
+
+% f = deblank(fileread('currentFile.txt'));
 % y = str2num(fileread('currentYear.txt'));
 
 for lon = 0:45:315
 
-%     latitudes = ncread(file, 'latitude');
-%     longitudes = ncread(file, 'longitude');
-    times = ncread(file, 'time');
+%     latitudes = ncread(f, 'latitude');
+%     longitudes = ncread(f, 'longitude');
+    times = ncread(f, 'time');
 
     baseOffset = 33; % not sure why this is, but ERA dates are slightly off
     lonOffset = 3*lon/45; % add 3 hour offset to start of day for each 45 deg
@@ -31,9 +33,9 @@ for lon = 0:45:315
 
     % var = {'mx2t', 'mn2t', 'tp'}
 
-%     mxData = ncread(file, 'mx2t', [ixlon 1 1], [nlon nlat Inf]);
-%     mnData = ncread(file, 'mn2t', [ixlon 1 1], [nlon nlat Inf]);
-     tpData = ncread(file, 'tp', [ixlon 1 1], [nlon nlat Inf])*1000;
+%     mxData = ncread(f, 'mx2t', [ixlon 1 1], [nlon nlat Inf]);
+%     mnData = ncread(f, 'mn2t', [ixlon 1 1], [nlon nlat Inf]);
+     tpData = ncread(f, 'tp', [ixlon 1 1], [nlon nlat Inf])*1000;
 
     % Calculate incremental precip, instead of accumulated
      ix = find(hours==3 | hours==15);
@@ -82,8 +84,8 @@ for lon = 0:45:315
 %         allMin = yearMin;
 %         allTP = yearTP;
 % 
-%         Y = ncread(file, 'latitude');
-%         X = ncread(file, 'longitude');
+%         Y = ncread(f, 'latitude');
+%         X = ncread(f, 'longitude');
 %         T = unique(mDates);
 %     else
 %         allMax = cat(1,allMax,yearMax);
@@ -104,3 +106,4 @@ end
 
 
 clear;
+end
