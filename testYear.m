@@ -31,16 +31,16 @@ for lon = 0:45:315
 
     % var = {'mx2t', 'mn2t', 'tp'}
 
-    mxData = ncread(file, 'mx2t', [ixlon 1 1], [nlon nlat Inf]);
+%     mxData = ncread(file, 'mx2t', [ixlon 1 1], [nlon nlat Inf]);
 %     mnData = ncread(file, 'mn2t', [ixlon 1 1], [nlon nlat Inf]);
-%     tpData = ncread(file, 'tp', [ixlon 1 1], [nlon nlat Inf])*1000;
+     tpData = ncread(file, 'tp', [ixlon 1 1], [nlon nlat Inf])*1000;
 
     % Calculate incremental precip, instead of accumulated
-    % ix = find(hours==3 | hours==15);
-%     nix = find(hours~=3 & hours~=15);
-%     pinc = diff(tpData,[],3);
-%     tpData(:,:,nix) = pinc(:,:,nix-1);
-%     clear pinc nix;
+     ix = find(hours==3 | hours==15);
+     nix = find(hours~=3 & hours~=15);
+     pinc = diff(tpData,[],3);
+     tpData(:,:,nix) = pinc(:,:,nix-1);
+     clear pinc nix;
 
     % Limit to records in the current year
     mDates = mDates(years==y);
@@ -49,9 +49,9 @@ for lon = 0:45:315
     %     days = days(years==y);
     hours = hours(years==y);
 
-    mxData = mxData(:,:,years==y);
+%     mxData = mxData(:,:,years==y);
 %     mnData = mnData(:,:,years==y);
-%     tpData = tpData(:,:,years==y);
+     tpData = tpData(:,:,years==y);
 
     years = years(years==y);
 
@@ -60,23 +60,23 @@ for lon = 0:45:315
     for dd = unique(doy)'
         ix = find(doy==dd);
 
-        dayMax = max(mxData(:,:,ix),[],3);
+%         dayMax = max(mxData(:,:,ix),[],3);
 %         dayMin = min(mnData(:,:,ix),[],3);
-%         dayTP = sum(tpData(:,:,ix),3);
+         dayTP = sum(tpData(:,:,ix),3);
 
         if dd==1
-            yearMax = dayMax;
+%             yearMax = dayMax;
 %             yearMin = dayMin;
-%             yearTP = dayTP;
+             yearTP = dayTP;
         else
-            yearMax = cat(3,yearMax,dayMax);
+%             yearMax = cat(3,yearMax,dayMax);
 %             yearMin = cat(3,yearMin,dayMin);
-%             yearTP = cat(3,yearTP,dayTP);
+             yearTP = cat(3,yearTP,dayTP);
         end
     end
 
     display(lon);
-    display(size(yearMax));
+    display(size(yearTP));
 %     if lon==0
 %         allMax = yearMax;
 %         allMin = yearMin;
