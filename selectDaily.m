@@ -1,5 +1,5 @@
-file = deblank(fileread('currentFile.txt'));
-y = str2num(fileread('currentYear.txt'));
+% file = deblank(fileread('currentFile.txt'));
+% y = str2num(fileread('currentYear.txt'));
 
 for lon = 0:45:315
 
@@ -76,27 +76,33 @@ for lon = 0:45:315
     end
 
     if lon==0
-        tmax = yearMax;
-        tmin = yearMin;
-        precip = yearTP;
+        allMax = yearMax;
+        allMin = yearMin;
+        allTP = yearTP;
 
         Y = ncread(file, 'latitude');
         X = ncread(file, 'longitude');
         T = unique(mDates);
     else
-        tmax = cat(1,tmax,yearMax);
-        tmin = cat(1,tmin,yearMin);
-        precip = cat(1,precip,yearTP);
+        allMax = cat(1,allMax,yearMax);
+        allMin = cat(1,allMin,yearMin);
+        allTP = cat(1,allTP,yearTP);
     end
 
     
 
 end
 
-tavg = (tmax + tmin)/2;
-s = struct('tmax',tmax,'tmin',tmin,'tavg',tavg,'precip',precip,'T',T,'Y',Y,'X',X);
-% clearvars -except s y;
+allAvg = (allMax + allMin)/2;
 
-save(strcat('ERAI_daily_',num2str(y),'_formatted.mat'),'-v7.3');
+tmax = struct('tmax',allMax,'T',T,'Y',Y,'X',X);
+tmin = struct('tmin',allMin,'T',T,'Y',Y,'X',X);
+tavg = struct('tavg',allAvg,'T',T,'Y',Y,'X',X);
+precip = struct('precip',allTP,'T',T,'Y',Y,'X',X);
+
+save(strcat('/home/theodor/norgay/data/sources/ERAI/DAILY/TMAX/ERAI_DAILY_TMAX_',num2str(y),'.mat'),'tmax','-v7.3');
+save(strcat('/home/theodor/norgay/data/sources/ERAI/DAILY/TMIN/ERAI_DAILY_TMIN_',num2str(y),'.mat'),'tmin','-v7.3');
+save(strcat('/home/theodor/norgay/data/sources/ERAI/DAILY/TAVG/ERAI_DAILY_TAVG_',num2str(y),'.mat'),'tavg','-v7.3');
+save(strcat('/home/theodor/norgay/data/sources/ERAI/DAILY/PRECIP/ERAI_DAILY_PRECIP_',num2str(y),'.mat'),'precip','-v7.3');
 
 clear;
