@@ -11,7 +11,7 @@ year = sys.argv[1]
 
 name = 'raw'
 
-outputDir = os.path.expandvars('$HOME/ERA_Interim/'+name+'/')
+outputDir = os.path.expandvars('$HOME/norgay/data/sources/ERAI/3HOURLY/'+name+'/')
 
 try:
     os.makedirs(outputDir)
