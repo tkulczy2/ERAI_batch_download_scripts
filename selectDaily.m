@@ -2,7 +2,11 @@ function selectDaily(f, y)
 
 % f = deblank(fileread('currentFile.txt'));
 % y = str2num(fileread('currentYear.txt'));
-fNext = strrep(strrep(f,num2str(y+1), num2str(y+2)), num2str(y), num2str(y+1));
+fNext = strrep(strrep(f,num2str(y), num2str(y+1)), num2str(y-1), num2str(y));
+if y == 1979
+    fNext = 'mx2t_mn2t_tp_3hour_1979-12-31to1980-12-31.nc'
+    fNext = strrep(fNext, '01-01', '12-31');
+end
 for lon = 0:45:315
 
     gridDelta = 1.0;
