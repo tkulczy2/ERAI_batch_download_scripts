@@ -2,45 +2,60 @@ function selectDaily(f, y)
 
 % f = deblank(fileread('currentFile.txt'));
 % y = str2num(fileread('currentYear.txt'));
-
+fNext = strrep(strrep(f,num2str(y+1), num2str(y+2)), num2str(y), num2str(y+1));
 for lon = 0:45:315
 
-%     latitudes = ncread(file, 'latitude');
-%     longitudes = ncread(file, 'longitude');
-    times = ncread(f, 'time');
-
-    baseOffset = 33; % not sure why this is, but ERA dates are slightly off
-    lonOffset = 3*lon/45; % add 3 hour offset to start of day for each 45 deg
-    totOffset = baseOffset + lonOffset;
     gridDelta = 1.0;
-
-    mDates = x2mdate((times+totOffset)/24);
-    %     dates = cellstr(datestr(mDates));
-    years = str2num(datestr(mDates, 'yyyy'));
-    %     months = str2num(datestr(mDates, 'mm'));
-    %     days = str2num(datestr(mDates, 'dd'));
-    hours = mod(times, 24);
-
-    %     yearDates = dates(years==y);
-    %     [C,ia,ic] = unique(yearDates);
-    %     uniqueDates = yearDates(sort(ia));
-
-
     % ixlat = round((90-lat)/0.25 + 1);
     ixlon = round(lon/gridDelta+1);
 
-    nlat = 180/gridDelta+1; % get all lat for a particular lon range
+    nlat = 180/gridDelta+1; % get all lat for a particular lon range (could use Inf instead)
     nlon = 45/gridDelta; % # of horizontal grid points in 45 deg arc
-
-    % var = {'mx2t', 'mn2t', 'tp'}
 
     mxData = ncread(f, 'mx2t', [ixlon 1 1], [nlon nlat Inf]);
     mnData = ncread(f, 'mn2t', [ixlon 1 1], [nlon nlat Inf]);
     tpData = ncread(f, 'tp', [ixlon 1 1], [nlon nlat Inf]);
+    times = ncread(f, 'time');
+    
+    if lon > 135 && year ~= 2015
+        mxData = cat(3, mxData, ncread(fNext, 'mx2t', [ixlon 1 9], [nlon nlat 8]));
+        mnData = cat(3, mnData, ncread(fNext, 'mn2t', [ixlon 1 9], [nlon nlat 8]));
+        tpData = cat(3, tpData, ncread(fNext, 'tp', [ixlon 1 9], [nlon nlat 8]));
+        times = [times; ncread(fNext, 'time', 9, 8)];
+    end
+        
 
-    mxData(mxData<0) = nan;
-    mnData(mnData<0) = nan;
-    tpData(tpData<0) = nan;
+    % The way I initially read the dates from raw ERA files required this
+    % adjustment, but not when converting dates using `datenum(1900,1,1) +
+    % (double(times)/24)`
+    %baseOffset = 33;
+    baseOffset = 0;
+    if lon <= 135
+        lonOffset = 3*lon/45; % add 3 hour offset to start of day for each 45 deg east of 
+    else
+        lonOffset = -3*(360-lon)/45; % subtract 3 hour offset to start of day for each 45 deg
+    offset = baseOffset + lonOffset;
+    
+
+    mDates = (datenum(1900,1,1) + (double(times+offset)/24));
+    %mDates = x2mdate((times+offset)/24);
+
+    % year vector to identify which observations are associated with days
+    % from the desired year (shifted so that 00:00 is associate with the
+    % previous day)
+    years = year(mDates-0.01);
+    % hour vector to identify which observation are NOT accumulated on top
+    % of previous observations (i.e. not hours 3 and 15)
+    hours = hour(mDates);
+
+%     years = str2num(datestr(mDates, 'yyyy')-0.01);
+%     hours = str2num(datestr(mDates, 'hh'));
+%     hours = mod(times, 24);
+
+    
+%     mxData(mxData<0) = nan;
+%     mnData(mnData<0) = nan;
+%     tpData(tpData<0) = nan;
 
     % Calculate incremental precip, instead of accumulated
     % ix = find(hours==3 | hours==15);
@@ -51,9 +66,6 @@ for lon = 0:45:315
 
     % Limit to records in the current year
     mDates = mDates(years==y);
-    %     dates = dates(years==y);
-    %     months = months(years==y);
-    %     days = days(years==y);
     hours = hours(years==y);
 
     mxData = mxData(:,:,years==y);
@@ -62,7 +74,7 @@ for lon = 0:45:315
 
     years = years(years==y);
 
-    doy = mDates-datenum(year(mDates),1,1)+1;
+    doy = floor(mDates-0.01 - datenum(y,1,1)+1);
 
     for dd = unique(doy)'
         ix = find(doy==dd);
