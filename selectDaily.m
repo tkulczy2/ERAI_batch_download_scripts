@@ -57,9 +57,9 @@ for lon = 0:45:315
 %     hours = mod(times, 24);
 
     
-%     mxData(mxData<0) = nan;
-%     mnData(mnData<0) = nan;
-%     tpData(tpData<0) = nan;
+    mxData(mxData<0) = nan;
+    mnData(mnData<0) = nan;
+    tpData(tpData<0) = nan;
 
     % Calculate incremental precip, instead of accumulated
     % ix = find(hours==3 | hours==15);
