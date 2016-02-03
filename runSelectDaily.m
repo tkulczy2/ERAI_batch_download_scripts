@@ -1,4 +1,4 @@
-cd /home/tkulczycki/norgay/data/sources/ERAI/3HOURLY
+cd /mnt/norgay/Datasets/Climate/ERA-Interim/Raw_NetCDF_1deg_x_1deg/
 
 files = dir('*.nc');
 

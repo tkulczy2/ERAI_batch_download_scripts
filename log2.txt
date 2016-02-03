@@ -1,0 +1,2244 @@
+2015-10-21 16:24:44 ECMWF API python library 1.3
+2015-10-21 16:24:44 ECMWF API at https://api.ecmwf.int/v1
+2015-10-21 16:24:45 Welcome Theodor Kulczycki
+2015-10-21 16:24:46 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Troubleshooting or contact calldesk@ecmwf.int
+2015-10-21 16:24:47 Request is queued
+Calling nice mars /tmp/tmp-marsxRdagQ.req
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20151021.232413 - grib_api created on  20141119
+mars - INFO   - 20151021.232413 - EMOSLIB version: 395
+mars - INFO   - 20151021.232413 - odb_api created on  20140527
+mars - INFO   - 20151021.232413 - Using grib_api version 1.13.1
+mars - INFO   - 20151021.232413 - Welcome to MARS with grib_api and ODB
+mars - INFO   - 20151021.232413 - Using odb_api version: 0.10.2 (file format version: 0.5)
+mars - INFO   - 20151021.232413 - Maximum retrieval size is 20.00 G
+mars - INFO   - 20151021.232413 - Automatic split by date is on
+retrieve,stream=oper,levtype=sfc,param=57.128,padding=0,step=03/06/09/12,grid=0.25/0.25,expver=0001,time=00/12,date=1979-01-01/to/1979-12-31,type=fc,class=ei,expect=anymars - WARN   - 20151021.232413 - For full resolution grid, it is recommended to use RESOL=AV to prevent any truncation before transformation
+
+mars - INFO   - 20151021.232413 - Request has been split into 12 monthly retrievals
+mars - INFO   - 20151021.232413 - Processing request 1
+
+    CLASS      = EI,
+RETRIEVE,
+    TYPE       = FC,
+    STREAM     = OPER,
+    REPRES     = SH,
+    EXPVER     = 0001,
+    PARAM      = 57.128,
+    TIME       = 0000/1200,
+    LEVTYPE    = SFC,
+    STEP       = 03/06/09/12,
+    GRID       = 0.25/0.25,
+    RESOL      = AUTO,
+    DOMAIN     = G,
+
+    EXPECT     = ANY,
+    PADDING    = 0,
+    DATE       = 19790101/19790102/19790103/19790104/19790105/19790106/19790107/19790108/19790109/19790110/19790111/19790112/19790113/19790114/19790115/19790116/19790117/19790118/19790119/19790120/19790121/19790122/19790123/19790124/19790125/19790126/19790127/19790128/19790129/19790130/19790131
+mars - INFO   - 20151021.232413 - Web API request id: 56281e9cf952b1d6e529f8c8
+mars - INFO   - 20151021.232413 - Requesting any number of fields (request describes 248)
+mars - INFO   - 20151021.232413 - Calling mars on 'marser', callback on 50060
+mars - INFO   - 20151021.232413 - Server task is 737 [marser]
+mars - INFO   - 20151021.232413 - Request cost: 248 fields, 42.169 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151021.232413 - Transfering 44217408 bytes
+2015-10-21 16:24:49 Request is active
+mars - INFO   - 20151021.232520 -   Read from network: 42.17 Mbyte(s) in 5 sec  [7.78 Mbyte/sec]
+mars - INFO   - 20151021.232520 - Request time:  wall: 1 min 7 sec  cpu: 1 min 1 sec
+mars - INFO   - 20151021.232520 - 248 fields retrieved from 'marser'
+mars - INFO   - 20151021.232520 - 248 fields have been interpolated
+mars - INFO   - 20151021.232520 - Processing request 2
+
+mars - INFO   - 20151021.232520 -   Writing to target file: 491.14 Mbyte(s) in < 1 sec [827.70 Mbyte/sec]
+mars - INFO   - 20151021.232520 -   Visiting marser: wall: 1 min 7 sec
+mars - INFO   - 20151021.232520 -   Post-processing: wall: 1 min cpu: 1 min
+
+    CLASS      = EI,
+RETRIEVE,
+    TYPE       = FC,
+    STREAM     = OPER,
+    REPRES     = SH,
+    EXPVER     = 0001,
+    LEVTYPE    = SFC,
+    PARAM      = 57.128,
+    STEP       = 03/06/09/12,
+    TIME       = 0000/1200,
+    RESOL      = AUTO,
+    DOMAIN     = G,
+    PADDING    = 0,
+
+    GRID       = 0.25/0.25,
+    EXPECT     = ANY,
+mars - INFO   - 20151021.232520 - Server task is 375 [marser]
+    DATE       = 19790201/19790202/19790203/19790204/19790205/19790206/19790207/19790208/19790209/19790210/19790211/19790212/19790213/19790214/19790215/19790216/19790217/19790218/19790219/19790220/19790221/19790222/19790223/19790224/19790225/19790226/19790227/19790228
+mars - INFO   - 20151021.232520 - Request cost: 224 fields, 38.0881 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151021.232520 - Requesting any number of fields (request describes 224)
+mars - INFO   - 20151021.232520 - Calling mars on 'marser', callback on 32969
+mars - INFO   - 20151021.232520 - Transfering 39938304 bytes
+mars - INFO   - 20151021.232620 - Request time:  wall: 1 min  cpu: 55 sec
+mars - INFO   - 20151021.232620 - Processing request 3
+    TYPE       = FC,
+mars - INFO   - 20151021.232620 -   Post-processing: wall: 54 sec cpu: 54 sec
+mars - INFO   - 20151021.232620 -   Writing to target file: 443.61 Mbyte(s) in < 1 sec [763.00 Mbyte/sec]
+mars - INFO   - 20151021.232620 - 224 fields have been interpolated
+    LEVTYPE    = SFC,
+
+    GRID       = 0.25/0.25,
+    CLASS      = EI,
+    DOMAIN     = G,
+    EXPECT     = ANY,
+mars - INFO   - 20151021.232620 - Transfering 44217408 bytes
+    STEP       = 03/06/09/12,
+
+    REPRES     = SH,
+RETRIEVE,
+mars - INFO   - 20151021.232620 -   Read from network: 38.09 Mbyte(s) in 5 sec  [8.24 Mbyte/sec]
+mars - INFO   - 20151021.232620 - 224 fields retrieved from 'marser'
+mars - INFO   - 20151021.232620 -   Visiting marser: wall: 1 min cpu: 55 sec
+    PADDING    = 0,
+    RESOL      = AUTO,
+    STREAM     = OPER,
+mars - INFO   - 20151021.232620 - Requesting any number of fields (request describes 248)
+    EXPVER     = 0001,
+    TIME       = 0000/1200,
+
+mars - INFO   - 20151021.232620 - Request cost: 248 fields, 42.169 Mbytes online, nodes: mvr02 [marser]
+    DATE       = 19790301/19790302/19790303/19790304/19790305/19790306/19790307/19790308/19790309/19790310/19790311/19790312/19790313/19790314/19790315/19790316/19790317/19790318/19790319/19790320/19790321/19790322/19790323/19790324/19790325/19790326/19790327/19790328/19790329/19790330/19790331
+mars - INFO   - 20151021.232620 - Calling mars on 'marser', callback on 49923
+mars - INFO   - 20151021.232620 - Server task is 375 [marser]
+    PARAM      = 57.128,
+mars - INFO   - 20151021.232726 - Processing request 4
+mars - INFO   - 20151021.232726 - 248 fields retrieved from 'marser'
+mars - INFO   - 20151021.232726 -   Visiting marser: wall: 1 min 6 sec cpu: 1 min 1 sec
+mars - INFO   - 20151021.232726 - Request time:  wall: 1 min 6 sec  cpu: 1 min
+mars - INFO   - 20151021.232726 -   Post-processing: wall: 1 min cpu: 1 min
+mars - INFO   - 20151021.232726 -   Read from network: 42.17 Mbyte(s) in 5 sec  [8.59 Mbyte/sec]
+mars - INFO   - 20151021.232726 - 248 fields have been interpolated
+
+mars - INFO   - 20151021.232726 -   Writing to target file: 491.14 Mbyte(s) in < 1 sec [838.14 Mbyte/sec]
+
+RETRIEVE,
+    TYPE       = FC,
+    CLASS      = EI,
+    STREAM     = OPER,
+    PARAM      = 57.128,
+    EXPVER     = 0001,
+    LEVTYPE    = SFC,
+    DOMAIN     = G,
+    GRID       = 0.25/0.25,
+    STEP       = 03/06/09/12,
+    PADDING    = 0,
+mars - INFO   - 20151021.232726 - Requesting any number of fields (request describes 240)
+    RESOL      = AUTO,
+    EXPECT     = ANY,
+
+    TIME       = 0000/1200,
+mars - INFO   - 20151021.232726 - Calling mars on 'marser', callback on 39977
+    REPRES     = SH,
+    DATE       = 19790401/19790402/19790403/19790404/19790405/19790406/19790407/19790408/19790409/19790410/19790411/19790412/19790413/19790414/19790415/19790416/19790417/19790418/19790419/19790420/19790421/19790422/19790423/19790424/19790425/19790426/19790427/19790428/19790429/19790430
+mars - INFO   - 20151021.232726 - Request cost: 240 fields, 40.8087 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151021.232726 - Server task is 20 [marser]
+mars - INFO   - 20151021.232726 - Transfering 42791040 bytes
+mars - INFO   - 20151021.232830 - 240 fields retrieved from 'marser'
+mars - INFO   - 20151021.232830 - 240 fields have been interpolated
+mars - INFO   - 20151021.232830 -   Read from network: 40.81 Mbyte(s) in 5 sec  [8.82 Mbyte/sec]
+mars - INFO   - 20151021.232830 -   Visiting marser: wall: 1 min 4 sec cpu: 1 min
+mars - INFO   - 20151021.232830 -   Post-processing: wall: 59 sec cpu: 59 sec
+mars - INFO   - 20151021.232830 - Request time:  wall: 1 min 4 sec  cpu: 59 sec
+mars - INFO   - 20151021.232830 -   Writing to target file: 475.29 Mbyte(s) in < 1 sec [810.48 Mbyte/sec]
+mars - INFO   - 20151021.232830 - Processing request 5
+
+    REPRES     = SH,
+
+    TYPE       = FC,
+    TIME       = 0000/1200,
+    PARAM      = 57.128,
+    LEVTYPE    = SFC,
+    DATE       = 19790501/19790502/19790503/19790504/19790505/19790506/19790507/19790508/19790509/19790510/19790511/19790512/19790513/19790514/19790515/19790516/19790517/19790518/19790519/19790520/19790521/19790522/19790523/19790524/19790525/19790526/19790527/19790528/19790529/19790530/19790531
+
+    CLASS      = EI,
+    RESOL      = AUTO,
+    EXPVER     = 0001,
+    GRID       = 0.25/0.25,
+RETRIEVE,
+mars - INFO   - 20151021.232830 - Request cost: 248 fields, 42.169 Mbytes online, nodes: mvr02 [marser]
+    DOMAIN     = G,
+mars - INFO   - 20151021.232830 - Transfering 44217408 bytes
+mars - INFO   - 20151021.232830 - Requesting any number of fields (request describes 248)
+mars - INFO   - 20151021.232830 - Calling mars on 'marser', callback on 48380
+    PADDING    = 0,
+    STREAM     = OPER,
+    STEP       = 03/06/09/12,
+mars - INFO   - 20151021.232830 - Server task is 20 [marser]
+    EXPECT     = ANY,
+mars - INFO   - 20151021.232930 - 248 fields have been interpolated
+mars - INFO   - 20151021.232930 -   Read from network: 42.17 Mbyte(s) in 5 sec  [8.86 Mbyte/sec]
+mars - INFO   - 20151021.232930 - Processing request 6
+
+mars - INFO   - 20151021.232930 -   Writing to target file: 491.14 Mbyte(s) in < 1 sec [879.77 Mbyte/sec]
+mars - INFO   - 20151021.232930 - 248 fields retrieved from 'marser'
+mars - INFO   - 20151021.232930 -   Visiting marser: wall: 1 min cpu: 55 sec
+mars - INFO   - 20151021.232930 - Request time:  wall: 1 min  cpu: 55 sec
+mars - INFO   - 20151021.232930 -   Post-processing: wall: 54 sec cpu: 54 sec
+
+    CLASS      = EI,
+RETRIEVE,
+    STREAM     = OPER,
+    LEVTYPE    = SFC,
+    PARAM      = 57.128,
+    EXPVER     = 0001,
+    STEP       = 03/06/09/12,
+    TIME       = 0000/1200,
+    TYPE       = FC,
+    REPRES     = SH,
+    GRID       = 0.25/0.25,
+    DATE       = 19790601/19790602/19790603/19790604/19790605/19790606/19790607/19790608/19790609/19790610/19790611/19790612/19790613/19790614/19790615/19790616/19790617/19790618/19790619/19790620/19790621/19790622/19790623/19790624/19790625/19790626/19790627/19790628/19790629/19790630
+
+    EXPECT     = ANY,
+    RESOL      = AUTO,
+    DOMAIN     = G,
+    PADDING    = 0,
+mars - INFO   - 20151021.232930 - Requesting any number of fields (request describes 240)
+mars - INFO   - 20151021.232930 - Calling mars on 'marser', callback on 48401
+mars - INFO   - 20151021.232930 - Server task is 20 [marser]
+mars - INFO   - 20151021.232930 - Request cost: 240 fields, 40.8087 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151021.232930 - Transfering 42791040 bytes
+mars - INFO   - 20151021.233032 - 240 fields retrieved from 'marser'
+mars - INFO   - 20151021.233032 - 240 fields have been interpolated
+mars - INFO   - 20151021.233032 -   Read from network: 40.81 Mbyte(s) in 5 sec  [8.31 Mbyte/sec]
+mars - INFO   - 20151021.233032 - Request time:  wall: 1 min 2 sec  cpu: 57 sec
+mars - INFO   - 20151021.233032 -   Visiting marser: wall: 1 min 2 sec cpu: 57 sec
+mars - INFO   - 20151021.233032 -   Post-processing: wall: 56 sec cpu: 56 sec
+mars - INFO   - 20151021.233032 -   Writing to target file: 475.29 Mbyte(s) in < 1 sec [871.31 Mbyte/sec]
+mars - INFO   - 20151021.233032 - Processing request 7
+
+
+RETRIEVE,
+    CLASS      = EI,
+    TYPE       = FC,
+    STREAM     = OPER,
+    EXPVER     = 0001,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 57.128,
+    TIME       = 0000/1200,
+    STEP       = 03/06/09/12,
+    DOMAIN     = G,
+    RESOL      = AUTO,
+    GRID       = 0.25/0.25,
+    PADDING    = 0,
+    EXPECT     = ANY,
+    DATE       = 19790701/19790702/19790703/19790704/19790705/19790706/19790707/19790708/19790709/19790710/19790711/19790712/19790713/19790714/19790715/19790716/19790717/19790718/19790719/19790720/19790721/19790722/19790723/19790724/19790725/19790726/19790727/19790728/19790729/19790730/19790731
+
+mars - INFO   - 20151021.233032 - Calling mars on 'marser', callback on 34210
+mars - INFO   - 20151021.233032 - Transfering 44217408 bytes
+mars - INFO   - 20151021.233032 - Requesting any number of fields (request describes 248)
+mars - INFO   - 20151021.233032 - Server task is 505 [marser]
+mars - INFO   - 20151021.233032 - Request cost: 248 fields, 42.169 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151021.233139 - 248 fields retrieved from 'marser'
+mars - INFO   - 20151021.233139 -   Read from network: 42.17 Mbyte(s) in 5 sec  [8.28 Mbyte/sec]
+mars - INFO   - 20151021.233139 - 248 fields have been interpolated
+mars - INFO   - 20151021.233139 -   Post-processing: wall: 1 min cpu: 1 min
+mars - INFO   - 20151021.233139 - Processing request 8
+mars - INFO   - 20151021.233139 - Request time:  wall: 1 min 7 sec  cpu: 1 min 1 sec
+RETRIEVE,
+mars - INFO   - 20151021.233139 -   Writing to target file: 491.14 Mbyte(s) in < 1 sec [830.71 Mbyte/sec]
+mars - INFO   - 20151021.233139 -   Visiting marser: wall: 1 min 7 sec cpu: 1 min 1 sec
+
+
+    CLASS      = EI,
+    STREAM     = OPER,
+    EXPVER     = 0001,
+    TYPE       = FC,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    DOMAIN     = G,
+    TIME       = 0000/1200,
+    PARAM      = 57.128,
+    PADDING    = 0,
+    STEP       = 03/06/09/12,
+    RESOL      = AUTO,
+    GRID       = 0.25/0.25,
+mars - INFO   - 20151021.233139 - Calling mars on 'marser', callback on 48288
+mars - INFO   - 20151021.233139 - Requesting any number of fields (request describes 248)
+    DATE       = 19790801/19790802/19790803/19790804/19790805/19790806/19790807/19790808/19790809/19790810/19790811/19790812/19790813/19790814/19790815/19790816/19790817/19790818/19790819/19790820/19790821/19790822/19790823/19790824/19790825/19790826/19790827/19790828/19790829/19790830/19790831
+    EXPECT     = ANY,
+
+mars - INFO   - 20151021.233139 - Request cost: 248 fields, 42.169 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151021.233139 - Server task is 505 [marser]
+mars - INFO   - 20151021.233139 - Transfering 44217408 bytes
+mars - INFO   - 20151021.233243 - 248 fields have been interpolated
+mars - INFO   - 20151021.233243 - Request time:  wall: 1 min 4 sec  cpu: 59 sec
+mars - INFO   - 20151021.233243 -   Read from network: 42.17 Mbyte(s) in 5 sec  [8.56 Mbyte/sec]
+mars - INFO   - 20151021.233243 - Processing request 9
+mars - INFO   - 20151021.233243 - 248 fields retrieved from 'marser'
+mars - INFO   - 20151021.233243 -   Visiting marser: wall: 1 min 4 sec cpu: 59 sec
+
+mars - INFO   - 20151021.233243 -   Post-processing: wall: 58 sec cpu: 58 sec
+mars - INFO   - 20151021.233243 -   Writing to target file: 491.14 Mbyte(s) in < 1 sec [788.03 Mbyte/sec]
+
+    CLASS      = EI,
+RETRIEVE,
+    STREAM     = OPER,
+    EXPVER     = 0001,
+    PARAM      = 57.128,
+    TIME       = 0000/1200,
+    STEP       = 03/06/09/12,
+    TYPE       = FC,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    RESOL      = AUTO,
+    DOMAIN     = G,
+    PADDING    = 0,
+    GRID       = 0.25/0.25,
+    EXPECT     = ANY,
+    DATE       = 19790901/19790902/19790903/19790904/19790905/19790906/19790907/19790908/19790909/19790910/19790911/19790912/19790913/19790914/19790915/19790916/19790917/19790918/19790919/19790920/19790921/19790922/19790923/19790924/19790925/19790926/19790927/19790928/19790929/19790930
+mars - INFO   - 20151021.233243 - Requesting any number of fields (request describes 240)
+mars - INFO   - 20151021.233243 - Calling mars on 'marser', callback on 58754
+
+mars - INFO   - 20151021.233243 - Server task is 505 [marser]
+mars - INFO   - 20151021.233243 - Request cost: 240 fields, 40.8087 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151021.233243 - Transfering 42791040 bytes
+mars - INFO   - 20151021.233348 - 240 fields have been interpolated
+mars - INFO   - 20151021.233348 - Processing request 10
+mars - INFO   - 20151021.233348 -   Read from network: 40.81 Mbyte(s) in 5 sec  [8.01 Mbyte/sec]
+mars - INFO   - 20151021.233348 - 240 fields retrieved from 'marser'
+mars - INFO   - 20151021.233348 - Request time:  wall: 1 min 5 sec  cpu: 1 min
+mars - INFO   - 20151021.233348 -   Visiting marser: wall: 1 min 5 sec cpu: 1 min
+mars - INFO   - 20151021.233348 -   Post-processing: wall: 59 sec cpu: 59 sec
+
+    CLASS      = EI,
+mars - INFO   - 20151021.233348 -   Writing to target file: 475.29 Mbyte(s) in < 1 sec [810.29 Mbyte/sec]
+RETRIEVE,
+
+    TYPE       = FC,
+    STREAM     = OPER,
+    REPRES     = SH,
+    TIME       = 0000/1200,
+    PARAM      = 57.128,
+    EXPVER     = 0001,
+    LEVTYPE    = SFC,
+    DOMAIN     = G,
+    RESOL      = AUTO,
+    GRID       = 0.25/0.25,
+    PADDING    = 0,
+    STEP       = 03/06/09/12,
+    DATE       = 19791001/19791002/19791003/19791004/19791005/19791006/19791007/19791008/19791009/19791010/19791011/19791012/19791013/19791014/19791015/19791016/19791017/19791018/19791019/19791020/19791021/19791022/19791023/19791024/19791025/19791026/19791027/19791028/19791029/19791030/19791031
+    EXPECT     = ANY,
+
+mars - INFO   - 20151021.233348 - Requesting any number of fields (request describes 248)
+mars - INFO   - 20151021.233348 - Calling mars on 'marser', callback on 46083
+mars - INFO   - 20151021.233348 - Server task is 353 [marser]
+mars - INFO   - 20151021.233348 - Request cost: 248 fields, 42.169 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151021.233348 - Transfering 44217408 bytes
+mars - INFO   - 20151021.233454 - 248 fields have been interpolated
+mars - INFO   - 20151021.233454 -   Visiting marser: wall: 1 min 6 sec cpu: 1 min 1 sec
+mars - INFO   - 20151021.233454 - 248 fields retrieved from 'marser'
+mars - INFO   - 20151021.233454 -   Read from network: 42.17 Mbyte(s) in 5 sec  [8.47 Mbyte/sec]
+RETRIEVE,
+mars - INFO   - 20151021.233454 -   Post-processing: wall: 1 min cpu: 1 min
+mars - INFO   - 20151021.233454 -   Writing to target file: 491.14 Mbyte(s) in < 1 sec [811.59 Mbyte/sec]
+    CLASS      = EI,
+mars - INFO   - 20151021.233454 - Processing request 11
+
+
+    REPRES     = SH,
+    EXPVER     = 0001,
+    LEVTYPE    = SFC,
+    STREAM     = OPER,
+    TIME       = 0000/1200,
+    DOMAIN     = G,
+    STEP       = 03/06/09/12,
+    PARAM      = 57.128,
+    PADDING    = 0,
+    RESOL      = AUTO,
+    EXPECT     = ANY,
+    DATE       = 19791101/19791102/19791103/19791104/19791105/19791106/19791107/19791108/19791109/19791110/19791111/19791112/19791113/19791114/19791115/19791116/19791117/19791118/19791119/19791120/19791121/19791122/19791123/19791124/19791125/19791126/19791127/19791128/19791129/19791130
+mars - INFO   - 20151021.233454 - Requesting any number of fields (request describes 240)
+mars - INFO   - 20151021.233454 - Request time:  wall: 1 min 6 sec  cpu: 1 min 1 sec
+
+mars - INFO   - 20151021.233454 - Calling mars on 'marser', callback on 35520
+    TYPE       = FC,
+    GRID       = 0.25/0.25,
+mars - INFO   - 20151021.233454 - Request cost: 240 fields, 40.8087 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151021.233454 - Server task is 858 [marser]
+mars - INFO   - 20151021.233454 - Transfering 42791040 bytes
+mars - INFO   - 20151021.233553 -   Visiting marser: wall: 59 sec cpu: 54 sec
+mars - INFO   - 20151021.233553 -   Read from network: 40.81 Mbyte(s) in 5 sec  [8.29 Mbyte/sec]
+mars - INFO   - 20151021.233553 - 240 fields have been interpolated
+mars - INFO   - 20151021.233553 - Processing request 12
+
+mars - INFO   - 20151021.233553 - 240 fields retrieved from 'marser'
+mars - INFO   - 20151021.233553 - Request time:  wall: 59 sec  cpu: 54 sec
+mars - INFO   - 20151021.233553 -   Post-processing: wall: 53 sec cpu: 53 sec
+mars - INFO   - 20151021.233553 -   Writing to target file: 475.29 Mbyte(s) in < 1 sec [707.74 Mbyte/sec]
+
+    STREAM     = OPER,
+    CLASS      = EI,
+    EXPECT     = ANY,
+    PARAM      = 57.128,
+    TIME       = 0000/1200,
+    TYPE       = FC,
+RETRIEVE,
+
+    EXPVER     = 0001,
+    STEP       = 03/06/09/12,
+    LEVTYPE    = SFC,
+    RESOL      = AUTO,
+mars - INFO   - 20151021.233553 - Requesting any number of fields (request describes 248)
+    REPRES     = SH,
+    DATE       = 19791201/19791202/19791203/19791204/19791205/19791206/19791207/19791208/19791209/19791210/19791211/19791212/19791213/19791214/19791215/19791216/19791217/19791218/19791219/19791220/19791221/19791222/19791223/19791224/19791225/19791226/19791227/19791228/19791229/19791230/19791231
+    GRID       = 0.25/0.25,
+    DOMAIN     = G,
+    PADDING    = 0,
+mars - INFO   - 20151021.233553 - Calling mars on 'marser', callback on 54631
+mars - INFO   - 20151021.233554 - Server task is 858 [marser]
+mars - INFO   - 20151021.233554 - Request cost: 248 fields, 42.169 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151021.233554 - Transfering 44217408 bytes
+mars - INFO   - 20151021.233659 -   Visiting marser: wall: 1 min 5 sec cpu: 59 sec
+mars - INFO   - 20151021.233659 -   Post-processing: wall: 58 sec cpu: 58 sec
+mars - INFO   - 20151021.233659 - 248 fields have been interpolated
+mars - INFO   - 20151021.233659 - Request time:  wall: 1 min 5 sec  cpu: 59 sec
+mars - INFO   - 20151021.233659 - No errors reported
+mars - INFO   - 20151021.233659 - 248 fields retrieved from 'marser'
+mars - INFO   - 20151021.233659 -   Writing to target file: 491.14 Mbyte(s) in < 1 sec [787.36 Mbyte/sec]
+mars - INFO   - 20151021.233659 -   Read from network: 42.17 Mbyte(s) in 6 sec  [7.55 Mbyte/sec]
+Calling nice grib_to_netcdf /data/data04/scratch/mars-atls02-a562cefde8a29a7288fa0b8b7f9413f7-jcoNq4.target -o /data/data04/scratch/mars-atls02-a562cefde8a29a7288fa0b8b7f9413f7-C9IWQF.nc -utime
+grib_to_netcdf: Defining variable 'uvb'.
+grib_to_netcdf: NetCDF library version: 4.3.0 of Sep 10 2014 17:37:07 $
+grib_to_netcdf: Creating netcdf file '/data/data04/scratch/mars-atls02-a562cefde8a29a7288fa0b8b7f9413f7-C9IWQF.nc'
+grib_to_netcdf: Done.
+grib_to_netcdf: Version 1.13.1
+grib_to_netcdf: Processing input file '/data/data04/scratch/mars-atls02-a562cefde8a29a7288fa0b8b7f9413f7-jcoNq4.target'.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate, hdate
+grib_to_netcdf: Found 2920 GRIB fields in 1 file.
+End of nice grib_to_netcdf /data/data04/scratch/mars-atls02-a562cefde8a29a7288fa0b8b7f9413f7-jcoNq4.target -o /data/data04/scratch/mars-atls02-a562cefde8a29a7288fa0b8b7f9413f7-C9IWQF.nc -utime
+End of nice mars /tmp/tmp-marsxRdagQ.req
+2015-10-21 16:40:21 Request is complete
+2015-10-21 16:40:21 Transfering 5.64693 Gbytes into /home/tkulczycki/norgay/data/sources/ERAI/3HOURLY/uvb/ERAI_uvb_1979-01-01to1979-12-31.nc
+2015-10-21 16:40:21 From http://stream.ecmwf.int/data/atls02/data/data04/scratch/mars-atls02-a562cefde8a29a7288fa0b8b7f9413f7-C9IWQF.nc
+2015-10-21 17:25:06 Transfer rate 2.15339 Mbytes/s
+2015-10-21 17:25:07 ECMWF API python library 1.3
+2015-10-21 17:25:07 ECMWF API at https://api.ecmwf.int/v1
+2015-10-21 17:25:08 Welcome Theodor Kulczycki
+2015-10-21 17:25:09 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Troubleshooting or contact calldesk@ecmwf.int
+2015-10-21 17:25:10 Request is queued
+Calling nice mars /tmp/tmp-mars4qdbxJ.req
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20151022.002435 - EMOSLIB version: 395
+mars - INFO   - 20151022.002435 - Welcome to MARS with grib_api and ODB
+mars - INFO   - 20151022.002435 - Using grib_api version 1.13.1
+mars - INFO   - 20151022.002435 - Using odb_api version: 0.10.2 (file format version: 0.5)
+mars - INFO   - 20151022.002435 - grib_api created on  20141119
+mars - INFO   - 20151022.002435 - Maximum retrieval size is 20.00 G
+mars - INFO   - 20151022.002435 - odb_api created on  20140527
+mars - INFO   - 20151022.002435 - Automatic split by date is on
+
+retrieve,stream=oper,levtype=sfc,param=57.128,padding=0,step=03/06/09/12,grid=0.25/0.25,expver=0001,time=00/12,date=1979-12-31/to/1980-12-31,type=fc,class=ei,expect=anymars - WARN   - 20151022.002435 - For full resolution grid, it is recommended to use RESOL=AV to prevent any truncation before transformation
+mars - INFO   - 20151022.002435 - Processing request 1
+
+mars - INFO   - 20151022.002435 - Request has been split into 13 monthly retrievals
+    CLASS      = EI,
+RETRIEVE,
+    TYPE       = FC,
+    REPRES     = SH,
+    STREAM     = OPER,
+    TIME       = 0000/1200,
+    PARAM      = 57.128,
+    EXPVER     = 0001,
+    LEVTYPE    = SFC,
+    DOMAIN     = G,
+    STEP       = 03/06/09/12,
+    RESOL      = AUTO,
+    GRID       = 0.25/0.25,
+
+mars - INFO   - 20151022.002435 - Web API request id: 56282cc346000c8b42559eaa
+    EXPECT     = ANY,
+    DATE       = 19791231
+    PADDING    = 0,
+mars - INFO   - 20151022.002435 - Requesting any number of fields (request describes 8)
+mars - INFO   - 20151022.002435 - Calling mars on 'marser', callback on 51654
+mars - INFO   - 20151022.002435 - Server task is 955 [marser]
+mars - INFO   - 20151022.002435 - Request cost: 8 fields, 1.36029 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151022.002435 - Transfering 1426368 bytes
+2015-10-21 17:25:11 Request is active
+mars - INFO   - 20151022.002437 - 8 fields retrieved from 'marser'
+mars - INFO   - 20151022.002437 - Request time:  wall: 2 sec  cpu: 1 sec
+mars - INFO   - 20151022.002437 - 8 fields have been interpolated
+mars - INFO   - 20151022.002437 -   Read from network: 1.36 Mbyte(s) in < 1 sec [7.28 Mbyte/sec]
+mars - INFO   - 20151022.002437 -   Visiting marser: wall: 2 sec
+mars - INFO   - 20151022.002437 -   Post-processing: wall: 2 sec cpu: 2 sec
+mars - INFO   - 20151022.002437 -   Writing to target file: 15.84 Mbyte(s) in < 1 sec [910.99 Mbyte/sec]
+mars - INFO   - 20151022.002437 - Processing request 2
+
+    CLASS      = EI,
+    TYPE       = FC,
+    REPRES     = SH,
+    STREAM     = OPER,
+    EXPVER     = 0001,
+
+RETRIEVE,
+    STEP       = 03/06/09/12,
+    GRID       = 0.25/0.25,
+    RESOL      = AUTO,
+    LEVTYPE    = SFC,
+    DATE       = 19800101/19800102/19800103/19800104/19800105/19800106/19800107/19800108/19800109/19800110/19800111/19800112/19800113/19800114/19800115/19800116/19800117/19800118/19800119/19800120/19800121/19800122/19800123/19800124/19800125/19800126/19800127/19800128/19800129/19800130/19800131
+    TIME       = 0000/1200,
+    EXPECT     = ANY,
+mars - INFO   - 20151022.002437 - Calling mars on 'marser', callback on 58760
+mars - INFO   - 20151022.002438 - Transfering 44217408 bytes
+mars - INFO   - 20151022.002438 - Request cost: 248 fields, 42.169 Mbytes online, nodes: mvr02 [marser]
+    DOMAIN     = G,
+    PARAM      = 57.128,
+
+mars - INFO   - 20151022.002437 - Requesting any number of fields (request describes 248)
+    PADDING    = 0,
+mars - INFO   - 20151022.002438 - Server task is 955 [marser]
+mars - INFO   - 20151022.002538 - 248 fields have been interpolated
+mars - INFO   - 20151022.002538 - 248 fields retrieved from 'marser'
+mars - INFO   - 20151022.002538 -   Visiting marser: wall: 1 min 1 sec cpu: 55 sec
+
+
+mars - INFO   - 20151022.002538 -   Read from network: 42.17 Mbyte(s) in 5 sec  [8.25 Mbyte/sec]
+mars - INFO   - 20151022.002538 -   Post-processing: wall: 54 sec cpu: 54 sec
+mars - INFO   - 20151022.002538 - Request time:  wall: 1 min 1 sec  cpu: 55 sec
+mars - INFO   - 20151022.002538 - Processing request 3
+mars - INFO   - 20151022.002538 -   Writing to target file: 491.14 Mbyte(s) in < 1 sec [882.96 Mbyte/sec]
+RETRIEVE,
+    STREAM     = OPER,
+    CLASS      = EI,
+    TYPE       = FC,
+    EXPVER     = 0001,
+    REPRES     = SH,
+    PARAM      = 57.128,
+    STEP       = 03/06/09/12,
+    TIME       = 0000/1200,
+    LEVTYPE    = SFC,
+    DOMAIN     = G,
+    RESOL      = AUTO,
+mars - INFO   - 20151022.002538 - Calling mars on 'marser', callback on 33634
+mars - INFO   - 20151022.002538 - Requesting any number of fields (request describes 232)
+    EXPECT     = ANY,
+    DATE       = 19800201/19800202/19800203/19800204/19800205/19800206/19800207/19800208/19800209/19800210/19800211/19800212/19800213/19800214/19800215/19800216/19800217/19800218/19800219/19800220/19800221/19800222/19800223/19800224/19800225/19800226/19800227/19800228/19800229
+    PADDING    = 0,
+    GRID       = 0.25/0.25,
+
+mars - INFO   - 20151022.002538 - Server task is 425 [marser]
+mars - INFO   - 20151022.002538 - Request cost: 232 fields, 39.4484 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151022.002538 - Transfering 41364672 bytes
+mars - INFO   - 20151022.002632 - 232 fields retrieved from 'marser'
+mars - INFO   - 20151022.002632 -   Post-processing: wall: 48 sec cpu: 48 sec
+mars - INFO   - 20151022.002632 - 232 fields have been interpolated
+mars - INFO   - 20151022.002632 - Request time:  wall: 54 sec  cpu: 49 sec
+RETRIEVE,
+mars - INFO   - 20151022.002632 -   Read from network: 39.45 Mbyte(s) in 4 sec  [8.85 Mbyte/sec]
+mars - INFO   - 20151022.002632 -   Writing to target file: 459.45 Mbyte(s) in < 1 sec [925.81 Mbyte/sec]
+
+    TYPE       = FC,
+    CLASS      = EI,
+mars - INFO   - 20151022.002632 - Processing request 4
+
+mars - INFO   - 20151022.002632 -   Visiting marser: wall: 54 sec cpu: 49 sec
+    REPRES     = SH,
+    STREAM     = OPER,
+    LEVTYPE    = SFC,
+    EXPVER     = 0001,
+    PARAM      = 57.128,
+    STEP       = 03/06/09/12,
+    DOMAIN     = G,
+    TIME       = 0000/1200,
+    RESOL      = AUTO,
+    GRID       = 0.25/0.25,
+    PADDING    = 0,
+    EXPECT     = ANY,
+    DATE       = 19800301/19800302/19800303/19800304/19800305/19800306/19800307/19800308/19800309/19800310/19800311/19800312/19800313/19800314/19800315/19800316/19800317/19800318/19800319/19800320/19800321/19800322/19800323/19800324/19800325/19800326/19800327/19800328/19800329/19800330/19800331
+mars - INFO   - 20151022.002632 - Requesting any number of fields (request describes 248)
+
+mars - INFO   - 20151022.002632 - Calling mars on 'marser', callback on 36961
+mars - INFO   - 20151022.002632 - Request cost: 248 fields, 42.169 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151022.002632 - Server task is 437 [marser]
+mars - INFO   - 20151022.002632 - Transfering 44217408 bytes
+mars - INFO   - 20151022.002734 - Request time:  wall: 1 min 3 sec  cpu: 57 sec
+mars - INFO   - 20151022.002734 -   Visiting marser: wall: 1 min 3 sec cpu: 57 sec
+mars - INFO   - 20151022.002734 -   Read from network: 42.17 Mbyte(s) in 5 sec  [7.85 Mbyte/sec]
+    EXPVER     = 0001,
+mars - INFO   - 20151022.002734 - 248 fields have been interpolated
+mars - INFO   - 20151022.002734 -   Post-processing: wall: 56 sec cpu: 56 sec
+mars - INFO   - 20151022.002734 - Processing request 5
+    TYPE       = FC,
+mars - INFO   - 20151022.002734 - 248 fields retrieved from 'marser'
+    TIME       = 0000/1200,
+    GRID       = 0.25/0.25,
+mars - INFO   - 20151022.002734 -   Writing to target file: 491.14 Mbyte(s) in < 1 sec [814.87 Mbyte/sec]
+    EXPECT     = ANY,
+    PADDING    = 0,
+    STREAM     = OPER,
+    REPRES     = SH,
+    STEP       = 03/06/09/12,
+RETRIEVE,
+mars - INFO   - 20151022.002734 - Calling mars on 'marser', callback on 60899
+    DOMAIN     = G,
+    CLASS      = EI,
+    PARAM      = 57.128,
+    RESOL      = AUTO,
+
+    LEVTYPE    = SFC,
+mars - INFO   - 20151022.002734 - Requesting any number of fields (request describes 240)
+
+    DATE       = 19800401/19800402/19800403/19800404/19800405/19800406/19800407/19800408/19800409/19800410/19800411/19800412/19800413/19800414/19800415/19800416/19800417/19800418/19800419/19800420/19800421/19800422/19800423/19800424/19800425/19800426/19800427/19800428/19800429/19800430
+
+mars - INFO   - 20151022.002734 - Server task is 545 [marser]
+mars - INFO   - 20151022.002734 - Request cost: 240 fields, 40.8087 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151022.002735 - Transfering 42791040 bytes
+mars - INFO   - 20151022.002830 - 240 fields retrieved from 'marser'
+mars - INFO   - 20151022.002830 -   Visiting marser: wall: 56 sec cpu: 51 sec
+mars - INFO   - 20151022.002830 -   Writing to target file: 475.29 Mbyte(s) in < 1 sec [907.45 Mbyte/sec]
+mars - INFO   - 20151022.002830 - Request time:  wall: 56 sec  cpu: 51 sec
+mars - INFO   - 20151022.002830 -   Read from network: 40.81 Mbyte(s) in 4 sec  [9.15 Mbyte/sec]
+mars - INFO   - 20151022.002830 - 240 fields have been interpolated
+mars - INFO   - 20151022.002830 -   Post-processing: wall: 50 sec cpu: 50 sec
+
+mars - INFO   - 20151022.002830 - Processing request 6
+
+RETRIEVE,
+    CLASS      = EI,
+    STREAM     = OPER,
+    TYPE       = FC,
+    EXPVER     = 0001,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    TIME       = 0000/1200,
+    STEP       = 03/06/09/12,
+    DOMAIN     = G,
+    PARAM      = 57.128,
+    EXPECT     = ANY,
+    PADDING    = 0,
+    GRID       = 0.25/0.25,
+    DATE       = 19800501/19800502/19800503/19800504/19800505/19800506/19800507/19800508/19800509/19800510/19800511/19800512/19800513/19800514/19800515/19800516/19800517/19800518/19800519/19800520/19800521/19800522/19800523/19800524/19800525/19800526/19800527/19800528/19800529/19800530/19800531
+    RESOL      = AUTO,
+
+mars - INFO   - 20151022.002830 - Calling mars on 'marser', callback on 57346
+mars - INFO   - 20151022.002830 - Requesting any number of fields (request describes 248)
+mars - INFO   - 20151022.002831 - Request cost: 248 fields, 42.169 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151022.002831 - Server task is 545 [marser]
+mars - INFO   - 20151022.002831 - Transfering 44217408 bytes
+mars - INFO   - 20151022.002930 - Request time:  wall: 1 min  cpu: 54 sec
+mars - INFO   - 20151022.002930 -   Read from network: 42.17 Mbyte(s) in 5 sec  [8.52 Mbyte/sec]
+mars - INFO   - 20151022.002930 - 248 fields retrieved from 'marser'
+mars - INFO   - 20151022.002930 - 248 fields have been interpolated
+
+mars - INFO   - 20151022.002930 -   Writing to target file: 491.14 Mbyte(s) in < 1 sec [889.96 Mbyte/sec]
+mars - INFO   - 20151022.002930 -   Visiting marser: wall: 1 min cpu: 55 sec
+mars - INFO   - 20151022.002930 -   Post-processing: wall: 54 sec cpu: 54 sec
+mars - INFO   - 20151022.002930 - Processing request 7
+    STREAM     = OPER,
+RETRIEVE,
+    CLASS      = EI,
+    TYPE       = FC,
+    LEVTYPE    = SFC,
+    EXPVER     = 0001,
+    PARAM      = 57.128,
+
+    TIME       = 0000/1200,
+    RESOL      = AUTO,
+    DOMAIN     = G,
+    EXPECT     = ANY,
+    STEP       = 03/06/09/12,
+
+mars - INFO   - 20151022.002930 - Requesting any number of fields (request describes 240)
+    GRID       = 0.25/0.25,
+    PADDING    = 0,
+mars - INFO   - 20151022.002930 - Calling mars on 'marser', callback on 58520
+    REPRES     = SH,
+    DATE       = 19800601/19800602/19800603/19800604/19800605/19800606/19800607/19800608/19800609/19800610/19800611/19800612/19800613/19800614/19800615/19800616/19800617/19800618/19800619/19800620/19800621/19800622/19800623/19800624/19800625/19800626/19800627/19800628/19800629/19800630
+mars - INFO   - 20151022.002931 - Server task is 711 [marser]
+mars - INFO   - 20151022.002931 - Request cost: 240 fields, 40.8087 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151022.002931 - Transfering 42791040 bytes
+mars - INFO   - 20151022.003028 - 240 fields retrieved from 'marser'
+mars - INFO   - 20151022.003028 -   Read from network: 40.81 Mbyte(s) in 5 sec  [8.15 Mbyte/sec]
+mars - INFO   - 20151022.003028 -   Visiting marser: wall: 57 sec cpu: 52 sec
+mars - INFO   - 20151022.003028 - 240 fields have been interpolated
+mars - INFO   - 20151022.003028 - Request time:  wall: 57 sec  cpu: 52 sec
+mars - INFO   - 20151022.003028 - Processing request 8
+mars - INFO   - 20151022.003028 -   Writing to target file: 475.29 Mbyte(s) in < 1 sec [891.64 Mbyte/sec]
+mars - INFO   - 20151022.003028 -   Post-processing: wall: 51 sec cpu: 51 sec
+
+
+RETRIEVE,
+    STREAM     = OPER,
+    CLASS      = EI,
+    TYPE       = FC,
+    EXPVER     = 0001,
+    REPRES     = SH,
+    TIME       = 0000/1200,
+    LEVTYPE    = SFC,
+    PARAM      = 57.128,
+    PADDING    = 0,
+    STEP       = 03/06/09/12,
+    DOMAIN     = G,
+    GRID       = 0.25/0.25,
+    RESOL      = AUTO,
+    EXPECT     = ANY,
+
+    DATE       = 19800701/19800702/19800703/19800704/19800705/19800706/19800707/19800708/19800709/19800710/19800711/19800712/19800713/19800714/19800715/19800716/19800717/19800718/19800719/19800720/19800721/19800722/19800723/19800724/19800725/19800726/19800727/19800728/19800729/19800730/19800731
+mars - INFO   - 20151022.003028 - Requesting any number of fields (request describes 248)
+mars - INFO   - 20151022.003028 - Calling mars on 'marser', callback on 36882
+mars - INFO   - 20151022.003028 - Server task is 711 [marser]
+mars - INFO   - 20151022.003028 - Request cost: 248 fields, 42.169 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151022.003028 - Transfering 44217408 bytes
+mars - INFO   - 20151022.003128 - 248 fields retrieved from 'marser'
+mars - INFO   - 20151022.003128 - 248 fields have been interpolated
+
+mars - INFO   - 20151022.003128 - Request time:  wall: 1 min  cpu: 54 sec
+RETRIEVE,
+mars - INFO   - 20151022.003128 -   Read from network: 42.17 Mbyte(s) in 5 sec  [8.00 Mbyte/sec]
+
+mars - INFO   - 20151022.003128 -   Writing to target file: 491.14 Mbyte(s) in < 1 sec [886.96 Mbyte/sec]
+    CLASS      = EI,
+mars - INFO   - 20151022.003128 -   Visiting marser: wall: 1 min cpu: 55 sec
+mars - INFO   - 20151022.003128 - Processing request 9
+    STREAM     = OPER,
+    TYPE       = FC,
+    EXPVER     = 0001,
+    REPRES     = SH,
+    PARAM      = 57.128,
+    DOMAIN     = G,
+    LEVTYPE    = SFC,
+    TIME       = 0000/1200,
+    PADDING    = 0,
+    STEP       = 03/06/09/12,
+    RESOL      = AUTO,
+    GRID       = 0.25/0.25,
+    DATE       = 19800801/19800802/19800803/19800804/19800805/19800806/19800807/19800808/19800809/19800810/19800811/19800812/19800813/19800814/19800815/19800816/19800817/19800818/19800819/19800820/19800821/19800822/19800823/19800824/19800825/19800826/19800827/19800828/19800829/19800830/19800831
+mars - INFO   - 20151022.003128 - Requesting any number of fields (request describes 248)
+mars - INFO   - 20151022.003128 - Calling mars on 'marser', callback on 35687
+mars - INFO   - 20151022.003128 - Request cost: 248 fields, 42.169 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151022.003128 - Server task is 363 [marser]
+mars - INFO   - 20151022.003128 - Transfering 44217408 bytes
+    EXPECT     = ANY,
+
+mars - INFO   - 20151022.003128 -   Post-processing: wall: 54 sec cpu: 54 sec
+mars - INFO   - 20151022.003226 - 248 fields retrieved from 'marser'
+mars - INFO   - 20151022.003226 - 248 fields have been interpolated
+mars - INFO   - 20151022.003226 -   Visiting marser: wall: 58 sec cpu: 53 sec
+mars - INFO   - 20151022.003226 -   Post-processing: wall: 52 sec cpu: 52 sec
+mars - INFO   - 20151022.003226 - Request time:  wall: 58 sec  cpu: 53 sec
+mars - INFO   - 20151022.003226 -   Read from network: 42.17 Mbyte(s) in 5 sec  [9.12 Mbyte/sec]
+
+mars - INFO   - 20151022.003226 - Processing request 10
+
+    CLASS      = EI,
+    TYPE       = FC,
+    STREAM     = OPER,
+RETRIEVE,
+mars - INFO   - 20151022.003226 -   Writing to target file: 491.14 Mbyte(s) in < 1 sec [878.60 Mbyte/sec]
+    PARAM      = 57.128,
+    REPRES     = SH,
+    DOMAIN     = G,
+    STEP       = 03/06/09/12,
+
+    EXPVER     = 0001,
+    PADDING    = 0,
+    RESOL      = AUTO,
+    TIME       = 0000/1200,
+mars - INFO   - 20151022.003226 - Calling mars on 'marser', callback on 43212
+    DATE       = 19800901/19800902/19800903/19800904/19800905/19800906/19800907/19800908/19800909/19800910/19800911/19800912/19800913/19800914/19800915/19800916/19800917/19800918/19800919/19800920/19800921/19800922/19800923/19800924/19800925/19800926/19800927/19800928/19800929/19800930
+mars - INFO   - 20151022.003226 - Server task is 363 [marser]
+    GRID       = 0.25/0.25,
+mars - INFO   - 20151022.003226 - Requesting any number of fields (request describes 240)
+mars - INFO   - 20151022.003226 - Request cost: 240 fields, 40.8087 Mbytes online, nodes: mvr02 [marser]
+    LEVTYPE    = SFC,
+    EXPECT     = ANY,
+mars - INFO   - 20151022.003227 - Transfering 42791040 bytes
+mars - INFO   - 20151022.003330 -   Read from network: 40.81 Mbyte(s) in 5 sec  [7.50 Mbyte/sec]
+
+mars - INFO   - 20151022.003330 - Processing request 11
+
+mars - INFO   - 20151022.003330 -   Visiting marser: wall: 1 min 4 sec cpu: 58 sec
+mars - INFO   - 20151022.003330 - 240 fields have been interpolated
+mars - INFO   - 20151022.003330 - Request time:  wall: 1 min 4 sec  cpu: 57 sec
+RETRIEVE,
+mars - INFO   - 20151022.003330 -   Writing to target file: 475.29 Mbyte(s) in < 1 sec [813.35 Mbyte/sec]
+mars - INFO   - 20151022.003330 - 240 fields retrieved from 'marser'
+mars - INFO   - 20151022.003330 -   Post-processing: wall: 57 sec cpu: 57 sec
+    CLASS      = EI,
+    TYPE       = FC,
+    STREAM     = OPER,
+    LEVTYPE    = SFC,
+    EXPVER     = 0001,
+    PARAM      = 57.128,
+    TIME       = 0000/1200,
+    REPRES     = SH,
+    STEP       = 03/06/09/12,
+    PADDING    = 0,
+    GRID       = 0.25/0.25,
+    DOMAIN     = G,
+    RESOL      = AUTO,
+
+mars - INFO   - 20151022.003330 - Calling mars on 'marser', callback on 52375
+    DATE       = 19801001/19801002/19801003/19801004/19801005/19801006/19801007/19801008/19801009/19801010/19801011/19801012/19801013/19801014/19801015/19801016/19801017/19801018/19801019/19801020/19801021/19801022/19801023/19801024/19801025/19801026/19801027/19801028/19801029/19801030/19801031
+mars - INFO   - 20151022.003330 - Requesting any number of fields (request describes 248)
+    EXPECT     = ANY,
+mars - INFO   - 20151022.003330 - Server task is 363 [marser]
+mars - INFO   - 20151022.003330 - Request cost: 248 fields, 42.169 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151022.003330 - Transfering 44217408 bytes
+mars - INFO   - 20151022.003432 - 248 fields retrieved from 'marser'
+mars - INFO   - 20151022.003432 - 248 fields have been interpolated
+mars - INFO   - 20151022.003432 - Request time:  wall: 1 min 1 sec  cpu: 56 sec
+mars - INFO   - 20151022.003432 -   Read from network: 42.17 Mbyte(s) in 5 sec  [8.93 Mbyte/sec]
+mars - INFO   - 20151022.003432 -   Visiting marser: wall: 1 min 1 sec cpu: 57 sec
+mars - INFO   - 20151022.003432 -   Post-processing: wall: 55 sec cpu: 55 sec
+
+mars - INFO   - 20151022.003432 - Processing request 12
+mars - INFO   - 20151022.003432 -   Writing to target file: 491.14 Mbyte(s) in < 1 sec [817.30 Mbyte/sec]
+
+    CLASS      = EI,
+    STREAM     = OPER,
+RETRIEVE,
+    TYPE       = FC,
+    EXPVER     = 0001,
+    REPRES     = SH,
+    PARAM      = 57.128,
+    LEVTYPE    = SFC,
+    STEP       = 03/06/09/12,
+    DOMAIN     = G,
+    GRID       = 0.25/0.25,
+    EXPECT     = ANY,
+    RESOL      = AUTO,
+
+    PADDING    = 0,
+    DATE       = 19801101/19801102/19801103/19801104/19801105/19801106/19801107/19801108/19801109/19801110/19801111/19801112/19801113/19801114/19801115/19801116/19801117/19801118/19801119/19801120/19801121/19801122/19801123/19801124/19801125/19801126/19801127/19801128/19801129/19801130
+mars - INFO   - 20151022.003432 - Calling mars on 'marser', callback on 37064
+mars - INFO   - 20151022.003432 - Requesting any number of fields (request describes 240)
+mars - INFO   - 20151022.003432 - Server task is 454 [marser]
+mars - INFO   - 20151022.003432 - Request cost: 240 fields, 40.8087 Mbytes online, nodes: mvr02 [marser]
+    TIME       = 0000/1200,
+mars - INFO   - 20151022.003432 - Transfering 42791040 bytes
+mars - INFO   - 20151022.003530 - 240 fields have been interpolated
+mars - INFO   - 20151022.003530 - Request time:  wall: 59 sec  cpu: 53 sec
+mars - INFO   - 20151022.003530 - 240 fields retrieved from 'marser'
+mars - INFO   - 20151022.003530 -   Writing to target file: 475.29 Mbyte(s) in < 1 sec [798.07 Mbyte/sec]
+mars - INFO   - 20151022.003530 -   Read from network: 40.81 Mbyte(s) in 5 sec  [8.12 Mbyte/sec]
+mars - INFO   - 20151022.003530 -   Post-processing: wall: 52 sec cpu: 52 sec
+
+mars - INFO   - 20151022.003530 -   Visiting marser: wall: 59 sec cpu: 53 sec
+    TYPE       = FC,
+    CLASS      = EI,
+    REPRES     = SH,
+mars - INFO   - 20151022.003530 - Processing request 13
+    EXPVER     = 0001,
+    STREAM     = OPER,
+    LEVTYPE    = SFC,
+
+RETRIEVE,
+    PARAM      = 57.128,
+    EXPECT     = ANY,
+    GRID       = 0.25/0.25,
+
+    RESOL      = AUTO,
+    TIME       = 0000/1200,
+    DATE       = 19801201/19801202/19801203/19801204/19801205/19801206/19801207/19801208/19801209/19801210/19801211/19801212/19801213/19801214/19801215/19801216/19801217/19801218/19801219/19801220/19801221/19801222/19801223/19801224/19801225/19801226/19801227/19801228/19801229/19801230/19801231
+    PADDING    = 0,
+    STEP       = 03/06/09/12,
+mars - INFO   - 20151022.003530 - Requesting any number of fields (request describes 248)
+mars - INFO   - 20151022.003530 - Calling mars on 'marser', callback on 44204
+    DOMAIN     = G,
+mars - INFO   - 20151022.003530 - Server task is 454 [marser]
+mars - INFO   - 20151022.003530 - Request cost: 248 fields, 42.169 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151022.003530 - Transfering 44217408 bytes
+mars - INFO   - 20151022.003636 - 248 fields retrieved from 'marser'
+mars - INFO   - 20151022.003636 - Request time:  wall: 1 min 6 sec  cpu: 1 min
+mars - INFO   - 20151022.003636 -   Post-processing: wall: 1 min cpu: 59 sec
+mars - INFO   - 20151022.003636 -   Read from network: 42.17 Mbyte(s) in 5 sec  [8.49 Mbyte/sec]
+mars - INFO   - 20151022.003636 -   Visiting marser: wall: 1 min 6 sec cpu: 1 min 1 sec
+mars - INFO   - 20151022.003636 - No errors reported
+mars - INFO   - 20151022.003636 -   Writing to target file: 491.14 Mbyte(s) in < 1 sec [748.88 Mbyte/sec]
+mars - INFO   - 20151022.003636 - 248 fields have been interpolated
+Calling nice grib_to_netcdf /data/data04/scratch/mars-atls01-a562cefde8a29a7288fa0b8b7f9413f7-7mLrfx.target -o /data/data04/scratch/mars-atls01-a562cefde8a29a7288fa0b8b7f9413f7-8n3xs2.nc -utime
+grib_to_netcdf: Version 1.13.1
+grib_to_netcdf: Creating netcdf file '/data/data04/scratch/mars-atls01-a562cefde8a29a7288fa0b8b7f9413f7-8n3xs2.nc'
+grib_to_netcdf: Done.
+grib_to_netcdf: Found 2936 GRIB fields in 1 file.
+grib_to_netcdf: Processing input file '/data/data04/scratch/mars-atls01-a562cefde8a29a7288fa0b8b7f9413f7-7mLrfx.target'.
+grib_to_netcdf: NetCDF library version: 4.3.0 of Sep 10 2014 17:37:08 $
+grib_to_netcdf: Defining variable 'uvb'.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate, hdate
+End of nice mars /tmp/tmp-mars4qdbxJ.req
+End of nice grib_to_netcdf /data/data04/scratch/mars-atls01-a562cefde8a29a7288fa0b8b7f9413f7-7mLrfx.target -o /data/data04/scratch/mars-atls01-a562cefde8a29a7288fa0b8b7f9413f7-8n3xs2.nc -utime
+2015-10-21 17:40:41 Request is complete
+2015-10-21 17:40:41 Transfering 5.67787 Gbytes into /home/tkulczycki/norgay/data/sources/ERAI/3HOURLY/uvb/ERAI_uvb_1979-12-31to1980-12-31.nc
+2015-10-21 17:40:41 From http://stream.ecmwf.int/data/atls01/data/data04/scratch/mars-atls01-a562cefde8a29a7288fa0b8b7f9413f7-8n3xs2.nc
+2015-10-21 18:32:25 Transfer rate 1.87318 Mbytes/s
+2015-10-21 18:32:26 ECMWF API python library 1.3
+2015-10-21 18:32:26 ECMWF API at https://api.ecmwf.int/v1
+2015-10-21 18:32:27 Welcome Theodor Kulczycki
+2015-10-21 18:32:28 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Troubleshooting or contact calldesk@ecmwf.int
+2015-10-21 18:32:28 Request is queued
+Calling nice mars /tmp/tmp-marsqfwJTY.req
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20151022.013155 - grib_api created on  20141119
+mars - INFO   - 20151022.013155 - Request has been split into 13 monthly retrievals
+mars - INFO   - 20151022.013155 - Welcome to MARS with grib_api and ODB
+mars - INFO   - 20151022.013155 - EMOSLIB version: 395
+mars - INFO   - 20151022.013155 - Using odb_api version: 0.10.2 (file format version: 0.5)
+mars - INFO   - 20151022.013155 - odb_api created on  20140527
+    LEVTYPE    = SFC,
+    CLASS      = EI,
+retrieve,stream=oper,levtype=sfc,param=57.128,padding=0,step=03/06/09/12,grid=0.25/0.25,expver=0001,time=00/12,date=1980-12-31/to/1981-12-31,type=fc,class=ei,expect=anymars - WARN   - 20151022.013155 - For full resolution grid, it is recommended to use RESOL=AV to prevent any truncation before transformation
+
+    STREAM     = OPER,
+mars - INFO   - 20151022.013155 - Processing request 1
+mars - INFO   - 20151022.013155 - Web API request id: 56283c8af952b1d6ec29f8d3
+RETRIEVE,
+mars - INFO   - 20151022.013155 - Using grib_api version 1.13.1
+
+    RESOL      = AUTO,
+    TIME       = 0000/1200,
+    TYPE       = FC,
+    EXPVER     = 0001,
+mars - INFO   - 20151022.013155 - Maximum retrieval size is 20.00 G
+
+    DOMAIN     = G,
+    PARAM      = 57.128,
+    GRID       = 0.25/0.25,
+    STEP       = 03/06/09/12,
+mars - INFO   - 20151022.013155 - Requesting any number of fields (request describes 8)
+    PADDING    = 0,
+    EXPECT     = ANY,
+    DATE       = 19801231
+mars - INFO   - 20151022.013155 - Automatic split by date is on
+    REPRES     = SH,
+mars - INFO   - 20151022.013155 - Calling mars on 'marser', callback on 56585
+mars - INFO   - 20151022.013155 - Server task is 982 [marser]
+mars - INFO   - 20151022.013155 - Request cost: 8 fields, 1.36029 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151022.013155 - Transfering 1426368 bytes
+2015-10-21 18:32:30 Request is active
+mars - INFO   - 20151022.013157 -   Read from network: 1.36 Mbyte(s) in < 1 sec [6.74 Mbyte/sec]
+
+mars - INFO   - 20151022.013157 - Calling mars on 'marser', callback on 53063
+    EXPVER     = 0001,
+
+    STEP       = 03/06/09/12,
+    CLASS      = EI,
+mars - INFO   - 20151022.013157 - Processing request 2
+mars - INFO   - 20151022.013157 - Server task is 982 [marser]
+
+    LEVTYPE    = SFC,
+    DOMAIN     = G,
+mars - INFO   - 20151022.013157 - Request time:  wall: 2 sec  cpu: 2 sec
+    STREAM     = OPER,
+    RESOL      = AUTO,
+    REPRES     = SH,
+    DATE       = 19810101/19810102/19810103/19810104/19810105/19810106/19810107/19810108/19810109/19810110/19810111/19810112/19810113/19810114/19810115/19810116/19810117/19810118/19810119/19810120/19810121/19810122/19810123/19810124/19810125/19810126/19810127/19810128/19810129/19810130/19810131
+mars - INFO   - 20151022.013157 - Transfering 44217408 bytes
+mars - INFO   - 20151022.013157 - Request cost: 248 fields, 42.169 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151022.013157 -   Writing to target file: 15.84 Mbyte(s) in < 1 sec [807.74 Mbyte/sec]
+mars - INFO   - 20151022.013157 -   Visiting marser: wall: 2 sec
+    EXPECT     = ANY,
+RETRIEVE,
+    TYPE       = FC,
+    TIME       = 0000/1200,
+    PADDING    = 0,
+mars - INFO   - 20151022.013157 -   Post-processing: wall: 2 sec cpu: 2 sec
+mars - INFO   - 20151022.013157 - 8 fields have been interpolated
+mars - INFO   - 20151022.013157 - Requesting any number of fields (request describes 248)
+mars - INFO   - 20151022.013157 - 8 fields retrieved from 'marser'
+    GRID       = 0.25/0.25,
+    PARAM      = 57.128,
+mars - INFO   - 20151022.013258 - 248 fields retrieved from 'marser'
+mars - INFO   - 20151022.013258 - Request time:  wall: 1 min 1 sec  cpu: 55 sec
+mars - INFO   - 20151022.013258 -   Read from network: 42.17 Mbyte(s) in 5 sec  [8.81 Mbyte/sec]
+mars - INFO   - 20151022.013258 -   Post-processing: wall: 55 sec cpu: 55 sec
+mars - INFO   - 20151022.013258 - 248 fields have been interpolated
+mars - INFO   - 20151022.013258 -   Writing to target file: 491.14 Mbyte(s) in < 1 sec [870.97 Mbyte/sec]
+mars - INFO   - 20151022.013258 - Processing request 3
+
+mars - INFO   - 20151022.013258 -   Visiting marser: wall: 1 min 1 sec cpu: 56 sec
+
+RETRIEVE,
+    TYPE       = FC,
+    STREAM     = OPER,
+    EXPVER     = 0001,
+    CLASS      = EI,
+    REPRES     = SH,
+    PARAM      = 57.128,
+    LEVTYPE    = SFC,
+    DOMAIN     = G,
+    TIME       = 0000/1200,
+    STEP       = 03/06/09/12,
+    RESOL      = AUTO,
+    GRID       = 0.25/0.25,
+    PADDING    = 0,
+    DATE       = 19810201/19810202/19810203/19810204/19810205/19810206/19810207/19810208/19810209/19810210/19810211/19810212/19810213/19810214/19810215/19810216/19810217/19810218/19810219/19810220/19810221/19810222/19810223/19810224/19810225/19810226/19810227/19810228
+    EXPECT     = ANY,
+mars - INFO   - 20151022.013258 - Calling mars on 'marser', callback on 40128
+mars - INFO   - 20151022.013258 - Requesting any number of fields (request describes 224)
+
+mars - INFO   - 20151022.013258 - Server task is 545 [marser]
+mars - INFO   - 20151022.013258 - Request cost: 224 fields, 38.0881 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151022.013258 - Transfering 39938304 bytes
+mars - INFO   - 20151022.013358 - 224 fields retrieved from 'marser'
+mars - INFO   - 20151022.013358 - Request time:  wall: 1 min  cpu: 53 sec
+mars - INFO   - 20151022.013358 -   Read from network: 38.09 Mbyte(s) in 6 sec  [6.66 Mbyte/sec]
+mars - INFO   - 20151022.013358 - 224 fields have been interpolated
+RETRIEVE,
+    STREAM     = OPER,
+mars - INFO   - 20151022.013358 -   Post-processing: wall: 53 sec cpu: 53 sec
+mars - INFO   - 20151022.013358 - Processing request 4
+    TIME       = 0000/1200,
+
+
+mars - INFO   - 20151022.013358 -   Writing to target file: 443.61 Mbyte(s) in < 1 sec [638.88 Mbyte/sec]
+    STEP       = 03/06/09/12,
+    PADDING    = 0,
+    PARAM      = 57.128,
+    DATE       = 19810301/19810302/19810303/19810304/19810305/19810306/19810307/19810308/19810309/19810310/19810311/19810312/19810313/19810314/19810315/19810316/19810317/19810318/19810319/19810320/19810321/19810322/19810323/19810324/19810325/19810326/19810327/19810328/19810329/19810330/19810331
+mars - INFO   - 20151022.013358 - Requesting any number of fields (request describes 248)
+mars - INFO   - 20151022.013358 - Calling mars on 'marser', callback on 39776
+
+    RESOL      = AUTO,
+    LEVTYPE    = SFC,
+    EXPVER     = 0001,
+mars - INFO   - 20151022.013358 -   Visiting marser: wall: 1 min cpu: 54 sec
+    REPRES     = SH,
+    EXPECT     = ANY,
+    GRID       = 0.25/0.25,
+    TYPE       = FC,
+mars - INFO   - 20151022.013358 - Server task is 871 [marser]
+mars - INFO   - 20151022.013358 - Transfering 44217408 bytes
+    CLASS      = EI,
+mars - INFO   - 20151022.013358 - Request cost: 248 fields, 42.169 Mbytes online, nodes: mvr02 [marser]
+    DOMAIN     = G,
+mars - INFO   - 20151022.013502 - 248 fields retrieved from 'marser'
+mars - INFO   - 20151022.013502 - Request time:  wall: 1 min 4 sec  cpu: 59 sec
+
+mars - INFO   - 20151022.013502 -   Writing to target file: 491.14 Mbyte(s) in < 1 sec [773.76 Mbyte/sec]
+mars - INFO   - 20151022.013502 - 248 fields have been interpolated
+mars - INFO   - 20151022.013502 - Processing request 5
+mars - INFO   - 20151022.013502 -   Read from network: 42.17 Mbyte(s) in 4 sec  [9.46 Mbyte/sec]
+mars - INFO   - 20151022.013502 -   Post-processing: wall: 58 sec cpu: 58 sec
+RETRIEVE,
+    TYPE       = FC,
+mars - INFO   - 20151022.013502 -   Visiting marser: wall: 1 min 4 sec cpu: 59 sec
+    EXPVER     = 0001,
+
+    PARAM      = 57.128,
+    CLASS      = EI,
+    TIME       = 0000/1200,
+    DOMAIN     = G,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    GRID       = 0.25/0.25,
+    STREAM     = OPER,
+    EXPECT     = ANY,
+    PADDING    = 0,
+    RESOL      = AUTO,
+    STEP       = 03/06/09/12,
+
+mars - INFO   - 20151022.013502 - Calling mars on 'marser', callback on 40524
+mars - INFO   - 20151022.013502 - Requesting any number of fields (request describes 240)
+mars - INFO   - 20151022.013502 - Request cost: 240 fields, 40.8087 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151022.013502 - Transfering 42791040 bytes
+mars - INFO   - 20151022.013502 - Server task is 236 [marser]
+    DATE       = 19810401/19810402/19810403/19810404/19810405/19810406/19810407/19810408/19810409/19810410/19810411/19810412/19810413/19810414/19810415/19810416/19810417/19810418/19810419/19810420/19810421/19810422/19810423/19810424/19810425/19810426/19810427/19810428/19810429/19810430
+mars - INFO   - 20151022.013603 - 240 fields retrieved from 'marser'
+mars - INFO   - 20151022.013603 - Request time:  wall: 1 min 2 sec  cpu: 56 sec
+
+mars - INFO   - 20151022.013603 -   Post-processing: wall: 55 sec cpu: 55 sec
+mars - INFO   - 20151022.013603 - 240 fields have been interpolated
+mars - INFO   - 20151022.013603 -   Visiting marser: wall: 1 min 2 sec cpu: 56 sec
+mars - INFO   - 20151022.013603 -   Writing to target file: 475.29 Mbyte(s) in < 1 sec [661.84 Mbyte/sec]
+mars - INFO   - 20151022.013603 -   Read from network: 40.81 Mbyte(s) in 5 sec  [7.73 Mbyte/sec]
+mars - INFO   - 20151022.013603 - Processing request 6
+
+RETRIEVE,
+    CLASS      = EI,
+    TYPE       = FC,
+    PADDING    = 0,
+    TIME       = 0000/1200,
+    STEP       = 03/06/09/12,
+    RESOL      = AUTO,
+mars - INFO   - 20151022.013603 - Requesting any number of fields (request describes 248)
+    GRID       = 0.25/0.25,
+
+    DOMAIN     = G,
+    PARAM      = 57.128,
+    REPRES     = SH,
+    STREAM     = OPER,
+    LEVTYPE    = SFC,
+    EXPVER     = 0001,
+    EXPECT     = ANY,
+    DATE       = 19810501/19810502/19810503/19810504/19810505/19810506/19810507/19810508/19810509/19810510/19810511/19810512/19810513/19810514/19810515/19810516/19810517/19810518/19810519/19810520/19810521/19810522/19810523/19810524/19810525/19810526/19810527/19810528/19810529/19810530/19810531
+mars - INFO   - 20151022.013603 - Calling mars on 'marser', callback on 52498
+mars - INFO   - 20151022.013604 - Server task is 282 [marser]
+mars - INFO   - 20151022.013604 - Request cost: 248 fields, 42.169 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151022.013604 - Transfering 44217408 bytes
+mars - INFO   - 20151022.013705 - Request time:  wall: 1 min 1 sec  cpu: 56 sec
+mars - INFO   - 20151022.013705 -   Visiting marser: wall: 1 min 1 sec cpu: 56 sec
+
+mars - INFO   - 20151022.013705 -   Read from network: 42.17 Mbyte(s) in 5 sec  [7.86 Mbyte/sec]
+mars - INFO   - 20151022.013705 - 248 fields retrieved from 'marser'
+    PARAM      = 57.128,
+mars - INFO   - 20151022.013705 -   Writing to target file: 491.14 Mbyte(s) in < 1 sec [862.11 Mbyte/sec]
+mars - INFO   - 20151022.013705 -   Post-processing: wall: 55 sec cpu: 55 sec
+mars - INFO   - 20151022.013705 - 248 fields have been interpolated
+    LEVTYPE    = SFC,
+mars - INFO   - 20151022.013705 - Server task is 238 [marser]
+    CLASS      = EI,
+    EXPECT     = ANY,
+    GRID       = 0.25/0.25,
+RETRIEVE,
+    STREAM     = OPER,
+    DATE       = 19810601/19810602/19810603/19810604/19810605/19810606/19810607/19810608/19810609/19810610/19810611/19810612/19810613/19810614/19810615/19810616/19810617/19810618/19810619/19810620/19810621/19810622/19810623/19810624/19810625/19810626/19810627/19810628/19810629/19810630
+    EXPVER     = 0001,
+mars - INFO   - 20151022.013705 - Processing request 7
+    REPRES     = SH,
+    PADDING    = 0,
+mars - INFO   - 20151022.013705 - Requesting any number of fields (request describes 240)
+    STEP       = 03/06/09/12,
+mars - INFO   - 20151022.013705 - Calling mars on 'marser', callback on 48798
+
+mars - INFO   - 20151022.013705 - Request cost: 240 fields, 40.8087 Mbytes online, nodes: mvr02 [marser]
+    TYPE       = FC,
+    TIME       = 0000/1200,
+    DOMAIN     = G,
+
+mars - INFO   - 20151022.013705 - Transfering 42791040 bytes
+    RESOL      = AUTO,
+mars - INFO   - 20151022.013803 - 240 fields retrieved from 'marser'
+mars - INFO   - 20151022.013803 -   Post-processing: wall: 50 sec cpu: 50 sec
+
+mars - INFO   - 20151022.013803 -   Read from network: 40.81 Mbyte(s) in 7 sec  [5.79 Mbyte/sec]
+mars - INFO   - 20151022.013803 - Request time:  wall: 58 sec  cpu: 51 sec
+mars - INFO   - 20151022.013803 - 240 fields have been interpolated
+mars - INFO   - 20151022.013803 -   Writing to target file: 475.29 Mbyte(s) in < 1 sec [911.63 Mbyte/sec]
+mars - INFO   - 20151022.013803 - Processing request 8
+mars - INFO   - 20151022.013803 -   Visiting marser: wall: 58 sec cpu: 51 sec
+
+    CLASS      = EI,
+RETRIEVE,
+    STREAM     = OPER,
+    REPRES     = SH,
+    EXPVER     = 0001,
+    TYPE       = FC,
+    LEVTYPE    = SFC,
+    PARAM      = 57.128,
+    TIME       = 0000/1200,
+    STEP       = 03/06/09/12,
+    DOMAIN     = G,
+    PADDING    = 0,
+    EXPECT     = ANY,
+    GRID       = 0.25/0.25,
+
+    DATE       = 19810701/19810702/19810703/19810704/19810705/19810706/19810707/19810708/19810709/19810710/19810711/19810712/19810713/19810714/19810715/19810716/19810717/19810718/19810719/19810720/19810721/19810722/19810723/19810724/19810725/19810726/19810727/19810728/19810729/19810730/19810731
+    RESOL      = AUTO,
+mars - INFO   - 20151022.013803 - Requesting any number of fields (request describes 248)
+mars - INFO   - 20151022.013803 - Request cost: 248 fields, 42.169 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151022.013803 - Server task is 545 [marser]
+mars - INFO   - 20151022.013803 - Calling mars on 'marser', callback on 56253
+mars - INFO   - 20151022.013803 - Transfering 44217408 bytes
+mars - INFO   - 20151022.013908 - 248 fields retrieved from 'marser'
+mars - INFO   - 20151022.013908 - 248 fields have been interpolated
+mars - INFO   - 20151022.013908 -   Read from network: 42.17 Mbyte(s) in 5 sec  [7.81 Mbyte/sec]
+mars - INFO   - 20151022.013908 -   Post-processing: wall: 58 sec cpu: 58 sec
+mars - INFO   - 20151022.013908 -   Visiting marser: wall: 1 min 5 sec cpu: 59 sec
+mars - INFO   - 20151022.013908 -   Writing to target file: 491.14 Mbyte(s) in < 1 sec [779.87 Mbyte/sec]
+
+mars - INFO   - 20151022.013908 - Request time:  wall: 1 min 5 sec  cpu: 59 sec
+mars - INFO   - 20151022.013908 - Processing request 9
+
+    CLASS      = EI,
+RETRIEVE,
+    STREAM     = OPER,
+    TYPE       = FC,
+    EXPVER     = 0001,
+    REPRES     = SH,
+    STEP       = 03/06/09/12,
+    RESOL      = AUTO,
+    LEVTYPE    = SFC,
+    GRID       = 0.25/0.25,
+    DOMAIN     = G,
+    DATE       = 19810801/19810802/19810803/19810804/19810805/19810806/19810807/19810808/19810809/19810810/19810811/19810812/19810813/19810814/19810815/19810816/19810817/19810818/19810819/19810820/19810821/19810822/19810823/19810824/19810825/19810826/19810827/19810828/19810829/19810830/19810831
+    PARAM      = 57.128,
+    PADDING    = 0,
+    EXPECT     = ANY,
+mars - INFO   - 20151022.013908 - Calling mars on 'marser', callback on 51887
+    TIME       = 0000/1200,
+
+mars - INFO   - 20151022.013908 - Requesting any number of fields (request describes 248)
+mars - INFO   - 20151022.013908 - Server task is 870 [marser]
+mars - INFO   - 20151022.013908 - Request cost: 248 fields, 42.169 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151022.013908 - Transfering 44217408 bytes
+mars - INFO   - 20151022.014015 -   Post-processing: wall: 59 sec cpu: 59 sec
+mars - INFO   - 20151022.014015 -   Read from network: 42.17 Mbyte(s) in 7 sec  [6.12 Mbyte/sec]
+mars - INFO   - 20151022.014015 - Request time:  wall: 1 min 8 sec  cpu: 1 min
+mars - INFO   - 20151022.014015 -   Visiting marser: wall: 1 min 8 sec cpu: 1 min 1 sec
+mars - INFO   - 20151022.014015 - Request cost: 240 fields, 40.8087 Mbytes online, nodes: mvr02 [marser]
+    LEVTYPE    = SFC,
+    RESOL      = AUTO,
+mars - INFO   - 20151022.014015 - Processing request 10
+    EXPVER     = 0001,
+RETRIEVE,
+
+mars - INFO   - 20151022.014015 -   Writing to target file: 491.14 Mbyte(s) in < 1 sec [819.73 Mbyte/sec]
+mars - INFO   - 20151022.014015 - Server task is 594 [marser]
+mars - INFO   - 20151022.014015 - Requesting any number of fields (request describes 240)
+mars - INFO   - 20151022.014015 - 248 fields retrieved from 'marser'
+    STEP       = 03/06/09/12,
+    EXPECT     = ANY,
+
+    REPRES     = SH,
+    DATE       = 19810901/19810902/19810903/19810904/19810905/19810906/19810907/19810908/19810909/19810910/19810911/19810912/19810913/19810914/19810915/19810916/19810917/19810918/19810919/19810920/19810921/19810922/19810923/19810924/19810925/19810926/19810927/19810928/19810929/19810930
+mars - INFO   - 20151022.014015 - Calling mars on 'marser', callback on 53111
+    PARAM      = 57.128,
+    GRID       = 0.25/0.25,
+mars - INFO   - 20151022.014015 - 248 fields have been interpolated
+    CLASS      = EI,
+    TYPE       = FC,
+    DOMAIN     = G,
+    TIME       = 0000/1200,
+
+    PADDING    = 0,
+    STREAM     = OPER,
+mars - INFO   - 20151022.014016 - Transfering 42791040 bytes
+mars - INFO   - 20151022.014121 - 240 fields have been interpolated
+mars - INFO   - 20151022.014121 - Request time:  wall: 1 min 6 sec  cpu: 59 sec
+mars - INFO   - 20151022.014121 -   Read from network: 40.81 Mbyte(s) in 6 sec  [6.36 Mbyte/sec]
+mars - INFO   - 20151022.014121 - 240 fields retrieved from 'marser'
+mars - INFO   - 20151022.014121 -   Visiting marser: wall: 1 min 6 sec cpu: 59 sec
+mars - INFO   - 20151022.014121 -   Writing to target file: 475.29 Mbyte(s) in < 1 sec [690.22 Mbyte/sec]
+mars - INFO   - 20151022.014121 -   Post-processing: wall: 58 sec cpu: 58 sec
+
+mars - INFO   - 20151022.014121 - Processing request 11
+
+    TYPE       = FC,
+    CLASS      = EI,
+    STREAM     = OPER,
+    LEVTYPE    = SFC,
+RETRIEVE,
+    PARAM      = 57.128,
+    STEP       = 03/06/09/12,
+    RESOL      = AUTO,
+    TIME       = 0000/1200,
+    REPRES     = SH,
+    GRID       = 0.25/0.25,
+    PADDING    = 0,
+    DOMAIN     = G,
+
+mars - INFO   - 20151022.014121 - Requesting any number of fields (request describes 248)
+    DATE       = 19811001/19811002/19811003/19811004/19811005/19811006/19811007/19811008/19811009/19811010/19811011/19811012/19811013/19811014/19811015/19811016/19811017/19811018/19811019/19811020/19811021/19811022/19811023/19811024/19811025/19811026/19811027/19811028/19811029/19811030/19811031
+mars - INFO   - 20151022.014121 - Calling mars on 'marser', callback on 50479
+mars - INFO   - 20151022.014121 - Server task is 594 [marser]
+    EXPVER     = 0001,
+mars - INFO   - 20151022.014121 - Request cost: 248 fields, 42.169 Mbytes online, nodes: mvr02 [marser]
+    EXPECT     = ANY,
+mars - INFO   - 20151022.014121 - Transfering 44217408 bytes
+mars - INFO   - 20151022.014228 -   Read from network: 42.17 Mbyte(s) in 5 sec  [7.70 Mbyte/sec]
+mars - INFO   - 20151022.014228 - 248 fields have been interpolated
+mars - INFO   - 20151022.014228 - 248 fields retrieved from 'marser'
+mars - INFO   - 20151022.014228 - Request time:  wall: 1 min 7 sec  cpu: 1 min 1 sec
+mars - INFO   - 20151022.014228 -   Visiting marser: wall: 1 min 7 sec cpu: 1 min 1 sec
+
+    CLASS      = EI,
+    STREAM     = OPER,
+RETRIEVE,
+    TYPE       = FC,
+mars - INFO   - 20151022.014228 - Processing request 12
+    EXPVER     = 0001,
+    PARAM      = 57.128,
+mars - INFO   - 20151022.014228 -   Writing to target file: 491.14 Mbyte(s) in < 1 sec [712.99 Mbyte/sec]
+    TIME       = 0000/1200,
+
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+mars - INFO   - 20151022.014228 -   Post-processing: wall: 1 min cpu: 1 min
+    STEP       = 03/06/09/12,
+    GRID       = 0.25/0.25,
+    PADDING    = 0,
+    RESOL      = AUTO,
+    EXPECT     = ANY,
+    DOMAIN     = G,
+mars - INFO   - 20151022.014228 - Requesting any number of fields (request describes 240)
+mars - INFO   - 20151022.014228 - Calling mars on 'marser', callback on 34741
+
+    DATE       = 19811101/19811102/19811103/19811104/19811105/19811106/19811107/19811108/19811109/19811110/19811111/19811112/19811113/19811114/19811115/19811116/19811117/19811118/19811119/19811120/19811121/19811122/19811123/19811124/19811125/19811126/19811127/19811128/19811129/19811130
+mars - INFO   - 20151022.014228 - Server task is 29 [marser]
+mars - INFO   - 20151022.014228 - Request cost: 240 fields, 40.8087 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151022.014228 - Transfering 42791040 bytes
+mars - INFO   - 20151022.014325 - 240 fields have been interpolated
+mars - INFO   - 20151022.014325 - 240 fields retrieved from 'marser'
+mars - INFO   - 20151022.014325 -   Read from network: 40.81 Mbyte(s) in 5 sec  [8.28 Mbyte/sec]
+mars - INFO   - 20151022.014325 - Request time:  wall: 57 sec  cpu: 52 sec
+mars - INFO   - 20151022.014325 -   Visiting marser: wall: 57 sec cpu: 52 sec
+mars - INFO   - 20151022.014325 -   Post-processing: wall: 51 sec cpu: 51 sec
+mars - INFO   - 20151022.014325 - Processing request 13
+mars - INFO   - 20151022.014325 -   Writing to target file: 475.29 Mbyte(s) in < 1 sec [799.32 Mbyte/sec]
+
+    LEVTYPE    = SFC,
+
+    CLASS      = EI,
+    TIME       = 0000/1200,
+    STEP       = 03/06/09/12,
+RETRIEVE,
+    EXPVER     = 0001,
+    TYPE       = FC,
+    PADDING    = 0,
+    REPRES     = SH,
+    STREAM     = OPER,
+
+    DATE       = 19811201/19811202/19811203/19811204/19811205/19811206/19811207/19811208/19811209/19811210/19811211/19811212/19811213/19811214/19811215/19811216/19811217/19811218/19811219/19811220/19811221/19811222/19811223/19811224/19811225/19811226/19811227/19811228/19811229/19811230/19811231
+mars - INFO   - 20151022.014325 - Calling mars on 'marser', callback on 33710
+    PARAM      = 57.128,
+    DOMAIN     = G,
+    GRID       = 0.25/0.25,
+    RESOL      = AUTO,
+mars - INFO   - 20151022.014325 - Requesting any number of fields (request describes 248)
+    EXPECT     = ANY,
+mars - INFO   - 20151022.014325 - Server task is 266 [marser]
+mars - INFO   - 20151022.014325 - Request cost: 248 fields, 42.169 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151022.014325 - Transfering 44217408 bytes
+mars - INFO   - 20151022.014426 - 248 fields retrieved from 'marser'
+mars - INFO   - 20151022.014426 - Request time:  wall: 1 min 1 sec  cpu: 54 sec
+mars - INFO   - 20151022.014426 -   Read from network: 42.17 Mbyte(s) in 6 sec  [6.86 Mbyte/sec]
+mars - INFO   - 20151022.014426 -   Visiting marser: wall: 1 min 1 sec cpu: 54 sec
+mars - INFO   - 20151022.014426 - 248 fields have been interpolated
+mars - INFO   - 20151022.014426 -   Post-processing: wall: 53 sec cpu: 53 sec
+mars - INFO   - 20151022.014426 -   Writing to target file: 491.14 Mbyte(s) in < 1 sec [736.27 Mbyte/sec]
+mars - INFO   - 20151022.014426 - No errors reported
+Calling nice grib_to_netcdf /data/data04/scratch/mars-atls10-a562cefde8a29a7288fa0b8b7f9413f7-9O5rk9.target -o /data/data04/scratch/mars-atls10-a562cefde8a29a7288fa0b8b7f9413f7-DwIBPV.nc -utime
+grib_to_netcdf: Version 1.13.1
+grib_to_netcdf: Processing input file '/data/data04/scratch/mars-atls10-a562cefde8a29a7288fa0b8b7f9413f7-9O5rk9.target'.
+grib_to_netcdf: Creating netcdf file '/data/data04/scratch/mars-atls10-a562cefde8a29a7288fa0b8b7f9413f7-DwIBPV.nc'
+grib_to_netcdf: Found 2928 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate, hdate
+grib_to_netcdf: NetCDF library version: 4.3.0 of Apr 24 2015 11:11:21 $
+grib_to_netcdf: Defining variable 'uvb'.
+grib_to_netcdf: Done.
+End of nice grib_to_netcdf /data/data04/scratch/mars-atls10-a562cefde8a29a7288fa0b8b7f9413f7-9O5rk9.target -o /data/data04/scratch/mars-atls10-a562cefde8a29a7288fa0b8b7f9413f7-DwIBPV.nc -utime
+End of nice mars /tmp/tmp-marsqfwJTY.req
+2015-10-21 18:48:40 Request is complete
+2015-10-21 18:48:40 Transfering 5.6624 Gbytes into /home/tkulczycki/norgay/data/sources/ERAI/3HOURLY/uvb/ERAI_uvb_1980-12-31to1981-12-31.nc
+2015-10-21 18:48:40 From http://stream.ecmwf.int/data/atls10/data/data04/scratch/mars-atls10-a562cefde8a29a7288fa0b8b7f9413f7-DwIBPV.nc
+2015-10-21 19:47:11 Transfer rate 1.6515 Mbytes/s
+2015-10-21 19:47:12 ECMWF API python library 1.3
+2015-10-21 19:47:12 ECMWF API at https://api.ecmwf.int/v1
+2015-10-21 19:47:13 Welcome Theodor Kulczycki
+2015-10-21 19:47:14 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Troubleshooting or contact calldesk@ecmwf.int
+2015-10-21 19:47:15 Request is queued
+Calling nice mars /tmp/tmp-marsPQbTPd.req
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20151022.024640 - Using grib_api version 1.13.1
+mars - INFO   - 20151022.024640 - EMOSLIB version: 395
+mars - INFO   - 20151022.024640 - grib_api created on  20141119
+mars - INFO   - 20151022.024640 - Welcome to MARS with grib_api and ODB
+mars - INFO   - 20151022.024640 - Using odb_api version: 0.10.2 (file format version: 0.5)
+mars - INFO   - 20151022.024640 - odb_api created on  20140527
+mars - INFO   - 20151022.024640 - Maximum retrieval size is 20.00 G
+retrieve,stream=oper,levtype=sfc,param=57.128,padding=0,step=03/06/09/12,grid=0.25/0.25,expver=0001,time=00/12,date=1981-12-31/to/1982-12-31,type=fc,class=ei,expect=anymars - WARN   - 20151022.024640 - For full resolution grid, it is recommended to use RESOL=AV to prevent any truncation before transformation
+mars - INFO   - 20151022.024640 - Request has been split into 13 monthly retrievals
+
+mars - INFO   - 20151022.024640 - Automatic split by date is on
+
+    TYPE       = FC,
+    CLASS      = EI,
+mars - INFO   - 20151022.024640 - Processing request 1
+RETRIEVE,
+    EXPVER     = 0001,
+    STREAM     = OPER,
+    REPRES     = SH,
+    PARAM      = 57.128,
+    TIME       = 0000/1200,
+    LEVTYPE    = SFC,
+    DOMAIN     = G,
+    GRID       = 0.25/0.25,
+    EXPECT     = ANY,
+    STEP       = 03/06/09/12,
+    PADDING    = 0,
+    RESOL      = AUTO,
+mars - INFO   - 20151022.024640 - Web API request id: 56284e10ff29d072455947ab
+    DATE       = 19811231
+
+mars - INFO   - 20151022.024640 - Requesting any number of fields (request describes 8)
+mars - INFO   - 20151022.024640 - Calling mars on 'marser', callback on 37670
+mars - INFO   - 20151022.024640 - Server task is 128 [marser]
+mars - INFO   - 20151022.024640 - Request cost: 8 fields, 1.36029 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151022.024640 - Transfering 1426368 bytes
+2015-10-21 19:47:16 Request is active
+mars - INFO   - 20151022.024642 - Request time:  wall: 2 sec  cpu: 2 sec
+mars - INFO   - 20151022.024642 -   Visiting marser: wall: 2 sec
+mars - INFO   - 20151022.024642 - 8 fields have been interpolated
+mars - INFO   - 20151022.024642 -   Post-processing: wall: 2 sec cpu: 2 sec
+    STREAM     = OPER,
+    EXPVER     = 0001,
+
+    PARAM      = 57.128,
+mars - INFO   - 20151022.024642 - 8 fields retrieved from 'marser'
+    CLASS      = EI,
+mars - INFO   - 20151022.024642 -   Read from network: 1.36 Mbyte(s) in < 1 sec [6.04 Mbyte/sec]
+    STEP       = 03/06/09/12,
+    EXPECT     = ANY,
+    GRID       = 0.25/0.25,
+    PADDING    = 0,
+    RESOL      = AUTO,
+    DATE       = 19820101/19820102/19820103/19820104/19820105/19820106/19820107/19820108/19820109/19820110/19820111/19820112/19820113/19820114/19820115/19820116/19820117/19820118/19820119/19820120/19820121/19820122/19820123/19820124/19820125/19820126/19820127/19820128/19820129/19820130/19820131
+mars - INFO   - 20151022.024643 - Calling mars on 'marser', callback on 35092
+    LEVTYPE    = SFC,
+
+
+mars - INFO   - 20151022.024642 -   Writing to target file: 15.84 Mbyte(s) in < 1 sec [809.11 Mbyte/sec]
+mars - INFO   - 20151022.024643 - Server task is 882 [marser]
+RETRIEVE,
+    DOMAIN     = G,
+mars - INFO   - 20151022.024643 - Request cost: 248 fields, 42.169 Mbytes online, nodes: mvr02 [marser]
+    TYPE       = FC,
+mars - INFO   - 20151022.024643 - Requesting any number of fields (request describes 248)
+    TIME       = 0000/1200,
+mars - INFO   - 20151022.024642 - Processing request 2
+    REPRES     = SH,
+mars - INFO   - 20151022.024643 - Transfering 44217408 bytes
+mars - INFO   - 20151022.024743 - Request time:  wall: 1 min  cpu: 54 sec
+mars - INFO   - 20151022.024743 -   Read from network: 42.17 Mbyte(s) in 5 sec  [8.30 Mbyte/sec]
+mars - INFO   - 20151022.024743 - 248 fields have been interpolated
+mars - INFO   - 20151022.024743 -   Visiting marser: wall: 1 min cpu: 55 sec
+mars - INFO   - 20151022.024743 -   Post-processing: wall: 54 sec cpu: 54 sec
+mars - INFO   - 20151022.024743 - 248 fields retrieved from 'marser'
+mars - INFO   - 20151022.024743 -   Writing to target file: 491.14 Mbyte(s) in < 1 sec [934.81 Mbyte/sec]
+mars - INFO   - 20151022.024743 - Processing request 3
+
+
+RETRIEVE,
+    CLASS      = EI,
+    TYPE       = FC,
+    EXPVER     = 0001,
+    REPRES     = SH,
+    DOMAIN     = G,
+    RESOL      = AUTO,
+    GRID       = 0.25/0.25,
+    PARAM      = 57.128,
+    STEP       = 03/06/09/12,
+    PADDING    = 0,
+    STREAM     = OPER,
+    DATE       = 19820201/19820202/19820203/19820204/19820205/19820206/19820207/19820208/19820209/19820210/19820211/19820212/19820213/19820214/19820215/19820216/19820217/19820218/19820219/19820220/19820221/19820222/19820223/19820224/19820225/19820226/19820227/19820228
+
+mars - INFO   - 20151022.024743 - Calling mars on 'marser', callback on 45121
+    EXPECT     = ANY,
+mars - INFO   - 20151022.024743 - Requesting any number of fields (request describes 224)
+    LEVTYPE    = SFC,
+    TIME       = 0000/1200,
+mars - INFO   - 20151022.024743 - Server task is 513 [marser]
+mars - INFO   - 20151022.024743 - Request cost: 224 fields, 38.0881 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151022.024743 - Transfering 39938304 bytes
+mars - INFO   - 20151022.024840 - 224 fields have been interpolated
+mars - INFO   - 20151022.024840 -   Read from network: 38.09 Mbyte(s) in 5 sec  [7.40 Mbyte/sec]
+
+mars - INFO   - 20151022.024840 - Processing request 4
+mars - INFO   - 20151022.024840 - 224 fields retrieved from 'marser'
+mars - INFO   - 20151022.024840 -   Post-processing: wall: 51 sec cpu: 51 sec
+mars - INFO   - 20151022.024840 -   Visiting marser: wall: 57 sec cpu: 52 sec
+mars - INFO   - 20151022.024840 -   Writing to target file: 443.61 Mbyte(s) in < 1 sec [763.72 Mbyte/sec]
+mars - INFO   - 20151022.024840 - Request time:  wall: 57 sec  cpu: 51 sec
+RETRIEVE,
+    CLASS      = EI,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    EXPVER     = 0001,
+    TYPE       = FC,
+    STREAM     = OPER,
+    PARAM      = 57.128,
+
+    TIME       = 0000/1200,
+    PADDING    = 0,
+
+    RESOL      = AUTO,
+    DATE       = 19820301/19820302/19820303/19820304/19820305/19820306/19820307/19820308/19820309/19820310/19820311/19820312/19820313/19820314/19820315/19820316/19820317/19820318/19820319/19820320/19820321/19820322/19820323/19820324/19820325/19820326/19820327/19820328/19820329/19820330/19820331
+    DOMAIN     = G,
+    GRID       = 0.25/0.25,
+    EXPECT     = ANY,
+    STEP       = 03/06/09/12,
+mars - INFO   - 20151022.024840 - Calling mars on 'marser', callback on 43229
+mars - INFO   - 20151022.024840 - Requesting any number of fields (request describes 248)
+mars - INFO   - 20151022.024840 - Request cost: 248 fields, 42.169 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151022.024840 - Server task is 70 [marser]
+mars - INFO   - 20151022.024840 - Transfering 44217408 bytes
+mars - INFO   - 20151022.024944 - 248 fields retrieved from 'marser'
+mars - INFO   - 20151022.024944 - Request time:  wall: 1 min 4 sec  cpu: 57 sec
+mars - INFO   - 20151022.024944 -   Visiting marser: wall: 1 min 4 sec cpu: 57 sec
+
+mars - INFO   - 20151022.024944 - 248 fields have been interpolated
+mars - INFO   - 20151022.024944 -   Read from network: 42.17 Mbyte(s) in 7 sec  [6.21 Mbyte/sec]
+mars - INFO   - 20151022.024944 -   Post-processing: wall: 56 sec cpu: 56 sec
+mars - INFO   - 20151022.024944 -   Writing to target file: 491.14 Mbyte(s) in < 1 sec [814.62 Mbyte/sec]
+mars - INFO   - 20151022.024944 - Processing request 5
+RETRIEVE,
+    CLASS      = EI,
+
+    TYPE       = FC,
+    STREAM     = OPER,
+    EXPVER     = 0001,
+    REPRES     = SH,
+    PARAM      = 57.128,
+    LEVTYPE    = SFC,
+    DOMAIN     = G,
+    STEP       = 03/06/09/12,
+    GRID       = 0.25/0.25,
+    PADDING    = 0,
+    EXPECT     = ANY,
+    RESOL      = AUTO,
+    TIME       = 0000/1200,
+    DATE       = 19820401/19820402/19820403/19820404/19820405/19820406/19820407/19820408/19820409/19820410/19820411/19820412/19820413/19820414/19820415/19820416/19820417/19820418/19820419/19820420/19820421/19820422/19820423/19820424/19820425/19820426/19820427/19820428/19820429/19820430
+
+mars - INFO   - 20151022.024944 - Requesting any number of fields (request describes 240)
+mars - INFO   - 20151022.024944 - Calling mars on 'marser', callback on 39567
+mars - INFO   - 20151022.024944 - Request cost: 240 fields, 40.8087 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151022.024944 - Server task is 349 [marser]
+mars - INFO   - 20151022.024944 - Transfering 42791040 bytes
+mars - INFO   - 20151022.025042 - 240 fields retrieved from 'marser'
+mars - INFO   - 20151022.025042 - 240 fields have been interpolated
+mars - INFO   - 20151022.025042 -   Read from network: 40.81 Mbyte(s) in 5 sec  [8.24 Mbyte/sec]
+mars - INFO   - 20151022.025042 - Request time:  wall: 58 sec  cpu: 52 sec
+mars - INFO   - 20151022.025042 -   Visiting marser: wall: 58 sec cpu: 53 sec
+mars - INFO   - 20151022.025042 -   Writing to target file: 475.29 Mbyte(s) in < 1 sec [996.26 Mbyte/sec]
+mars - INFO   - 20151022.025042 -   Post-processing: wall: 52 sec cpu: 52 sec
+
+mars - INFO   - 20151022.025042 - Processing request 6
+    EXPVER     = 0001,
+
+    STREAM     = OPER,
+    PADDING    = 0,
+    REPRES     = SH,
+    GRID       = 0.25/0.25,
+    TYPE       = FC,
+    PARAM      = 57.128,
+    RESOL      = AUTO,
+    TIME       = 0000/1200,
+    EXPECT     = ANY,
+    DATE       = 19820501/19820502/19820503/19820504/19820505/19820506/19820507/19820508/19820509/19820510/19820511/19820512/19820513/19820514/19820515/19820516/19820517/19820518/19820519/19820520/19820521/19820522/19820523/19820524/19820525/19820526/19820527/19820528/19820529/19820530/19820531
+    LEVTYPE    = SFC,
+
+mars - INFO   - 20151022.025042 - Calling mars on 'marser', callback on 51854
+mars - INFO   - 20151022.025042 - Server task is 23 [marser]
+mars - INFO   - 20151022.025042 - Requesting any number of fields (request describes 248)
+    CLASS      = EI,
+    DOMAIN     = G,
+RETRIEVE,
+mars - INFO   - 20151022.025042 - Transfering 44217408 bytes
+mars - INFO   - 20151022.025042 - Request cost: 248 fields, 42.169 Mbytes online, nodes: mvr02 [marser]
+    STEP       = 03/06/09/12,
+mars - INFO   - 20151022.025141 - 248 fields retrieved from 'marser'
+mars - INFO   - 20151022.025141 - 248 fields have been interpolated
+mars - INFO   - 20151022.025141 - Request time:  wall: 59 sec  cpu: 53 sec
+mars - INFO   - 20151022.025141 -   Post-processing: wall: 53 sec cpu: 53 sec
+mars - INFO   - 20151022.025141 -   Read from network: 42.17 Mbyte(s) in 5 sec  [8.52 Mbyte/sec]
+
+RETRIEVE,
+mars - INFO   - 20151022.025141 - Processing request 7
+    CLASS      = EI,
+
+    TYPE       = FC,
+mars - INFO   - 20151022.025141 -   Visiting marser: wall: 59 sec cpu: 54 sec
+mars - INFO   - 20151022.025141 -   Writing to target file: 491.14 Mbyte(s) in < 1 sec [830.63 Mbyte/sec]
+    EXPVER     = 0001,
+    LEVTYPE    = SFC,
+    PARAM      = 57.128,
+    TIME       = 0000/1200,
+    STEP       = 03/06/09/12,
+    DOMAIN     = G,
+    RESOL      = AUTO,
+    STREAM     = OPER,
+    REPRES     = SH,
+    EXPECT     = ANY,
+    GRID       = 0.25/0.25,
+    DATE       = 19820601/19820602/19820603/19820604/19820605/19820606/19820607/19820608/19820609/19820610/19820611/19820612/19820613/19820614/19820615/19820616/19820617/19820618/19820619/19820620/19820621/19820622/19820623/19820624/19820625/19820626/19820627/19820628/19820629/19820630
+    PADDING    = 0,
+
+mars - INFO   - 20151022.025141 - Requesting any number of fields (request describes 240)
+mars - INFO   - 20151022.025141 - Calling mars on 'marser', callback on 57272
+mars - INFO   - 20151022.025141 - Server task is 695 [marser]
+mars - INFO   - 20151022.025141 - Request cost: 240 fields, 40.8087 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151022.025141 - Transfering 42791040 bytes
+mars - INFO   - 20151022.025240 - 240 fields retrieved from 'marser'
+mars - INFO   - 20151022.025240 - 240 fields have been interpolated
+mars - INFO   - 20151022.025240 - Request time:  wall: 59 sec  cpu: 53 sec
+mars - INFO   - 20151022.025240 -   Visiting marser: wall: 59 sec cpu: 54 sec
+mars - INFO   - 20151022.025240 -   Writing to target file: 475.29 Mbyte(s) in < 1 sec [866.49 Mbyte/sec]
+
+mars - INFO   - 20151022.025240 - Processing request 8
+
+mars - INFO   - 20151022.025240 -   Read from network: 40.81 Mbyte(s) in 5 sec  [9.07 Mbyte/sec]
+mars - INFO   - 20151022.025240 -   Post-processing: wall: 53 sec cpu: 53 sec
+RETRIEVE,
+    CLASS      = EI,
+    EXPVER     = 0001,
+    STREAM     = OPER,
+    TYPE       = FC,
+    LEVTYPE    = SFC,
+    STEP       = 03/06/09/12,
+    PARAM      = 57.128,
+    REPRES     = SH,
+    TIME       = 0000/1200,
+    DOMAIN     = G,
+
+mars - INFO   - 20151022.025240 - Server task is 627 [marser]
+    EXPECT     = ANY,
+mars - INFO   - 20151022.025240 - Calling mars on 'marser', callback on 53101
+    DATE       = 19820701/19820702/19820703/19820704/19820705/19820706/19820707/19820708/19820709/19820710/19820711/19820712/19820713/19820714/19820715/19820716/19820717/19820718/19820719/19820720/19820721/19820722/19820723/19820724/19820725/19820726/19820727/19820728/19820729/19820730/19820731
+mars - INFO   - 20151022.025240 - Request cost: 248 fields, 42.169 Mbytes online, nodes: mvr02 [marser]
+    RESOL      = AUTO,
+mars - INFO   - 20151022.025240 - Requesting any number of fields (request describes 248)
+    PADDING    = 0,
+    GRID       = 0.25/0.25,
+mars - INFO   - 20151022.025240 - Transfering 44217408 bytes
+mars - INFO   - 20151022.025346 - Request time:  wall: 1 min 6 sec  cpu: 1 min
+mars - INFO   - 20151022.025346 -   Visiting marser: wall: 1 min 6 sec cpu: 1 min 1 sec
+mars - INFO   - 20151022.025346 -   Read from network: 42.17 Mbyte(s) in 5 sec  [7.86 Mbyte/sec]
+
+mars - INFO   - 20151022.025346 -   Writing to target file: 491.14 Mbyte(s) in < 1 sec [747.26 Mbyte/sec]
+mars - INFO   - 20151022.025346 - Processing request 9
+    TYPE       = FC,
+    STREAM     = OPER,
+    EXPVER     = 0001,
+    TIME       = 0000/1200,
+    LEVTYPE    = SFC,
+    STEP       = 03/06/09/12,
+    GRID       = 0.25/0.25,
+    PARAM      = 57.128,
+
+    PADDING    = 0,
+    EXPECT     = ANY,
+
+mars - INFO   - 20151022.025346 - Calling mars on 'marser', callback on 56009
+mars - INFO   - 20151022.025346 - Server task is 995 [marser]
+mars - INFO   - 20151022.025346 - 248 fields retrieved from 'marser'
+mars - INFO   - 20151022.025346 - Request cost: 248 fields, 42.169 Mbytes online, nodes: mvr02 [marser]
+    DOMAIN     = G,
+mars - INFO   - 20151022.025346 - Requesting any number of fields (request describes 248)
+mars - INFO   - 20151022.025346 - 248 fields have been interpolated
+RETRIEVE,
+    RESOL      = AUTO,
+    CLASS      = EI,
+    REPRES     = SH,
+mars - INFO   - 20151022.025346 -   Post-processing: wall: 1 min cpu: 1 min
+    DATE       = 19820801/19820802/19820803/19820804/19820805/19820806/19820807/19820808/19820809/19820810/19820811/19820812/19820813/19820814/19820815/19820816/19820817/19820818/19820819/19820820/19820821/19820822/19820823/19820824/19820825/19820826/19820827/19820828/19820829/19820830/19820831
+mars - INFO   - 20151022.025346 - Transfering 44217408 bytes
+mars - INFO   - 20151022.025450 - Request time:  wall: 1 min 4 sec  cpu: 58 sec
+mars - INFO   - 20151022.025450 - 248 fields retrieved from 'marser'
+mars - INFO   - 20151022.025450 - 248 fields have been interpolated
+
+mars - INFO   - 20151022.025450 -   Read from network: 42.17 Mbyte(s) in 5 sec  [7.88 Mbyte/sec]
+mars - INFO   - 20151022.025450 -   Post-processing: wall: 57 sec cpu: 57 sec
+mars - INFO   - 20151022.025450 - Processing request 10
+mars - INFO   - 20151022.025450 -   Visiting marser: wall: 1 min 4 sec cpu: 58 sec
+mars - INFO   - 20151022.025450 -   Writing to target file: 491.14 Mbyte(s) in < 1 sec [769.91 Mbyte/sec]
+    CLASS      = EI,
+    EXPVER     = 0001,
+    DOMAIN     = G,
+    LEVTYPE    = SFC,
+    STEP       = 03/06/09/12,
+    TIME       = 0000/1200,
+    EXPECT     = ANY,
+    STREAM     = OPER,
+    REPRES     = SH,
+
+    DATE       = 19820901/19820902/19820903/19820904/19820905/19820906/19820907/19820908/19820909/19820910/19820911/19820912/19820913/19820914/19820915/19820916/19820917/19820918/19820919/19820920/19820921/19820922/19820923/19820924/19820925/19820926/19820927/19820928/19820929/19820930
+    GRID       = 0.25/0.25,
+    TYPE       = FC,
+
+    RESOL      = AUTO,
+mars - INFO   - 20151022.025450 - Requesting any number of fields (request describes 240)
+mars - INFO   - 20151022.025450 - Server task is 995 [marser]
+RETRIEVE,
+mars - INFO   - 20151022.025450 - Calling mars on 'marser', callback on 37263
+mars - INFO   - 20151022.025450 - Transfering 42791040 bytes
+    PADDING    = 0,
+mars - INFO   - 20151022.025450 - Request cost: 240 fields, 40.8087 Mbytes online, nodes: mvr02 [marser]
+    PARAM      = 57.128,
+mars - INFO   - 20151022.025551 - 240 fields have been interpolated
+mars - INFO   - 20151022.025551 - 240 fields retrieved from 'marser'
+mars - INFO   - 20151022.025551 - Request time:  wall: 1 min  cpu: 55 sec
+mars - INFO   - 20151022.025551 -   Post-processing: wall: 55 sec cpu: 55 sec
+mars - INFO   - 20151022.025551 -   Visiting marser: wall: 1 min cpu: 56 sec
+mars - INFO   - 20151022.025551 -   Writing to target file: 475.29 Mbyte(s) in < 1 sec [884.86 Mbyte/sec]
+
+mars - INFO   - 20151022.025551 -   Read from network: 40.81 Mbyte(s) in 5 sec  [8.50 Mbyte/sec]
+    CLASS      = EI,
+mars - INFO   - 20151022.025551 - Processing request 11
+RETRIEVE,
+    EXPVER     = 0001,
+    PARAM      = 57.128,
+    STEP       = 03/06/09/12,
+    RESOL      = AUTO,
+    STREAM     = OPER,
+    REPRES     = SH,
+
+    EXPECT     = ANY,
+    DOMAIN     = G,
+    TYPE       = FC,
+mars - INFO   - 20151022.025551 - Requesting any number of fields (request describes 248)
+mars - INFO   - 20151022.025551 - Calling mars on 'marser', callback on 37972
+    DATE       = 19821001/19821002/19821003/19821004/19821005/19821006/19821007/19821008/19821009/19821010/19821011/19821012/19821013/19821014/19821015/19821016/19821017/19821018/19821019/19821020/19821021/19821022/19821023/19821024/19821025/19821026/19821027/19821028/19821029/19821030/19821031
+
+    TIME       = 0000/1200,
+    GRID       = 0.25/0.25,
+    PADDING    = 0,
+mars - INFO   - 20151022.025551 - Server task is 127 [marser]
+mars - INFO   - 20151022.025551 - Request cost: 248 fields, 42.169 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151022.025551 - Transfering 44217408 bytes
+    LEVTYPE    = SFC,
+mars - INFO   - 20151022.025658 - 248 fields retrieved from 'marser'
+mars - INFO   - 20151022.025658 - 248 fields have been interpolated
+mars - INFO   - 20151022.025658 -   Read from network: 42.17 Mbyte(s) in 7 sec  [5.83 Mbyte/sec]
+mars - INFO   - 20151022.025658 - Request time:  wall: 1 min 7 sec  cpu: 59 sec
+mars - INFO   - 20151022.025658 -   Visiting marser: wall: 1 min 7 sec cpu: 1 min
+mars - INFO   - 20151022.025658 - Processing request 12
+mars - INFO   - 20151022.025658 -   Post-processing: wall: 59 sec cpu: 59 sec
+mars - INFO   - 20151022.025658 -   Writing to target file: 491.14 Mbyte(s) in < 1 sec [819.73 Mbyte/sec]
+    CLASS      = EI,
+RETRIEVE,
+
+    STREAM     = OPER,
+    EXPVER     = 0001,
+    PARAM      = 57.128,
+    LEVTYPE    = SFC,
+    DOMAIN     = G,
+    REPRES     = SH,
+    TIME       = 0000/1200,
+    TYPE       = FC,
+    RESOL      = AUTO,
+    GRID       = 0.25/0.25,
+    EXPECT     = ANY,
+    DATE       = 19821101/19821102/19821103/19821104/19821105/19821106/19821107/19821108/19821109/19821110/19821111/19821112/19821113/19821114/19821115/19821116/19821117/19821118/19821119/19821120/19821121/19821122/19821123/19821124/19821125/19821126/19821127/19821128/19821129/19821130
+
+mars - INFO   - 20151022.025658 - Requesting any number of fields (request describes 240)
+mars - INFO   - 20151022.025658 - Calling mars on 'marser', callback on 39077
+    PADDING    = 0,
+
+mars - INFO   - 20151022.025658 - Server task is 513 [marser]
+    STEP       = 03/06/09/12,
+mars - INFO   - 20151022.025658 - Request cost: 240 fields, 40.8087 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151022.025658 - Transfering 42791040 bytes
+mars - INFO   - 20151022.025801 -   Visiting marser: wall: 1 min 3 sec cpu: 55 sec
+mars - INFO   - 20151022.025801 -   Read from network: 40.81 Mbyte(s) in 8 sec  [5.37 Mbyte/sec]
+mars - INFO   - 20151022.025801 -   Post-processing: wall: 54 sec cpu: 54 sec
+
+mars - INFO   - 20151022.025801 - Processing request 13
+mars - INFO   - 20151022.025801 -   Writing to target file: 475.29 Mbyte(s) in < 1 sec [791.75 Mbyte/sec]
+mars - INFO   - 20151022.025801 - Request time:  wall: 1 min 3 sec  cpu: 54 sec
+mars - INFO   - 20151022.025801 - 240 fields have been interpolated
+mars - INFO   - 20151022.025801 - 240 fields retrieved from 'marser'
+
+    EXPVER     = 0001,
+    CLASS      = EI,
+    REPRES     = SH,
+RETRIEVE,
+    STREAM     = OPER,
+    LEVTYPE    = SFC,
+    TYPE       = FC,
+    TIME       = 0000/1200,
+    STEP       = 03/06/09/12,
+    PARAM      = 57.128,
+    EXPECT     = ANY,
+    RESOL      = AUTO,
+    DATE       = 19821201/19821202/19821203/19821204/19821205/19821206/19821207/19821208/19821209/19821210/19821211/19821212/19821213/19821214/19821215/19821216/19821217/19821218/19821219/19821220/19821221/19821222/19821223/19821224/19821225/19821226/19821227/19821228/19821229/19821230/19821231
+    DOMAIN     = G,
+    PADDING    = 0,
+    GRID       = 0.25/0.25,
+mars - INFO   - 20151022.025801 - Requesting any number of fields (request describes 248)
+mars - INFO   - 20151022.025801 - Calling mars on 'marser', callback on 55177
+
+mars - INFO   - 20151022.025801 - Server task is 902 [marser]
+mars - INFO   - 20151022.025801 - Request cost: 248 fields, 42.169 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151022.025801 - Transfering 44217408 bytes
+mars - INFO   - 20151022.025900 - Request time:  wall: 59 sec  cpu: 54 sec
+mars - INFO   - 20151022.025900 -   Post-processing: wall: 53 sec cpu: 53 sec
+mars - INFO   - 20151022.025900 -   Visiting marser: wall: 59 sec cpu: 54 sec
+mars - INFO   - 20151022.025900 - 248 fields retrieved from 'marser'
+mars - INFO   - 20151022.025900 - 248 fields have been interpolated
+mars - INFO   - 20151022.025900 -   Writing to target file: 491.14 Mbyte(s) in < 1 sec [858.12 Mbyte/sec]
+mars - INFO   - 20151022.025900 - No errors reported
+mars - INFO   - 20151022.025900 -   Read from network: 42.17 Mbyte(s) in 5 sec  [9.33 Mbyte/sec]
+Calling nice grib_to_netcdf /data/data04/scratch/mars-atls10-a562cefde8a29a7288fa0b8b7f9413f7-E_2jUr.target -o /data/data04/scratch/mars-atls10-a562cefde8a29a7288fa0b8b7f9413f7-pVTCHP.nc -utime
+grib_to_netcdf: Version 1.13.1
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate, hdate
+grib_to_netcdf: Processing input file '/data/data04/scratch/mars-atls10-a562cefde8a29a7288fa0b8b7f9413f7-E_2jUr.target'.
+grib_to_netcdf: Found 2928 GRIB fields in 1 file.
+grib_to_netcdf: Creating netcdf file '/data/data04/scratch/mars-atls10-a562cefde8a29a7288fa0b8b7f9413f7-pVTCHP.nc'
+grib_to_netcdf: Done.
+grib_to_netcdf: Defining variable 'uvb'.
+grib_to_netcdf: NetCDF library version: 4.3.0 of Apr 24 2015 11:11:21 $
+End of nice grib_to_netcdf /data/data04/scratch/mars-atls10-a562cefde8a29a7288fa0b8b7f9413f7-E_2jUr.target -o /data/data04/scratch/mars-atls10-a562cefde8a29a7288fa0b8b7f9413f7-pVTCHP.nc -utime
+End of nice mars /tmp/tmp-marsPQbTPd.req
+2015-10-21 20:02:46 Request is complete
+2015-10-21 20:02:46 Transfering 5.6624 Gbytes into /home/tkulczycki/norgay/data/sources/ERAI/3HOURLY/uvb/ERAI_uvb_1981-12-31to1982-12-31.nc
+2015-10-21 20:02:46 From http://stream.ecmwf.int/data/atls10/data/data04/scratch/mars-atls10-a562cefde8a29a7288fa0b8b7f9413f7-pVTCHP.nc
+2015-10-21 20:48:17 Transfer rate 2.12307 Mbytes/s
+2015-10-21 20:48:18 ECMWF API python library 1.3
+2015-10-21 20:48:18 ECMWF API at https://api.ecmwf.int/v1
+2015-10-21 20:48:19 Welcome Theodor Kulczycki
+2015-10-21 20:48:20 In case of problems, please check https://software.ecmwf.int/wiki/display/WEBAPI/Troubleshooting or contact calldesk@ecmwf.int
+2015-10-21 20:48:21 Request is queued
+Calling nice mars /tmp/tmp-marsV8isev.req
+PPDIR is /var/tmp/ppdir/x86_64
+mars - INFO   - 20151022.034747 - grib_api created on  20141119
+mars - INFO   - 20151022.034747 - Using grib_api version 1.13.1
+mars - INFO   - 20151022.034747 - EMOSLIB version: 395
+mars - INFO   - 20151022.034747 - odb_api created on  20140527
+mars - INFO   - 20151022.034747 - Welcome to MARS with grib_api and ODB
+mars - INFO   - 20151022.034747 - Maximum retrieval size is 20.00 G
+mars - INFO   - 20151022.034747 - Using odb_api version: 0.10.2 (file format version: 0.5)
+retrieve,stream=oper,levtype=sfc,param=57.128,padding=0,step=03/06/09/12,grid=0.25/0.25,expver=0001,time=00/12,date=1982-12-31/to/1983-12-31,type=fc,class=ei,expect=anymars - WARN   - 20151022.034747 - For full resolution grid, it is recommended to use RESOL=AV to prevent any truncation before transformation
+mars - INFO   - 20151022.034747 - Request has been split into 13 monthly retrievals
+
+mars - INFO   - 20151022.034747 - Processing request 1
+    STREAM     = OPER,
+RETRIEVE,
+    EXPVER     = 0001,
+mars - INFO   - 20151022.034747 - Automatic split by date is on
+
+    LEVTYPE    = SFC,
+    TIME       = 0000/1200,
+    GRID       = 0.25/0.25,
+    CLASS      = EI,
+    TYPE       = FC,
+    PARAM      = 57.128,
+mars - INFO   - 20151022.034747 - Web API request id: 56285c62616850f7f172b2b0
+    DOMAIN     = G,
+    EXPECT     = ANY,
+    STEP       = 03/06/09/12,
+    REPRES     = SH,
+    DATE       = 19821231
+    PADDING    = 0,
+
+    RESOL      = AUTO,
+mars - INFO   - 20151022.034747 - Requesting any number of fields (request describes 8)
+mars - INFO   - 20151022.034747 - Calling mars on 'marser', callback on 33614
+mars - INFO   - 20151022.034747 - Server task is 727 [marser]
+mars - INFO   - 20151022.034747 - Request cost: 8 fields, 1.36029 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151022.034747 - Transfering 1426368 bytes
+2015-10-21 20:48:23 Request is active
+mars - INFO   - 20151022.034749 - 8 fields retrieved from 'marser'
+mars - INFO   - 20151022.034749 - 8 fields have been interpolated
+mars - INFO   - 20151022.034749 - Request time:  wall: 2 sec  cpu: 2 sec
+mars - INFO   - 20151022.034749 -   Visiting marser: wall: 2 sec
+mars - INFO   - 20151022.034749 -   Read from network: 1.36 Mbyte(s) in < 1 sec [5.23 Mbyte/sec]
+mars - INFO   - 20151022.034749 - Processing request 2
+    PARAM      = 57.128,
+    STREAM     = OPER,
+    EXPECT     = ANY,
+    RESOL      = AUTO,
+mars - INFO   - 20151022.034749 -   Post-processing: wall: 2 sec cpu: 2 sec
+    EXPVER     = 0001,
+    PADDING    = 0,
+RETRIEVE,
+    DOMAIN     = G,
+    TIME       = 0000/1200,
+mars - INFO   - 20151022.034749 - Request cost: 248 fields, 42.169 Mbytes online, nodes: mvr02 [marser]
+    GRID       = 0.25/0.25,
+mars - INFO   - 20151022.034749 - Server task is 727 [marser]
+    TYPE       = FC,
+
+    CLASS      = EI,
+
+    STEP       = 03/06/09/12,
+
+    LEVTYPE    = SFC,
+mars - INFO   - 20151022.034749 - Requesting any number of fields (request describes 248)
+mars - INFO   - 20151022.034749 - Calling mars on 'marser', callback on 60252
+mars - INFO   - 20151022.034749 - Transfering 44217408 bytes
+    DATE       = 19830101/19830102/19830103/19830104/19830105/19830106/19830107/19830108/19830109/19830110/19830111/19830112/19830113/19830114/19830115/19830116/19830117/19830118/19830119/19830120/19830121/19830122/19830123/19830124/19830125/19830126/19830127/19830128/19830129/19830130/19830131
+mars - INFO   - 20151022.034749 -   Writing to target file: 15.84 Mbyte(s) in < 1 sec [871.75 Mbyte/sec]
+    REPRES     = SH,
+mars - INFO   - 20151022.034848 -   Read from network: 42.17 Mbyte(s) in 5 sec  [8.99 Mbyte/sec]
+mars - INFO   - 20151022.034848 -   Visiting marser: wall: 59 sec cpu: 54 sec
+mars - INFO   - 20151022.034848 - Request time:  wall: 59 sec  cpu: 54 sec
+
+mars - INFO   - 20151022.034848 - 248 fields have been interpolated
+mars - INFO   - 20151022.034848 -   Writing to target file: 491.14 Mbyte(s) in < 1 sec [881.13 Mbyte/sec]
+
+    CLASS      = EI,
+    EXPVER     = 0001,
+    STREAM     = OPER,
+RETRIEVE,
+mars - INFO   - 20151022.034848 -   Post-processing: wall: 53 sec cpu: 53 sec
+    PARAM      = 57.128,
+    RESOL      = AUTO,
+    DOMAIN     = G,
+    TYPE       = FC,
+mars - INFO   - 20151022.034848 - Processing request 3
+    EXPECT     = ANY,
+mars - INFO   - 20151022.034848 - Request cost: 224 fields, 38.0881 Mbytes online, nodes: mvr02 [marser]
+    TIME       = 0000/1200,
+
+mars - INFO   - 20151022.034848 - Requesting any number of fields (request describes 224)
+mars - INFO   - 20151022.034848 - Calling mars on 'marser', callback on 55428
+    PADDING    = 0,
+    GRID       = 0.25/0.25,
+mars - INFO   - 20151022.034848 - 248 fields retrieved from 'marser'
+mars - INFO   - 20151022.034848 - Transfering 39938304 bytes
+    STEP       = 03/06/09/12,
+    LEVTYPE    = SFC,
+mars - INFO   - 20151022.034848 - Server task is 257 [marser]
+    REPRES     = SH,
+    DATE       = 19830201/19830202/19830203/19830204/19830205/19830206/19830207/19830208/19830209/19830210/19830211/19830212/19830213/19830214/19830215/19830216/19830217/19830218/19830219/19830220/19830221/19830222/19830223/19830224/19830225/19830226/19830227/19830228
+mars - INFO   - 20151022.034943 - Request time:  wall: 55 sec  cpu: 50 sec
+mars - INFO   - 20151022.034943 - 224 fields have been interpolated
+mars - INFO   - 20151022.034943 - 224 fields retrieved from 'marser'
+mars - INFO   - 20151022.034943 -   Post-processing: wall: 49 sec cpu: 49 sec
+mars - INFO   - 20151022.034943 -   Writing to target file: 443.61 Mbyte(s) in < 1 sec [784.47 Mbyte/sec]
+
+mars - INFO   - 20151022.034943 -   Read from network: 38.09 Mbyte(s) in 5 sec  [7.63 Mbyte/sec]
+mars - INFO   - 20151022.034943 - Processing request 4
+mars - INFO   - 20151022.034943 -   Visiting marser: wall: 55 sec cpu: 50 sec
+
+    TYPE       = FC,
+    STREAM     = OPER,
+    REPRES     = SH,
+RETRIEVE,
+    EXPVER     = 0001,
+    CLASS      = EI,
+    LEVTYPE    = SFC,
+    DOMAIN     = G,
+    STEP       = 03/06/09/12,
+    TIME       = 0000/1200,
+    GRID       = 0.25/0.25,
+    PARAM      = 57.128,
+    PADDING    = 0,
+    EXPECT     = ANY,
+    DATE       = 19830301/19830302/19830303/19830304/19830305/19830306/19830307/19830308/19830309/19830310/19830311/19830312/19830313/19830314/19830315/19830316/19830317/19830318/19830319/19830320/19830321/19830322/19830323/19830324/19830325/19830326/19830327/19830328/19830329/19830330/19830331
+
+    RESOL      = AUTO,
+mars - INFO   - 20151022.034943 - Requesting any number of fields (request describes 248)
+mars - INFO   - 20151022.034943 - Calling mars on 'marser', callback on 54786
+mars - INFO   - 20151022.034943 - Server task is 974 [marser]
+mars - INFO   - 20151022.034943 - Request cost: 248 fields, 42.169 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151022.034943 - Transfering 44217408 bytes
+mars - INFO   - 20151022.035042 - 248 fields retrieved from 'marser'
+mars - INFO   - 20151022.035042 - Request time:  wall: 59 sec  cpu: 52 sec
+mars - INFO   - 20151022.035042 -   Visiting marser: wall: 59 sec cpu: 52 sec
+mars - INFO   - 20151022.035042 -   Read from network: 42.17 Mbyte(s) in 7 sec  [6.48 Mbyte/sec]
+mars - INFO   - 20151022.035042 - 248 fields have been interpolated
+mars - INFO   - 20151022.035042 -   Post-processing: wall: 51 sec cpu: 51 sec
+mars - INFO   - 20151022.035042 -   Writing to target file: 491.14 Mbyte(s) in < 1 sec [927.53 Mbyte/sec]
+
+RETRIEVE,
+    STREAM     = OPER,
+    DOMAIN     = G,
+    CLASS      = EI,
+mars - INFO   - 20151022.035042 - Processing request 5
+    TYPE       = FC,
+    TIME       = 0000/1200,
+
+    GRID       = 0.25/0.25,
+    REPRES     = SH,
+    PARAM      = 57.128,
+    LEVTYPE    = SFC,
+    EXPVER     = 0001,
+    EXPECT     = ANY,
+mars - INFO   - 20151022.035042 - Requesting any number of fields (request describes 240)
+    STEP       = 03/06/09/12,
+    PADDING    = 0,
+    RESOL      = AUTO,
+    DATE       = 19830401/19830402/19830403/19830404/19830405/19830406/19830407/19830408/19830409/19830410/19830411/19830412/19830413/19830414/19830415/19830416/19830417/19830418/19830419/19830420/19830421/19830422/19830423/19830424/19830425/19830426/19830427/19830428/19830429/19830430
+
+mars - INFO   - 20151022.035042 - Calling mars on 'marser', callback on 47879
+mars - INFO   - 20151022.035042 - Request cost: 240 fields, 40.8087 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151022.035042 - Server task is 340 [marser]
+mars - INFO   - 20151022.035042 - Transfering 42791040 bytes
+mars - INFO   - 20151022.035142 - Request time:  wall: 1 min  cpu: 54 sec
+mars - INFO   - 20151022.035142 - 240 fields retrieved from 'marser'
+mars - INFO   - 20151022.035142 -   Read from network: 40.81 Mbyte(s) in 6 sec  [6.81 Mbyte/sec]
+mars - INFO   - 20151022.035142 - 240 fields have been interpolated
+mars - INFO   - 20151022.035142 -   Visiting marser: wall: 1 min cpu: 54 sec
+mars - INFO   - 20151022.035142 -   Post-processing: wall: 53 sec cpu: 53 sec
+
+mars - INFO   - 20151022.035142 -   Writing to target file: 475.29 Mbyte(s) in < 1 sec [812.71 Mbyte/sec]
+mars - INFO   - 20151022.035142 - Processing request 6
+    CLASS      = EI,
+RETRIEVE,
+    STREAM     = OPER,
+
+    EXPVER     = 0001,
+    TIME       = 0000/1200,
+    TYPE       = FC,
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    PARAM      = 57.128,
+    STEP       = 03/06/09/12,
+    RESOL      = AUTO,
+    GRID       = 0.25/0.25,
+    EXPECT     = ANY,
+    PADDING    = 0,
+    DOMAIN     = G,
+    DATE       = 19830501/19830502/19830503/19830504/19830505/19830506/19830507/19830508/19830509/19830510/19830511/19830512/19830513/19830514/19830515/19830516/19830517/19830518/19830519/19830520/19830521/19830522/19830523/19830524/19830525/19830526/19830527/19830528/19830529/19830530/19830531
+mars - INFO   - 20151022.035142 - Requesting any number of fields (request describes 248)
+
+mars - INFO   - 20151022.035142 - Calling mars on 'marser', callback on 46851
+mars - INFO   - 20151022.035142 - Server task is 340 [marser]
+mars - INFO   - 20151022.035142 - Request cost: 248 fields, 42.169 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151022.035142 - Transfering 44217408 bytes
+mars - INFO   - 20151022.035241 - 248 fields retrieved from 'marser'
+mars - INFO   - 20151022.035241 - 248 fields have been interpolated
+mars - INFO   - 20151022.035241 - Request time:  wall: 59 sec  cpu: 53 sec
+mars - INFO   - 20151022.035241 -   Read from network: 42.17 Mbyte(s) in 5 sec  [8.05 Mbyte/sec]
+mars - INFO   - 20151022.035241 -   Writing to target file: 491.14 Mbyte(s) in < 1 sec [832.95 Mbyte/sec]
+mars - INFO   - 20151022.035241 - Processing request 7
+
+mars - INFO   - 20151022.035241 -   Visiting marser: wall: 59 sec cpu: 53 sec
+mars - INFO   - 20151022.035241 -   Post-processing: wall: 52 sec cpu: 52 sec
+    TYPE       = FC,
+
+RETRIEVE,
+    STREAM     = OPER,
+    REPRES     = SH,
+    CLASS      = EI,
+    PARAM      = 57.128,
+    LEVTYPE    = SFC,
+    EXPVER     = 0001,
+    DOMAIN     = G,
+    PADDING    = 0,
+    TIME       = 0000/1200,
+    STEP       = 03/06/09/12,
+mars - INFO   - 20151022.035241 - Requesting any number of fields (request describes 240)
+    DATE       = 19830601/19830602/19830603/19830604/19830605/19830606/19830607/19830608/19830609/19830610/19830611/19830612/19830613/19830614/19830615/19830616/19830617/19830618/19830619/19830620/19830621/19830622/19830623/19830624/19830625/19830626/19830627/19830628/19830629/19830630
+
+mars - INFO   - 20151022.035241 - Calling mars on 'marser', callback on 57423
+    EXPECT     = ANY,
+    RESOL      = AUTO,
+    GRID       = 0.25/0.25,
+mars - INFO   - 20151022.035241 - Request cost: 240 fields, 40.8087 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151022.035241 - Server task is 347 [marser]
+mars - INFO   - 20151022.035241 - Transfering 42791040 bytes
+mars - INFO   - 20151022.035338 - Request time:  wall: 57 sec  cpu: 51 sec
+mars - INFO   - 20151022.035338 -   Read from network: 40.81 Mbyte(s) in 5 sec  [8.93 Mbyte/sec]
+
+mars - INFO   - 20151022.035338 - Processing request 8
+mars - INFO   - 20151022.035338 -   Post-processing: wall: 51 sec cpu: 51 sec
+    STREAM     = OPER,
+mars - INFO   - 20151022.035338 -   Writing to target file: 475.29 Mbyte(s) in < 1 sec [746.70 Mbyte/sec]
+    STEP       = 03/06/09/12,
+mars - INFO   - 20151022.035338 -   Visiting marser: wall: 57 sec cpu: 52 sec
+    TYPE       = FC,
+    TIME       = 0000/1200,
+mars - INFO   - 20151022.035338 - Server task is 394 [marser]
+    PARAM      = 57.128,
+    DATE       = 19830701/19830702/19830703/19830704/19830705/19830706/19830707/19830708/19830709/19830710/19830711/19830712/19830713/19830714/19830715/19830716/19830717/19830718/19830719/19830720/19830721/19830722/19830723/19830724/19830725/19830726/19830727/19830728/19830729/19830730/19830731
+mars - INFO   - 20151022.035338 - Requesting any number of fields (request describes 248)
+
+    EXPECT     = ANY,
+    REPRES     = SH,
+    GRID       = 0.25/0.25,
+mars - INFO   - 20151022.035338 - Calling mars on 'marser', callback on 60962
+    PADDING    = 0,
+    EXPVER     = 0001,
+    LEVTYPE    = SFC,
+
+mars - INFO   - 20151022.035338 - 240 fields have been interpolated
+    CLASS      = EI,
+    RESOL      = AUTO,
+RETRIEVE,
+mars - INFO   - 20151022.035338 - Transfering 44217408 bytes
+    DOMAIN     = G,
+mars - INFO   - 20151022.035338 - 240 fields retrieved from 'marser'
+mars - INFO   - 20151022.035338 - Request cost: 248 fields, 42.169 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151022.035436 - 248 fields retrieved from 'marser'
+mars - INFO   - 20151022.035436 - 248 fields have been interpolated
+mars - INFO   - 20151022.035436 -   Writing to target file: 491.14 Mbyte(s) in < 1 sec [796.96 Mbyte/sec]
+mars - INFO   - 20151022.035436 -   Post-processing: wall: 52 sec cpu: 52 sec
+
+mars - INFO   - 20151022.035436 -   Read from network: 42.17 Mbyte(s) in 5 sec  [8.57 Mbyte/sec]
+mars - INFO   - 20151022.035436 - Request time:  wall: 58 sec  cpu: 52 sec
+mars - INFO   - 20151022.035436 -   Visiting marser: wall: 58 sec cpu: 53 sec
+mars - INFO   - 20151022.035436 - Processing request 9
+RETRIEVE,
+
+    CLASS      = EI,
+    LEVTYPE    = SFC,
+    PARAM      = 57.128,
+    REPRES     = SH,
+    STREAM     = OPER,
+    TYPE       = FC,
+    EXPVER     = 0001,
+    DOMAIN     = G,
+    RESOL      = AUTO,
+    TIME       = 0000/1200,
+    GRID       = 0.25/0.25,
+    STEP       = 03/06/09/12,
+    PADDING    = 0,
+
+mars - INFO   - 20151022.035436 - Requesting any number of fields (request describes 248)
+    DATE       = 19830801/19830802/19830803/19830804/19830805/19830806/19830807/19830808/19830809/19830810/19830811/19830812/19830813/19830814/19830815/19830816/19830817/19830818/19830819/19830820/19830821/19830822/19830823/19830824/19830825/19830826/19830827/19830828/19830829/19830830/19830831
+    EXPECT     = ANY,
+mars - INFO   - 20151022.035436 - Calling mars on 'marser', callback on 37288
+mars - INFO   - 20151022.035436 - Server task is 22 [marser]
+mars - INFO   - 20151022.035436 - Request cost: 248 fields, 42.169 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151022.035436 - Transfering 44217408 bytes
+
+mars - INFO   - 20151022.035533 - Processing request 10
+mars - INFO   - 20151022.035533 -   Post-processing: wall: 52 sec cpu: 52 sec
+mars - INFO   - 20151022.035533 - Transfering 42791040 bytes
+mars - INFO   - 20151022.035533 - 248 fields have been interpolated
+
+mars - INFO   - 20151022.035533 -   Read from network: 42.17 Mbyte(s) in 4 sec  [9.53 Mbyte/sec]
+    LEVTYPE    = SFC,
+mars - INFO   - 20151022.035533 -   Writing to target file: 491.14 Mbyte(s) in < 1 sec [900.23 Mbyte/sec]
+    GRID       = 0.25/0.25,
+    STEP       = 03/06/09/12,
+    PARAM      = 57.128,
+mars - INFO   - 20151022.035533 - Requesting any number of fields (request describes 240)
+    TIME       = 0000/1200,
+    STREAM     = OPER,
+    EXPECT     = ANY,
+mars - INFO   - 20151022.035533 - Calling mars on 'marser', callback on 43396
+    DATE       = 19830901/19830902/19830903/19830904/19830905/19830906/19830907/19830908/19830909/19830910/19830911/19830912/19830913/19830914/19830915/19830916/19830917/19830918/19830919/19830920/19830921/19830922/19830923/19830924/19830925/19830926/19830927/19830928/19830929/19830930
+    REPRES     = SH,
+
+    EXPVER     = 0001,
+mars - INFO   - 20151022.035533 - 248 fields retrieved from 'marser'
+mars - INFO   - 20151022.035533 -   Visiting marser: wall: 58 sec cpu: 53 sec
+    PADDING    = 0,
+    RESOL      = AUTO,
+mars - INFO   - 20151022.035533 - Request time:  wall: 58 sec  cpu: 53 sec
+    DOMAIN     = G,
+    CLASS      = EI,
+    TYPE       = FC,
+mars - INFO   - 20151022.035533 - Request cost: 240 fields, 40.8087 Mbytes online, nodes: mvr02 [marser]
+RETRIEVE,
+mars - INFO   - 20151022.035533 - Server task is 22 [marser]
+mars - INFO   - 20151022.035629 - 240 fields retrieved from 'marser'
+mars - INFO   - 20151022.035629 - 240 fields have been interpolated
+mars - INFO   - 20151022.035629 - Request time:  wall: 56 sec  cpu: 50 sec
+mars - INFO   - 20151022.035629 -   Visiting marser: wall: 56 sec cpu: 50 sec
+mars - INFO   - 20151022.035629 -   Post-processing: wall: 50 sec cpu: 50 sec
+
+mars - INFO   - 20151022.035629 -   Read from network: 40.81 Mbyte(s) in 5 sec  [8.17 Mbyte/sec]
+mars - INFO   - 20151022.035629 - Processing request 11
+mars - INFO   - 20151022.035629 -   Writing to target file: 475.29 Mbyte(s) in < 1 sec [876.27 Mbyte/sec]
+RETRIEVE,
+
+    CLASS      = EI,
+    TYPE       = FC,
+    STREAM     = OPER,
+    REPRES     = SH,
+    DOMAIN     = G,
+    EXPVER     = 0001,
+    RESOL      = AUTO,
+    LEVTYPE    = SFC,
+    PARAM      = 57.128,
+    DATE       = 19831001/19831002/19831003/19831004/19831005/19831006/19831007/19831008/19831009/19831010/19831011/19831012/19831013/19831014/19831015/19831016/19831017/19831018/19831019/19831020/19831021/19831022/19831023/19831024/19831025/19831026/19831027/19831028/19831029/19831030/19831031
+    TIME       = 0000/1200,
+    GRID       = 0.25/0.25,
+    EXPECT     = ANY,
+    STEP       = 03/06/09/12,
+    PADDING    = 0,
+mars - INFO   - 20151022.035629 - Requesting any number of fields (request describes 248)
+mars - INFO   - 20151022.035629 - Request cost: 248 fields, 42.169 Mbytes online, nodes: mvr02 [marser]
+
+mars - INFO   - 20151022.035629 - Server task is 571 [marser]
+mars - INFO   - 20151022.035629 - Calling mars on 'marser', callback on 53632
+mars - INFO   - 20151022.035629 - Transfering 44217408 bytes
+mars - INFO   - 20151022.035728 - 248 fields have been interpolated
+mars - INFO   - 20151022.035728 - 248 fields retrieved from 'marser'
+mars - INFO   - 20151022.035728 - Request time:  wall: 59 sec  cpu: 53 sec
+mars - INFO   - 20151022.035728 -   Read from network: 42.17 Mbyte(s) in 5 sec  [8.45 Mbyte/sec]
+mars - INFO   - 20151022.035728 -   Visiting marser: wall: 59 sec cpu: 54 sec
+mars - INFO   - 20151022.035728 -   Post-processing: wall: 53 sec cpu: 53 sec
+mars - INFO   - 20151022.035728 -   Writing to target file: 491.14 Mbyte(s) in < 1 sec [846.09 Mbyte/sec]
+
+RETRIEVE,
+    CLASS      = EI,
+    TYPE       = FC,
+    STREAM     = OPER,
+    LEVTYPE    = SFC,
+    PARAM      = 57.128,
+    EXPVER     = 0001,
+    DOMAIN     = G,
+    REPRES     = SH,
+    DATE       = 19831101/19831102/19831103/19831104/19831105/19831106/19831107/19831108/19831109/19831110/19831111/19831112/19831113/19831114/19831115/19831116/19831117/19831118/19831119/19831120/19831121/19831122/19831123/19831124/19831125/19831126/19831127/19831128/19831129/19831130
+    EXPECT     = ANY,
+    RESOL      = AUTO,
+
+    GRID       = 0.25/0.25,
+    PADDING    = 0,
+mars - INFO   - 20151022.035728 - Requesting any number of fields (request describes 240)
+mars - INFO   - 20151022.035728 - Server task is 571 [marser]
+mars - INFO   - 20151022.035728 - Request cost: 240 fields, 40.8087 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151022.035728 - Processing request 12
+mars - INFO   - 20151022.035728 - Calling mars on 'marser', callback on 58430
+    TIME       = 0000/1200,
+    STEP       = 03/06/09/12,
+
+mars - INFO   - 20151022.035728 - Transfering 42791040 bytes
+mars - INFO   - 20151022.035826 - 240 fields have been interpolated
+
+mars - INFO   - 20151022.035826 -   Writing to target file: 475.29 Mbyte(s) in < 1 sec [734.15 Mbyte/sec]
+mars - INFO   - 20151022.035826 - Processing request 13
+
+mars - INFO   - 20151022.035826 -   Read from network: 40.81 Mbyte(s) in 7 sec  [6.08 Mbyte/sec]
+mars - INFO   - 20151022.035826 - Request time:  wall: 58 sec  cpu: 51 sec
+mars - INFO   - 20151022.035826 - 240 fields retrieved from 'marser'
+    CLASS      = EI,
+    TYPE       = FC,
+mars - INFO   - 20151022.035826 -   Visiting marser: wall: 58 sec cpu: 51 sec
+RETRIEVE,
+mars - INFO   - 20151022.035826 -   Post-processing: wall: 50 sec cpu: 50 sec
+    REPRES     = SH,
+    LEVTYPE    = SFC,
+    STREAM     = OPER,
+    TIME       = 0000/1200,
+    PARAM      = 57.128,
+    EXPVER     = 0001,
+    STEP       = 03/06/09/12,
+    DOMAIN     = G,
+    RESOL      = AUTO,
+    GRID       = 0.25/0.25,
+    PADDING    = 0,
+    EXPECT     = ANY,
+    DATE       = 19831201/19831202/19831203/19831204/19831205/19831206/19831207/19831208/19831209/19831210/19831211/19831212/19831213/19831214/19831215/19831216/19831217/19831218/19831219/19831220/19831221/19831222/19831223/19831224/19831225/19831226/19831227/19831228/19831229/19831230/19831231
+
+mars - INFO   - 20151022.035826 - Server task is 340 [marser]
+mars - INFO   - 20151022.035826 - Requesting any number of fields (request describes 248)
+mars - INFO   - 20151022.035826 - Request cost: 248 fields, 42.169 Mbytes online, nodes: mvr02 [marser]
+mars - INFO   - 20151022.035826 - Calling mars on 'marser', callback on 54482
+mars - INFO   - 20151022.035826 - Transfering 44217408 bytes
+mars - INFO   - 20151022.035932 - 248 fields retrieved from 'marser'
+mars - INFO   - 20151022.035932 - Request time:  wall: 1 min 6 sec  cpu: 57 sec
+mars - INFO   - 20151022.035932 - 248 fields have been interpolated
+mars - INFO   - 20151022.035932 -   Post-processing: wall: 57 sec cpu: 57 sec
+mars - INFO   - 20151022.035932 -   Writing to target file: 491.14 Mbyte(s) in < 1 sec [784.82 Mbyte/sec]
+mars - INFO   - 20151022.035932 -   Visiting marser: wall: 1 min 6 sec cpu: 58 sec
+mars - INFO   - 20151022.035932 -   Read from network: 42.17 Mbyte(s) in 8 sec  [5.12 Mbyte/sec]
+mars - INFO   - 20151022.035932 - No errors reported
+Calling nice grib_to_netcdf /data/data04/scratch/mars-atls09-a562cefde8a29a7288fa0b8b7f9413f7-E5anKV.target -o /data/data04/scratch/mars-atls09-a562cefde8a29a7288fa0b8b7f9413f7-YWzaEN.nc -utime
+grib_to_netcdf: Version 1.13.1
+grib_to_netcdf: Processing input file '/data/data04/scratch/mars-atls09-a562cefde8a29a7288fa0b8b7f9413f7-E5anKV.target'.
+grib_to_netcdf: Found 2928 GRIB fields in 1 file.
+grib_to_netcdf: Ignoring key(s): method, type, stream, refdate, hdate
+grib_to_netcdf: Creating netcdf file '/data/data04/scratch/mars-atls09-a562cefde8a29a7288fa0b8b7f9413f7-YWzaEN.nc'
+grib_to_netcdf: NetCDF library version: 4.3.0 of Apr 24 2015 11:10:46 $
+grib_to_netcdf: Defining variable 'uvb'.
+grib_to_netcdf: Done.
+End of nice mars /tmp/tmp-marsV8isev.req
+End of nice grib_to_netcdf /data/data04/scratch/mars-atls09-a562cefde8a29a7288fa0b8b7f9413f7-E5anKV.target -o /data/data04/scratch/mars-atls09-a562cefde8a29a7288fa0b8b7f9413f7-YWzaEN.nc -utime
+2015-10-21 21:02:38 Request is complete
+2015-10-21 21:02:38 Transfering 5.6624 Gbytes into /home/tkulczycki/norgay/data/sources/ERAI/3HOURLY/uvb/ERAI_uvb_1982-12-31to1983-12-31.nc
+2015-10-21 21:02:38 From http://stream.ecmwf.int/data/atls09/data/data04/scratch/mars-atls09-a562cefde8a29a7288fa0b8b7f9413f7-YWzaEN.nc
+Unexpected error: <type 'exceptions.AssertionError'>
+Traceback (most recent call last):
+  File "/home/tkulczycki/ERA_Interim/ERAI_batch_download_scripts/ecmwfapi/api.py", line 76, in wrapped
+    return func(*args,**kwargs)
+  File "/home/tkulczycki/ERA_Interim/ERAI_batch_download_scripts/ecmwfapi/api.py", line 340, in _transfer
+    assert total == size
+AssertionError
+
+Traceback (most recent call last):
+  File "getExtrasForSol.py", line 7, in <module>
+    getParameterYear.get(p, y)
+  File "/home/tkulczycki/ERA_Interim/ERAI_batch_download_scripts/getParameterYear.py", line 59, in get
+    'target'    : outputDir+targetFile
+  File "/home/tkulczycki/ERA_Interim/ERAI_batch_download_scripts/ecmwfapi/api.py", line 414, in retrieve
+    c.execute(req, target)
+  File "/home/tkulczycki/ERA_Interim/ERAI_batch_download_scripts/ecmwfapi/api.py", line 377, in execute
+    size = self._transfer(result["href"], target, result["size"])
+  File "/home/tkulczycki/ERA_Interim/ERAI_batch_download_scripts/ecmwfapi/api.py", line 76, in wrapped
+    return func(*args,**kwargs)
+  File "/home/tkulczycki/ERA_Interim/ERAI_batch_download_scripts/ecmwfapi/api.py", line 340, in _transfer
+    assert total == size
+AssertionError

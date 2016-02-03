@@ -12,6 +12,7 @@ for lon = 0:45:315
     baseOffset = 33; % not sure why this is, but ERA dates are slightly off
     lonOffset = 3*lon/45; % add 3 hour offset to start of day for each 45 deg
     totOffset = baseOffset + lonOffset;
+    gridDelta = 1.0;
 
     mDates = x2mdate((times+totOffset)/24);
     %     dates = cellstr(datestr(mDates));
@@ -26,16 +27,20 @@ for lon = 0:45:315
 
 
     % ixlat = round((90-lat)/0.25 + 1);
-    ixlon = round(lon/0.25+1);
+    ixlon = round(lon/gridDelta+1);
 
-    nlat = 721; % get all lat for a particular lon range
-    nlon = 45/0.25; % # of horizontal grid points in 45 deg arc
+    nlat = 180/gridDelta+1; % get all lat for a particular lon range
+    nlon = 45/gridDelta; % # of horizontal grid points in 45 deg arc
 
     % var = {'mx2t', 'mn2t', 'tp'}
 
     mxData = ncread(f, 'mx2t', [ixlon 1 1], [nlon nlat Inf]);
     mnData = ncread(f, 'mn2t', [ixlon 1 1], [nlon nlat Inf]);
-    tpData = ncread(f, 'tp', [ixlon 1 1], [nlon nlat Inf])*1000;
+    tpData = ncread(f, 'tp', [ixlon 1 1], [nlon nlat Inf]);
+
+    mxData(mxData<0) = nan;
+    mnData(mnData<0) = nan;
+    tpData(tpData<0) = nan;
 
     % Calculate incremental precip, instead of accumulated
     % ix = find(hours==3 | hours==15);
@@ -64,7 +69,7 @@ for lon = 0:45:315
 
         dayMax = max(mxData(:,:,ix),[],3);
         dayMin = min(mnData(:,:,ix),[],3);
-        dayTP = sum(tpData(:,:,ix),3);
+        dayTP = sum(tpData(:,:,ix),3)*1000;
 
         if dd==1
             yearMax = dayMax;
@@ -97,15 +102,16 @@ end
 
 allAvg = (allMax + allMin)/2;
 
-tmax = struct('tmax',allMax,'T',T,'Y',Y,'X',X);
-tmin = struct('tmin',allMin,'T',T,'Y',Y,'X',X);
-tavg = struct('tavg',allAvg,'T',T,'Y',Y,'X',X);
-precip = struct('precip',allTP,'T',T,'Y',Y,'X',X);
+tmax = struct('tmax',allMax,'T',T,'lat',Y,'lon',X);
+tmin = struct('tmin',allMin,'T',T,'lat',Y,'lon',X);
+tavg = struct('tavg',allAvg,'T',T,'lat',Y,'lon',X);
+precip = struct('precip',allTP,'T',T,'lat',Y,'lon',X);
 
-save(strcat('/home/tkulczycki/norgay/data/sources/ERAI/DAILY/TMAX/ERAI_DAILY_TMAX_',num2str(y),'.mat'),'tmax','-v7.3');
-save(strcat('/home/tkulczycki/norgay/data/sources/ERAI/DAILY/TMIN/ERAI_DAILY_TMIN_',num2str(y),'.mat'),'tmin','-v7.3');
-save(strcat('/home/tkulczycki/norgay/data/sources/ERAI/DAILY/TAVG/ERAI_DAILY_TAVG_',num2str(y),'.mat'),'tavg','-v7.3');
-save(strcat('/home/tkulczycki/norgay/data/sources/ERAI/DAILY/PRECIP/ERAI_DAILY_PRECIP_',num2str(y),'.mat'),'precip','-v7.3');
+baseDir = '/mnt/norgay/Datasets/Climate/ERA-Interim/Matlab_1deg_x_1deg/';
+save(strcat(baseDir,'/TMAX/ERAI_DAILY_TMAX_',num2str(y),'.mat'),'tmax','-v7.3');
+save(strcat(baseDir,'/TMIN/ERAI_DAILY_TMIN_',num2str(y),'.mat'),'tmin','-v7.3');
+save(strcat(baseDir,'/TAVG/ERAI_DAILY_TAVG_',num2str(y),'.mat'),'tavg','-v7.3');
+save(strcat(baseDir,'/PRECIP/ERAI_DAILY_PRECIP_',num2str(y),'.mat'),'precip','-v7.3');
 
 clear;
 end
