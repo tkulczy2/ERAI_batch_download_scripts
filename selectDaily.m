@@ -124,11 +124,12 @@ tmin = struct('tmin',allMin,'T',T,'lat',Y,'lon',X);
 tavg = struct('tavg',allAvg,'T',T,'lat',Y,'lon',X);
 precip = struct('precip',allTP,'T',T,'lat',Y,'lon',X);
 
-baseDir = '/mnt/norgay/Datasets/Climate/ERA-Interim/Matlab_1deg_x_1deg/';
-save(strcat(baseDir,'/TMAX/ERAI_DAILY_TMAX_',num2str(y),'.mat'),'tmax','-v7.3');
-save(strcat(baseDir,'/TMIN/ERAI_DAILY_TMIN_',num2str(y),'.mat'),'tmin','-v7.3');
-save(strcat(baseDir,'/TAVG/ERAI_DAILY_TAVG_',num2str(y),'.mat'),'tavg','-v7.3');
-save(strcat(baseDir,'/PRECIP/ERAI_DAILY_PRECIP_',num2str(y),'.mat'),'precip','-v7.3');
+outputDir = '/mnt/norgay/Datasets/Climate/ERA-Interim/Matlab_1deg_x_1deg/';
+
+save(strcat(outputDir,'/TMAX/ERAI_DAILY_TMAX_',num2str(y),'.mat'),'tmax','-v7.3');
+save(strcat(outputDir,'/TMIN/ERAI_DAILY_TMIN_',num2str(y),'.mat'),'tmin','-v7.3');
+save(strcat(outputDir,'/TAVG/ERAI_DAILY_TAVG_',num2str(y),'.mat'),'tavg','-v7.3');
+save(strcat(outputDir,'/PRECIP/ERAI_DAILY_PRECIP_',num2str(y),'.mat'),'precip','-v7.3');
 
 clear;
 end
