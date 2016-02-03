@@ -61,6 +61,7 @@ for lon = 0:45:315
     % Calculate incremental precip, instead of accumulated
     % ix = find(hours==3 | hours==15);
     nix = find(hours~=3 & hours~=15);
+    nix = nix(nix~=1);
     pinc = diff(tpData,[],3);
     tpData(:,:,nix) = pinc(:,:,nix-1);
     clear pinc nix;
