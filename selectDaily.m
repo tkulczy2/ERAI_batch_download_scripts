@@ -4,8 +4,7 @@ function selectDaily(f, y)
 % y = str2num(fileread('currentYear.txt'));
 fNext = strrep(strrep(f,num2str(y), num2str(y+1)), num2str(y-1), num2str(y));
 if y == 1979
-    fNext = 'mx2t_mn2t_tp_3hour_1979-12-31to1980-12-31.nc'
-    %fNext = strrep(fNext, '01-01', '12-31');
+    fNext = 'mx2t_mn2t_tp_3hour_1979-12-31to1980-12-31.nc';
 end
 for lon = 0:45:315
 
@@ -107,7 +106,7 @@ for lon = 0:45:315
 
         Y = ncread(f, 'latitude');
         X = ncread(f, 'longitude');
-        T = unique(mDates);
+        T = unique(floor(mDates-0.01));
     else
         allMax = cat(1,allMax,yearMax);
         allMin = cat(1,allMin,yearMin);
