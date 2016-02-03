@@ -34,6 +34,7 @@ for lon = 0:45:315
         lonOffset = 3*lon/45; % add 3 hour offset to start of day for each 45 deg east of 
     else
         lonOffset = -3*(360-lon)/45; % subtract 3 hour offset to start of day for each 45 deg
+    end
     offset = baseOffset + lonOffset;
     
 
