@@ -1,0 +1,64 @@
+Unrecognized MATLAB option "b".
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2014 The MathWorks, Inc.
+                   R2014b (8.4.0.150421) 64-bit (glnxa64)
+                             September 15, 2014
+
+[Warning: Function psi has the same name as a MATLAB builtin. We suggest you
+rename the function to avoid a potential name conflict.] 
+[Warning: Function psi has the same name as a MATLAB builtin. We suggest you
+rename the function to avoid a potential name conflict.] 
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+    ----------------------------------------------------
+	Your MATLAB license will expire in 04 days.
+	Please contact your system administrator or
+	MathWorks to renew this license.
+    ----------------------------------------------------
+>> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> 
+newpath =
+
+/mnt/norgay/Computation/sol_matlab_toolbox
+
+
+sample =
+
+ESP
+
+
+s = 
+
+18x1 struct array with fields:
+
+    Geometry
+    BoundingBox
+    Lon
+    Lat
+
+
+a = 
+
+18x1 struct array with fields:
+
+    ID_0
+    ISO
+    NAME_0
+    ID_1
+    NAME_1
+    VARNAME_1
+    NL_NAME_1
+    HASC_1
+    CC_1
+    TYPE_1
+    ENGTYPE_1
+    VALIDFR_1
+    VALIDTO_1
+    REMARKS_1
+    Shape_Leng
+    Shape_Area
+
+[Warning: Directory already exists.] 
+[> In ESP_projection_2000_poly at 33] 

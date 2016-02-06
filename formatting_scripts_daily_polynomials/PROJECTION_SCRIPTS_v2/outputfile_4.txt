@@ -1,0 +1,465 @@
+Unrecognized MATLAB option "b".
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2014 The MathWorks, Inc.
+                   R2014b (8.4.0.150421) 64-bit (glnxa64)
+                             September 15, 2014
+
+[Warning: Function psi has the same name as a MATLAB builtin. We suggest you
+rename the function to avoid a potential name conflict.] 
+[Warning: Function psi has the same name as a MATLAB builtin. We suggest you
+rename the function to avoid a potential name conflict.] 
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+    ----------------------------------------------------
+	Your MATLAB license will expire in 03 days.
+	Please contact your system administrator or
+	MathWorks to renew this license.
+    ----------------------------------------------------
+>> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> 
+newpath =
+
+/mnt/norgay/Computation/sol_matlab_toolbox
+
+
+sample =
+
+IND
+
+
+s = 
+
+468x1 struct array with fields:
+
+    Geometry
+    BoundingBox
+    Lon
+    Lat
+
+
+a = 
+
+468x1 struct array with fields:
+
+    DIST91_ID
+    AREA
+    PERIMETER
+    DIST91_
+    DIST_CODE
+    FLAG
+    NAME
+    STATE_UT
+    TOT_AREA
+    R_AREA
+    U_AREA
+    P_R_AREA
+    P_U_AREA
+    TOT_HOUSE
+    R_NM_HOUSE
+    U_NM_HOUSE
+    P_R_HOUSE
+    P_U_HOUSE
+    T_NM_HH
+    R_NM_HH
+    U_NM_HH
+    P_R_NM_HH
+    P_U_NM_HH
+    TOT_POP
+    R_POP
+    R_M_POP
+    R_F_POP
+    U_POP
+    U_M_POP
+    U_F_POP
+    P_R_POP
+    P_R_M_POP
+    P_R_F_POP
+    P_U_POP
+    P_U_M_POP
+    P_U_F_POP
+    TOT_POP_L6
+    R_POP_L6
+    R_M_L6
+    R_F_L6
+    U_POP_L6
+    U_M_L6
+    U_F_L6
+    P_TOT_L6
+    P_R_L6
+    P_R_M_L6
+    P_R_F_L6
+    P_U_L6
+    P_U_M_L6
+    P_U_F_L6
+    TOT_SC
+    R_SC
+    R_M_SC
+    R_F_SC
+    U_SC
+    U_M_SC
+    U_F_SC
+    P_TOT_SC
+    P_R_SC
+    P_R_M_SC
+    P_R_F_SC
+    P_U_SC
+    P_U_M_SC
+    P_U_F_SC
+    TOT_ST
+    R_ST
+    R_M_ST
+    R_F_ST
+    U_ST
+    U_M_ST
+    U_F_ST
+    P_TOT_ST
+    P_R_ST
+    P_R_M_ST
+    P_R_F_ST
+    P_U_ST
+    P_U_M_ST
+    P_U_F_ST
+    TOT_LIT
+    R_LIT
+    R_M_LIT
+    R_F_LIT
+    U_LIT
+    U_M_LIT
+    U_F_LIT
+    P_TOT_LIT
+    P_R_LIT
+    P_R_M_LIT
+    P_R_F_LIT
+    P_U_LIT
+    P_U_M_LIT
+    P_U_F_LIT
+    TOT_W
+    R_W
+    R_M_W
+    R_F_W
+    U_W
+    U_M_W
+    U_F_W
+    P_TOT_W
+    P_R_W
+    P_R_M_W
+    P_R_F_W
+    P_U_W
+    P_U_M_W
+    P_U_F_W
+    TOT_MNW
+    R_MNW
+    R_M_MNW
+    R_F_MNW
+    U_MNW
+    U_M_MNW
+    U_F_MNW
+    P_TOT_MNW
+    P_R_MNW
+    P_R_M_MNW
+    P_R_F_MNW
+    P_U_MNW
+    P_U_M_MNW
+    P_U_F_MNW
+    TOT_MRW
+    R_MRW
+    R_M_MRW
+    R_F_MRW
+    U_MRW
+    U_M_MRW
+    U_F_MRW
+    P_TOT_MRW
+    P_R_MRW
+    P_R_M_MRW
+    P_R_F_MRW
+    P_U_MRW
+    P_U_M_MRW
+    P_U_F_MRW
+    TOT_NNW
+    R_NNW
+    R_M_NNW
+    R_F_NNW
+    U_NNW
+    U_M_NNW
+    U_F_NNW
+    P_TOT_NNW
+    P_R_NNW
+    P_R_M_NNW
+    P_R_F_NNW
+    P_U_NNW
+    P_U_M_NNW
+    P_U_F_NNW
+
+SOL: FOR GREATER SPEED, CONSIDER OPENING THE MATLAB WORKER POOL
+Starting parallel pool (parpool) using the 'local' profile ... connected to 12 workers.
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 1
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 1
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 1
+-----------------------------finished with polynomial power 1
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 2
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 2
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 2
+-----------------------------finished with polynomial power 2
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 2
+-----------------------------finis
+ans =
+
+     1
+
+------------
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 3
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 3
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 3
+-----------------------------finished with polynomial power 3
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 4
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 4
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 4
+-----------------------------finished with polynomial power 4
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 5
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 5
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 5
+-----------------------------finished with polynomial power 5
+----DONE----
+Elapsed time is 46223.875421 seconds.
+{Undefined function 'norate' for input arguments of type 'char'.
+} 
+>> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> 

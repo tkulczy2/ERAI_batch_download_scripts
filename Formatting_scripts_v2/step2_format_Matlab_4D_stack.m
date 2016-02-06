@@ -85,7 +85,7 @@ for base_year = 1979:1:2016
 end
 %}
 
-for base_year = 1979:1:2016
+for base_year = 1979:1:2015
     clear bin_* command
 
     disp(['----------- YEAR ' num2str(base_year) ' -----------'])
@@ -151,7 +151,7 @@ for base_year = 1979:1:2016
     
     clear tavg_* command* T bin_mask_daily ans i d S
     %save decdal files (roughly 80MB each)
-    command = ['save Matlab_4d_stack_by_decade/TAVG/tavg_' num2str(base_year) '_raw_bin_counts'];
+    command = ['save Matlab_4d_stack_by_decade/PRECIP/precip_' num2str(base_year) '_raw_bin_counts'];
     eval(command)
     
     

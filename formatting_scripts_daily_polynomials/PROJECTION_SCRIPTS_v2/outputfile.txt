@@ -1,0 +1,4209 @@
+Unrecognized MATLAB option "b".
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2014 The MathWorks, Inc.
+                   R2014b (8.4.0.150421) 64-bit (glnxa64)
+                             September 15, 2014
+
+[Warning: Function psi has the same name as a MATLAB builtin. We suggest you
+rename the function to avoid a potential name conflict.] 
+[Warning: Function psi has the same name as a MATLAB builtin. We suggest you
+rename the function to avoid a potential name conflict.] 
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+    ----------------------------------------------------
+	Your MATLAB license will expire in 04 days.
+	Please contact your system administrator or
+	MathWorks to renew this license.
+    ----------------------------------------------------
+>> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> 
+newpath =
+
+/mnt/norgay/Computation/sol_matlab_toolbox
+
+
+sample =
+
+NLD
+
+
+s = 
+
+14x1 struct array with fields:
+
+    Geometry
+    BoundingBox
+    Lon
+    Lat
+
+
+a = 
+
+14x1 struct array with fields:
+
+    ID_0
+    ISO
+    NAME_0
+    ID_1
+    NAME_1
+    NL_NAME_1
+    VARNAME_1
+    TYPE_1
+    ENGTYPE_1
+
+[Warning: Directory already exists.] 
+[> In NLD_projection_2000_poly at 33] 
+SOL: FOR GREATER SPEED, CONSIDER OPENING THE MATLAB WORKER POOL
+Starting parallel pool (parpool) using the 'local' profile ... connected to 12 workers.
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 1
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 1
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 1
+-----------------------------finished with polynomial power 1
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 2
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 2
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 2
+-----------------------------finished with polynomial power 2
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 3
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 3
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 3
+-----------------------------finished with polynomial power 3
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 4
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 4
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 4
+-----------------------------finished with polynomial power 4
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 5
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 5
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 5
+-----------------------------finished with polynomial power 5
+----DONE----
+Elapsed time is 683.689832 seconds.
+>> >> 
+newpath =
+
+/mnt/norgay/Computation/sol_matlab_toolbox
+
+
+sample =
+
+NIC
+
+
+s = 
+
+139x1 struct array with fields:
+
+    Geometry
+    BoundingBox
+    Lon
+    Lat
+
+
+a = 
+
+139x1 struct array with fields:
+
+    ID_0
+    ISO
+    NAME_0
+    ID_1
+    NAME_1
+    ID_2
+    NAME_2
+    NL_NAME_2
+    VARNAME_2
+    TYPE_2
+    ENGTYPE_2
+
+[Warning: Directory already exists.] 
+[> In NIC_projection_1990_poly at 35] 
+SOL: MATLAB POOL HAS 12 WORKERS ACTIVE
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 1
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 1
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 1
+-----------------------------finished with polynomial power 1
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 2
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 2
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 2
+-----------------------------finished with polynomial power 2
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 3
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 3
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 3
+-----------------------------finished with polynomial power 3
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 4
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 4
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 4
+-----------------------------finished with polynomial power 4
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 5
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 5
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 5
+-----------------------------finished with polynomial power 5
+----DONE----
+Elapsed time is 3152.188837 seconds.
+IdleTimeout has been reached.
+Parallel pool using the 'local' profile is shutting down.
+>> >> 
+newpath =
+
+/mnt/norgay/Computation/sol_matlab_toolbox
+
+
+sample =
+
+ESP
+
+{Error using cd
+Cannot CD to /mnt/norgay/Datasets/SHAPEFILES/ESP_adm (Name is nonexistent or
+not a directory).
+
+Error in ESP_projection_2000_poly (line 28)
+cd '/mnt/norgay/Datasets/SHAPEFILES/ESP_adm'
+} 
+>> >> >> 
+newpath =
+
+/mnt/norgay/Computation/sol_matlab_toolbox
+
+
+sample =
+
+ZAF
+
+
+s = 
+
+10x1 struct array with fields:
+
+    Geometry
+    BoundingBox
+    Lon
+    Lat
+
+
+a = 
+
+10x1 struct array with fields:
+
+    ID_0
+    ISO
+    NAME_0
+    ID_1
+    NAME_1
+    VARNAME_1
+    NL_NAME_1
+    HASC_1
+    CC_1
+    TYPE_1
+    ENGTYPE_1
+    VALIDFR_1
+    VALIDTO_1
+    REMARKS_1
+    Shape_Leng
+    Shape_Area
+
+[Warning: Directory already exists.] 
+[> In ZAF_projection_2000_poly at 33] 
+SOL: FOR GREATER SPEED, CONSIDER OPENING THE MATLAB WORKER POOL
+Starting parallel pool (parpool) using the 'local' profile ... connected to 12 workers.
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 1
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 1
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 1
+-----------------------------finished with polynomial power 1
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 2
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 2
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 2
+-----------------------------finished with polynomial power 2
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 3
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 3
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 3
+-----------------------------finished with polynomial power 3
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 4
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 4
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 4
+-----------------------------finished with polynomial power 4
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 5
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 5
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 5
+-----------------------------finished with polynomial power 5
+----DONE----
+Elapsed time is 802.795993 seconds.
+>> >> >> 
+newpath =
+
+/mnt/norgay/Computation/sol_matlab_toolbox
+
+
+sample =
+
+GBR
+
+
+s = 
+
+11x1 struct array with fields:
+
+    Geometry
+    BoundingBox
+    Lon
+    Lat
+
+
+a = 
+
+11x1 struct array with fields:
+
+    CNTRY_NAME
+    ADMIN_NAME
+    CNTRY_CODE
+    GEOLEVEL1
+    BPL_CODE
+
+[Warning: Directory already exists.] 
+[> In GBR_projection_1970_poly at 33] 
+SOL: MATLAB POOL HAS 12 WORKERS ACTIVE
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 1
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 1
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 1
+-----------------------------finished with polynomial power 1
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 2
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 2
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 2
+-----------------------------finished with polynomial power 2
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 3
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 3
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 3
+-----------------------------finished with polynomial power 3
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 4
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 4
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 4
+-----------------------------finished with polynomial power 4
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 5
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 5
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 5
+-----------------------------finished with polynomial power 5
+----DONE----
+Elapsed time is 449.969083 seconds.
+>> >> 
+newpath =
+
+/mnt/norgay/Computation/sol_matlab_toolbox
+
+
+sample =
+
+GBR
+
+
+s = 
+
+11x1 struct array with fields:
+
+    Geometry
+    BoundingBox
+    Lon
+    Lat
+
+
+a = 
+
+11x1 struct array with fields:
+
+    CNTRY_NAME
+    ADMIN_NAME
+    CNTRY_CODE
+    GEOLEVEL1
+    BPL_CODE
+
+[Warning: Directory already exists.] 
+[> In GBR_projection_1980_poly at 33] 
+SOL: MATLAB POOL HAS 12 WORKERS ACTIVE
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 1
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 1
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 1
+-----------------------------finished with polynomial power 1
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 2
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 2
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 2
+-----------------------------finished with polynomial power 2
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 3
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 3
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 3
+-----------------------------finished with polynomial power 3
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 4
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 4
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 4
+-----------------------------finished with polynomial power 4
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 5
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 5
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 5
+-----------------------------finished with polynomial power 5
+----DONE----
+Elapsed time is 800.985829 seconds.
+>> >> >> 
+newpath =
+
+/mnt/norgay/Computation/sol_matlab_toolbox
+
+
+sample =
+
+GBR
+
+
+s = 
+
+11x1 struct array with fields:
+
+    Geometry
+    BoundingBox
+    Lon
+    Lat
+
+
+a = 
+
+11x1 struct array with fields:
+
+    CNTRY_NAME
+    ADMIN_NAME
+    CNTRY_CODE
+    GEOLEVEL1
+    BPL_CODE
+
+[Warning: Directory already exists.] 
+[> In GBR_projection_1990_poly at 33] 
+SOL: MATLAB POOL HAS 12 WORKERS ACTIVE
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 1
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 1
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 1
+-----------------------------finished with polynomial power 1
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 2
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 2
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 2
+-----------------------------finished with polynomial power 2
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 3
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 3
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 3
+-----------------------------finished with polynomial power 3
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 4
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 4
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 4
+-----------------------------finished with polynomial power 4
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 5
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 5
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 5
+-----------------------------finished with polynomial power 5
+----DONE----
+Elapsed time is 2339.025747 seconds.
+IdleTimeout has been reached.
+Parallel pool using the 'local' profile is shutting down.
+>> >> 
+newpath =
+
+/mnt/norgay/Computation/sol_matlab_toolbox
+
+
+sample =
+
+GBR
+
+
+s = 
+
+11x1 struct array with fields:
+
+    Geometry
+    BoundingBox
+    Lon
+    Lat
+
+
+a = 
+
+11x1 struct array with fields:
+
+    CNTRY_NAME
+    ADMIN_NAME
+    CNTRY_CODE
+    GEOLEVEL1
+    BPL_CODE
+
+[Warning: Directory already exists.] 
+[> In GBR_projection_2000_poly at 33] 
+SOL: FOR GREATER SPEED, CONSIDER OPENING THE MATLAB WORKER POOL
+Starting parallel pool (parpool) using the 'local' profile ... connected to 12 workers.
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 1
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 1
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 1
+-----------------------------finished with polynomial power 1
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 2
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 2
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 2
+-----------------------------finished with polynomial power 2
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 3
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 3
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 3
+-----------------------------finished with polynomial power 3
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 4
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 4
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 4
+-----------------------------finished with polynomial power 4
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 5
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 5
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 5
+-----------------------------finished with polynomial power 5
+----DONE----
+Elapsed time is 242.337490 seconds.
+>> >> 
+newpath =
+
+/mnt/norgay/Computation/sol_matlab_toolbox
+
+
+sample =
+
+PSE
+
+
+s = 
+
+16x1 struct array with fields:
+
+    Geometry
+    BoundingBox
+    Lon
+    Lat
+
+
+a = 
+
+16x1 struct array with fields:
+
+    ID_0
+    ISO
+    NAME_0
+    ID_1
+    NAME_1
+    ID_2
+    NAME_2
+    VARNAME_2
+    NL_NAME_2
+    HASC_2
+    CC_2
+    TYPE_2
+    ENGTYPE_2
+    VALIDFR_2
+    VALIDTO_2
+    REMARKS_2
+    Shape_Leng
+    Shape_Area
+
+[Warning: Directory already exists.] 
+[> In PSE_projection_1990_poly at 35] 
+SOL: MATLAB POOL HAS 12 WORKERS ACTIVE
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 1
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 1
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 1
+-----------------------------finished with polynomial power 1
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 2
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 2
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 2
+-----------------------------finished with polynomial power 2
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 3
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 3
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 3
+-----------------------------finished with polynomial power 3
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 4
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 4
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 4
+-----------------------------finished with polynomial power 4
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 5
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 5
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 5
+-----------------------------finished with polynomial power 5
+----DONE----
+Elapsed time is 330.103581 seconds.
+>> >> 
+newpath =
+
+/mnt/norgay/Computation/sol_matlab_toolbox
+
+
+sample =
+
+PSE
+
+
+s = 
+
+16x1 struct array with fields:
+
+    Geometry
+    BoundingBox
+    Lon
+    Lat
+
+
+a = 
+
+16x1 struct array with fields:
+
+    ID_0
+    ISO
+    NAME_0
+    ID_1
+    NAME_1
+    ID_2
+    NAME_2
+    VARNAME_2
+    NL_NAME_2
+    HASC_2
+    CC_2
+    TYPE_2
+    ENGTYPE_2
+    VALIDFR_2
+    VALIDTO_2
+    REMARKS_2
+    Shape_Leng
+    Shape_Area
+
+[Warning: Directory already exists.] 
+[> In PSE_projection_2000_poly at 35] 
+SOL: MATLAB POOL HAS 12 WORKERS ACTIVE
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 1
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 1
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 1
+-----------------------------finished with polynomial power 1
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 2
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 2
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 2
+-----------------------------finished with polynomial power 2
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 3
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 3
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 3
+-----------------------------finished with polynomial power 3
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 4
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 4
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 4
+-----------------------------finished with polynomial power 4
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 5
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 5
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 5
+-----------------------------finished with polynomial power 5
+----DONE----
+Elapsed time is 319.788164 seconds.
+>> >> 
+newpath =
+
+/mnt/norgay/Computation/sol_matlab_toolbox
+
+
+sample =
+
+MEX
+
+
+s = 
+
+2456x1 struct array with fields:
+
+    Geometry
+    BoundingBox
+    Lon
+    Lat
+
+
+a = 
+
+2456x1 struct array with fields:
+
+    CVEGEO
+    NOM_ENT
+    NOM_MUN
+    POB1
+    POB2
+    POB2_R
+    POB3
+    POB3_R
+    POB4
+    POB4_R
+    POB5
+    POB5_R
+    POB6
+    POB6_R
+    POB7
+    POB7_R
+    POB8
+    POB8_R
+    POB9
+    POB9_R
+    POB10
+    POB10_R
+    POB11
+    POB11_R
+    POB12
+    POB12_R
+    POB13
+    POB13_R
+    POB14
+    POB14_R
+    POB15
+    POB15_R
+    POB16
+    POB16_R
+    POB17
+    POB17_R
+    POB18
+    POB18_R
+    POB19
+    POB19_R
+    POB20
+    POB20_R
+    POB21
+    POB21_R
+    POB22
+    POB22_R
+    POB23
+    POB23_R
+    POB24
+    POB24_R
+    POB25
+    POB25_R
+    POB26_R
+    POB27_R
+    POB28_R
+    POB29_R
+    POB30_R
+    POB31
+    POB31_R
+    POB32
+    POB32_R
+    POB33
+    POB33_R
+    POB34
+    POB34_R
+    POB35
+    POB35_R
+    POB36
+    POB36_R
+    POB37
+    POB37_R
+    POB38
+    POB38_R
+    POB39
+    POB39_R
+    POB40
+    POB40_R
+    POB41
+    POB41_R
+    POB42
+    POB42_R
+    POB43
+    POB43_R
+    POB44
+    POB44_R
+    POB45
+    POB45_R
+    POB46
+    POB46_R
+    POB47
+    POB47_R
+    POB48
+    POB48_R
+    POB49
+    POB49_R
+    POB50
+    POB50_R
+    POB51
+    POB51_R
+    POB52
+    POB52_R
+    POB53
+    POB53_R
+    POB54
+    POB54_R
+    POB55
+    POB55_R
+    POB56
+    POB56_R
+    POB57
+    POB57_R
+    POB58
+    POB58_R
+    POB59
+    POB59_R
+    POB60
+    POB60_R
+    POB61
+    POB61_R
+    POB62
+    POB62_R
+    POB63
+    POB63_R
+    POB64
+    POB64_R
+    POB65
+    POB65_R
+    POB66
+    POB66_R
+    POB67
+    POB67_R
+    POB68
+    POB68_R
+    POB69
+    POB69_R
+    POB70
+    POB70_R
+    POB71
+    POB71_R
+    POB72
+    POB72_R
+    POB73
+    POB73_R
+    POB74
+    POB74_R
+    POB75
+    POB75_R
+    POB76
+    POB76_R
+    POB77
+    POB77_R
+    POB78
+    POB78_R
+    POB79
+    POB79_R
+    POB80
+    POB80_R
+    POB81
+    POB81_R
+    OID
+
+[Warning: Directory already exists.] 
+[> In MEX_projection_1980_poly at 36] 
+SOL: MATLAB POOL HAS 12 WORKERS ACTIVE
+{Error using cell2table (line 69)
+'Coahuila_de_Zaragoza_Francisco_I._Madero' is not a valid variable name.
+
+Error in cell2table2csv (line 46)
+T = cell2table(CELL_DATA(2:end,:),'VariableNames', CELL_DATA(1,:));
+
+Error in MEX_projection_1980_poly (line 179)
+    cell2table2csv(output_area, [sample '_' num2str(sample_first_year)
+    '_daily_' var '_area_weights_poly_' num2str(power)])
+} 
+>> >> 
+newpath =
+
+/mnt/norgay/Computation/sol_matlab_toolbox
+
+
+sample =
+
+MEX
+
+
+s = 
+
+2456x1 struct array with fields:
+
+    Geometry
+    BoundingBox
+    Lon
+    Lat
+
+
+a = 
+
+2456x1 struct array with fields:
+
+    CVEGEO
+    NOM_ENT
+    NOM_MUN
+    POB1
+    POB2
+    POB2_R
+    POB3
+    POB3_R
+    POB4
+    POB4_R
+    POB5
+    POB5_R
+    POB6
+    POB6_R
+    POB7
+    POB7_R
+    POB8
+    POB8_R
+    POB9
+    POB9_R
+    POB10
+    POB10_R
+    POB11
+    POB11_R
+    POB12
+    POB12_R
+    POB13
+    POB13_R
+    POB14
+    POB14_R
+    POB15
+    POB15_R
+    POB16
+    POB16_R
+    POB17
+    POB17_R
+    POB18
+    POB18_R
+    POB19
+    POB19_R
+    POB20
+    POB20_R
+    POB21
+    POB21_R
+    POB22
+    POB22_R
+    POB23
+    POB23_R
+    POB24
+    POB24_R
+    POB25
+    POB25_R
+    POB26_R
+    POB27_R
+    POB28_R
+    POB29_R
+    POB30_R
+    POB31
+    POB31_R
+    POB32
+    POB32_R
+    POB33
+    POB33_R
+    POB34
+    POB34_R
+    POB35
+    POB35_R
+    POB36
+    POB36_R
+    POB37
+    POB37_R
+    POB38
+    POB38_R
+    POB39
+    POB39_R
+    POB40
+    POB40_R
+    POB41
+    POB41_R
+    POB42
+    POB42_R
+    POB43
+    POB43_R
+    POB44
+    POB44_R
+    POB45
+    POB45_R
+    POB46
+    POB46_R
+    POB47
+    POB47_R
+    POB48
+    POB48_R
+    POB49
+    POB49_R
+    POB50
+    POB50_R
+    POB51
+    POB51_R
+    POB52
+    POB52_R
+    POB53
+    POB53_R
+    POB54
+    POB54_R
+    POB55
+    POB55_R
+    POB56
+    POB56_R
+    POB57
+    POB57_R
+    POB58
+    POB58_R
+    POB59
+    POB59_R
+    POB60
+    POB60_R
+    POB61
+    POB61_R
+    POB62
+    POB62_R
+    POB63
+    POB63_R
+    POB64
+    POB64_R
+    POB65
+    POB65_R
+    POB66
+    POB66_R
+    POB67
+    POB67_R
+    POB68
+    POB68_R
+    POB69
+    POB69_R
+    POB70
+    POB70_R
+    POB71
+    POB71_R
+    POB72
+    POB72_R
+    POB73
+    POB73_R
+    POB74
+    POB74_R
+    POB75
+    POB75_R
+    POB76
+    POB76_R
+    POB77
+    POB77_R
+    POB78
+    POB78_R
+    POB79
+    POB79_R
+    POB80
+    POB80_R
+    POB81
+    POB81_R
+    OID
+
+[Warning: Directory already exists.] 
+[> In MEX_projection_1990_poly at 35] 
+SOL: MATLAB POOL HAS 12 WORKERS ACTIVE
+{Error using cell2table (line 69)
+'Coahuila_de_Zaragoza_Francisco_I._Madero' is not a valid variable name.
+
+Error in cell2table2csv (line 46)
+T = cell2table(CELL_DATA(2:end,:),'VariableNames', CELL_DATA(1,:));
+
+Error in MEX_projection_1990_poly (line 178)
+    cell2table2csv(output_area, [sample '_' num2str(sample_first_year)
+    '_daily_' var '_area_weights_poly_' num2str(power)])
+} 
+>> >> >> 
+newpath =
+
+/mnt/norgay/Computation/sol_matlab_toolbox
+
+
+sample =
+
+MEX
+
+
+s = 
+
+2456x1 struct array with fields:
+
+    Geometry
+    BoundingBox
+    Lon
+    Lat
+
+
+a = 
+
+2456x1 struct array with fields:
+
+    CVEGEO
+    NOM_ENT
+    NOM_MUN
+    POB1
+    POB2
+    POB2_R
+    POB3
+    POB3_R
+    POB4
+    POB4_R
+    POB5
+    POB5_R
+    POB6
+    POB6_R
+    POB7
+    POB7_R
+    POB8
+    POB8_R
+    POB9
+    POB9_R
+    POB10
+    POB10_R
+    POB11
+    POB11_R
+    POB12
+    POB12_R
+    POB13
+    POB13_R
+    POB14
+    POB14_R
+    POB15
+    POB15_R
+    POB16
+    POB16_R
+    POB17
+    POB17_R
+    POB18
+    POB18_R
+    POB19
+    POB19_R
+    POB20
+    POB20_R
+    POB21
+    POB21_R
+    POB22
+    POB22_R
+    POB23
+    POB23_R
+    POB24
+    POB24_R
+    POB25
+    POB25_R
+    POB26_R
+    POB27_R
+    POB28_R
+    POB29_R
+    POB30_R
+    POB31
+    POB31_R
+    POB32
+    POB32_R
+    POB33
+    POB33_R
+    POB34
+    POB34_R
+    POB35
+    POB35_R
+    POB36
+    POB36_R
+    POB37
+    POB37_R
+    POB38
+    POB38_R
+    POB39
+    POB39_R
+    POB40
+    POB40_R
+    POB41
+    POB41_R
+    POB42
+    POB42_R
+    POB43
+    POB43_R
+    POB44
+    POB44_R
+    POB45
+    POB45_R
+    POB46
+    POB46_R
+    POB47
+    POB47_R
+    POB48
+    POB48_R
+    POB49
+    POB49_R
+    POB50
+    POB50_R
+    POB51
+    POB51_R
+    POB52
+    POB52_R
+    POB53
+    POB53_R
+    POB54
+    POB54_R
+    POB55
+    POB55_R
+    POB56
+    POB56_R
+    POB57
+    POB57_R
+    POB58
+    POB58_R
+    POB59
+    POB59_R
+    POB60
+    POB60_R
+    POB61
+    POB61_R
+    POB62
+    POB62_R
+    POB63
+    POB63_R
+    POB64
+    POB64_R
+    POB65
+    POB65_R
+    POB66
+    POB66_R
+    POB67
+    POB67_R
+    POB68
+    POB68_R
+    POB69
+    POB69_R
+    POB70
+    POB70_R
+    POB71
+    POB71_R
+    POB72
+    POB72_R
+    POB73
+    POB73_R
+    POB74
+    POB74_R
+    POB75
+    POB75_R
+    POB76
+    POB76_R
+    POB77
+    POB77_R
+    POB78
+    POB78_R
+    POB79
+    POB79_R
+    POB80
+    POB80_R
+    POB81
+    POB81_R
+    OID
+
+[Warning: Directory already exists.] 
+[> In MEX_projection_2000_poly at 36] 
+SOL: MATLAB POOL HAS 12 WORKERS ACTIVE
+{Error using cell2table (line 69)
+'Coahuila_de_Zaragoza_Francisco_I._Madero' is not a valid variable name.
+
+Error in cell2table2csv (line 46)
+T = cell2table(CELL_DATA(2:end,:),'VariableNames', CELL_DATA(1,:));
+
+Error in MEX_projection_2000_poly (line 179)
+    cell2table2csv(output_area, [sample '_' num2str(sample_first_year)
+    '_daily_' var '_area_weights_poly_' num2str(power)])
+} 
+>> >> >> 
+newpath =
+
+/mnt/norgay/Computation/sol_matlab_toolbox
+
+
+sample =
+
+MEX
+
+
+s = 
+
+2456x1 struct array with fields:
+
+    Geometry
+    BoundingBox
+    Lon
+    Lat
+
+
+a = 
+
+2456x1 struct array with fields:
+
+    CVEGEO
+    NOM_ENT
+    NOM_MUN
+    POB1
+    POB2
+    POB2_R
+    POB3
+    POB3_R
+    POB4
+    POB4_R
+    POB5
+    POB5_R
+    POB6
+    POB6_R
+    POB7
+    POB7_R
+    POB8
+    POB8_R
+    POB9
+    POB9_R
+    POB10
+    POB10_R
+    POB11
+    POB11_R
+    POB12
+    POB12_R
+    POB13
+    POB13_R
+    POB14
+    POB14_R
+    POB15
+    POB15_R
+    POB16
+    POB16_R
+    POB17
+    POB17_R
+    POB18
+    POB18_R
+    POB19
+    POB19_R
+    POB20
+    POB20_R
+    POB21
+    POB21_R
+    POB22
+    POB22_R
+    POB23
+    POB23_R
+    POB24
+    POB24_R
+    POB25
+    POB25_R
+    POB26_R
+    POB27_R
+    POB28_R
+    POB29_R
+    POB30_R
+    POB31
+    POB31_R
+    POB32
+    POB32_R
+    POB33
+    POB33_R
+    POB34
+    POB34_R
+    POB35
+    POB35_R
+    POB36
+    POB36_R
+    POB37
+    POB37_R
+    POB38
+    POB38_R
+    POB39
+    POB39_R
+    POB40
+    POB40_R
+    POB41
+    POB41_R
+    POB42
+    POB42_R
+    POB43
+    POB43_R
+    POB44
+    POB44_R
+    POB45
+    POB45_R
+    POB46
+    POB46_R
+    POB47
+    POB47_R
+    POB48
+    POB48_R
+    POB49
+    POB49_R
+    POB50
+    POB50_R
+    POB51
+    POB51_R
+    POB52
+    POB52_R
+    POB53
+    POB53_R
+    POB54
+    POB54_R
+    POB55
+    POB55_R
+    POB56
+    POB56_R
+    POB57
+    POB57_R
+    POB58
+    POB58_R
+    POB59
+    POB59_R
+    POB60
+    POB60_R
+    POB61
+    POB61_R
+    POB62
+    POB62_R
+    POB63
+    POB63_R
+    POB64
+    POB64_R
+    POB65
+    POB65_R
+    POB66
+    POB66_R
+    POB67
+    POB67_R
+    POB68
+    POB68_R
+    POB69
+    POB69_R
+    POB70
+    POB70_R
+    POB71
+    POB71_R
+    POB72
+    POB72_R
+    POB73
+    POB73_R
+    POB74
+    POB74_R
+    POB75
+    POB75_R
+    POB76
+    POB76_R
+    POB77
+    POB77_R
+    POB78
+    POB78_R
+    POB79
+    POB79_R
+    POB80
+    POB80_R
+    POB81
+    POB81_R
+    OID
+
+[Warning: Directory already exists.] 
+[> In MEX_projection_2010_poly at 35] 
+SOL: MATLAB POOL HAS 12 WORKERS ACTIVE
+{Error using cell2table (line 69)
+'Coahuila_de_Zaragoza_Francisco_I._Madero' is not a valid variable name.
+
+Error in cell2table2csv (line 46)
+T = cell2table(CELL_DATA(2:end,:),'VariableNames', CELL_DATA(1,:));
+
+Error in MEX_projection_2010_poly (line 178)
+    cell2table2csv(output_area, [sample '_' num2str(sample_first_year)
+    '_daily_' var '_area_weights_poly_' num2str(power)])
+} 
+>> >> 
+newpath =
+
+/mnt/norgay/Computation/sol_matlab_toolbox
+
+
+sample =
+
+USA
+
+
+s = 
+
+3145x1 struct array with fields:
+
+    Geometry
+    BoundingBox
+    Lon
+    Lat
+
+
+a = 
+
+3145x1 struct array with fields:
+
+    ID_0
+    ISO
+    NAME_0
+    ID_1
+    NAME_1
+    ID_2
+    NAME_2
+    VARNAME_2
+    NL_NAME_2
+    HASC_2
+    CC_2
+    TYPE_2
+    ENGTYPE_2
+    VALIDFR_2
+    VALIDTO_2
+    REMARKS_2
+    Shape_Leng
+    Shape_Area
+
+[Warning: Directory already exists.] 
+[> In USA_projection_1990_poly at 35] 
+SOL: MATLAB POOL HAS 12 WORKERS ACTIVE
+{Error using cell2table (line 69)
+'Michigan_Lake_St._Clair' is not a valid variable name.
+
+Error in cell2table2csv (line 46)
+T = cell2table(CELL_DATA(2:end,:),'VariableNames', CELL_DATA(1,:));
+
+Error in USA_projection_1990_poly (line 177)
+    cell2table2csv(output_area, [sample '_' num2str(sample_first_year)
+    '_daily_' var '_area_weights_poly_' num2str(power)])
+} 
+>> >> >> 
+newpath =
+
+/mnt/norgay/Computation/sol_matlab_toolbox
+
+
+sample =
+
+USA
+
+
+s = 
+
+3145x1 struct array with fields:
+
+    Geometry
+    BoundingBox
+    Lon
+    Lat
+
+
+a = 
+
+3145x1 struct array with fields:
+
+    ID_0
+    ISO
+    NAME_0
+    ID_1
+    NAME_1
+    ID_2
+    NAME_2
+    VARNAME_2
+    NL_NAME_2
+    HASC_2
+    CC_2
+    TYPE_2
+    ENGTYPE_2
+    VALIDFR_2
+    VALIDTO_2
+    REMARKS_2
+    Shape_Leng
+    Shape_Area
+
+[Warning: Directory already exists.] 
+[> In USA_projection_2000_poly at 34] 
+SOL: MATLAB POOL HAS 12 WORKERS ACTIVE
+{Error using cell2table (line 69)
+'Michigan_Lake_St._Clair' is not a valid variable name.
+
+Error in cell2table2csv (line 46)
+T = cell2table(CELL_DATA(2:end,:),'VariableNames', CELL_DATA(1,:));
+
+Error in USA_projection_2000_poly (line 176)
+    cell2table2csv(output_area, [sample '_' num2str(sample_first_year)
+    '_daily_' var '_area_weights_poly_' num2str(power)])
+} 
+>> >> 
+newpath =
+
+/mnt/norgay/Computation/sol_matlab_toolbox
+
+
+sample =
+
+USA
+
+
+s = 
+
+3145x1 struct array with fields:
+
+    Geometry
+    BoundingBox
+    Lon
+    Lat
+
+
+a = 
+
+3145x1 struct array with fields:
+
+    ID_0
+    ISO
+    NAME_0
+    ID_1
+    NAME_1
+    ID_2
+    NAME_2
+    VARNAME_2
+    NL_NAME_2
+    HASC_2
+    CC_2
+    TYPE_2
+    ENGTYPE_2
+    VALIDFR_2
+    VALIDTO_2
+    REMARKS_2
+    Shape_Leng
+    Shape_Area
+
+[Warning: Directory already exists.] 
+[> In USA_projection_2010_poly at 34] 
+SOL: MATLAB POOL HAS 12 WORKERS ACTIVE
+{Error using cell2table (line 69)
+'Michigan_Lake_St._Clair' is not a valid variable name.
+
+Error in cell2table2csv (line 46)
+T = cell2table(CELL_DATA(2:end,:),'VariableNames', CELL_DATA(1,:));
+
+Error in USA_projection_2010_poly (line 176)
+    cell2table2csv(output_area, [sample '_' num2str(sample_first_year)
+    '_daily_' var '_area_weights_poly_' num2str(power)])
+} 
+>> >> 
+newpath =
+
+/mnt/norgay/Computation/sol_matlab_toolbox
+
+[Warning: Directory already exists.] 
+[> In BRA_projection_2000_poly at 62] 
+SOL: MATLAB POOL HAS 12 WORKERS ACTIVE
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 1
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 1
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 1
+-----------------------------finished with polynomial power 1
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 2
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 2
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 2
+-----------------------------finished with polynomial power 2
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 3
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 3
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 3
+-----------------------------finished with polynomial power 3
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 4
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 4
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 4
+-----------------------------finished with polynomial power 4
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 5
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 5
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 5
+-----------------------------finished with polynomial power 5
+----DONE----
+Elapsed time is 186.975880 seconds.
+>> >> >> 
+newpath =
+
+/mnt/norgay/Computation/sol_matlab_toolbox
+
+[Warning: Directory already exists.] 
+[> In BRA_projection_2010_poly at 62] 
+SOL: MATLAB POOL HAS 12 WORKERS ACTIVE
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 1
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 1
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 1
+-----------------------------finished with polynomial power 1
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 2
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 2
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 2
+-----------------------------finished with polynomial power 2
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 3
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 3
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 3
+-----------------------------finished with polynomial power 3
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 4
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 4
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 4
+-----------------------------finished with polynomial power 4
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tavg for polynomial power 5
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmax for polynomial power 5
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with tmin for polynomial power 5
+-----------------------------finished with polynomial power 5
+----DONE----
+Elapsed time is 62.488044 seconds.
+>> >> 
+newpath =
+
+/mnt/norgay/Computation/sol_matlab_toolbox
+
+
+sample =
+
+CHL
+
+
+s = 
+
+343x1 struct array with fields:
+
+    Geometry
+    BoundingBox
+    Lon
+    Lat
+
+
+a = 
+
+343x1 struct array with fields:
+
+    ID_2002
+    NOMBRE
+    AREA
+    PERIMETER
+
+[Warning: Directory already exists.] 
+[> In CHL_projection_1990_poly at 43] 
+{Undefined variable "tavg_data" or function "tavg_data.lat".
+
+Error in CHL_projection_1990_poly (line 66)
+lat = tavg_data.lat;
+} 
+>> >> >> 
+newpath =
+
+/mnt/norgay/Computation/sol_matlab_toolbox
+
+
+sample =
+
+CHL
+
+
+s = 
+
+343x1 struct array with fields:
+
+    Geometry
+    BoundingBox
+    Lon
+    Lat
+
+
+a = 
+
+343x1 struct array with fields:
+
+    ID_2002
+    NOMBRE
+    AREA
+    PERIMETER
+
+[Warning: Directory already exists.] 
+[> In CHL_projection_2000_poly at 42] 
+{Undefined variable "tavg_data" or function "tavg_data.lat".
+
+Error in CHL_projection_2000_poly (line 65)
+lat = tavg_data.lat;
+} 
+>> >> >> 
+newpath =
+
+/mnt/norgay/Computation/sol_matlab_toolbox
+
+
+sample =
+
+CHL
+
+
+s = 
+
+343x1 struct array with fields:
+
+    Geometry
+    BoundingBox
+    Lon
+    Lat
+
+
+a = 
+
+343x1 struct array with fields:
+
+    ID_2002
+    NOMBRE
+    AREA
+    PERIMETER
+
+[Warning: Directory already exists.] 
+[> In CHL_projection_2010_poly at 41] 
+{Undefined variable "tavg_data" or function "tavg_data.lat".
+
+Error in CHL_projection_2010_poly (line 64)
+lat = tavg_data.lat;
+} 
+>> 

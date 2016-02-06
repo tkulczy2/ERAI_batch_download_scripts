@@ -1,0 +1,1010 @@
+Unrecognized MATLAB option "b".
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2014 The MathWorks, Inc.
+                   R2014b (8.4.0.150421) 64-bit (glnxa64)
+                             September 15, 2014
+
+[Warning: Function psi has the same name as a MATLAB builtin. We suggest you
+rename the function to avoid a potential name conflict.] 
+[Warning: Function psi has the same name as a MATLAB builtin. We suggest you
+rename the function to avoid a potential name conflict.] 
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+    ----------------------------------------------------
+	Your MATLAB license will expire in 13 days.
+	Please contact your system administrator or
+	MathWorks to renew this license.
+    ----------------------------------------------------
+>> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> [Warning: Directory already exists.] 
+>> [Warning: Directory already exists.] 
+>> [Warning: Directory already exists.] 
+>> [Warning: Directory already exists.] 
+>> >> >> >> >> >> >> >> >> >> ----------- DECADE BEGINNING 1880 -----------
+
+tavg_raw = 
+
+        tavg_anomaly: [360x180x3653 single]
+    tavg_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3653x1 double]
+               month: [3653x1 double]
+        day_of_month: [3653x1 double]
+         day_of_year: [3653x1 double]
+
+year 1880 is a leap year
+year 1884 is a leap year
+year 1888 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 1890 -----------
+
+tavg_raw = 
+
+        tavg_anomaly: [360x180x3652 single]
+    tavg_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3652x1 double]
+               month: [3652x1 double]
+        day_of_month: [3652x1 double]
+         day_of_year: [3652x1 double]
+
+year 1892 is a leap year
+year 1896 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 1900 -----------
+
+tavg_raw = 
+
+        tavg_anomaly: [360x180x3652 single]
+    tavg_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3652x1 double]
+               month: [3652x1 double]
+        day_of_month: [3652x1 double]
+         day_of_year: [3652x1 double]
+
+year 1904 is a leap year
+year 1908 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 1910 -----------
+
+tavg_raw = 
+
+        tavg_anomaly: [360x180x3652 single]
+    tavg_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3652x1 double]
+               month: [3652x1 double]
+        day_of_month: [3652x1 double]
+         day_of_year: [3652x1 double]
+
+year 1912 is a leap year
+year 1916 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 1920 -----------
+
+tavg_raw = 
+
+        tavg_anomaly: [360x180x3653 single]
+    tavg_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3653x1 double]
+               month: [3653x1 double]
+        day_of_month: [3653x1 double]
+         day_of_year: [3653x1 double]
+
+year 1920 is a leap year
+year 1924 is a leap year
+year 1928 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 1930 -----------
+
+tavg_raw = 
+
+        tavg_anomaly: [360x180x3652 single]
+    tavg_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3652x1 double]
+               month: [3652x1 double]
+        day_of_month: [3652x1 double]
+         day_of_year: [3652x1 double]
+
+year 1932 is a leap year
+year 1936 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 1940 -----------
+
+tavg_raw = 
+
+        tavg_anomaly: [360x180x3653 single]
+    tavg_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3653x1 double]
+               month: [3653x1 double]
+        day_of_month: [3653x1 double]
+         day_of_year: [3653x1 double]
+
+year 1940 is a leap year
+year 1944 is a leap year
+year 1948 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 1950 -----------
+
+tavg_raw = 
+
+        tavg_anomaly: [360x180x3652 single]
+    tavg_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3652x1 double]
+               month: [3652x1 double]
+        day_of_month: [3652x1 double]
+         day_of_year: [3652x1 double]
+
+year 1952 is a leap year
+year 1956 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 1960 -----------
+
+tavg_raw = 
+
+        tavg_anomaly: [360x180x3653 single]
+    tavg_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3653x1 double]
+               month: [3653x1 double]
+        day_of_month: [3653x1 double]
+         day_of_year: [3653x1 double]
+
+year 1960 is a leap year
+year 1964 is a leap year
+year 1968 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 1970 -----------
+
+tavg_raw = 
+
+        tavg_anomaly: [360x180x3652 single]
+    tavg_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3652x1 double]
+               month: [3652x1 double]
+        day_of_month: [3652x1 double]
+         day_of_year: [3652x1 double]
+
+year 1972 is a leap year
+year 1976 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 1980 -----------
+
+tavg_raw = 
+
+        tavg_anomaly: [360x180x3653 single]
+    tavg_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3653x1 double]
+               month: [3653x1 double]
+        day_of_month: [3653x1 double]
+         day_of_year: [3653x1 double]
+
+year 1980 is a leap year
+year 1984 is a leap year
+year 1988 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 1990 -----------
+
+tavg_raw = 
+
+        tavg_anomaly: [360x180x3652 single]
+    tavg_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3652x1 double]
+               month: [3652x1 double]
+        day_of_month: [3652x1 double]
+         day_of_year: [3652x1 double]
+
+year 1992 is a leap year
+year 1996 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 2000 -----------
+
+tavg_raw = 
+
+        tavg_anomaly: [360x180x3653 single]
+    tavg_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3653x1 double]
+               month: [3653x1 double]
+        day_of_month: [3653x1 double]
+         day_of_year: [3653x1 double]
+
+year 2000 is a leap year
+year 2004 is a leap year
+year 2008 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 2010 -----------
+
+tavg_raw = 
+
+        tavg_anomaly: [360x180x1444 single]
+    tavg_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [1444x1 double]
+               month: [1444x1 double]
+        day_of_month: [1444x1 double]
+         day_of_year: [1444x1 double]
+
+year 2012 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+>> >> >> >> ----DONE WITH TAVG ----
+>> >> >> >> >> >> >> ----------- DECADE BEGINNING 1880 -----------
+
+tmax_raw = 
+
+        tmax_anomaly: [360x180x3653 single]
+    tmax_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3653x1 double]
+               month: [3653x1 double]
+        day_of_month: [3653x1 double]
+         day_of_year: [3653x1 double]
+
+year 1880 is a leap year
+year 1884 is a leap year
+year 1888 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 1890 -----------
+
+tmax_raw = 
+
+        tmax_anomaly: [360x180x3652 single]
+    tmax_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3652x1 double]
+               month: [3652x1 double]
+        day_of_month: [3652x1 double]
+         day_of_year: [3652x1 double]
+
+year 1892 is a leap year
+year 1896 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 1900 -----------
+
+tmax_raw = 
+
+        tmax_anomaly: [360x180x3652 single]
+    tmax_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3652x1 double]
+               month: [3652x1 double]
+        day_of_month: [3652x1 double]
+         day_of_year: [3652x1 double]
+
+year 1904 is a leap year
+year 1908 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 1910 -----------
+
+tmax_raw = 
+
+        tmax_anomaly: [360x180x3652 single]
+    tmax_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3652x1 double]
+               month: [3652x1 double]
+        day_of_month: [3652x1 double]
+         day_of_year: [3652x1 double]
+
+year 1912 is a leap year
+year 1916 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 1920 -----------
+
+tmax_raw = 
+
+        tmax_anomaly: [360x180x3653 single]
+    tmax_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3653x1 double]
+               month: [3653x1 double]
+        day_of_month: [3653x1 double]
+         day_of_year: [3653x1 double]
+
+year 1920 is a leap year
+year 1924 is a leap year
+year 1928 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 1930 -----------
+
+tmax_raw = 
+
+        tmax_anomaly: [360x180x3652 single]
+    tmax_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3652x1 double]
+               month: [3652x1 double]
+        day_of_month: [3652x1 double]
+         day_of_year: [3652x1 double]
+
+year 1932 is a leap year
+year 1936 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 1940 -----------
+
+tmax_raw = 
+
+        tmax_anomaly: [360x180x3653 single]
+    tmax_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3653x1 double]
+               month: [3653x1 double]
+        day_of_month: [3653x1 double]
+         day_of_year: [3653x1 double]
+
+year 1940 is a leap year
+year 1944 is a leap year
+year 1948 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 1950 -----------
+
+tmax_raw = 
+
+        tmax_anomaly: [360x180x3652 single]
+    tmax_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3652x1 double]
+               month: [3652x1 double]
+        day_of_month: [3652x1 double]
+         day_of_year: [3652x1 double]
+
+year 1952 is a leap year
+year 1956 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 1960 -----------
+
+tmax_raw = 
+
+        tmax_anomaly: [360x180x3653 single]
+    tmax_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3653x1 double]
+               month: [3653x1 double]
+        day_of_month: [3653x1 double]
+         day_of_year: [3653x1 double]
+
+year 1960 is a leap year
+year 1964 is a leap year
+year 1968 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 1970 -----------
+
+tmax_raw = 
+
+        tmax_anomaly: [360x180x3652 single]
+    tmax_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3652x1 double]
+               month: [3652x1 double]
+        day_of_month: [3652x1 double]
+         day_of_year: [3652x1 double]
+
+year 1972 is a leap year
+year 1976 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 1980 -----------
+
+tmax_raw = 
+
+        tmax_anomaly: [360x180x3653 single]
+    tmax_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3653x1 double]
+               month: [3653x1 double]
+        day_of_month: [3653x1 double]
+         day_of_year: [3653x1 double]
+
+year 1980 is a leap year
+year 1984 is a leap year
+year 1988 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 1990 -----------
+
+tmax_raw = 
+
+        tmax_anomaly: [360x180x3652 single]
+    tmax_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3652x1 double]
+               month: [3652x1 double]
+        day_of_month: [3652x1 double]
+         day_of_year: [3652x1 double]
+
+year 1992 is a leap year
+year 1996 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 2000 -----------
+
+tmax_raw = 
+
+        tmax_anomaly: [360x180x3653 single]
+    tmax_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3653x1 double]
+               month: [3653x1 double]
+        day_of_month: [3653x1 double]
+         day_of_year: [3653x1 double]
+
+year 2000 is a leap year
+year 2004 is a leap year
+year 2008 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 2010 -----------
+
+tmax_raw = 
+
+        tmax_anomaly: [360x180x1430 single]
+    tmax_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [1430x1 double]
+               month: [1430x1 double]
+        day_of_month: [1430x1 double]
+         day_of_year: [1430x1 double]
+
+year 2012 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+>> >> >> ----DONE WITH TMAX ----
+>> >> >> >> >> >> ----------- DECADE BEGINNING 1880 -----------
+
+tmin_raw = 
+
+        tmin_anomaly: [360x180x3653 single]
+    tmin_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3653x1 double]
+               month: [3653x1 double]
+        day_of_month: [3653x1 double]
+         day_of_year: [3653x1 double]
+
+year 1880 is a leap year
+year 1884 is a leap year
+year 1888 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 1890 -----------
+
+tmin_raw = 
+
+        tmin_anomaly: [360x180x3652 single]
+    tmin_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3652x1 double]
+               month: [3652x1 double]
+        day_of_month: [3652x1 double]
+         day_of_year: [3652x1 double]
+
+year 1892 is a leap year
+year 1896 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 1900 -----------
+
+tmin_raw = 
+
+        tmin_anomaly: [360x180x3652 single]
+    tmin_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3652x1 double]
+               month: [3652x1 double]
+        day_of_month: [3652x1 double]
+         day_of_year: [3652x1 double]
+
+year 1904 is a leap year
+year 1908 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 1910 -----------
+
+tmin_raw = 
+
+        tmin_anomaly: [360x180x3652 single]
+    tmin_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3652x1 double]
+               month: [3652x1 double]
+        day_of_month: [3652x1 double]
+         day_of_year: [3652x1 double]
+
+year 1912 is a leap year
+year 1916 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 1920 -----------
+
+tmin_raw = 
+
+        tmin_anomaly: [360x180x3653 single]
+    tmin_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3653x1 double]
+               month: [3653x1 double]
+        day_of_month: [3653x1 double]
+         day_of_year: [3653x1 double]
+
+year 1920 is a leap year
+year 1924 is a leap year
+year 1928 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 1930 -----------
+
+tmin_raw = 
+
+        tmin_anomaly: [360x180x3652 single]
+    tmin_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3652x1 double]
+               month: [3652x1 double]
+        day_of_month: [3652x1 double]
+         day_of_year: [3652x1 double]
+
+year 1932 is a leap year
+year 1936 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 1940 -----------
+
+tmin_raw = 
+
+        tmin_anomaly: [360x180x3653 single]
+    tmin_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3653x1 double]
+               month: [3653x1 double]
+        day_of_month: [3653x1 double]
+         day_of_year: [3653x1 double]
+
+year 1940 is a leap year
+year 1944 is a leap year
+year 1948 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 1950 -----------
+
+tmin_raw = 
+
+        tmin_anomaly: [360x180x3652 single]
+    tmin_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3652x1 double]
+               month: [3652x1 double]
+        day_of_month: [3652x1 double]
+         day_of_year: [3652x1 double]
+
+year 1952 is a leap year
+year 1956 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 1960 -----------
+
+tmin_raw = 
+
+        tmin_anomaly: [360x180x3653 single]
+    tmin_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3653x1 double]
+               month: [3653x1 double]
+        day_of_month: [3653x1 double]
+         day_of_year: [3653x1 double]
+
+year 1960 is a leap year
+year 1964 is a leap year
+year 1968 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 1970 -----------
+
+tmin_raw = 
+
+        tmin_anomaly: [360x180x3652 single]
+    tmin_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3652x1 double]
+               month: [3652x1 double]
+        day_of_month: [3652x1 double]
+         day_of_year: [3652x1 double]
+
+year 1972 is a leap year
+year 1976 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 1980 -----------
+
+tmin_raw = 
+
+        tmin_anomaly: [360x180x3653 single]
+    tmin_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3653x1 double]
+               month: [3653x1 double]
+        day_of_month: [3653x1 double]
+         day_of_year: [3653x1 double]
+
+year 1980 is a leap year
+year 1984 is a leap year
+year 1988 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 1990 -----------
+
+tmin_raw = 
+
+        tmin_anomaly: [360x180x3652 single]
+    tmin_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3652x1 double]
+               month: [3652x1 double]
+        day_of_month: [3652x1 double]
+         day_of_year: [3652x1 double]
+
+year 1992 is a leap year
+year 1996 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 2000 -----------
+
+tmin_raw = 
+
+        tmin_anomaly: [360x180x3653 single]
+    tmin_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [3653x1 double]
+               month: [3653x1 double]
+        day_of_month: [3653x1 double]
+         day_of_year: [3653x1 double]
+
+year 2000 is a leap year
+year 2004 is a leap year
+year 2008 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 2010 -----------
+
+tmin_raw = 
+
+        tmin_anomaly: [360x180x1430 single]
+    tmin_climatology: [360x180x365 single]
+                 lon: [360x1 single]
+                 lat: [180x1 single]
+                year: [1430x1 double]
+               month: [1430x1 double]
+        day_of_month: [1430x1 double]
+         day_of_year: [1430x1 double]
+
+year 2012 is a leap year
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+>> >> >> ----DONE WITH TMIN ----
+>> >> >> >> ----DONE WITH TAVG, TMAX, TMIN----
+>> 

@@ -10,10 +10,11 @@ from ecmwfapi import ECMWFDataServer
 year = sys.argv[1]
 
 name = 'raw'
+#grid = '1.0/1.0'
+grid = '0.25/0.25'
 
-outputDir = os.path.expandvars('/mnt/norgay/Datasets/Climate/ERA-Interim/Raw_NetCDF_1deg_x_1deg/')
-#outputDir = os.path.expandvars('/mnt/norgay/Datasets/Climate/ERA-Interim/Raw_NetCDF_.25deg_x_.25deg/')
-#outputDir = os.path.expandvars('$HOME/norgay/data/sources/ERAI/3HOURLY/'+name+'/')
+#outputDir = os.path.expandvars('/mnt/norgay/Datasets/Climate/ERA_Interim/Raw_NetCDF_1deg_x_1deg/')
+outputDir = os.path.expandvars('/mnt/norgay/Datasets/Climate/ERA_Interim/Raw_NetCDF_.25deg_x_.25deg/')
 
 try:
     os.makedirs(outputDir)
@@ -28,13 +29,9 @@ if year!='1979':
 else:
     startDate = year + '-01-01'
 
-#if year=='2015':
-#    endDate = year + '-06-30'
-#else:
 endDate = year + '-12-31'
 
 targetFile = "mx2t_mn2t_tp_3hour_{}to{}.nc".format(startDate, endDate)
-grid = '1.0/1.0'
 
 server.retrieve({
     'stream'    : "oper",
@@ -51,10 +48,10 @@ server.retrieve({
     'target'    : outputDir+targetFile
 })
 
-fileHandle = open(outputDir+'currentFile.txt','w')
-fileHandle.write(targetFile)
-fileHandle.close()
+#fileHandle = open(outputDir+'currentFile.txt','w')
+#fileHandle.write(targetFile)
+#fileHandle.close()
 
-fileHandle = open(outputDir+'currentYear.txt','w')
-fileHandle.write(year)
-fileHandle.close()
+#fileHandle = open(outputDir+'currentYear.txt','w')
+#fileHandle.write(year)
+#fileHandle.close()

@@ -1,4 +1,4 @@
-outputDir = '/mnt/norgay/Datasets/Climate/ERA-Interim/Matlab_1deg_x_1deg/';
+outputDir = '/mnt/norgay/Datasets/Climate/ERA_Interim/Matlab_1deg_x_1deg/';
 mkdir(outputDir);
 mkdir(outputDir,'TMAX');
 mkdir(outputDir,'TMIN');
