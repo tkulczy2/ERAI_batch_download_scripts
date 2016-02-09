@@ -58,7 +58,7 @@ for v = {'precip', 'tavg', 'tmax', 'tmin'}
     end
 
     disp('')
-    disp(['----- Done with variable ' var ' -----')
+    disp(['----- Done with variable ' var ' -----'])
     disp('')
 end
 diary('off')
