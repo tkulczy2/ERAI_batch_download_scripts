@@ -59,8 +59,8 @@ a = combine_attributes(a, 'NAME_1', 'NAME_2');
 % Tamma-Shackleton: change directory to store output files on Norgay
 cd '/mnt/norgay/Datasets/Climate/ERA_Interim/Matlab_projected_DAILY_polynomials'
 
-mkdir BRA_daily_ERAI_polynomials
-cd BRA_daily_ERAI_polynomials
+mkdir BRA_daily_BEST_polynomials
+cd BRA_daily_BEST_polynomials
 label = 'NAME_1_NAME_2';
 
 %obtain BEST data file for relevant decade
@@ -72,10 +72,9 @@ sample_first_year = 2000;
 %load '/Volumes/Disk 1 RAID Set/LARGE_DATASETS/ERA_Interim/Matlab_1deg_x_1deg_polynomials/TMIN/tmin_2000_raw_polynomials'
 
 % Tamma-Shackleton
-%load '/mnt/norgay/Datasets/Climate/ERA_Interim/Matlab_1deg_x_1deg_polynomials/TAVG/tavg_2000_raw_polynomials'
-%load '/mnt/norgay/Datasets/Climate/ERA_Interim/Matlab_1deg_x_1deg_polynomials/TMAX/tmax_2000_raw_polynomials'
-%load '/mnt/norgay/Datasets/Climate/ERA_Interim/Matlab_1deg_x_1deg_polynomials/TMIN/tmin_2000_raw_polynomials'
-load '/mnt/norgay/Datasets/Climate/ERA_Interim/Matlab_1deg_x_1deg_polynomials/PRECIP/precip_2000_raw_polynomials'
+load '/mnt/norgay/Datasets/Climate/ERA_Interim/Matlab_1deg_x_1deg_polynomials/TAVG/tavg_2000_raw_polynomials'
+load '/mnt/norgay/Datasets/Climate/ERA_Interim/Matlab_1deg_x_1deg_polynomials/TMAX/tmax_2000_raw_polynomials'
+load '/mnt/norgay/Datasets/Climate/ERA_Interim/Matlab_1deg_x_1deg_polynomials/TMIN/tmin_2000_raw_polynomials'
 
 % Choose a max. polynomial power
 maxpower = 5;
@@ -83,8 +82,8 @@ maxpower = 5;
 %%
 N = length(s);
 density = 1; %1 degree resolution
-lat = precip_poly_1.lat;
-lon = precip_poly_1.lon;
+lat = tavg_poly_1.lat;
+lon = tavg_poly_1.lon;
 latlim = double([lat(1) lat(end)]);
 lonlim = double([lon(1) lon(end)]);
 
