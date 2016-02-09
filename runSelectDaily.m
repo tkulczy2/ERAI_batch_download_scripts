@@ -12,7 +12,6 @@ files = dir('*.nc');
 for fInfo = files'
     f = deblank(fInfo.name);
     y = str2num(f(end-12:end-9));
-    if y < 2011
-        selectDaily(f, y);
-    end
+    selectDaily(f, y);
+    disp(['----- Done with year ' num2str(y) ' -----'])
 end
