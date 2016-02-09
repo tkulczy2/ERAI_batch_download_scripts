@@ -16,7 +16,7 @@ cd /mnt/norgay/Datasets/Climate/Berkeley_Earth/formatting_scripts_daily_polynomi
 %IND_projection_1990_poly % ADM1 98-99
 
 cd /mnt/norgay/Datasets/Climate/Berkeley_Earth/formatting_scripts_daily_polynomials/PROJECTION_SCRIPTS_v2
-IND91_projection_1990_poly % ADM1 98-99
+%IND91_projection_1990_poly % ADM1 98-99
 
 cd /mnt/norgay/Datasets/Climate/Berkeley_Earth/formatting_scripts_daily_polynomials/PROJECTION_SCRIPTS_v2
 %ISR_projection_1990_poly % ADM1 91 92 
@@ -85,7 +85,7 @@ cd /mnt/norgay/Datasets/Climate/Berkeley_Earth/formatting_scripts_daily_polynomi
 %USA_projection_2010_poly %ADM2 2010-2012
 
 cd /mnt/norgay/Datasets/Climate/Berkeley_Earth/formatting_scripts_daily_polynomials/PROJECTION_SCRIPTS_v2
-%BRA_projection_2000_poly %ADM2 limited cities 2000-2009
+BRA_projection_2000_poly %ADM2 limited cities 2000-2009
 
 cd /mnt/norgay/Datasets/Climate/Berkeley_Earth/formatting_scripts_daily_polynomials/PROJECTION_SCRIPTS_v2
 %BRA_projection_2010_poly %ADM2 limited cities 2010-2012

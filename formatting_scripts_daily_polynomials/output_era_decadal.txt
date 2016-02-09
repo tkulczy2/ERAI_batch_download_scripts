@@ -135,4 +135,220 @@ data_raw =
             tavg: [360x181x4019 double]
                T: [366x1 double]
              lat: [181x1 single]
-             lon
+             lon: [360x1 single]
+            year: [4019x1 double]
+           month: [4019x1 double]
+    day_of_month: [4019x1 double]
+     day_of_year: [4019x1 double]
+
+kelvin-to-celcius conversion
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 2010 -----------
+
+data_raw = 
+
+            tavg: [360x181x2556 double]
+               T: [365x1 double]
+             lat: [181x1 single]
+             lon: [360x1 single]
+            year: [2556x1 double]
+           month: [2556x1 double]
+    day_of_month: [2556x1 double]
+     day_of_year: [2556x1 double]
+
+kelvin-to-celcius conversion
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----DONE WITH TAVG ----
+----------- DECADE BEGINNING 1980 -----------
+
+data_raw = 
+
+            tmax: [360x181x4018 double]
+               T: [365x1 double]
+             lat: [181x1 single]
+             lon: [360x1 single]
+            year: [4018x1 double]
+           month: [4018x1 double]
+    day_of_month: [4018x1 double]
+     day_of_year: [4018x1 double]
+
+kelvin-to-celcius conversion
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 1990 -----------
+
+data_raw = 
+
+            tmax: [360x181x4017 double]
+               T: [365x1 double]
+             lat: [181x1 single]
+             lon: [360x1 single]
+            year: [4017x1 double]
+           month: [4017x1 double]
+    day_of_month: [4017x1 double]
+     day_of_year: [4017x1 double]
+
+kelvin-to-celcius conversion
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 2000 -----------
+
+data_raw = 
+
+            tmax: [360x181x4019 double]
+               T: [366x1 double]
+             lat: [181x1 single]
+             lon: [360x1 single]
+            year: [4019x1 double]
+           month: [4019x1 double]
+    day_of_month: [4019x1 double]
+     day_of_year: [4019x1 double]
+
+kelvin-to-celcius conversion
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 2010 -----------
+
+data_raw = 
+
+            tmax: [360x181x2556 double]
+               T: [365x1 double]
+             lat: [181x1 single]
+             lon: [360x1 single]
+            year: [2556x1 double]
+           month: [2556x1 double]
+    day_of_month: [2556x1 double]
+     day_of_year: [2556x1 double]
+
+kelvin-to-celcius conversion
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----DONE WITH TMAX ----
+----------- DECADE BEGINNING 1980 -----------
+
+data_raw = 
+
+            tmin: [360x181x4018 double]
+               T: [365x1 double]
+             lat: [181x1 single]
+             lon: [360x1 single]
+            year: [4018x1 double]
+           month: [4018x1 double]
+    day_of_month: [4018x1 double]
+     day_of_year: [4018x1 double]
+
+kelvin-to-celcius conversion
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 1990 -----------
+
+data_raw = 
+
+            tmin: [360x181x4017 double]
+               T: [365x1 double]
+             lat: [181x1 single]
+             lon: [360x1 single]
+            year: [4017x1 double]
+           month: [4017x1 double]
+    day_of_month: [4017x1 double]
+     day_of_year: [4017x1 double]
+
+kelvin-to-celcius conversion
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 2000 -----------
+
+data_raw = 
+
+            tmin: [360x181x4019 double]
+               T: [366x1 double]
+             lat: [181x1 single]
+             lon: [360x1 single]
+            year: [4019x1 double]
+           month: [4019x1 double]
+    day_of_month: [4019x1 double]
+     day_of_year: [4019x1 double]
+
+kelvin-to-celcius conversion
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 2010 -----------
+
+data_raw = 
+
+            tmin: [360x181x2556 double]
+               T: [365x1 double]
+             lat: [181x1 single]
+             lon: [360x1 single]
+            year: [2556x1 double]
+           month: [2556x1 double]
+    day_of_month: [2556x1 double]
+     day_of_year: [2556x1 double]
+
+kelvin-to-celcius conversion
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----DONE WITH TMIN ----
+exit
