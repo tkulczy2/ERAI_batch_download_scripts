@@ -12,7 +12,7 @@
 clear
 close all
 clc
-
+diary('output_era.txt')
 %% SET UP
 
 % access norgay from local
@@ -85,3 +85,4 @@ end
 disp(['----DONE WITH ' VAR ' ----'])
 clear;
 end
+diary('off')
