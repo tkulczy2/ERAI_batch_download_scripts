@@ -37,11 +37,8 @@ s(1) = S; a(1) = A;
 [S, A] = keep_by_attribute(s, a, 'NAME_2', 'Rio de Janeiro');
 s(2) = S; a(2) = A;
 
-[S, A] = keep_by_attribute(s, a, 'NAME_2', 'Belo Horizonte');
-s(3) = S; a(3) = A;
-
-[S, A] = keep_by_attribute(s, a, 'NAME_2', 'S�o Paulo');
-s(4) = S; a(4) = A;
+[S, A] = keep_by_attribute(s, a, 'NAME_2', 'Belo Horizonte'); s(3) = S; a(3) = A;
+[S, A] = keep_by_attribute(s, a, 'NAME_2', 'S�o Paulo'); s(4) = S; a(4) = A;
 
 [S, A] = keep_by_attribute(s, a, 'NAME_2', 'Salvador');
 s(5) = S; a(5) = A;
@@ -57,7 +54,7 @@ clear S A
 a = combine_attributes(a, 'NAME_1', 'NAME_2');
 
 % Tamma-Shackleton: change directory to store output files on Norgay
-cd '/mnt/norgay/Datasets/Climate/Berkeley_Earth/Matlab_projected_DAILY_polynomials'
+cd '/mnt/norgay/Datasets/Climate/ERA_Interim/Matlab_projected_DAILY_polynomials'
 
 mkdir BRA_daily_BEST_polynomials
 cd BRA_daily_BEST_polynomials
@@ -72,9 +69,10 @@ sample_first_year = 2010;
 %load '/Volumes/Disk 1 RAID Set/LARGE_DATASETS/Berkeley_Earth/Matlab_1deg_x_1deg_polynomials/TMIN/tmin_2010_raw_polynomials'
 
 % Tamma-Shackleton
-load '/mnt/norgay/Datasets/Climate/Berkeley_Earth/Matlab_1deg_x_1deg_polynomials/TAVG/tavg_2010_raw_polynomials'
-load '/mnt/norgay/Datasets/Climate/Berkeley_Earth/Matlab_1deg_x_1deg_polynomials/TMAX/tmax_2010_raw_polynomials'
-load '/mnt/norgay/Datasets/Climate/Berkeley_Earth/Matlab_1deg_x_1deg_polynomials/TMIN/tmin_2010_raw_polynomials'
+load '/mnt/norgay/Datasets/Climate/ERA_Interim/Matlab_1deg_x_1deg_polynomials/TAVG/tavg_2010_raw_polynomials'
+load '/mnt/norgay/Datasets/Climate/ERA_Interim/Matlab_1deg_x_1deg_polynomials/TMAX/tmax_2010_raw_polynomials'
+load '/mnt/norgay/Datasets/Climate/ERA_Interim/Matlab_1deg_x_1deg_polynomials/TMIN/tmin_2010_raw_polynomials'
+load '/mnt/norgay/Datasets/Climate/ERA_Interim/Matlab_1deg_x_1deg_polynomials/PRECIP/precip_2010_raw_polynomials'
 
 % Choose a max. polynomial power
 maxpower = 5;
@@ -112,7 +110,7 @@ end
 
 tic
 for power=1:maxpower % these are polynomial powers
-for T = 1:3 % 1 is tavg, 2 is tmax, 3 is tmin
+for T = 1:4 % 1 is tavg, 2 is tmax, 3 is tmin, 4 is precip
     
     if T == 1
         command = ['temp_actual = tavg_poly_' num2str(power) '.tavg_actual_poly;'];
@@ -126,6 +124,10 @@ for T = 1:3 % 1 is tavg, 2 is tmax, 3 is tmin
         command = ['temp_actual = tmin_poly_' num2str(power) '.tmin_actual_poly;'];
         eval(command)
         var = 'tmin';
+    elseif T == 4
+        command = ['temp_actual = precip_poly_' num2str(power) '.precip_actual_poly;'];
+        eval(command)
+        var = 'precip';
     end
     
     %generate the output table with headers and dates, columns are districts

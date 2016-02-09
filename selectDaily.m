@@ -9,7 +9,7 @@ end
 
 for lon = 0:45:315
 
-    gridDelta = 1.0;
+    gridDelta = 0.25;
     % ixlat = round((90-lat)/0.25 + 1);
     ixlon = round(lon/gridDelta+1);
 
@@ -119,7 +119,7 @@ tavg = struct('tavg',allAvg,'T',T,'lat',Y,'lon',X);
 precip = struct('precip',allTP,'T',T,'lat',Y,'lon',X);
 
 % Save to norgay for future processing
-outputDir = '/mnt/norgay/Datasets/Climate/ERA-Interim/Matlab_1deg_x_1deg/';
+outputDir = '/mnt/norgay/Datasets/Climate/ERA_Interim/Matlab_.25deg_x_.25deg/';
 save(strcat(outputDir,'/TMAX/ERAI_DAILY_TMAX_',num2str(y),'.mat'),'tmax','-v7.3');
 save(strcat(outputDir,'/TMIN/ERAI_DAILY_TMIN_',num2str(y),'.mat'),'tmin','-v7.3');
 save(strcat(outputDir,'/TAVG/ERAI_DAILY_TAVG_',num2str(y),'.mat'),'tavg','-v7.3');
