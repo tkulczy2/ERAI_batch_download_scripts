@@ -12,7 +12,7 @@
 clear
 close all
 clc
-diary('output_era_precip.txt')
+diary('output_era.txt')
 %% SET UP
 
 % access norgay from local
@@ -23,14 +23,11 @@ cd '/mnt/norgay/Datasets/Climate/ERA_Interim'
 
 %mkdir Matlab_1deg_x_1deg_polynomials
 mkdir Matlab_1deg_x_1deg_polynomials/PRECIP
-mkdir Matlab_1deg_x_1deg_polynomials/TAVG
-mkdir Matlab_1deg_x_1deg_polynomials/TMAX
-mkdir Matlab_1deg_x_1deg_polynomials/TMIN
 
 
 %% PULL IN DAILY DATA AT 1deg x 1deg RESOLUTION BY THE DECADE, SAVE BY THE DECADE
 
-for v = {'precip', 'tavg', 'tmax', 'tmin'}
+for v = {'precip'}
 var = char(v);
 VAR = upper(var);
 for base_year = 1980:10:2010
