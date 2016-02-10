@@ -14,7 +14,7 @@ name = 'raw'
 grid = '0.25/0.25'
 
 #outputDir = os.path.expandvars('/mnt/norgay/Datasets/Climate/ERA_Interim/Raw_NetCDF_1deg_x_1deg/')
-outputDir = os.path.expandvars('/mnt/norgay/Datasets/Climate/ERA_Interim/Raw_NetCDF_.25deg_x_.25deg/')
+outputDir = os.path.expandvars('/mnt/norgay/Datasets/Climate/ERA_Interim/Raw_NetCDF_.25deg_x_.25deg/new/')
 
 try:
     os.makedirs(outputDir)

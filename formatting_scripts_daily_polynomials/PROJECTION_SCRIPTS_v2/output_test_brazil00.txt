@@ -1,0 +1,62 @@
+master_daily_ERAI_temp_and_precip_script
+
+newpath =
+
+/mnt/norgay/Computation/sol_matlab_toolbox
+
+SOL: FOR GREATER SPEED, CONSIDER OPENING THE MATLAB WORKER POOL
+{Attempt to reference field of non-structure array.
+
+Error in BRA_projection_2000_poly (line 99)
+N = length(ID.ID);
+
+Error in master_daily_ERAI_temp_and_precip_script (line 88)
+BRA_projection_2000_poly %ADM2 limited cities 2000-2009
+} 
+generate_ID_maps
+{Error using generate_ID_maps (line 24)
+Not enough input arguments.
+} 
+help generate_ID_maps
+  S. HSIANG
+  SMH2137@COLUMBIA.EDU
+  2.10
+ 
+  ---------------------
+ 
+  generate_ID_maps(S, A, LABEL, DENSITY, LATLIM, LONLIM)
+ 
+  Takes the map structure S and generates a raster mask for each element at
+  density DENSITY on a pallet that spans LATLIM and LONLIM.  Density is the
+  number of pixels per degree lat (or lon) and the limit vectors are two
+  values that specify the limits of the map.
+  LABEL is a string
+ 
+  -------------------------------------
+  NOTE: THIS CODE HAS A PARELLELIZED VERSION
+  -------------------------------------
+ 
+  see also generate_ID_maps_par
+
+help generate_ID_maps_par
+  S. HSIANG
+  SMH2137@COLUMBIA.EDU
+  3.11
+ 
+  ---------------------
+ 
+  generate_ID_maps_par(S, A, LABEL, DENSITY, LATLIM, LONLIM)
+ 
+  Takes the map structure S and generates a raster mask for each element at
+  density DENSITY on a pallet that spans LATLIM and LONLIM.  Density is the
+  number of pixels per degree lat (or lon) and the limit vectors are two
+  values that specify the limits of the map.
+  LABEL is a string
+ 
+  -------------------------------------
+  NOTE: THIS CODE HAS BEEN PARELLELIZED
+  -------------------------------------
+ 
+  see also generate_ID_maps
+
+diary('off')

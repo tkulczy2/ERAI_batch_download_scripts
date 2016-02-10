@@ -1,0 +1,40 @@
+runSelectDaily
+{Undefined function or variable 'lat'.
+
+Error in selectDaily (line 11)
+    disp(['--Starting latitude ' num2str(lat) '--'])
+
+Error in runSelectDaily (line 15)
+    selectDaily(f, y);
+} 
+runSelectDaily
+--Starting longitude 0--
+--Starting longitude 45--
+--Starting longitude 90--
+--Starting longitude 135--
+--Starting longitude 180--
+--Starting longitude 225--
+--Starting longitude 270--
+--Starting longitude 315--
+----- Done with year 1979 -----
+--Starting longitude 0--
+--Starting longitude 45--
+--Starting longitude 90--
+--Starting longitude 135--
+--Starting longitude 180--
+--Starting longitude 225--
+--Starting longitude 270--
+--Starting longitude 315--
+----- Done with year 1980 -----
+--Starting longitude 0--
+--Starting longitude 45--
+--Starting longitude 90--
+{Error using cat
+Dimensions of matrices being concatenated are not consistent.
+
+Error in selectDaily (line 106)
+        allMax = cat(1,allMax,yearMax);
+
+Error in runSelectDaily (line 15)
+    selectDaily(f, y);
+} 

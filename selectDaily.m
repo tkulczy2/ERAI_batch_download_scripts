@@ -8,6 +8,7 @@ if y == 1979
 end
 
 for lon = 0:45:315
+    disp(['--Starting longitude ' num2str(lon) '--'])
 
     gridDelta = 0.25;
     % ixlat = round((90-lat)/0.25 + 1);

@@ -83,8 +83,11 @@ maxpower = 5;
 %%
 N = length(s);
 density = 1; %1 degree resolution
-lat = precip_poly_1.lat;
+% CAUTION - I'M DROPPING THE -90 LATITUDE OBSERVATION AND SHIFTING BY 0.5 DEGREES TO CONFORM WITH BEST WEIGHT GRID
+lat = flip(precip_poly_1.lat(1:end-1)-0.5);
 lon = precip_poly_1.lon;
+ixlon = find(lon==180);
+lon = [-360+lon(ixlon:end); lon(1:ixlon-1)] + 0.5;
 latlim = double([lat(1) lat(end)]);
 lonlim = double([lon(1) lon(end)]);
 
@@ -128,7 +131,10 @@ elseif T == 3
     eval(command)
     var = 'tmin';
 elseif T == 4
-    command = ['temp_actual = precip_poly_' num2str(power) '.precip_actual_poly;'];
+    % CAUTION - I'M DROPPING THE -90 LATITUDE DATA TO CONFORM WITH BEST GRID
+    command = ['temp_actual = cat(2, precip_poly_' num2str(power) '.precip_actual_poly(1:end-1,ixlon:end,:), precip_poly_' num2str(power) '.precip_actual_poly(1:end-1,1:ixlon-1,:));'];
+    eval(command)
+    command = ['temp_actual = flip(temp_actual, 1);'];
     eval(command)
     var = 'precip';
 end

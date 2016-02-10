@@ -1,0 +1,422 @@
+runSelectDaily
+[Warning: Directory already exists.] 
+[> In runSelectDaily at 3] 
+[Warning: Directory already exists.] 
+[> In runSelectDaily at 4] 
+[Warning: Directory already exists.] 
+[> In runSelectDaily at 5] 
+[Warning: Directory already exists.] 
+[> In runSelectDaily at 6] 
+[Warning: Directory already exists.] 
+[> In runSelectDaily at 7] 
+----- Done with year 1979 -----
+----- Done with year 1980 -----
+{Undefined function 'selectDaily' for input arguments of type 'char'.
+
+Error in runSelectDaily (line 16)
+    selectDaily(f, y);
+} 
+pwd
+
+ans =
+
+/mnt/norgay/Datasets/Climate/ERA_Interim/Raw_NetCDF_.25deg_x_.25deg
+
+diary('off')
+addpath(ans)
+{Attempt to execute SCRIPT ans as a function:
+/usr/local/MATLAB/R2014b/toolbox/matlab/lang/ans.m
+} 
+pwd
+
+ans =
+
+/home/tkulczycki/ERA_Interim/ERAI_batch_download_scripts
+
+addpath(ans)
+runSelectDaily
+[Warning: Directory already exists.] 
+[> In runSelectDaily at 3] 
+[Warning: Directory already exists.] 
+[> In runSelectDaily at 4] 
+[Warning: Directory already exists.] 
+[> In runSelectDaily at 5] 
+[Warning: Directory already exists.] 
+[> In runSelectDaily at 6] 
+[Warning: Directory already exists.] 
+[> In runSelectDaily at 7] 
+----- Done with year 1979 -----
+----- Done with year 1980 -----
+----- Done with year 1982 -----
+----- Done with year 1983 -----
+----- Done with year 1984 -----
+----- Done with year 1985 -----
+--Starting longitude 0--
+--Starting longitude 45--
+--Starting longitude 90--
+--Starting longitude 135--
+--Starting longitude 180--
+--Starting longitude 225--
+--Starting longitude 270--
+--Starting longitude 315--
+----- Done with year 1988 -----
+----- Done with year 1989 -----
+--Starting longitude 0--
+--Starting longitude 45--
+--Starting longitude 90--
+--Starting longitude 135--
+--Starting longitude 180--
+--Starting longitude 225--
+--Starting longitude 270--
+--Starting longitude 315--
+----- Done with year 1991 -----
+--Starting longitude 0--
+--Starting longitude 45--
+--Starting longitude 90--
+--Starting longitude 135--
+--Starting longitude 180--
+--Starting longitude 225--
+--Starting longitude 270--
+--Starting longitude 315--
+----- Done with year 1992 -----
+----- Done with year 1993 -----
+--Starting longitude 0--
+--Starting longitude 45--
+--Starting longitude 90--
+--Starting longitude 135--
+--Starting longitude 180--
+--Starting longitude 225--
+--Starting longitude 270--
+--Starting longitude 315--
+----- Done with year 1995 -----
+--Starting longitude 0--
+--Starting longitude 45--
+--Starting longitude 90--
+--Starting longitude 135--
+--Starting longitude 180--
+--Starting longitude 225--
+--Starting longitude 270--
+--Starting longitude 315--
+----- Done with year 1996 -----
+--Starting longitude 0--
+--Starting longitude 45--
+--Starting longitude 90--
+--Starting longitude 135--
+--Starting longitude 180--
+--Starting longitude 225--
+--Starting longitude 270--
+--Starting longitude 315--
+----- Done with year 1997 -----
+--Starting longitude 0--
+--Starting longitude 45--
+--Starting longitude 90--
+--Starting longitude 135--
+--Starting longitude 180--
+--Starting longitude 225--
+--Starting longitude 270--
+--Starting longitude 315--
+----- Done with year 1998 -----
+--Starting longitude 0--
+--Starting longitude 45--
+--Starting longitude 90--
+--Starting longitude 135--
+--Starting longitude 180--
+--Starting longitude 225--
+--Starting longitude 270--
+--Starting longitude 315--
+----- Done with year 1999 -----
+----- Done with year 2000 -----
+--Starting longitude 0--
+--Starting longitude 45--
+--Starting longitude 90--
+--Starting longitude 135--
+--Starting longitude 180--
+--Starting longitude 225--
+--Starting longitude 270--
+--Starting longitude 315--
+----- Done with year 2002 -----
+--Starting longitude 0--
+--Starting longitude 45--
+--Starting longitude 90--
+--Starting longitude 135--
+--Starting longitude 180--
+--Starting longitude 225--
+--Starting longitude 270--
+--Starting longitude 315--
+----- Done with year 2003 -----
+--Starting longitude 0--
+--Starting longitude 45--
+--Starting longitude 90--
+--Starting longitude 135--
+--Starting longitude 180--
+--Starting longitude 225--
+--Starting longitude 270--
+--Starting longitude 315--
+----- Done with year 2004 -----
+--Starting longitude 0--
+--Starting longitude 45--
+--Starting longitude 90--
+--Starting longitude 135--
+--Starting longitude 180--
+--Starting longitude 225--
+--Starting longitude 270--
+--Starting longitude 315--
+----- Done with year 2005 -----
+--Starting longitude 0--
+--Starting longitude 45--
+--Starting longitude 90--
+--Starting longitude 135--
+--Starting longitude 180--
+--Starting longitude 225--
+--Starting longitude 270--
+--Starting longitude 315--
+----- Done with year 2006 -----
+----- Done with year 2007 -----
+--Starting longitude 0--
+--Starting longitude 45--
+--Starting longitude 90--
+--Starting longitude 135--
+--Starting longitude 180--
+--Starting longitude 225--
+--Starting longitude 270--
+--Starting longitude 315--
+----- Done with year 2009 -----
+--Starting longitude 0--
+--Starting longitude 45--
+--Starting longitude 90--
+--Starting longitude 135--
+--Starting longitude 180--
+--Starting longitude 225--
+--Starting longitude 270--
+--Starting longitude 315--
+----- Done with year 2010 -----
+--Starting longitude 0--
+--Starting longitude 45--
+--Starting longitude 90--
+--Starting longitude 135--
+--Starting longitude 180--
+--Starting longitude 225--
+--Starting longitude 270--
+--Starting longitude 315--
+----- Done with year 2011 -----
+--Starting longitude 0--
+--Starting longitude 45--
+--Starting longitude 90--
+--Starting longitude 135--
+--Starting longitude 180--
+--Starting longitude 225--
+--Starting longitude 270--
+--Starting longitude 315--
+----- Done with year 2012 -----
+--Starting longitude 0--
+--Starting longitude 45--
+--Starting longitude 90--
+--Starting longitude 135--
+--Starting longitude 180--
+--Starting longitude 225--
+--Starting longitude 270--
+--Starting longitude 315--
+----- Done with year 2013 -----
+--Starting longitude 0--
+--Starting longitude 45--
+--Starting longitude 90--
+--Starting longitude 135--
+--Starting longitude 180--
+--Starting longitude 225--
+--Starting longitude 270--
+--Starting longitude 315--
+----- Done with year 2014 -----
+--Starting longitude 0--
+--Starting longitude 45--
+--Starting longitude 90--
+--Starting longitude 135--
+--Starting longitude 180--
+--Starting longitude 225--
+--Starting longitude 270--
+--Starting longitude 315--
+----- Done with year 2015 -----
+runBadYears
+[Warning: Directory already exists.] 
+[> In runBadYears at 3] 
+[Warning: Directory already exists.] 
+[> In runBadYears at 4] 
+[Warning: Directory already exists.] 
+[> In runBadYears at 5] 
+[Warning: Directory already exists.] 
+[> In runBadYears at 6] 
+[Warning: Directory already exists.] 
+[> In runBadYears at 7] 
+----- Done with year 1979 -----
+----- Done with year 1980 -----
+----- Done with year 1981 -----
+----- Done with year 1982 -----
+----- Done with year 1983 -----
+----- Done with year 1984 -----
+--Starting longitude 0--
+--Starting longitude 45--
+--Starting longitude 90--
+--Starting longitude 135--
+--Starting longitude 180--
+--Starting longitude 225--
+--Starting longitude 270--
+--Starting longitude 315--
+----- Done with year 1985 -----
+--Starting longitude 0--
+--Starting longitude 45--
+--Starting longitude 90--
+--Starting longitude 135--
+--Starting longitude 180--
+--Starting longitude 225--
+--Starting longitude 270--
+--Starting longitude 315--
+----- Done with year 1986 -----
+--Starting longitude 0--
+--Starting longitude 45--
+--Starting longitude 90--
+--Starting longitude 135--
+--Starting longitude 180--
+--Starting longitude 225--
+--Starting longitude 270--
+--Starting longitude 315--
+----- Done with year 1987 -----
+----- Done with year 1988 -----
+--Starting longitude 0--
+--Starting longitude 45--
+--Starting longitude 90--
+--Starting longitude 135--
+--Starting longitude 180--
+--Starting longitude 225--
+--Starting longitude 270--
+--Starting longitude 315--
+----- Done with year 1989 -----
+--Starting longitude 0--
+--Starting longitude 45--
+--Starting longitude 90--
+--Starting longitude 135--
+--Starting longitude 180--
+--Starting longitude 225--
+--Starting longitude 270--
+--Starting longitude 315--
+----- Done with year 1990 -----
+----- Done with year 1991 -----
+----- Done with year 1992 -----
+--Starting longitude 0--
+--Starting longitude 45--
+--Starting longitude 90--
+--Starting longitude 135--
+--Starting longitude 180--
+--Starting longitude 225--
+--Starting longitude 270--
+--Starting longitude 315--
+----- Done with year 1993 -----
+--Starting longitude 0--
+--Starting longitude 45--
+--Starting longitude 90--
+--Starting longitude 135--
+--Starting longitude 180--
+--Starting longitude 225--
+--Starting longitude 270--
+--Starting longitude 315--
+----- Done with year 1994 -----
+----- Done with year 1995 -----
+----- Done with year 1996 -----
+----- Done with year 1997 -----
+----- Done with year 1998 -----
+----- Done with year 1999 -----
+----- Done with year 2000 -----
+----- Done with year 2001 -----
+----- Done with year 2002 -----
+----- Done with year 2003 -----
+----- Done with year 2004 -----
+----- Done with year 2005 -----
+----- Done with year 2006 -----
+--Starting longitude 0--
+--Starting longitude 45--
+--Starting longitude 90--
+--Starting longitude 135--
+--Starting longitude 180--
+--Starting longitude 225--
+--Starting longitude 270--
+--Starting longitude 315--
+----- Done with year 2007 -----
+--Starting longitude 0--
+--Starting longitude 45--
+--Starting longitude 90--
+--Starting longitude 135--
+--Starting longitude 180--
+--Starting longitude 225--
+--Starting longitude 270--
+--Starting longitude 315--
+----- Done with year 2008 -----
+----- Done with year 2009 -----
+----- Done with year 2010 -----
+----- Done with year 2011 -----
+----- Done with year 2012 -----
+----- Done with year 2013 -----
+----- Done with year 2014 -----
+----- Done with year 2015 -----
+runBadYears
+[Warning: Directory already exists.] 
+[> In runBadYears at 3] 
+[Warning: Directory already exists.] 
+[> In runBadYears at 4] 
+[Warning: Directory already exists.] 
+[> In runBadYears at 5] 
+[Warning: Directory already exists.] 
+[> In runBadYears at 6] 
+[Warning: Directory already exists.] 
+[> In runBadYears at 7] 
+----- Done with year 1979 -----
+----- Done with year 1980 -----
+----- Done with year 1981 -----
+----- Done with year 1982 -----
+----- Done with year 1983 -----
+----- Done with year 1984 -----
+----- Done with year 1985 -----
+----- Done with year 1986 -----
+----- Done with year 1987 -----
+----- Done with year 1988 -----
+----- Done with year 1989 -----
+----- Done with year 1990 -----
+----- Done with year 1991 -----
+----- Done with year 1992 -----
+----- Done with year 1993 -----
+----- Done with year 1994 -----
+----- Done with year 1995 -----
+----- Done with year 1996 -----
+----- Done with year 1997 -----
+----- Done with year 1998 -----
+----- Done with year 1999 -----
+--Starting longitude 0--
+--Starting longitude 45--
+--Starting longitude 90--
+--Starting longitude 135--
+--Starting longitude 180--
+--Starting longitude 225--
+--Starting longitude 270--
+--Starting longitude 315--
+----- Done with year 2000 -----
+--Starting longitude 0--
+--Starting longitude 45--
+--Starting longitude 90--
+--Starting longitude 135--
+--Starting longitude 180--
+--Starting longitude 225--
+--Starting longitude 270--
+--Starting longitude 315--
+----- Done with year 2001 -----
+----- Done with year 2002 -----
+----- Done with year 2003 -----
+----- Done with year 2004 -----
+----- Done with year 2005 -----
+----- Done with year 2006 -----
+----- Done with year 2007 -----
+----- Done with year 2008 -----
+----- Done with year 2009 -----
+----- Done with year 2010 -----
+----- Done with year 2011 -----
+----- Done with year 2012 -----
+----- Done with year 2013 -----
+----- Done with year 2014 -----
+----- Done with year 2015 -----
+diary('off')
