@@ -10,7 +10,7 @@ end
 for lon = 0:45:315
     disp(['--Starting longitude ' num2str(lon) '--'])
 
-    gridDelta = 0.25;
+    gridDelta = 1.;
     % ixlat = round((90-lat)/0.25 + 1);
     ixlon = round(lon/gridDelta+1);
 
@@ -20,7 +20,7 @@ for lon = 0:45:315
     tpData = ncread(f, 'tp', [ixlon 1 1], [nlon nlat Inf]);
     times = ncread(f, 'time');
     
-    if lon > 135 && y ~= 2015
+    if y ~= 2015
         tpData = cat(3, tpData, ncread(fNext, 'tp', [ixlon 1 9], [nlon nlat 8]));
         times = [times; ncread(fNext, 'time', 9, 8)];
     end
@@ -32,45 +32,40 @@ for lon = 0:45:315
     % (double(times)/24)`
     %baseOffset = 33;
     baseOffset = 0;
+    lonOffset = 0;
     if lon <= 135
         lonOffset = 3*lon/45; % add 3 hour offset to start of day for each 45 deg east of 
     else
         lonOffset = -3*(360-lon)/45; % subtract 3 hour offset to start of day for each 45 deg
     end
     offset = baseOffset + lonOffset;
-
+    
+    unshiftedDates = (datenum(1900,1,1) + (double(times)/24));
     mDates = (datenum(1900,1,1) + (double(times+offset)/24));
 
     % year vector to identify which observations are associated with days
     % from the desired year (shifted so that 00:00 is associate with the
     % previous day)
     years = year(mDates-0.01);
+    
     % hour vector to identify which observation are NOT accumulated on top
     % of previous observations (i.e. not hours 3 and 15)
-    hours = hour(mDates);
-
     % Calculate incremental precip, instead of accumulated
-    nix = find(hours~=3 & hours~=15);
-    nix = nix(nix~=1);
+    ixhour = find(hour(unshiftedDates)~=3 & hour(unshiftedDates)~=15);
+    ixhour = ixhour(ixhour~=1); % in case index value 1
     pinc = diff(tpData,[],3);
-    tpData(:,:,nix) = pinc(:,:,nix-1);
+    tpData(:,:,ixhour) = pinc(:,:,ixhour-1);
     clear pinc nix;
 
     % Limit to records in the current year
     mDates = mDates(years==y);
-    hours = hours(years==y);
-
-    mxData = mxData(:,:,years==y);
-    mnData = mnData(:,:,years==y);
     tpData = tpData(:,:,years==y);
-
     years = years(years==y);
-
-    doy = floor(mDates-0.01 - datenum(y,1,1)+1);
 
     % For each day of the year, take the relevant max/min/sum
     % and add to the data structure holding daily observations
     % for the entire year
+    doy = floor(mDates-0.01 - datenum(y,1,1)+1);
     for dd = unique(doy)'
         ix = find(doy==dd);
 

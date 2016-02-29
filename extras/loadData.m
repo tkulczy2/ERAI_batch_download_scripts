@@ -38,7 +38,8 @@ else
     toffset = 33;
 end
 
-mDates = x2mdate((times+toffset)/24); % WHY IS OFFSET NECESSARY?
+mDates = (datenum(1900,1,1) + (double(times)/24));
+%mDates = x2mdate((times+toffset)/24); % WHY IS OFFSET NECESSARY?
 dates = cellstr(datestr(mDates));
 years = str2num(datestr(mDates, 'yyyy'));
 months = str2num(datestr(mDates, 'mm'));
