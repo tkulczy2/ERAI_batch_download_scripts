@@ -16,12 +16,16 @@ for lon = 0:45:315
 
     nlat = 180/gridDelta+1; % get all lat for a particular lon range (could use Inf instead)
     nlon = 45/gridDelta; % # of horizontal grid points in 45 deg arc
-
-    tpData = ncread(f, 'tp', [ixlon 1 1], [nlon nlat Inf]);
+    
+    mxData = ncread(f, 'mx2t', [ixlon 1 1], [nlon nlat Inf]);
+    mnData = ncread(f, 'mn2t', [ixlon 1 1], [nlon nlat Inf]);
+%    tpData = ncread(f, 'tp', [ixlon 1 1], [nlon nlat Inf]);
     times = ncread(f, 'time');
     
     if y ~= 2015
-        tpData = cat(3, tpData, ncread(fNext, 'tp', [ixlon 1 9], [nlon nlat 8]));
+        mxData = cat(3, mxData, ncread(fNext, 'mx2t', [ixlon 1 9], [nlon nlat 8]));
+        mnData = cat(3, mnData, ncread(fNext, 'mn2t', [ixlon 1 9], [nlon nlat 8]));
+        %tpData = cat(3, tpData, ncread(fNext, 'tp', [ixlon 1 9], [nlon nlat 8]));
         times = [times; ncread(fNext, 'time', 9, 8)];
     end
     

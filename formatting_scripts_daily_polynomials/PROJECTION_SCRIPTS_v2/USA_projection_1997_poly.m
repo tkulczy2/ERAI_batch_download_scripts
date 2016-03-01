@@ -28,9 +28,9 @@ elseif strcmp(CLIM, 'BEST')
     climateDir = 'Berkeley_Earth';
 end
 %obtain shapefile
-sample = 'BRA';
+sample = 'USA';
 %obtain data file for relevant decade
-sample_first_year = 1997;
+sample_first_year = 1987;
 
 shapeDir = ['/mnt/norgay/Datasets/SHAPEFILES/' sample '/' sample '_adm'];
 shapeFile = [sample '_adm2.shp'];
@@ -58,6 +58,7 @@ eval(command)
 command = ['cd ' outputDir];
 eval(command)
 label = 'NAME_1_NAME_2';
+
 
 % Sol's machine
 %load '/Volumes/Disk 1 RAID Set/LARGE_DATASETS/ERA_Interim/Matlab_1deg_x_1deg_polynomials/TAVG/tavg_2000_raw_polynomials'
