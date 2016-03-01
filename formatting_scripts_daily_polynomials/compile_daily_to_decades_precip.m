@@ -1,3 +1,6 @@
+clear
+close all
+clc
 diary('compile_daily_to_decades_precip.txt')
 cd '/mnt/norgay/Datasets/Climate/ERA_Interim/Matlab_1deg_x_1deg';
 mkdir PRECIP

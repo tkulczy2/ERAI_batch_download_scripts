@@ -96,7 +96,8 @@ end
 precip = struct('precip',allTP,'T',T,'lat',Y,'lon',X);
 
 % Save to norgay for future processing
-outputDir = '/mnt/norgay/Datasets/Climate/ERA_Interim/Matlab_.25deg_x_.25deg/';
+%outputDir = '/mnt/norgay/Datasets/Climate/ERA_Interim/Matlab_.25deg_x_.25deg/';
+outputDir = '/mnt/norgay/Datasets/Climate/ERA_Interim/Matlab_1deg_x_1deg/';
 save(strcat(outputDir,'/PRECIP/ERAI_DAILY_PRECIP_',num2str(y),'.mat'),'precip','-v7.3');
 
 clear;

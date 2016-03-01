@@ -1,9 +1,12 @@
-outputDir = '/mnt/norgay/Datasets/Climate/ERA_Interim/Matlab_.25deg_x_.25deg/';
-%outputDir = '/mnt/norgay/Datasets/Climate/ERA_Interim/Matlab_1deg_x_1deg/';
+addpath('/home/tkulczycki/ERA_Interim/ERAI_batch_download_scripts');
+
+%outputDir = '/mnt/norgay/Datasets/Climate/ERA_Interim/Matlab_.25deg_x_.25deg/';
+outputDir = '/mnt/norgay/Datasets/Climate/ERA_Interim/Matlab_1deg_x_1deg/';
 
 mkdir(outputDir,'PRECIP');
 
-cd /mnt/norgay/Datasets/Climate/ERA_Interim/Raw_NetCDF_.25deg_x_.25deg/
+%cd /mnt/norgay/Datasets/Climate/ERA_Interim/Raw_NetCDF_.25deg_x_.25deg/
+cd /mnt/norgay/Datasets/Climate/ERA_Interim/Raw_NetCDF_1deg_x_1deg/
 files = dir('*.nc');
 
 for fInfo = files'
