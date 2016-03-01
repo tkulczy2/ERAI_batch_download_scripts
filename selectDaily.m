@@ -19,13 +19,13 @@ for lon = 0:45:315
 
     mxData = ncread(f, 'mx2t', [ixlon 1 1], [nlon nlat Inf]);
     mnData = ncread(f, 'mn2t', [ixlon 1 1], [nlon nlat Inf]);
-    tpData = ncread(f, 'tp', [ixlon 1 1], [nlon nlat Inf]);
+%     tpData = ncread(f, 'tp', [ixlon 1 1], [nlon nlat Inf]);
     times = ncread(f, 'time');
     
     if lon > 135 && y ~= 2015
         mxData = cat(3, mxData, ncread(fNext, 'mx2t', [ixlon 1 9], [nlon nlat 8]));
         mnData = cat(3, mnData, ncread(fNext, 'mn2t', [ixlon 1 9], [nlon nlat 8]));
-        tpData = cat(3, tpData, ncread(fNext, 'tp', [ixlon 1 9], [nlon nlat 8]));
+%         tpData = cat(3, tpData, ncread(fNext, 'tp', [ixlon 1 9], [nlon nlat 8]));
         times = [times; ncread(fNext, 'time', 9, 8)];
     end
     
