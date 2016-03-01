@@ -63,7 +63,7 @@ for lon = 0:45:315
 
     % Limit to records in the current year
     mDates = mDates(years==y);
-    hours = hours(years==y);
+%     hours = hours(years==y);
 
     mxData = mxData(:,:,years==y);
     mnData = mnData(:,:,years==y);
