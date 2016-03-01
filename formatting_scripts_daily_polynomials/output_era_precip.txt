@@ -1,0 +1,85 @@
+----------- DECADE BEGINNING 1980 -----------
+
+data_raw = 
+
+          precip: [360x181x4018 double]
+               T: [365x1 double]
+             lat: [181x1 single]
+             lon: [360x1 single]
+            year: [4018x1 double]
+           month: [4018x1 double]
+    day_of_month: [4018x1 double]
+     day_of_year: [4018x1 double]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 1990 -----------
+
+data_raw = 
+
+          precip: [360x181x3652 double]
+               T: [365x1 double]
+             lat: [181x1 single]
+             lon: [360x1 single]
+            year: [3652x1 double]
+           month: [3652x1 double]
+    day_of_month: [3652x1 double]
+     day_of_year: [3652x1 double]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 2000 -----------
+
+data_raw = 
+
+          precip: [360x181x3653 double]
+               T: [366x1 double]
+             lat: [181x1 single]
+             lon: [360x1 single]
+            year: [3653x1 double]
+           month: [3653x1 double]
+    day_of_month: [3653x1 double]
+     day_of_year: [3653x1 double]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- DECADE BEGINNING 2010 -----------
+
+data_raw = 
+
+          precip: [360x181x2191 double]
+               T: [365x1 double]
+             lat: [181x1 single]
+             lon: [360x1 single]
+            year: [2191x1 double]
+           month: [2191x1 double]
+    day_of_month: [2191x1 double]
+     day_of_year: [2191x1 double]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----DONE WITH PRECIP ----

@@ -1,0 +1,52 @@
+testing_latitude_USA
+
+newpath =
+
+/mnt/norgay/Computation/sol_matlab_toolbox
+
+SOL: FOR GREATER SPEED, CONSIDER OPENING THE MATLAB WORKER POOL
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with precip for polynomial power 1
+-----------------------------finished with polynomial power 1
+----DONE----
+Elapsed time is 3280.044967 seconds.
+
+newpath =
+
+/mnt/norgay/Computation/sol_matlab_toolbox
+
+SOL: FOR GREATER SPEED, CONSIDER OPENING THE MATLAB WORKER POOL
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+
+ans =
+
+     1
+
+-----------------------------finished with precip for polynomial power 1
+-----------------------------finished with polynomial power 1
+----DONE----
+Elapsed time is 3414.796348 seconds.
+exit
