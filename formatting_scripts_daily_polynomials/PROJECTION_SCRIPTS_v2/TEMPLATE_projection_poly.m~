@@ -85,10 +85,8 @@ density = 1; %1 degree resolution
 % lon = precip_poly_1.lon;
 % ixlon = find(lon==180);
 % lon = [-360+lon(ixlon:end); lon(1:ixlon-1)] + 0.5;
-lat = precip_poly_1.lat;
-lon = precip_poly_1.lon;
-latlim = double([lat(1) lat(end)]);
-lonlim = double([lon(1) lon(end)]);
+% latlim = double([lat(1) lat(end)]);
+% lonlim = double([lon(1) lon(end)]);
 
 %%
 % cross sectional data for weighting BEST data

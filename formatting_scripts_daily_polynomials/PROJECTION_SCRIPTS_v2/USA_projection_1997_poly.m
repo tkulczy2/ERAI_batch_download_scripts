@@ -30,7 +30,7 @@ end
 %obtain shapefile
 sample = 'BRA';
 %obtain data file for relevant decade
-sample_first_year = 2000;
+sample_first_year = 1997;
 
 shapeDir = ['/mnt/norgay/Datasets/SHAPEFILES/' sample '/' sample '_adm'];
 shapeFile = [sample '_adm2.shp'];
@@ -51,7 +51,7 @@ baseDir = ['/mnt/norgay/Datasets/Climate/' climateDir];
 command = ['cd ' baseDir '/Matlab_projected_DAILY_polynomials'];
 eval(command) 
 
-outputDir = [sample '_daily_' CLIM '_polynomials'];
+outputDir = [sample '_daily_' CLIM '_polynomials_.25deg'];
 
 command = ['mkdir ' outputDir];
 eval(command)
@@ -70,7 +70,7 @@ label = 'NAME_1_NAME_2';
 %load '/mnt/norgay/Datasets/Climate/ERA_Interim/Matlab_1deg_x_1deg_polynomials/TMIN/tmin_2000_raw_polynomials'
 %load '/mnt/norgay/Datasets/Climate/ERA_Interim/Matlab_1deg_x_1deg_polynomials/PRECIP/precip_2000_raw_polynomials'
 for var = {'precip'}%,'tavg','tmax','tmin'}
-    command = ['load ' baseDir '/Matlab_1deg_x_1deg_polynomials/' upper(char(var)) '/' char(var) '_' num2str(sample_first_year) '_raw_polynomials;'];
+    command = ['load ' baseDir '/Matlab_.25deg_x_.25deg_polynomials/' upper(char(var)) '/' char(var) '_' num2str(sample_first_year) '_raw_polynomials;'];
     eval(command) 
 end
 
