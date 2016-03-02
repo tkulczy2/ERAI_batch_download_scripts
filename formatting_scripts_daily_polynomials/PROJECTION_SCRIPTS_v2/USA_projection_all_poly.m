@@ -28,10 +28,7 @@ elseif strcmp(CLIM, 'BEST')
     climateDir = 'Berkeley_Earth';
 end
 %obtain shapefile
-sample = 'BRA';
-%obtain data file for relevant decade
-sample_first_year = 2000;
-
+sample = 'USA';
 shapeDir = ['/mnt/norgay/Datasets/SHAPEFILES/' sample '/' sample '_adm'];
 shapeFile = [sample '_adm2.shp'];
 
@@ -51,7 +48,7 @@ baseDir = ['/mnt/norgay/Datasets/Climate/' climateDir];
 command = ['cd ' baseDir '/Matlab_projected_DAILY_polynomials'];
 eval(command) 
 
-outputDir = [sample '_daily_' CLIM '_polynomials'];
+outputDir = [sample '_daily_' CLIM '_polynomials_.25deg'];
 
 command = ['mkdir ' outputDir];
 eval(command)
@@ -59,65 +56,55 @@ command = ['cd ' outputDir];
 eval(command)
 label = 'NAME_1_NAME_2';
 
-disp(['-- Loading year ' num2str(sample_first_year) ' --'])
-% Sol's machine
-%load '/Volumes/Disk 1 RAID Set/LARGE_DATASETS/ERA_Interim/Matlab_1deg_x_1deg_polynomials/TAVG/tavg_2000_raw_polynomials'
-%load '/Volumes/Disk 1 RAID Set/LARGE_DATASETS/ERA_Interim/Matlab_1deg_x_1deg_polynomials/TMAX/tmax_2000_raw_polynomials'
-%load '/Volumes/Disk 1 RAID Set/LARGE_DATASETS/ERA_Interim/Matlab_1deg_x_1deg_polynomials/TMIN/tmin_2000_raw_polynomials'
 
-% Tamma-Shackleton
-%load '/mnt/norgay/Datasets/Climate/ERA_Interim/Matlab_1deg_x_1deg_polynomials/TAVG/tavg_2000_raw_polynomials'
-%load '/mnt/norgay/Datasets/Climate/ERA_Interim/Matlab_1deg_x_1deg_polynomials/TMAX/tmax_2000_raw_polynomials'
-%load '/mnt/norgay/Datasets/Climate/ERA_Interim/Matlab_1deg_x_1deg_polynomials/TMIN/tmin_2000_raw_polynomials'
-%load '/mnt/norgay/Datasets/Climate/ERA_Interim/Matlab_1deg_x_1deg_polynomials/PRECIP/precip_2000_raw_polynomials'
-for var = {'precip'}%,'tavg','tmax','tmin'}
-    command = ['load ' baseDir '/Matlab_1deg_x_1deg_polynomials/' upper(char(var)) '/' char(var) '_' num2str(sample_first_year) '_raw_polynomials;'];
-    eval(command) 
-end
+for sample_first_year = 1979:2015
+    
+    for var = {'precip'}%,'tavg','tmax','tmin'}
+        command = ['load ' baseDir '/Matlab_.25deg_x_.25deg_polynomials/' upper(char(var)) '/' char(var) '_' num2str(sample_first_year) '_raw_polynomials;'];
+        eval(command) 
+    end
 
-% Choose a max. polynomial power
-maxpower = 5;
+    % Choose a max. polynomial power
+    maxpower = 1;
 
-%%
-N = length(s);
-density = 1; %1 degree resolution
-% CAUTION - I'M DROPPING THE -90 LATITUDE OBSERVATION AND SHIFTING BY 0.5 DEGREES TO CONFORM WITH BEST WEIGHT GRID
-% lat = flip(precip_poly_1.lat(1:end-1)-0.5);
-% lon = precip_poly_1.lon;
-% ixlon = find(lon==180);
-% lon = [-360+lon(ixlon:end); lon(1:ixlon-1)] + 0.5;
-lat = precip_poly_1.lat;
-lon = precip_poly_1.lon;
-latlim = double([lat(1) lat(end)]);
-lonlim = double([lon(1) lon(end)]);
+    %%
+    N = length(s);
+    density = 1; %1 degree resolution
+    % CAUTION - I'M DROPPING THE -90 LATITUDE OBSERVATION AND SHIFTING BY 0.5 DEGREES TO CONFORM WITH BEST WEIGHT GRID
+    % lat = flip(precip_poly_1.lat(1:end-1)-0.5);
+    % lon = precip_poly_1.lon;
+    % ixlon = find(lon==180);
+    % lon = [-360+lon(ixlon:end); lon(1:ixlon-1)] + 0.5;
+    lat = precip_poly_1.lat;
+    lon = precip_poly_1.lon;
+    latlim = double([lat(1) lat(end)]);
+    lonlim = double([lon(1) lon(end)]);
 
-%%
-% cross sectional data for weighting BEST data
-load '/mnt/norgay/Computation/sol_matlab_toolbox/global_data/population_BEST'
-load '/mnt/norgay/Computation/sol_matlab_toolbox/global_data/crops_BEST'
+    %%
+    % cross sectional data for weighting BEST data
+    load '/mnt/norgay/Computation/sol_matlab_toolbox/global_data/population_BEST'
+    load '/mnt/norgay/Computation/sol_matlab_toolbox/global_data/crops_BEST'
 
-% make an ID map set (works well for fewer than 150 districts)
-ID = generate_ID_maps_par(s, a, label, density, latlim, lonlim);
-N = length(ID.ID);
+    % make an ID map set (works well for fewer than 150 districts)
+    ID = generate_ID_maps_par(s, a, label, density, latlim, lonlim);
+    N = length(ID.ID);
 
-%vectorize these ID maps into I and J locations in the array
-%entries hold the vectors describing the row and col of cell in the polygon
-ID_I = cell(N,1);
-ID_J = cell(N,1);
+    %vectorize these ID maps into I and J locations in the array
+    %entries hold the vectors describing the row and col of cell in the polygon
+    ID_I = cell(N,1);
+    ID_J = cell(N,1);
 
-%get indicies of maps, store in a structure that is N large
-for n = 1:N
-    [I,J] = find(ID.masks(:,:,n)==1);
-    ID_I{n} = I;
-    ID_J{n} = J; 
-end
+    %get indicies of maps, store in a structure that is N large
+    for n = 1:N
+        [I,J] = find(ID.masks(:,:,n)==1);
+        ID_I{n} = I;
+        ID_J{n} = J; 
+    end
 
-%% loop through three temp variables, three polynomials, and output three weights for each temp measure
+    %% loop through three temp variables, three polynomials, and output three weights for each temp measure
 
-tic
-disp(['--- BEGIN POWER LOOP ---'])
-for power=1:maxpower % these are polynomial powers
-    %for T = 1:4 % 1 is tavg, 2 is tmax, 3 is tmin
+    tic
+    for power=1:maxpower % these are polynomial powers
     T = 4; % 1 is tavg, 2 is tmax, 3 is tmin
 
     if T == 1
@@ -141,7 +128,7 @@ for power=1:maxpower % these are polynomial powers
         eval(command)
         var = 'precip';
     end
-    disp(['---- Power ' num2str(power) ', ' var ' ----'])
+
     %generate the output table with headers and dates, columns are districts
     %and date variables
 
@@ -220,11 +207,13 @@ for power=1:maxpower % these are polynomial powers
 
     disp(['-----------------------------finished with ' var ' for polynomial power ' num2str(power)])
 
-    % close the tavg, tmax, tmin loop 
+    %end % close the tavg, tmax, tmin loop 
 
     disp(['-----------------------------finished with polynomial power ' num2str(power)])
-    
-end % close polynomial power loop
+
+    end % close polynomial power loop
+    disp(['-----------------------------finished with year ' num2str(sample_first_year)])
+end
 disp('----DONE----')
 toc
 
