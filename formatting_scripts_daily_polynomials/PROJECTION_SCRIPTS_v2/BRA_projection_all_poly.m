@@ -28,7 +28,7 @@ elseif strcmp(CLIM, 'BEST')
     climateDir = 'Berkeley_Earth';
 end
 %obtain shapefile
-sample = 'USA';
+sample = 'BRA';
 shapeDir = ['/mnt/norgay/Datasets/SHAPEFILES/' sample '/' sample '_adm'];
 shapeFile = [sample '_adm2.shp'];
 
@@ -40,6 +40,29 @@ command = ['cd ' shapeDir];
 eval(command)
 
 [s,a] = shaperead(shapeFile,'UseGeoCoords', true); 
+
+[S, A] = keep_by_attribute(s, a, 'NAME_2', 'Porto Alegre');
+s(1) = S; a(1) = A;
+
+[S, A] = keep_by_attribute(s, a, 'NAME_2', 'Rio de Janeiro');
+s(2) = S; a(2) = A;
+
+[S, A] = keep_by_attribute(s, a, 'NAME_2', 'Belo Horizonte');
+s(3) = S; a(3) = A;
+
+[S, A] = keep_by_attribute(s, a, 'NAME_2', 'S�o Paulo');
+s(4) = S; a(4) = A;
+
+[S, A] = keep_by_attribute(s, a, 'NAME_2', 'Salvador');
+s(5) = S; a(5) = A;
+
+[S, A] = keep_by_attribute(s, a, 'NAME_2', 'Recife');
+s(6) = S; a(6) = A;
+
+s = s(1:6); a = a(1:6);
+clear S A
+
+
 %% Sample specific instructions here
 a = combine_attributes(a, 'NAME_1', 'NAME_2');
 
@@ -57,7 +80,7 @@ eval(command)
 label = 'NAME_1_NAME_2';
 
 
-for sample_first_year = 1979:2015
+for sample_first_year = 2000:2015
     
     for var = {'precip'}%,'tavg','tmax','tmin'}
         command = ['load ' baseDir '/Matlab_.25deg_x_.25deg_polynomials/' upper(char(var)) '/' char(var) '_' num2str(sample_first_year) '_raw_polynomials;'];

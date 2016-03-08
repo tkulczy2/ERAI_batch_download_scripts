@@ -28,9 +28,9 @@ elseif strcmp(CLIM, 'BEST')
     climateDir = 'Berkeley_Earth';
 end
 %obtain shapefile
-sample = 'USA';
+sample = 'ISR';
 shapeDir = ['/mnt/norgay/Datasets/SHAPEFILES/' sample '/' sample '_adm'];
-shapeFile = [sample '_adm2.shp'];
+shapeFile = [sample '_adm1.shp'];
 
 % Sol's machine
 %cd /Users/solhsiang/Dropbox/Rhodium/summer-workshop-data/_spatial_data/BRA
@@ -41,7 +41,6 @@ eval(command)
 
 [s,a] = shaperead(shapeFile,'UseGeoCoords', true); 
 %% Sample specific instructions here
-a = combine_attributes(a, 'NAME_1', 'NAME_2');
 
 % Tamma-Shackleton: change directory to store output files on Norgay
 baseDir = ['/mnt/norgay/Datasets/Climate/' climateDir];
@@ -54,10 +53,10 @@ command = ['mkdir ' outputDir];
 eval(command)
 command = ['cd ' outputDir];
 eval(command)
-label = 'NAME_1_NAME_2';
+label = 'NAME_1';
 
 
-for sample_first_year = 1979:2015
+for sample_first_year = 1990:1999
     
     for var = {'precip'}%,'tavg','tmax','tmin'}
         command = ['load ' baseDir '/Matlab_.25deg_x_.25deg_polynomials/' upper(char(var)) '/' char(var) '_' num2str(sample_first_year) '_raw_polynomials;'];
