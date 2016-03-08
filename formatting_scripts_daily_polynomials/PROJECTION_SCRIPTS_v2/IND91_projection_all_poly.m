@@ -47,7 +47,7 @@ baseDir = ['/mnt/norgay/Datasets/Climate/' climateDir];
 command = ['cd ' baseDir '/Matlab_projected_DAILY_polynomials'];
 eval(command) 
 
-outputDir = [sample '_daily_' CLIM '_polynomials_.25deg'];
+outputDir = [sample '_daily_' CLIM '_polynomials'];
 
 command = ['mkdir ' outputDir];
 eval(command)

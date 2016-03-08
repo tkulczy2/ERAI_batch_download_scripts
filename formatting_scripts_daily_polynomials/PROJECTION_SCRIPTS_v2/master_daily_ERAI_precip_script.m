@@ -1,4 +1,5 @@
 %% run all daily precip projections
+diary('output_precip_all.txt')
 
 cd /mnt/norgay/Datasets/Climate/ERA_Interim/formatting_scripts_daily_polynomials/PROJECTION_SCRIPTS_v2
 %testing
@@ -51,3 +52,4 @@ BRA_projection_all_poly %ADM2 limited cities all-2009
 cd /mnt/norgay/Datasets/Climate/ERA_Interim/formatting_scripts_daily_polynomials/PROJECTION_SCRIPTS_v2
 CHL_projection_all_poly %ADM2
 
+diary('off')
