@@ -12,9 +12,21 @@ mkdir Matlab_4d_stack_by_decade/PRECIP
 
 grid = '1deg_x_1deg';
 
-for v = {'tavg'}
-var = char(v);
-VAR = upper(var);
+for v = {'tavg','precip'}
+    var = char(v);
+    VAR = upper(var);
+
+    if strcmp(var, 'precip')
+        bot_bin = 10;
+        top_bin = 200;
+        inc = 10;
+        unit = 'mm';
+    else
+        bot_bin = -40.;
+        top_bin = 35.;
+        inc = 1;
+        unit = 'C';
+    end
     for base_year = 1979:1:2015
         command = ['load Matlab_.25deg_x_.25deg/' VAR '/ERAI_DAILY_' VAR '_' num2str(base_year) '.mat'];
         eval(command)
@@ -53,29 +65,33 @@ VAR = upper(var);
         
         
         %lowest bin
-        disp(['------------T < -40C'])
-        bin_mask_daily = (data_actual<-40);
-        command = ['bin_nInf_n40C_mask_monthly = monthify_stack_sum(data_raw.lat, data_raw.lon, [1:size(data_actual,3)], bin_mask_daily,' num2str(base_year) ');' ];
+        disp(['------------T < ' num2str(bot_bin) unit])
+        bin_mask_daily = (data_actual<bot_bin);
+        if bot_bin<0
+            command = ['bin_nInf_n' num2str(abs(T)) unit '_mask_monthly = monthify_stack_sum(data_raw.lat, data_raw.lon, [1:size(data_actual,3)], bin_mask_daily,' num2str(base_year) ');' ];
+        else
+            command = ['bin_nInf_n' num2str(abs(T)) unit '_mask_monthly = monthify_stack_sum(data_raw.lat, data_raw.lon, [1:size(data_actual,3)], bin_mask_daily,' num2str(base_year) ');' ];
+        end
         eval(command)
 
         %highest bin
-        disp(['------------T >= 35C'])
-        bin_mask_daily = (data_actual>=35);
-        command = ['bin_35C_Inf_mask_monthly = monthify_stack_sum(data_raw.lat, data_raw.lon, [1:size(data_actual,3)], bin_mask_daily,' num2str(base_year) ');'];
+        disp(['------------T >= ' num2str(top_bin) unit])
+        bin_mask_daily = (data_actual>=top_bin);
+        command = ['bin_' num2str(T) unit '_Inf_mask_monthly = monthify_stack_sum(data_raw.lat, data_raw.lon, [1:size(data_actual,3)], bin_mask_daily,' num2str(base_year) ');'];
         eval(command)
 
         %all other bins
-        for T = -40:34
+        for T = bot_bin:inc:top_bin-inc
     %        for T = -10:-8
 
-            disp(['------------T = ' num2str(T) 'C'])
+            disp(['------------T = ' num2str(T) unit])
             bin_mask_daily = (data_actual>=T & data_actual<T+1);
-            if T<-1
-                command_1 = ['bin_n' num2str(abs(T)) 'C_n' num2str(abs(T+1)) 'C_mask_monthly'];
-            elseif T == -1
-                command_1 = ['bin_n1_0_mask_monthly'];
+            if T<-1*inc
+                command_1 = ['bin_n' num2str(abs(T)) unit '_n' num2str(abs(T+inc)) unit '_mask_monthly'];
+            elseif T > 0
+                command_1 = ['bin_' num2str(T) unit '_' num2str(T+inc) unit '_mask_monthly'];
             else
-                command_1 = ['bin_' num2str(T) 'C_' num2str(T+1) 'C_mask_monthly'];
+                command_1 = ['bin_n' num2str(abs(T)) unit '_' num2str(T+inc) unit '_mask_monthly'];
             end
             command_2 = ['= monthify_stack_sum(data_raw.lat, data_raw.lon, [1:size(data_actual,3)], bin_mask_daily, ' num2str(base_year) ');'];
             eval([command_1 command_2])
