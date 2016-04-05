@@ -16,30 +16,7 @@ mkdir Matlab_1deg_x_1deg/TMIN
 for v = {'tmax', 'tmin', 'prate', 'q2m'}
 var = char(v);
 VAR = upper(var);
-    for y = 1979:1:2010
-        
-        % read monthly grib files (maybe add step 0)
-        for m = 1:12
-        
-        filename = ['Raw_GRIB2_T382_Gaussian/'+var+'/'+var+'.gdas.'+yearmm+'.grb2']
-        nc=ncgeodataset(filename);
-        % need to change this depending on var
-        varname = 'Maximum_temperature_height_above_ground_Mixed_intervals_Interval';
-        s = nc.size(varname);
-        data = nan(s(1),s(3),s(4));
-        for i = 1:s(1)
-            slice = double(squeeze(nc{varname}(i,:,:,:)));
-            data(i,:,:) = slice;
-        end
-        data = double(squeeze(data));
-        latitude = double(nc{'lat'}(:));
-        longitude = double(nc{'lon'}(:));
-        t = nc.variable('time');
-        mdate = datenum(y,m,1,0,0,0) + double(t.data(:))/24;
-        end
-        
-        year = year(mdate);
-        month = month(mdate);
+    for y = 1979:1:2015
         
         % old commands
         year = ncread(filename, 'year');
