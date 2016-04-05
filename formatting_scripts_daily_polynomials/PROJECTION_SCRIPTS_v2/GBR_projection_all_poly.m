@@ -29,7 +29,8 @@ elseif strcmp(CLIM, 'BEST')
 end
 %obtain shapefile
 sample = 'GBR';
-shapeDir = ['/mnt/norgay/Datasets/SHAPEFILES/' sample '/' sample '_adm'];
+shapeDir = ['/mnt/norgay/Datasets/SHAPEFILES/' sample];
+%shapeDir = ['/mnt/norgay/Datasets/SHAPEFILES/' sample '/' sample '_adm'];
 shapeFile = [sample '_region.shp'];
 
 % Sol's machine

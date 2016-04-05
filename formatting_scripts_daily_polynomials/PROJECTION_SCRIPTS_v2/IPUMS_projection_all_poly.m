@@ -41,7 +41,21 @@ eval(command)
 
 [s,a] = shaperead(shapeFile,'UseGeoCoords', true); 
 %% Sample specific instructions here
+[s,a] = drop_by_attribute(s, a, 'BPL_CODE', '99999');
+[s,a] = drop_by_attribute(s, a, 'GEOLEVEL1', '999999');
+[s,a] = drop_by_attribute(s, a, 'ADMIN_NAME', 'Alaska');
+[s,a] = drop_by_attribute(s, a, 'CNTRY_NAME', 'Russia');
+[s,a] = drop_by_attribute(s, a, 'CNTRY_NAME', 'Fiji');
+[s,a] = drop_by_attribute(s, a, 'CNTRY_NAME', 'Antarctica');
+[s,a] = drop_by_attribute(s, a, 'CNTRY_NAME', 'Tuvalu');
+[s,a] = drop_by_attribute(s, a, 'CNTRY_NAME', 'Hong Kong');
+%[s,a] = drop_by_attribute(s, a, 'CNTRY_NAME', 'Congo');
 a = combine_attributes(a, 'CNTRY_NAME', 'ADMIN_NAME');
+for i=1:length(a)
+  a(i).CNTRY_NAME_ADMIN_NAME = regexprep(a(i).CNTRY_NAME_ADMIN_NAME, ' \(.*\)', '');
+%  a(i).CNTRY_NAME_ADMIN_NAME = regexprep(a(i).CNTRY_NAME_ADMIN_NAME, ',.*-', '-');
+  a(i).CNTRY_NAME_ADMIN_NAME = regexprep(a(i).CNTRY_NAME_ADMIN_NAME, 'rdoba.*rdoba', 'rdoba');
+end
 
 % Tamma-Shackleton: change directory to store output files on Norgay
 baseDir = ['/mnt/norgay/Datasets/Climate/' climateDir];
@@ -201,9 +215,9 @@ for sample_first_year = 1979:2015
     end
 
     %output
-    cell2table2csv(output_area, [sample '_' num2str(sample_first_year) '_daily_' var '_area_weights_poly_' num2str(power)])
-    cell2table2csv(output_pop, [sample  '_' num2str(sample_first_year) '_daily_' var '_pop_weights_poly_' num2str(power)])
-    cell2table2csv(output_crop, [sample  '_' num2str(sample_first_year) '_daily_' var '_crop_weights_poly_' num2str(power)])
+    cell2table2csv_alt(output_area, [sample '_' num2str(sample_first_year) '_daily_' var '_area_weights_poly_' num2str(power)])
+    cell2table2csv_alt(output_pop, [sample  '_' num2str(sample_first_year) '_daily_' var '_pop_weights_poly_' num2str(power)])
+    cell2table2csv_alt(output_crop, [sample  '_' num2str(sample_first_year) '_daily_' var '_crop_weights_poly_' num2str(power)])
 
     disp(['-----------------------------finished with ' var ' for polynomial power ' num2str(power)])
 
