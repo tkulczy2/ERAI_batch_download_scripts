@@ -5,7 +5,7 @@
 
 %%
 
-cd '/mnt/norgay/Datasets/Climate/ERA-Interim/'
+cd '/mnt/norgay/Datasets/Climate/ERA_Interim/'
 mkdir Matlab_4d_stack_by_decade
 mkdir Matlab_4d_stack_by_decade/TAVG
 mkdir Matlab_4d_stack_by_decade/PRECIP
@@ -51,6 +51,8 @@ for v = {'tavg','precip'}
         % Reorder longitude
         data_actual = cat(2, data_actual(:,lon<0,:), data_actual(:,lon>0,:));
         lon = [lon(lon<0); lon(lon>0)];
+        lat = double(lat);
+        lon = double(lon);
 
         % Generate time variables
         yr = year(data_raw.T);
@@ -68,16 +70,16 @@ for v = {'tavg','precip'}
         disp(['------------T < ' num2str(bot_bin) unit])
         bin_mask_daily = (data_actual<bot_bin);
         if bot_bin<0
-            command = ['bin_nInf_n' num2str(abs(T)) unit '_mask_monthly = monthify_stack_sum(data_raw.lat, data_raw.lon, [1:size(data_actual,3)], bin_mask_daily,' num2str(base_year) ');' ];
+            command = ['bin_nInf_n' num2str(abs(bot_bin)) unit '_mask_monthly = monthify_stack_sum(lat, lon, [1:size(data_actual,3)], bin_mask_daily,' num2str(base_year) ');' ];
         else
-            command = ['bin_nInf_n' num2str(abs(T)) unit '_mask_monthly = monthify_stack_sum(data_raw.lat, data_raw.lon, [1:size(data_actual,3)], bin_mask_daily,' num2str(base_year) ');' ];
+            command = ['bin_nInf_' num2str(abs(bot_bin)) unit '_mask_monthly = monthify_stack_sum(lat, lon, [1:size(data_actual,3)], bin_mask_daily,' num2str(base_year) ');' ];
         end
         eval(command)
 
         %highest bin
         disp(['------------T >= ' num2str(top_bin) unit])
         bin_mask_daily = (data_actual>=top_bin);
-        command = ['bin_' num2str(T) unit '_Inf_mask_monthly = monthify_stack_sum(data_raw.lat, data_raw.lon, [1:size(data_actual,3)], bin_mask_daily,' num2str(base_year) ');'];
+        command = ['bin_' num2str(top_bin) unit '_Inf_mask_monthly = monthify_stack_sum(lat, lon, [1:size(data_actual,3)], bin_mask_daily,' num2str(base_year) ');'];
         eval(command)
 
         %all other bins
@@ -93,7 +95,7 @@ for v = {'tavg','precip'}
             else
                 command_1 = ['bin_n' num2str(abs(T)) unit '_' num2str(T+inc) unit '_mask_monthly'];
             end
-            command_2 = ['= monthify_stack_sum(data_raw.lat, data_raw.lon, [1:size(data_actual,3)], bin_mask_daily, ' num2str(base_year) ');'];
+            command_2 = ['= monthify_stack_sum(lat, lon, [1:size(data_actual,3)], bin_mask_daily, ' num2str(base_year) ');'];
             eval([command_1 command_2])
 
         end

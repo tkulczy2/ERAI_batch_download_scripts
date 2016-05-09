@@ -5,10 +5,10 @@
 
 %%
 
-cd '/mnt/norgay/Datasets/Climate/ERA-Interim/'
+cd '/mnt/norgay/Datasets/Climate/ERA_Interim/'
 mkdir Matlab_4d_stack_by_temp_bin
 mkdir Matlab_4d_stack_by_temp_bin/TAVG
-mkdir Matlab_4d_stack_by_precip_bin/PRECIP
+mkdir Matlab_4d_stack_by_temp_bin/PRECIP
 
 %%
 
@@ -52,7 +52,7 @@ for T = bot_bin-inc:inc:top_bin %complete sample
             new_varname = ['tavg_bin_nInf_' num2str(T) unit '_daily_count_monthly'];
             new_filename = ['tavg_bin_nInf_' num2str(T) unit '_ERAI_1979_2015'];
         elseif T==top_bin %top bin
-            varname = ['bin_' num2str(T) unit '_Inf_mask_monthly';
+            varname = ['bin_' num2str(T) unit '_Inf_mask_monthly'];
             new_varname = ['tavg_bin_' num2str(T) unit '_Inf_daily_count_monthly'];
             new_filename = ['tavg_bin_' num2str(T) unit '_Inf_ERAI_1979_2015'];
         else
@@ -67,7 +67,7 @@ for T = bot_bin-inc:inc:top_bin %complete sample
             new_varname = ['tavg_bin_nInf_n40C_daily_count_monthly'];
             new_filename = ['tavg_bin_nInf_n40C_ERAI_1979_2015'];
         elseif T==35 %top bin
-            varname = ['bin_' num2str(T) unit '_Inf_mask_monthly';
+            varname = ['bin_' num2str(T) unit '_Inf_mask_monthly'];
             new_varname = ['tavg_bin_' num2str(T) unit '_Inf_daily_count_monthly'];
             new_filename = ['tavg_bin_' num2str(T) unit '_Inf_ERAI_1979_2015'];
         elseif T<-1
@@ -120,7 +120,7 @@ for T = bot_bin-inc:inc:top_bin %complete sample
     
     command = [new_varname ' = new_data;'];
     eval(command)
-    command = ['save Matlab_4d_stack_by_' var '_bin/' VAR '/' new_filename ' ' new_varname];
+    command = ['save Matlab_4d_stack_by_temp_bin/' VAR '/' new_filename ' ' new_varname];
     eval(command)
 
     clear y year tavg_* month* i* lat lon command bin_* data new_* varname
@@ -128,7 +128,7 @@ for T = bot_bin-inc:inc:top_bin %complete sample
 end
 
 clear T total_years
-
+end
 disp('-----------DONE------------')
 toc
 
