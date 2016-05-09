@@ -69,11 +69,12 @@ for v = {'tavg','precip'}
         %lowest bin
         disp(['------------T < ' num2str(bot_bin) unit])
         bin_mask_daily = (data_actual<bot_bin);
-        if bot_bin<0
-            command = ['bin_nInf_n' num2str(abs(bot_bin)) unit '_mask_monthly = monthify_stack_sum(lat, lon, [1:size(data_actual,3)], bin_mask_daily,' num2str(base_year) ');' ];
-        else
-            command = ['bin_nInf_' num2str(abs(bot_bin)) unit '_mask_monthly = monthify_stack_sum(lat, lon, [1:size(data_actual,3)], bin_mask_daily,' num2str(base_year) ');' ];
-        end
+        command = ['bin_nInf_' strrep(num2str(bot_bin),'-','n') unit '_mask_monthly = monthify_stack_sum(lat, lon, [1:size(data_actual,3)], bin_mask_daily,' num2str(base_year) ');' ];
+%         if bot_bin<0
+%             command = ['bin_nInf_n' num2str(abs(bot_bin)) unit '_mask_monthly = monthify_stack_sum(lat, lon, [1:size(data_actual,3)], bin_mask_daily,' num2str(base_year) ');' ];
+%         else
+%             command = ['bin_nInf_' num2str(abs(bot_bin)) unit '_mask_monthly = monthify_stack_sum(lat, lon, [1:size(data_actual,3)], bin_mask_daily,' num2str(base_year) ');' ];
+%         end
         eval(command)
 
         %highest bin
@@ -87,14 +88,15 @@ for v = {'tavg','precip'}
     %        for T = -10:-8
 
             disp(['------------T = ' num2str(T) unit])
-            bin_mask_daily = (data_actual>=T & data_actual<T+1);
-            if T<-1*inc
-                command_1 = ['bin_n' num2str(abs(T)) unit '_n' num2str(abs(T+inc)) unit '_mask_monthly'];
-            elseif T > 0
-                command_1 = ['bin_' num2str(T) unit '_' num2str(T+inc) unit '_mask_monthly'];
-            else
-                command_1 = ['bin_n' num2str(abs(T)) unit '_' num2str(T+inc) unit '_mask_monthly'];
-            end
+            bin_mask_daily = (data_actual>=T & data_actual<T+inc);
+            command_1 = ['bin_' strrep(num2str(T),'-','n') unit '_n' strrep(num2str(T+inc),'-','n') unit '_mask_monthly'];
+%             if T<-1*inc
+%                 command_1 = ['bin_n' num2str(abs(T)) unit '_n' num2str(abs(T+inc)) unit '_mask_monthly'];
+%             elseif T > 0
+%                 command_1 = ['bin_' num2str(T) unit '_' num2str(T+inc) unit '_mask_monthly'];
+%             else
+%                 command_1 = ['bin_n' num2str(abs(T)) unit '_' num2str(T+inc) unit '_mask_monthly'];
+%             end
             command_2 = ['= monthify_stack_sum(lat, lon, [1:size(data_actual,3)], bin_mask_daily, ' num2str(base_year) ');'];
             eval([command_1 command_2])
 

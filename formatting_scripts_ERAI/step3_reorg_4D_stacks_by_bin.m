@@ -25,7 +25,7 @@ total_years = (2015-1978);
 %for T = -41:-39
 %for T = 33:35
 
-for v = {'tavg','precip'}
+for v = {'tavg'} %,'precip'}
     var = char(v);
     VAR = upper(var);
 
@@ -45,45 +45,45 @@ for v = {'tavg','precip'}
 for T = bot_bin-inc:inc:top_bin %complete sample
     disp(['----------- bin: ' num2str(T) unit])
     
-    if strcmp(var, 'precip')
-        % define variable and file names based on bin
-        if T==bot_bin-inc %bottom bin
-            varname = ['bin_nInf_' num2str(T) unit 'mask_monthly'];
-            new_varname = ['tavg_bin_nInf_' num2str(T) unit '_daily_count_monthly'];
-            new_filename = ['tavg_bin_nInf_' num2str(T) unit '_ERAI_1979_2015'];
-        elseif T==top_bin %top bin
-            varname = ['bin_' num2str(T) unit '_Inf_mask_monthly'];
-            new_varname = ['tavg_bin_' num2str(T) unit '_Inf_daily_count_monthly'];
-            new_filename = ['tavg_bin_' num2str(T) unit '_Inf_ERAI_1979_2015'];
-        else
-            varname = ['bin_' num2str(T) unit '_' num2str(T+1) unit '_mask_monthly'];
-            new_varname = ['tavg_bin_' num2str(T) unit '_' num2str(T+1) unit '_daily_count_monthly'];
-            new_filename = ['tavg_bin_' num2str(T) unit '_' num2str(T+1) unit '_ERAI_1979_2015'];
-        end
+%     if strcmp(var, 'precip')
+    % define variable and file names based on bin
+    if T==bot_bin-inc %bottom bin
+        varname = ['bin_nInf_' strrep(num2str(T),'-','n') unit 'mask_monthly'];
+        new_varname = [var '_bin_nInf_' strrep(num2str(T),'-','n') unit '_daily_count_monthly'];
+        new_filename = [var '_bin_nInf_' strrep(num2str(T),'-','n') unit '_ERAI_1979_2015'];
+    elseif T==top_bin %top bin
+        varname = ['bin_' num2str(T) unit '_Inf_mask_monthly'];
+        new_varname = [var '_bin_' num2str(T) unit '_Inf_daily_count_monthly'];
+        new_filename = [var '_bin_' num2str(T) unit '_Inf_ERAI_1979_2015'];
     else
-        % define variable and file names based on bin
-        if T==-41 %bottom bin
-            varname = 'bin_nInf_n40C_mask_monthly';
-            new_varname = ['tavg_bin_nInf_n40C_daily_count_monthly'];
-            new_filename = ['tavg_bin_nInf_n40C_ERAI_1979_2015'];
-        elseif T==35 %top bin
-            varname = ['bin_' num2str(T) unit '_Inf_mask_monthly'];
-            new_varname = ['tavg_bin_' num2str(T) unit '_Inf_daily_count_monthly'];
-            new_filename = ['tavg_bin_' num2str(T) unit '_Inf_ERAI_1979_2015'];
-        elseif T<-1
-            varname = ['bin_n' num2str(abs(T)) 'C_n' num2str(abs(T+1)) 'C_mask_monthly'];
-            new_varname = ['tavg_bin_n' num2str(abs(T)) 'C_n' num2str(abs(T+1)) 'C_daily_count_monthly'];
-            new_filename = ['tavg_bin_n' num2str(abs(T)) 'C_n' num2str(abs(T+1)) 'C_ERAI_1979_2015'];
-        elseif T == -1
-            varname = ['bin_n1_0_mask_monthly'];
-            new_varname = ['tavg_bin_n1C_0C_daily_count_monthly']; %in earlier steps, lost celsius C in var names
-            new_filename = ['tavg_bin_n1C_0C_ERAI_1979_2015'];
-        else
-            varname = ['bin_' num2str(T) 'C_' num2str(T+1) 'C_mask_monthly'];
-            new_varname = ['tavg_bin_' num2str(T) 'C_' num2str(T+1) 'C_daily_count_monthly'];
-            new_filename = ['tavg_bin_' num2str(T) 'C_' num2str(T+1) 'C_ERAI_1979_2015'];
-        end
+        varname = ['bin_' strrep(num2str(T),'-','n') unit '_' strrep(num2str(T+inc),'-','n') unit '_mask_monthly'];
+        new_varname = [var '_bin_' strrep(num2str(T),'-','n') unit '_' strrep(num2str(T+inc),'-','n') unit '_daily_count_monthly'];
+        new_filename = [var '_bin_' strrep(num2str(T),'-','n') unit '_' strrep(num2str(T+inc),'-','n') unit '_ERAI_1979_2015'];
     end
+%     else
+%         % define variable and file names based on bin
+%         if T==-41 %bottom bin
+%             varname = 'bin_nInf_n40C_mask_monthly';
+%             new_varname = ['tavg_bin_nInf_n40C_daily_count_monthly'];
+%             new_filename = ['tavg_bin_nInf_n40C_ERAI_1979_2015'];
+%         elseif T==35 %top bin
+%             varname = ['bin_' num2str(T) unit '_Inf_mask_monthly'];
+%             new_varname = ['tavg_bin_' num2str(T) unit '_Inf_daily_count_monthly'];
+%             new_filename = ['tavg_bin_' num2str(T) unit '_Inf_ERAI_1979_2015'];
+%         elseif T<-1
+%             varname = ['bin_n' num2str(abs(T)) 'C_n' num2str(abs(T+1)) 'C_mask_monthly'];
+%             new_varname = ['tavg_bin_n' num2str(abs(T)) 'C_n' num2str(abs(T+1)) 'C_daily_count_monthly'];
+%             new_filename = ['tavg_bin_n' num2str(abs(T)) 'C_n' num2str(abs(T+1)) 'C_ERAI_1979_2015'];
+%         elseif T == -1
+%             varname = ['bin_n1_0_mask_monthly'];
+%             new_varname = ['tavg_bin_n1C_0C_daily_count_monthly']; %in earlier steps, lost celsius C in var names
+%             new_filename = ['tavg_bin_n1C_0C_ERAI_1979_2015'];
+%         else
+%             varname = ['bin_' num2str(T) 'C_' num2str(T+1) 'C_mask_monthly'];
+%             new_varname = ['tavg_bin_' num2str(T) 'C_' num2str(T+1) 'C_daily_count_monthly'];
+%             new_filename = ['tavg_bin_' num2str(T) 'C_' num2str(T+1) 'C_ERAI_1979_2015'];
+%         end
+%     end
     
     %create a large monthly array to encompass all years in the dataset
     %(for a specific temp bin)

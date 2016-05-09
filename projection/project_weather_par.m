@@ -58,6 +58,7 @@ function [Q] = project_weather_par(s, a, label, field)
 %                             resolution is 0.1 degree, limits = [48S,48N]
 %           'DATASET_climatevariable_BIN_lowerbound_upperbound'
 %           'NASA-aerosol'  - stratospheric optical depth (1984-2005)
+%           'ERAI-temp'
 %
 % THIS CODE IS WRITTEN IN PARALLEL FOR DATASETS WITH A LARGE NUMBER OF
 % ID-MAPS
