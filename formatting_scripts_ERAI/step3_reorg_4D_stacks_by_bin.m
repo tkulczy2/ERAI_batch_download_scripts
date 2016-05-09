@@ -55,6 +55,10 @@ for v = {'tavg'} %,'precip'}
             varname = ['bin_' num2str(T) unit '_Inf_mask_monthly'];
             new_varname = [var '_bin_' num2str(T) unit '_Inf_daily_count_monthly'];
             new_filename = [var '_bin_' num2str(T) unit '_Inf_ERAI_1979_2015'];
+        elseif T==0 % needed due to bug in Step2 that produced variables with "n0C"
+            varname = ['bin_n' num2str(T) unit '_' strrep(num2str(T+inc),'-','n') unit '_mask_monthly'];
+            new_varname = [var '_bin_' strrep(num2str(T),'-','n') unit '_' strrep(num2str(T+inc),'-','n') unit '_daily_count_monthly'];
+            new_filename = [var '_bin_' strrep(num2str(T),'-','n') unit '_' strrep(num2str(T+inc),'-','n') unit '_ERAI_1979_2015'];
         else
             varname = ['bin_' strrep(num2str(T),'-','n') unit '_' strrep(num2str(T+inc),'-','n') unit '_mask_monthly'];
             new_varname = [var '_bin_' strrep(num2str(T),'-','n') unit '_' strrep(num2str(T+inc),'-','n') unit '_daily_count_monthly'];
