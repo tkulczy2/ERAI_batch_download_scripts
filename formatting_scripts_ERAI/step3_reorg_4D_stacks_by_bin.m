@@ -48,13 +48,13 @@ for T = bot_bin-inc:inc:top_bin %complete sample
 %     if strcmp(var, 'precip')
     % define variable and file names based on bin
     if T==bot_bin-inc %bottom bin
-        varname = ['bin_nInf_' strrep(num2str(T),'-','n') unit '_mask_monthly'];
-        new_varname = [var '_bin_nInf_' strrep(num2str(T),'-','n') unit '_daily_count_monthly'];
-        new_filename = [var '_bin_nInf_' strrep(num2str(T),'-','n') unit '_ERAI_1979_2015'];
+        varname = ['bin_nInf' unit '_' strrep(num2str(T),'-','n') unit '_mask_monthly'];
+        new_varname = [var '_bin_nInf' unit '_' strrep(num2str(T),'-','n') unit '_daily_count_monthly'];
+        new_filename = [var '_bin_nInf' unit '_' strrep(num2str(T),'-','n') unit '_ERAI_1979_2015'];
     elseif T==top_bin %top bin
-        varname = ['bin_' num2str(T) unit '_Inf_mask_monthly'];
-        new_varname = [var '_bin_' num2str(T) unit '_Inf_daily_count_monthly'];
-        new_filename = [var '_bin_' num2str(T) unit '_Inf_ERAI_1979_2015'];
+        varname = ['bin_' num2str(T) unit '_Inf' unit '_mask_monthly'];
+        new_varname = [var '_bin_' num2str(T) unit '_Inf' unit '_daily_count_monthly'];
+        new_filename = [var '_bin_' num2str(T) unit '_Inf' unit '_ERAI_1979_2015'];
     else
         varname = ['bin_' strrep(num2str(T),'-','n') unit '_' strrep(num2str(T+inc),'-','n') unit '_mask_monthly'];
         new_varname = [var '_bin_' strrep(num2str(T),'-','n') unit '_' strrep(num2str(T+inc),'-','n') unit '_daily_count_monthly'];
