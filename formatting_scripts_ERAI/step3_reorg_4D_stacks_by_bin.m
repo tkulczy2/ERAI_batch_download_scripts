@@ -48,7 +48,7 @@ for T = bot_bin-inc:inc:top_bin %complete sample
 %     if strcmp(var, 'precip')
     % define variable and file names based on bin
     if T==bot_bin-inc %bottom bin
-        varname = ['bin_nInf_' strrep(num2str(T),'-','n') unit 'mask_monthly'];
+        varname = ['bin_nInf_' strrep(num2str(T),'-','n') unit '_mask_monthly'];
         new_varname = [var '_bin_nInf_' strrep(num2str(T),'-','n') unit '_daily_count_monthly'];
         new_filename = [var '_bin_nInf_' strrep(num2str(T),'-','n') unit '_ERAI_1979_2015'];
     elseif T==top_bin %top bin
