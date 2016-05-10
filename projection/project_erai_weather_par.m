@@ -2647,9 +2647,6 @@ for i = 1:number_of_steps
         
         year = start_year - 1 + t;
         output_t(:,2) = num2cell(year*ones(obs_i,1)); % ENTRY WITH YEAR
-   
-        size(output_t)
-        size(ID.ID)
         
         output_t(:,1) = ID.ID; %ENTRY WITH DISTRICT
 
