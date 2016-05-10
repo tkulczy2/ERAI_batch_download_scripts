@@ -34,9 +34,9 @@ sample = 'USA';
     a = combine_attributes(a, 'NAME_1', 'NAME_2');
     label = 'NAME_1_NAME_2';
     
-    outputDir = {'/mnt/norgay/Datasets/Climate/ERA_Interim/Binned_temperature'};    
+    outputDir = {'/mnt/norgay/Datasets/Climate/ERA_Interim/Binned_temperature'};
 
-    project_erai_weather_data(s, a, label, outputDir)
+    project_erai_weather_data_folder(s, a, label, outputDir)
 % end
 disp('----DONE----')
 toc
