@@ -31,9 +31,9 @@ for v = {'precip'}
     VAR = upper(var);
 
     if strcmp(var, 'precip')
-        bot_bin = 10;
+        bot_bin = 5;
         top_bin = 200;
-        inc = 10;
+        inc = 5;
         unit = 'mm';
     else
         bot_bin = -40.;
