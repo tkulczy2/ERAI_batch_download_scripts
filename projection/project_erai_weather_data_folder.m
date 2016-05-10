@@ -443,7 +443,7 @@ for i = 1:N
     %----------------------------------------------------------------------
     %project each dataset onto the shapefile
     %tabulate output
-    x = project_weather_par(s, a, label, field); 
+    x = project_erai_weather_par(s, a, label, field); 
     
     % USE THIS COMMAND AS AN ALTERNATIVE FOR ABOVE COMMAND IF PROJECTING
     % ONLY ONTO THE FOUR COUNTRIES THAT SPAN THE DATELINE: USA, RUS, TUV
