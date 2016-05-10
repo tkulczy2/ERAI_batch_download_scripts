@@ -2632,8 +2632,9 @@ for i = 1:number_of_steps
     % -----------------------------------
     
     parfor t = 1:years_total
-        
-        disp(['year ' num2str(t) ' of ' num2str(years_total)])
+        if mod(t,10)==mod(years_total,10)
+            disp(['year ' num2str(t) ' of ' num2str(years_total)])
+        end
         
         if M==12
             data_t = data(:,:,t,:); % SLICING THE RAW WEATHER VARS

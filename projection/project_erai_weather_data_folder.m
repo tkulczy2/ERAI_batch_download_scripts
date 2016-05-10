@@ -467,7 +467,7 @@ for i = 1:N
     %adjust field names so they are valid field names in a structure
     variable_list{i} = regexprep(field,'-','_'); 
     
-    email_me([field ' is done']);
+%     email_me([field ' is done']);
     
 end
 
