@@ -13,9 +13,7 @@ close all
 clc
 
 %% custom functions path
-currentpath = path;
-newpath = '/mnt/norgay/Computation/sol_matlab_toolbox'
-path(currentpath, newpath)
+addpath('/mnt/norgay/Computation/climate_projection_system_2016_2_10')
 addpath('/mnt/norgay/Datasets/Climate/ERA_Interim/erai_download_formatting_projection/projection');
 
 %% THIS SECTION CONTAINS ALL VARIABLE FUNCTION NAMES
