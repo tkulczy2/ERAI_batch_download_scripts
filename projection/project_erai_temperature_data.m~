@@ -35,24 +35,8 @@ sample = 'USA';
     % Tamma - Shackleton: call shapefiles stored on Norgay
 %     command = ['cd ' shapeDir];
 %     eval(command)
-
     [s,a] = shaperead(shapeFile,'UseGeoCoords', true); 
-    %% Sample specific instructions here
-    [s,a] = drop_by_attribute(s, a, 'BPL_CODE', '99999');
-    [s,a] = drop_by_attribute(s, a, 'GEOLEVEL1', '999999');
-    [s,a] = drop_by_attribute(s, a, 'ADMIN_NAME', 'Alaska');
-    [s,a] = drop_by_attribute(s, a, 'CNTRY_NAME', 'Russia');
-    [s,a] = drop_by_attribute(s, a, 'CNTRY_NAME', 'Fiji');
-    [s,a] = drop_by_attribute(s, a, 'CNTRY_NAME', 'Antarctica');
-    [s,a] = drop_by_attribute(s, a, 'CNTRY_NAME', 'Tuvalu');
-    [s,a] = drop_by_attribute(s, a, 'CNTRY_NAME', 'Hong Kong');
-    %[s,a] = drop_by_attribute(s, a, 'CNTRY_NAME', 'Congo');
-    a = combine_attributes(a, 'CNTRY_NAME', 'ADMIN_NAME');
-    for i=1:length(a)
-      a(i).CNTRY_NAME_ADMIN_NAME = regexprep(a(i).CNTRY_NAME_ADMIN_NAME, ' \(.*\)', '');
-    %  a(i).CNTRY_NAME_ADMIN_NAME = regexprep(a(i).CNTRY_NAME_ADMIN_NAME, ',.*-', '-');
-      a(i).CNTRY_NAME_ADMIN_NAME = regexprep(a(i).CNTRY_NAME_ADMIN_NAME, 'rdoba.*rdoba', 'rdoba');
-    end
+    a = combine_attributes(a, 'NAME_1', 'NAME_2');
 
     % Tamma-Shackleton: change directory to store output files on Norgay
     baseDir = ['/mnt/norgay/Datasets/Climate/' climateDir];
