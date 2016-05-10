@@ -70,7 +70,7 @@ S = size(varargin);
 
 if S(1) == 1
     %if a filename is specified, make that folder
-    foldername = varargin{1};
+    foldername = char(varargin{1});
 else
     %if no filename is specified, make a generic folder
     c = clock;
