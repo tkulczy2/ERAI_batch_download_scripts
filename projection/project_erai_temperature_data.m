@@ -28,7 +28,8 @@ sample = 'USA';
     shapeDir = ['/mnt/norgay/Datasets/SHAPEFILES/' sample '/' sample '_adm'];
     shapeFile = [shapeDir '/' sample '_adm2.shp'];
 
-    [s,a] = shaperead(shapeFile,'UseGeoCoords', true); 
+    [s,a] = shaperead(shapeFile,'UseGeoCoords', true);
+    [s,a] = drop_by_attribute(s, a, 'NAME_1', 'Alaska');
     a = combine_attributes(a, 'NAME_1', 'NAME_2');
     label = 'NAME_1_NAME_2';
     
