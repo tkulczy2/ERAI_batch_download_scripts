@@ -121,7 +121,7 @@ for v = {'precip'}
 
         command = [new_varname ' = new_data;'];
         eval(command)
-        command = ['save Matlab_4d_stack_by_temp_bin/' VAR '/' new_filename ' ' new_varname];
+        command = ['save(''Matlab_4d_stack_by_temp_bin/' VAR '/' new_filename ''', ''' new_varname ''', ''-v7.3'');' ];
         eval(command)
 
         clearvars y year tavg_* month* i1 lat lon command bin_* data new_* varname
