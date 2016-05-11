@@ -30,7 +30,7 @@ for v = {'tavg','precip'}
     for base_year = 1979:1:2015
         command = ['load Matlab_.25deg_x_.25deg/' VAR '/ERAI_DAILY_' VAR '_' num2str(base_year) '.mat'];
         eval(command)
-        command = ['data_raw = ' var];
+        command = ['data_raw = ' var ';'];
         eval(command)
 
         %transposing each layer of stack since Berkeley EARTH data is transposed
@@ -89,7 +89,7 @@ for v = {'tavg','precip'}
 
             disp(['------------T = ' num2str(T) unit])
             bin_mask_daily = (data_actual>=T & data_actual<T+inc);
-            command_1 = ['bin_' strrep(num2str(T),'-','n') unit '_n' strrep(num2str(T+inc),'-','n') unit '_mask_monthly'];
+            command_1 = ['bin_' strrep(num2str(T),'-','n') unit '_' strrep(num2str(T+inc),'-','n') unit '_mask_monthly'];
 %             if T<-1*inc
 %                 command_1 = ['bin_n' num2str(abs(T)) unit '_n' num2str(abs(T+inc)) unit '_mask_monthly'];
 %             elseif T > 0
@@ -104,11 +104,12 @@ for v = {'tavg','precip'}
 
 
 
-        clear data_* command* T bin_mask_daily ans i d S
+        clearvars data_* command* T bin_mask_daily ans i d S
         %save annual files (roughly ??MB each)
         command = ['save Matlab_4d_stack_by_decade/' VAR '/' var '_' num2str(base_year) '_raw_bin_counts'];
         eval(command)
     end
+    clearvars -except v;
 end
 
 disp('----DONE----')

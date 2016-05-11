@@ -124,11 +124,11 @@ for v = {'precip'}
         command = ['save Matlab_4d_stack_by_temp_bin/' VAR '/' new_filename ' ' new_varname];
         eval(command)
 
-        clear y year tavg_* month* i1 lat lon command bin_* data new_* varname
+        clearvars y year tavg_* month* i1 lat lon command bin_* data new_* varname
 
     end
 
-    clear T total_years
+    clearvars T total_years
 end
 disp('-----------DONE------------')
 toc
