@@ -361,6 +361,57 @@ if binned_variable == true
             disp('------------------not formatted yet'); Q = false; return
         end
         %---------------------------------------------------------------------|
+        
+         elseif strcmp(datasample, 'NCEP')
+        %---------------------------------------------------------------------|
+        % 
+    % VARIABLE = 'Days in bin': USE NCEP CDAS1 DAILY REANALYSIS DATA
+        % formatted 1948-2014
+        % count of days in temperature bin
+        % irregular resolution (1.9047 x 1.8750 mostly)
+        % lat lim ~ [-88.542 88.542]
+        % lon lim ~ [-180 178.125]
+
+        pathname = '''/mnt/norgay/Datasets/Climate/NCEP_CDAS/NCEP_CDAS1_daily_v2/Matlab_4d_stack_by_temp_bin/';
+        if strcmp(clim_variable,'tavg')
+            varname = 'average temperature';
+            filename = [clim_variable '_bin_' bin_lower_bound '_' bin_upper_bound '_' datasample '_1979_2015'];
+            command = ['load ' pathname 'TAVG/' filename ''''];
+            eval(command)
+            structure_name = [clim_variable '_bin_' bin_lower_bound '_' bin_upper_bound '_daily_count_monthly'];
+        elseif strcmp(clim_variable,'tmax')
+            disp('------------------not formatted yet'); Q = false; return
+        elseif strcmp(clim_variable,'tmin')
+            disp('------------------not formatted yet'); Q = false; return
+        elseif strcmp(clim_variabl,'precip')
+            disp('------------------not formatted yet'); Q = false; return          
+        end
+        
+        density = 1; %1 degree resolution
+        M = 12; %resolution is monthly   
+        variable = [clim_variable '_bin_' bin_lower_bound '_' bin_upper_bound]; %string used to name outcome variables
+        command = ['structure_x = ' structure_name '; clear ' structure_name];
+        eval(command)
+        
+        lat = structure_x.lat;
+        lon = structure_x.lon;
+        latlim = [-89 89];
+        lonlim = [-179 179];
+    
+        data = structure_x.monthly_field;  
+        start_year = 1948;
+        years_total = 67;
+
+        irregular_data = true;
+
+        %daily NCEP data begins in Jan 1948, monthly obs
+        %project 756 observations (up to Dec 2014, inclusive)
+        
+        clear structure_x year_ID_for_starting first_year_set
+        source = 'NCEP CDAS 1 reanalysis';
+        
+        %---------------------------------------------------------------------|
+
     end
 
     
@@ -451,21 +502,8 @@ elseif polynomial_variable == true
         
     elseif strcmp(datasample, 'NCEP')
         %---------------------------------------------------------------------|
-        % 
-    % VARIABLE = 'Days in bin': USE NCEP CDAS1 DAILY REANALYSIS DATA
-        % formatted 1948-2014
-        % count of days in temperature bin
-        % irregular resolution (1.9047 x 1.8750 mostly)
-        % lat lim ~ [-88.542 88.542]
-        % lon lim ~ [-180 178.125]
-
-        pathname = '''/mnt/norgay/Datasets/Climate/NCEP_CDAS/NCEP_CDAS1_daily_v2/Matlab_4d_stack_by_temp_bin/';
         if strcmp(clim_variable,'tavg')
-            varname = 'average temperature';
-            filename = [clim_variable '_bin_' bin_lower_bound '_' bin_upper_bound '_' datasample '_1979_2015'];
-            command = ['load ' pathname 'TAVG/' filename ''''];
-            eval(command)
-            structure_name = [clim_variable '_bin_' bin_lower_bound '_' bin_upper_bound '_daily_count_monthly'];
+            disp('------------------not formatted yet'); Q = false; return
         elseif strcmp(clim_variable,'tmax')
             disp('------------------not formatted yet'); Q = false; return
         elseif strcmp(clim_variable,'tmin')
@@ -473,30 +511,6 @@ elseif polynomial_variable == true
         elseif strcmp(clim_variabl,'precip')
             disp('------------------not formatted yet'); Q = false; return          
         end
-        
-        density = 1; %1 degree resolution
-        M = 12; %resolution is monthly   
-        variable = [clim_variable '_bin_' bin_lower_bound '_' bin_upper_bound]; %string used to name outcome variables
-        command = ['structure_x = ' structure_name '; clear ' structure_name];
-        eval(command)
-        
-        lat = structure_x.lat;
-        lon = structure_x.lon;
-        latlim = [-89 89];
-        lonlim = [-179 179];
-    
-        data = structure_x.monthly_field;  
-        start_year = 1948;
-        years_total = 67;
-
-        irregular_data = true;
-
-        %daily NCEP data begins in Jan 1948, monthly obs
-        %project 756 observations (up to Dec 2014, inclusive)
-        
-        clear structure_x year_ID_for_starting first_year_set
-        source = 'NCEP CDAS 1 reanalysis';
-        
         %---------------------------------------------------------------------|
     end
 
