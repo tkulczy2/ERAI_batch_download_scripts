@@ -375,7 +375,7 @@ if binned_variable == true
         pathname = '''/mnt/norgay/Datasets/Climate/NCEP_CDAS/NCEP_CDAS1_daily_v2/Matlab_4d_stack_by_temp_bin/';
         if strcmp(clim_variable,'tavg')
             varname = 'average temperature';
-            filename = [clim_variable '_bin_' bin_lower_bound '_' bin_upper_bound '_' datasample '_1979_2015'];
+            filename = [clim_variable '_bin_' bin_lower_bound '_' bin_upper_bound '_' datasample '_1948_2014'];
             command = ['load ' pathname 'TAVG/' filename ''''];
             eval(command)
             structure_name = [clim_variable '_bin_' bin_lower_bound '_' bin_upper_bound '_daily_count_monthly'];
