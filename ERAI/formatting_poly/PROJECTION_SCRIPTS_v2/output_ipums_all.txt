@@ -1,0 +1,8926 @@
+IPUMS_projection_all_poly
+
+newpath =
+
+/mnt/norgay/Computation/sol_matlab_toolbox
+
+SOL: FOR GREATER SPEED, CONSIDER OPENING THE MATLAB WORKER POOL
+{Error using cell2table (line 69)
+'In_dispute_South_Sudan/Sudan_' is not a valid variable name.
+
+Error in cell2table2csv (line 50)
+T = cell2table(CELL_DATA(2:end,:),'VariableNames', CELL_DATA(1,:));
+
+Error in IPUMS_projection_all_poly (line 204)
+    cell2table2csv(output_area, [sample '_' num2str(sample_first_year) '_daily_' var '_area_weights_poly_'
+    num2str(power)])
+} 
+whos
+  Name                                 Size                     Bytes  Class      Attributes
+
+  CLIM                                 1x4                          8  char                 
+  I                                   25x1                        200  double               
+  ID                                   1x1                  864946936  struct               
+  ID_I                              1668x1                     383096  cell                 
+  ID_J                              1668x1                     383096  cell                 
+  J                                   25x1                        200  double               
+  N                                    1x1                          8  double               
+  T                                    1x1                          8  double               
+  VAR                                  1x6                         12  char                 
+  a                                 1680x1                     252516  struct               
+  baseDir                              1x40                        80  char                 
+  base_year                            1x1                          8  double               
+  climateDir                           1x11                        22  char                 
+  command                              1x76                       152  char                 
+  crop_fraction_BEST                   1x1                     523248  struct               
+  currentpath                          1x39598                  79196  char                 
+  daily_mean_temps_area_weight       365x1                       2920  double               
+  daily_mean_temps_crop_weight       365x1                       2920  double               
+  daily_mean_temps_pop_weight        365x1                       2920  double               
+  daily_pixel_temp                   365x25                     73000  double               
+  density                              1x1                          8  double               
+  i                                    1x1                          8  double               
+  label                                1x21                        42  char                 
+  lat                                180x1                        720  single               
+  latlim                               1x2                         16  double               
+  lon                                360x1                       1440  single               
+  lonlim                               1x2                         16  double               
+  maxpower                             1x1                          8  double               
+  n                                    1x1                          8  double               
+  nan_flags                           25x1                         25  logical              
+  newpath                              1x42                        84  char                 
+  outputDir                            1x28                        56  char                 
+  output_area                        366x1671                73440872  cell                 
+  output_crop                        366x1671                73440872  cell                 
+  output_pop                         366x1671                73440872  cell                 
+  pixel_area_weights                  25x1                        200  double               
+  pixel_crop_weights                  25x1                        200  double               
+  pixel_pop_weights                   25x1                        200  double               
+  population_total_BEST                1x1                     523248  struct               
+  power                                1x1                          8  double               
+  precip_poly_1                        1x1                  189231072  struct               
+  precip_poly_2                        1x1                  189231072  struct               
+  precip_poly_3                        1x1                  189231072  struct               
+  precip_poly_4                        1x1                  189231072  struct               
+  precip_poly_5                        1x1                  189231072  struct               
+  precip_poly_6                        1x1                  189231072  struct               
+  precip_poly_7                        1x1                  189231072  struct               
+  precip_poly_8                        1x1                  189231072  struct               
+  s                                 1680x1                  173923872  struct               
+  sample                               1x5                         10  char                 
+  sample_first_year                    1x1                          8  double               
+  shapeDir                             1x51                       102  char                 
+  shapeFile                            1x17                        34  char                 
+  temp_actual                        180x360x365            189216000  double               
+  total_days                           1x1                          8  double               
+  var                                  1x6                         12  char                 
+  varyear                              1x11                        22  char                 
+
+a
+
+a = 
+
+1680x1 struct array with fields:
+
+    CNTRY_NAME_ADMIN_NAME
+
+a.CNTRY_NAME_ADMIN_NAME(1:5)
+{Field reference for multiple structure elements that is followed by more reference blocks is an error.
+} 
+a.CNTRY_NAME_ADMIN_NAME
+
+ans =
+
+Algeria-
+
+
+ans =
+
+Angola-
+
+
+ans =
+
+In dispute South Sudan/Sudan-
+
+
+ans =
+
+Benin-
+
+
+ans =
+
+Botswana-
+
+
+ans =
+
+Burundi-
+
+
+ans =
+
+Bouvet I.-
+
+
+ans =
+
+Cape Verde-
+
+
+ans =
+
+Central African Republic-
+
+
+ans =
+
+Chad-
+
+
+ans =
+
+Comoros-
+
+
+ans =
+
+Mayotte-
+
+
+ans =
+
+Seychelles-
+
+
+ans =
+
+Congo-
+
+
+ans =
+
+Congo, DRC-
+
+
+ans =
+
+Cote d'Ivoire-
+
+
+ans =
+
+Djibouti-
+
+
+ans =
+
+Equatorial Guinea-
+
+
+ans =
+
+Eritrea-
+
+
+ans =
+
+French Southern & Antarctic Lands-
+
+
+ans =
+
+Gabon-
+
+
+ans =
+
+Guinea-Bissau-
+
+
+ans =
+
+Heard I. & McDonald Is.-
+
+
+ans =
+
+In dispute Benin/Burkina Faso-
+
+
+ans =
+
+In dispute Comoros/Mayotte/Madagascar-
+
+
+ans =
+
+In dispute Djibouti/Eritrea-
+
+
+ans =
+
+In dispute Egypt/Saudi Arabia-
+
+
+ans =
+
+In dispute Equatorial Guinea/Gabon-
+
+
+ans =
+
+Lesotho-
+
+
+ans =
+
+Libya-
+
+
+ans =
+
+Madagascar-
+
+
+ans =
+
+Mauritania-
+
+
+ans =
+
+Mauritius-
+
+
+ans =
+
+Namibia-
+
+
+ans =
+
+Niger-
+
+
+ans =
+
+Reunion-
+
+
+ans =
+
+Sao Tome & Principe-
+
+
+ans =
+
+Somalia-
+
+
+ans =
+
+Swaziland-
+
+
+ans =
+
+St. Helena-
+
+
+ans =
+
+The Gambia-
+
+
+ans =
+
+Togo-
+
+
+ans =
+
+Tunisia-
+
+
+ans =
+
+Western Sahara-
+
+
+ans =
+
+Zimbabwe-
+
+
+ans =
+
+In dispute Morocco/Spain-
+
+
+ans =
+
+Afghanistan-
+
+
+ans =
+
+Bhutan-
+
+
+ans =
+
+British Indian Ocean Territory-
+
+
+ans =
+
+Myanmar-
+
+
+ans =
+
+Hong Kong (China)-
+
+
+ans =
+
+In dispute-Paracel Islands-
+
+
+ans =
+
+In dispute Bhutan/China-
+
+
+ans =
+
+In dispute China/India-
+
+
+ans =
+
+In dispute China/Japan/Taiwan-
+
+
+ans =
+
+In dispute India/Nepal-
+
+
+ans =
+
+In dispute India/Pakistan-
+
+
+ans =
+
+In dispute Japan/Russia-
+
+
+ans =
+
+In dispute Japan/South Korea-
+
+
+ans =
+
+Japan-
+
+
+ans =
+
+Kazakhstan-
+
+
+ans =
+
+Korean islands under UN jurisdiction-
+
+
+ans =
+
+Laos-
+
+
+ans =
+
+Macau (China)-
+
+
+ans =
+
+Maldives-
+
+
+ans =
+
+North Korea-
+
+
+ans =
+
+Russia-
+
+
+ans =
+
+South Korea-
+
+
+ans =
+
+Sri Lanka-
+
+
+ans =
+
+Taiwan-
+
+
+ans =
+
+Tajikistan-
+
+
+ans =
+
+Turkmenistan-
+
+
+ans =
+
+Uzbekistan-
+
+
+ans =
+
+Akrotiri (UK)-
+
+
+ans =
+
+Albania-
+
+
+ans =
+
+Andorra-
+
+
+ans =
+
+Azerbaijan-
+
+
+ans =
+
+Bahrain-
+
+
+ans =
+
+Belgium-
+
+
+ans =
+
+Bosnia & Herzegovina-
+
+
+ans =
+
+Bulgaria-
+
+
+ans =
+
+Croatia-
+
+
+ans =
+
+Cyprus-
+
+
+ans =
+
+Czech Republic-
+
+
+ans =
+
+Denmark-
+
+
+ans =
+
+Dhekelia (UK)-
+
+
+ans =
+
+Estonia-
+
+
+ans =
+
+Faroe Is.-
+
+
+ans =
+
+Finland-
+
+
+ans =
+
+Palestine Territories: Gaza Strip-
+
+
+ans =
+
+Georgia-
+
+
+ans =
+
+Gibraltar (UK)-
+
+
+ans =
+
+Guernsey-
+
+
+ans =
+
+Hungary-
+
+
+ans =
+
+Iceland-
+
+
+ans =
+
+In dispute Croatia/Slovenia-
+
+
+ans =
+
+In dispute Iran/United Arab Emirates-
+
+
+ans =
+
+Isle of Man-
+
+
+ans =
+
+Jan Mayen (Norway)-
+
+
+ans =
+
+Jersey-
+
+
+ans =
+
+Kosovo-
+
+
+ans =
+
+Kuwait-
+
+
+ans =
+
+Latvia-
+
+
+ans =
+
+Lebanon-
+
+
+ans =
+
+Liechtenstein-
+
+
+ans =
+
+Lithuania-
+
+
+ans =
+
+Luxembourg-
+
+
+ans =
+
+Macedonia-
+
+
+ans =
+
+Malta-
+
+
+ans =
+
+Moldova-
+
+
+ans =
+
+Monaco-
+
+
+ans =
+
+Montenegro-
+
+
+ans =
+
+Netherlands-
+
+
+ans =
+
+No Man's Land-ISRAEL/West Bank-
+
+
+ans =
+
+Norway-
+
+
+ans =
+
+Oman-
+
+
+ans =
+
+Poland-
+
+
+ans =
+
+Qatar-
+
+
+ans =
+
+San Marino-
+
+
+ans =
+
+Saudi Arabia-
+
+
+ans =
+
+Serbia-
+
+
+ans =
+
+Slovakia-
+
+
+ans =
+
+Jan Mayen-
+
+
+ans =
+
+Sweden-
+
+
+ans =
+
+Syria-
+
+
+ans =
+
+United Arab Emirates-
+
+
+ans =
+
+Vatican City-
+
+
+ans =
+
+Palestine Territories: Gaza Strip-
+
+
+ans =
+
+Yemen-
+
+
+ans =
+
+Anguilla-
+
+
+ans =
+
+Antigua & Barbuda-
+
+
+ans =
+
+Barbados-
+
+
+ans =
+
+Belize-
+
+
+ans =
+
+Bermuda-
+
+
+ans =
+
+Cayman Is.-
+
+
+ans =
+
+Clipperton Island (France)-
+
+
+ans =
+
+Dominica-
+
+
+ans =
+
+Greenland-
+
+
+ans =
+
+Grenada-
+
+
+ans =
+
+Guadeloupe-
+
+
+ans =
+
+Guatemala-
+
+
+ans =
+
+Honduras-
+
+
+ans =
+
+In dispute Belize/Honduras-
+
+
+ans =
+
+In dispute Canada/Denmark-
+
+
+ans =
+
+In dispute El Salvador/Honduras-
+
+
+ans =
+
+Martinique-
+
+
+ans =
+
+Montserrat-
+
+
+ans =
+
+Navassa Island (US)-
+
+
+ans =
+
+Jarvis I.-
+
+
+ans =
+
+Saba (Neth)-
+
+
+ans =
+
+Saint Barthelemy (France)-
+
+
+ans =
+
+St. Kitts & Nevis-
+
+
+ans =
+
+St. Lucia-
+
+
+ans =
+
+Saint Martin (France)-
+
+
+ans =
+
+St. Pierre & Miquelon-
+
+
+ans =
+
+St. Vincent & the Grenadines-
+
+
+ans =
+
+Sint Eustatius (Neth)-
+
+
+ans =
+
+Sint Maarten (Neth)-
+
+
+ans =
+
+The Bahamas-
+
+
+ans =
+
+Turks & Caicos Is.-
+
+
+ans =
+
+British Virgin Is.-
+
+
+ans =
+
+Virgin Is.-
+
+
+ans =
+
+Ashmore & Cartier Islands (Australia)-
+
+
+ans =
+
+Coral Sea Islands (Australia)-
+
+
+ans =
+
+In dispute China/Philippines/Taiwan-
+
+
+ans =
+
+In dispute Spratly Islands-
+
+
+ans =
+
+Antarctica-
+
+
+ans =
+
+American Samoa (Eastern Samoa)-
+
+
+ans =
+
+Australia-
+
+
+ans =
+
+Brunei-
+
+
+ans =
+
+Cocos Is.-
+
+
+ans =
+
+Cook Is.-
+
+
+ans =
+
+Christmas I.-
+
+
+ans =
+
+Micronesia-
+
+
+ans =
+
+Guam-
+
+
+ans =
+
+Kiribati-
+
+
+ans =
+
+Marshall Is.-
+
+
+ans =
+
+Northern Mariana Is.-
+
+
+ans =
+
+New Caledonia-
+
+
+ans =
+
+Norfolk Islands-
+
+
+ans =
+
+Nauru-
+
+
+ans =
+
+Niue-
+
+
+ans =
+
+New Zealand-
+
+
+ans =
+
+French Polynesia-
+
+
+ans =
+
+Papua New Guinea-
+
+
+ans =
+
+Pitcairn Is.-
+
+
+ans =
+
+Palau-
+
+
+ans =
+
+Solomon Is.-
+
+
+ans =
+
+Singapore-
+
+
+ans =
+
+Tokelau-
+
+
+ans =
+
+Timor Leste-
+
+
+ans =
+
+Tonga-
+
+
+ans =
+
+Tuvalu-
+
+
+ans =
+
+Vanuatu-
+
+
+ans =
+
+Wallis & Futuna-
+
+
+ans =
+
+Samoa-
+
+
+ans =
+
+Aruba-
+
+
+ans =
+
+French Guiana-
+
+
+ans =
+
+Falkland Is.-
+
+
+ans =
+
+Guyana-
+
+
+ans =
+
+Suriname-
+
+
+ans =
+
+Bonaire (Neth)-
+
+
+ans =
+
+South Georgia & the South Sandwich Is.-
+
+
+ans =
+
+Trinidad & Tobago-
+
+
+ans =
+
+Netherlands Antilles-
+
+
+ans =
+
+In dispute Brazil/Uruguay-
+
+
+ans =
+
+Armenia-Aragatsotn
+
+
+ans =
+
+Armenia-Ararat
+
+
+ans =
+
+Armenia-Armavir
+
+
+ans =
+
+Armenia-Yerevan
+
+
+ans =
+
+Armenia-Gegharkunik
+
+
+ans =
+
+Armenia-Kotayk
+
+
+ans =
+
+Armenia-Lori
+
+
+ans =
+
+Armenia-Shirak
+
+
+ans =
+
+Armenia-Syunik
+
+
+ans =
+
+Armenia-Tavush
+
+
+ans =
+
+Armenia-Vayots Dzor
+
+
+ans =
+
+Armenia-Lake Sevan
+
+
+ans =
+
+Argentina-City of Buenos Aires
+
+
+ans =
+
+Argentina-Buenos Aires province
+
+
+ans =
+
+Argentina-Catamarca
+
+
+ans =
+
+Argentina-C�rdoba
+C�rdoba
+C�rdoba
+
+
+
+ans =
+
+Argentina-Corrientes
+
+
+ans =
+
+Argentina-Chaco
+
+
+ans =
+
+Argentina-Chubut
+
+
+ans =
+
+Argentina-Entre Rios
+
+
+ans =
+
+Argentina-Formosa
+
+
+ans =
+
+Argentina-Jujuy
+
+
+ans =
+
+Argentina-La Pampa
+
+
+ans =
+
+Argentina-La Rioja
+
+
+ans =
+
+Argentina-Mendoza
+
+
+ans =
+
+Argentina-Misiones
+
+
+ans =
+
+Argentina-Neuqu�n
+
+
+
+ans =
+
+Argentina-R�o Negro
+
+
+
+ans =
+
+Argentina-Salta
+
+
+ans =
+
+Argentina-San Juan
+
+
+ans =
+
+Argentina-San Luis
+
+
+ans =
+
+Argentina-Santa Cruz
+
+
+ans =
+
+Argentina-Santa Fe
+
+
+ans =
+
+Argentina-Santiago del Estero
+
+
+ans =
+
+Argentina-Tucum�n
+
+
+
+ans =
+
+Argentina-Falkland Islands
+
+
+ans =
+
+Argentina-South Georgia and South Sandwich Islands
+
+
+ans =
+
+Argentina-Tierra del Fuego
+
+
+ans =
+
+Austria-Nieder�sterreich
+
+
+
+ans =
+
+Austria-Salzburg
+
+
+ans =
+
+Austria-Burgenland
+
+
+ans =
+
+Austria-Vorarlberg
+
+
+ans =
+
+Austria-Steiermark
+
+
+ans =
+
+Austria-Tirol
+
+
+ans =
+
+Austria-K�rnten
+
+
+
+ans =
+
+Austria-Ober�sterreich
+
+
+
+ans =
+
+Austria-Wien
+
+
+ans =
+
+Bangladesh-Barisal
+
+
+ans =
+
+Bangladesh-Chittagong
+
+
+ans =
+
+Bangladesh-Dhaka
+
+
+ans =
+
+Bangladesh-Khulna
+
+
+ans =
+
+Bangladesh-Rajshahi, Rangpur
+
+
+ans =
+
+Bangladesh-Sylhet
+
+
+ans =
+
+Burkina Faso-Boucle du Mouhoun
+
+
+ans =
+
+Burkina Faso-Cascades
+
+
+ans =
+
+Burkina Faso-Centre
+
+
+ans =
+
+Burkina Faso-Centre-Est
+
+
+ans =
+
+Burkina Faso-Centre-Nord
+
+
+ans =
+
+Burkina Faso-Centre-Ouest
+
+
+ans =
+
+Burkina Faso-Centre-Sud
+
+
+ans =
+
+Burkina Faso-Est
+
+
+ans =
+
+Burkina Faso-Hauts-Bassins
+
+
+ans =
+
+Burkina Faso-Nord
+
+
+ans =
+
+Burkina Faso-Plateau Central
+
+
+ans =
+
+Burkina Faso-Sahel
+
+
+ans =
+
+Burkina Faso-Sud-Ouest
+
+
+ans =
+
+Bolivia-Chuquisaca
+
+
+ans =
+
+Bolivia-La Paz
+
+
+ans =
+
+Bolivia-Cochabamba
+
+
+ans =
+
+Bolivia-Oruro
+
+
+ans =
+
+Bolivia-Potos�
+
+
+ans =
+
+Bolivia-Tarija
+
+
+ans =
+
+Bolivia-Santa Cruz
+
+
+ans =
+
+Bolivia-Beni
+
+
+ans =
+
+Bolivia-Pando
+
+
+ans =
+
+Bolivia-Lake Titicaca
+
+
+ans =
+
+Belarus-Brest
+
+
+ans =
+
+Belarus-Gomel
+
+
+ans =
+
+Belarus-Grodno
+
+
+ans =
+
+Belarus-Mogilev
+
+
+ans =
+
+Belarus-Minsk
+
+
+ans =
+
+Belarus-Vitebsk
+
+
+ans =
+
+Switzerland-Zurich
+
+
+ans =
+
+Switzerland-Bern
+
+
+ans =
+
+Switzerland-Luzern (Lucerne)
+
+
+ans =
+
+Switzerland-Uri
+
+
+ans =
+
+Switzerland-Schwyz
+
+
+ans =
+
+Switzerland-Obwalden (Obwald)
+
+
+ans =
+
+Switzerland-Nidwalden (Nidwald)
+
+
+ans =
+
+Switzerland-Glarus
+
+
+ans =
+
+Switzerland-Zug
+
+
+ans =
+
+Switzerland-Fribourg
+
+
+ans =
+
+Switzerland-Solothurn
+
+
+ans =
+
+Switzerland-Basel-Stadt (Basel-City)
+
+
+ans =
+
+Switzerland-Basel-Landschaft (Basel-Country)
+
+
+ans =
+
+Switzerland-Schaffhausen
+
+
+ans =
+
+Switzerland-Outer and Inner Rhodes
+
+
+ans =
+
+Switzerland-St. Gallen (St. Gall)
+
+
+ans =
+
+Switzerland-Graubundun (Grisons)
+
+
+ans =
+
+Switzerland-Aargau (Argovia)
+
+
+ans =
+
+Switzerland-Thurgau (Thurgovia)
+
+
+ans =
+
+Switzerland-Ticino
+
+
+ans =
+
+Switzerland-Vaud
+
+
+ans =
+
+Switzerland-Valais
+
+
+ans =
+
+Switzerland-Neuchatel
+
+
+ans =
+
+Switzerland-Geneva
+
+
+ans =
+
+Switzerland-Jura
+
+
+ans =
+
+Cameroon-Nord, Adamoua, Extr�me Nord
+
+
+ans =
+
+Cameroon-Centre, Sud
+
+
+ans =
+
+Cameroon-Est
+
+
+ans =
+
+Cameroon-Littoral
+
+
+
+ans =
+
+Cameroon-Nord Ouest
+
+
+ans =
+
+Cameroon-Ouest
+
+
+ans =
+
+Cameroon-Sud Ouest
+
+
+ans =
+
+Costa Rica-San Jos�
+
+
+
+ans =
+
+Costa Rica-Alajuela
+
+
+ans =
+
+Costa Rica-Cartago
+
+
+ans =
+
+Costa Rica-Heredia
+
+
+ans =
+
+Costa Rica-Guanacaste
+
+
+ans =
+
+Costa Rica-Puntarenas
+
+
+ans =
+
+Costa Rica-Lim�n
+
+
+
+ans =
+
+Ecuador-Azuay
+
+
+ans =
+
+Ecuador-Bol�var
+
+
+ans =
+
+Ecuador-Ca�ar, Esmeraldas, Guayas, Manab�, Manga del Cura [Disputed canton], Pichincha, El Piedrero [Disputed canton], Los R�os, Santa Elena, Santo Domingo de las Ts�chilas, Gal�pagos
+
+
+ans =
+
+Ecuador-Carchi
+
+
+ans =
+
+Ecuador-Cotopaxi
+
+
+ans =
+
+Ecuador-Chimborazo
+
+
+ans =
+
+Ecuador-El Oro
+
+
+ans =
+
+Ecuador-Imbabura, Las Golondrinas [Disputed canton]
+
+
+ans =
+
+Ecuador-Loja
+
+
+ans =
+
+Ecuador-Morona Santiago
+
+
+ans =
+
+Ecuador-Napo, Orellana, Sucumb�os
+
+
+ans =
+
+Ecuador-Pastaza
+
+
+ans =
+
+Ecuador-Tungurahua
+
+
+ans =
+
+Ecuador-Zamora Chinchipe
+
+
+ans =
+
+Ecuador-Unknown
+
+
+ans =
+
+Spain-Galicia
+
+
+ans =
+
+Spain-Principado de Asturias
+
+
+ans =
+
+Spain-Cantabria
+
+
+ans =
+
+Spain-Pa�s Vasco
+
+
+ans =
+
+Spain-Comunidad Foral de Navarra
+
+
+ans =
+
+Spain-La Rioja
+
+
+ans =
+
+Spain-Arag�n
+
+
+ans =
+
+Spain-Comunidad de Madrid
+
+
+ans =
+
+Spain-Castilla y Le�n
+
+
+ans =
+
+Spain-Castilla-La Mancha
+
+
+ans =
+
+Spain-Extremadura
+
+
+ans =
+
+Spain-Catalu�a
+
+
+ans =
+
+Spain-Comunidad Valenciana
+
+
+ans =
+
+Spain-Illes Balears
+
+
+ans =
+
+Spain-Andaluc�a
+
+
+ans =
+
+Spain-Regi�n de Murcia
+
+
+ans =
+
+Spain-Ciudad Aut�noma de Ceuta
+
+
+ans =
+
+Spain-Ciudad Aut�noma de Melilla
+
+
+ans =
+
+Spain-Canarias
+
+
+ans =
+
+Ethiopia-Tigray
+
+
+ans =
+
+Ethiopia-Affar
+
+
+ans =
+
+Ethiopia-Amhara
+
+
+ans =
+
+Ethiopia-Oromia
+
+
+ans =
+
+Ethiopia-Somali
+
+
+ans =
+
+Ethiopia-Benishangul-Gumz
+
+
+
+ans =
+
+Ethiopia-Southern Nations, Nationalities, and People (SNPP)
+
+
+ans =
+
+Ethiopia-Gambela
+
+
+ans =
+
+Ethiopia-Harari
+
+
+ans =
+
+Ethiopia-Addis Ababa
+
+
+ans =
+
+Ethiopia-Dire Dawa
+
+
+ans =
+
+Ethiopia-Lake Tana
+
+
+ans =
+
+Ethiopia-Special Region
+
+
+ans =
+
+France-�le-de-France
+
+
+ans =
+
+France-Champagne-Ardenne
+
+
+ans =
+
+France-Picardy
+
+
+ans =
+
+France-Upper Normandy
+
+
+ans =
+
+France-Centre
+
+
+ans =
+
+France-Lower Normandy
+
+
+ans =
+
+France-Burgundy
+
+
+ans =
+
+France-North Pas-de-Calais
+
+
+ans =
+
+France-Lorraine
+
+
+ans =
+
+France-Alsace
+
+
+ans =
+
+France-Franche-Comt�
+
+
+ans =
+
+France-Loire Valley
+
+
+ans =
+
+France-Brittany
+
+
+ans =
+
+France-Poitou-Charentes
+
+
+ans =
+
+France-Aquitaine
+
+
+ans =
+
+France-Midi-Pyr�n�es
+
+
+ans =
+
+France-Limousin
+
+
+ans =
+
+France-Rh�ne-Alpes
+
+
+ans =
+
+France-Auvergne
+
+
+ans =
+
+France-Languedoc-Roussillon
+
+
+ans =
+
+France-Provence-Alpes-Riviera
+
+
+ans =
+
+France-Corsica
+
+
+ans =
+
+France-Guadeloupe
+
+
+ans =
+
+France-Martinique
+
+
+ans =
+
+France-French Guyana
+
+
+ans =
+
+France-R�union Island
+
+
+ans =
+
+Ghana-Western
+
+
+ans =
+
+Ghana-Central
+
+
+ans =
+
+Ghana-Greater Accra
+
+
+ans =
+
+Ghana-Volta
+
+
+ans =
+
+Ghana-Eastern
+
+
+ans =
+
+Ghana-Ashanti
+
+
+ans =
+
+Ghana-Brong Ahafo
+
+
+ans =
+
+Ghana-Northern
+
+
+ans =
+
+Ghana-Upper East
+
+
+ans =
+
+Ghana-Upper West
+
+
+ans =
+
+Haiti-Centre (Central), L'Artibonite, Ouest (West), Sud'Est (South East)
+
+
+ans =
+
+Haiti-Nord (North) and Nord'est (North East)
+
+
+
+
+ans =
+
+Haiti-Grand'Anse, Nippes, Sud (South)
+
+
+ans =
+
+Haiti-Nord'Ouest (North West)
+
+
+ans =
+
+Ireland-South-West
+
+
+ans =
+
+Ireland-Midlands
+
+
+ans =
+
+Ireland-Border
+
+
+ans =
+
+Ireland-Dublin
+
+
+ans =
+
+Ireland-West
+
+
+ans =
+
+Ireland-South-East
+
+
+ans =
+
+Ireland-Mid-East
+
+
+ans =
+
+Ireland-Mid-West
+
+
+ans =
+
+Iraq-Nineveh
+
+
+ans =
+
+Iraq-Al-Tameem
+
+
+ans =
+
+Iraq-Diala
+
+
+ans =
+
+Iraq-Al-Anbar
+
+
+ans =
+
+Iraq-Baghdad
+
+
+ans =
+
+Iraq-Babylon
+
+
+ans =
+
+Iraq-Kerbela
+
+
+ans =
+
+Iraq-Wasit
+
+
+ans =
+
+Iraq-Salah Al-Deen
+
+
+ans =
+
+Iraq-Al-Najaf
+
+
+ans =
+
+Iraq-Al-Qadisiya
+
+
+ans =
+
+Iraq-Al-Muthanna
+
+
+ans =
+
+Iraq-Thi-Qar
+
+
+ans =
+
+Iraq-Maysan
+
+
+ans =
+
+Iraq-Al-Basrah
+
+
+ans =
+
+Iraq-Erbil
+
+
+ans =
+
+Iraq-Sulaymaniyah
+
+
+ans =
+
+Iraq-Dahuk
+
+
+ans =
+
+Iran-Markazi
+
+
+ans =
+
+Iran-Gilan
+
+
+ans =
+
+Iran-Mazandaran
+
+
+ans =
+
+Iran-East Azarbayejan
+
+
+ans =
+
+Iran-West Azarbayejan
+
+
+ans =
+
+Iran-Kermanshah
+
+
+ans =
+
+Iran-Khuzestan
+
+
+ans =
+
+Iran-Fars
+
+
+ans =
+
+Iran-Kerman
+
+
+ans =
+
+Iran-Khorasan-e- Razavi
+
+
+ans =
+
+Iran-Esfahan
+
+
+ans =
+
+Iran-Sistan and Baluchestan
+
+
+ans =
+
+Iran-Kordestan
+
+
+ans =
+
+Iran-Hamedan
+
+
+ans =
+
+Iran-Chaharmahal and Bakhtiyari
+
+
+ans =
+
+Iran-Lorestan
+
+
+ans =
+
+Iran-Ilam
+
+
+ans =
+
+Iran-Kohgiluyeh and Boyerahmad
+
+
+ans =
+
+Iran-Bushehr
+
+
+ans =
+
+Iran-Zanjan
+
+
+ans =
+
+Iran-Semnan
+
+
+ans =
+
+Iran-Yazd
+
+
+ans =
+
+Iran-Hormozgan
+
+
+ans =
+
+Iran-Tehran
+
+
+ans =
+
+Iran-Ardebil
+
+
+ans =
+
+Iran-Qom
+
+
+ans =
+
+Iran-Qazvin
+
+
+ans =
+
+Iran-Golestan
+
+
+ans =
+
+Iran-North Khorasan
+
+
+ans =
+
+Iran-South Khorasan
+
+
+ans =
+
+Iran-Lake Urmia
+
+
+ans =
+
+Italy-Abruzzo
+
+
+ans =
+
+Italy-Puglia
+
+
+ans =
+
+Italy-Basilicata
+
+
+ans =
+
+Italy-Calabria
+
+
+ans =
+
+Italy-Campania
+
+
+ans =
+
+Italy-Emilia-Romagna
+
+
+ans =
+
+Italy-Friuli-Venezia Giulia
+
+
+ans =
+
+Italy-Lazio
+
+
+ans =
+
+Italy-Liguria
+
+
+ans =
+
+Italy-Lombardia
+
+
+ans =
+
+Italy-Marche
+
+
+ans =
+
+Italy-Molise
+
+
+ans =
+
+Italy-Piemonte-Valle d'Aosta
+
+
+ans =
+
+Italy-Sardegna
+
+
+ans =
+
+Italy-Sicilia
+
+
+ans =
+
+Italy-Toscana
+
+
+ans =
+
+Italy-Trentino-Alto Adige
+
+
+ans =
+
+Italy-Umbria
+
+
+ans =
+
+Italy-Veneto
+
+
+ans =
+
+Jamaica-Clarendon
+
+
+ans =
+
+Jamaica-Hanover
+
+
+ans =
+
+Jamaica-Kingston
+
+
+ans =
+
+Jamaica-Manchester
+
+
+ans =
+
+Jamaica-Portland
+
+
+ans =
+
+Jamaica-Saint Andrew
+
+
+ans =
+
+Jamaica-Saint Ann
+
+
+ans =
+
+Jamaica-Saint Catherine
+
+
+ans =
+
+Jamaica-Saint Elizabeth
+
+
+ans =
+
+Jamaica-Saint James
+
+
+ans =
+
+Jamaica-Saint Mary
+
+
+ans =
+
+Jamaica-Saint Thomas
+
+
+ans =
+
+Jamaica-Trelawny
+
+
+ans =
+
+Jamaica-Westmoreland
+
+
+ans =
+
+Cambodia-Banteay Meanchey
+
+
+ans =
+
+Cambodia-Battambang
+
+
+ans =
+
+Cambodia-Kampong Cham
+
+
+ans =
+
+Cambodia-Kampong Chhnang
+
+
+ans =
+
+Cambodia-Kampong Speu
+
+
+ans =
+
+Cambodia-Kampong Thom
+
+
+ans =
+
+Cambodia-Kampot
+
+
+ans =
+
+Cambodia-Kandal
+
+
+ans =
+
+Cambodia-Koh Kong
+
+
+ans =
+
+Cambodia-Kratie
+
+
+ans =
+
+Cambodia-Mondul Kiri
+
+
+ans =
+
+Cambodia-Phnom Penh
+
+
+ans =
+
+Cambodia-Preah Vihear
+
+
+ans =
+
+Cambodia-Prey Veng
+
+
+ans =
+
+Cambodia-Pursat
+
+
+ans =
+
+Cambodia-Rotanak Kiri
+
+
+ans =
+
+Cambodia-Otdar Meanchey, Siem Reap
+
+
+ans =
+
+Cambodia-Preah Sihanouk
+
+
+ans =
+
+Cambodia-Stung Treng
+
+
+ans =
+
+Cambodia-Svay Rieng
+
+
+ans =
+
+Cambodia-Takeo
+
+
+ans =
+
+Cambodia-Kep
+
+
+ans =
+
+Cambodia-Pailin
+
+
+ans =
+
+Cambodia-Areas Under National Administration
+
+
+ans =
+
+Cambodia-Tonle Sap Lake
+
+
+ans =
+
+Cambodia-Unknown
+
+
+ans =
+
+Morocco-Oued-Ed-Dahab-Lagouira
+
+
+ans =
+
+Morocco-La�youne-Boujdour-Sakia El Hamra
+
+
+ans =
+
+Morocco-Guelmin-Es-Samara
+
+
+ans =
+
+Morocco-Souss-Massa-Dra�
+
+
+ans =
+
+Morocco-Charb-Chrarda-B�ni Hssen
+
+
+ans =
+
+Morocco-Chaouia-Ouardigha
+
+
+ans =
+
+Morocco-Marrakech-Tensift-Al Haouz
+
+
+ans =
+
+Morocco-Oriental
+
+
+ans =
+
+Morocco-Grand-Casablanca
+
+
+ans =
+
+Morocco-Rabat-Sal�-Zemmour-Zaer
+
+
+ans =
+
+Morocco-Doukala Abda
+
+
+ans =
+
+Morocco-Tadla Azilal
+
+
+ans =
+
+Morocco-Mekn�s - Tafilalet
+
+
+ans =
+
+Morocco-F�s-Boulemane
+
+
+ans =
+
+Morocco-Taza-Al Heiceima-Taounate
+
+
+ans =
+
+Morocco-Tanger-T�touan
+
+
+ans =
+
+Mali-Kayes
+
+
+ans =
+
+Mali-S�gou
+
+
+ans =
+
+Mali-Mopti
+
+
+ans =
+
+Mali-Tombouctou
+
+
+ans =
+
+Mali-Gao and Kidal
+
+
+ans =
+
+Mali-Bamako
+
+
+ans =
+
+Mali-Unknown
+
+
+ans =
+
+Mali-Sikasso
+
+
+ans =
+
+Mali-Koulikoro
+
+
+ans =
+
+Malawi-Chitipa
+
+
+ans =
+
+Malawi-Karonga
+
+
+ans =
+
+Malawi-Nkhata Bay, Likoma
+
+
+ans =
+
+Malawi-Rumphi
+
+
+ans =
+
+Malawi-Mzimba, Mzuzu City
+
+
+ans =
+
+Malawi-Kasungu
+
+
+ans =
+
+Malawi-Nkhota Kota
+
+
+ans =
+
+Malawi-Ntchisi
+
+
+ans =
+
+Malawi-Dowa
+
+
+ans =
+
+Malawi-Salima
+
+
+ans =
+
+Malawi-Lilongwe
+
+
+ans =
+
+Malawi-Mchinji
+
+
+ans =
+
+Malawi-Dedza
+
+
+ans =
+
+Malawi-Ntcheu
+
+
+ans =
+
+Malawi-Mangochi
+
+
+ans =
+
+Malawi-Machinga, Balaka
+
+
+ans =
+
+Malawi-Zomba
+
+
+ans =
+
+Malawi-Chiradzulu
+
+
+ans =
+
+Malawi-Blantyre
+
+
+ans =
+
+Malawi-Thyolo
+
+
+ans =
+
+Malawi-Mulanje, Phalombe
+
+
+ans =
+
+Malawi-Chikwawa
+
+
+ans =
+
+Malawi-Nsanje
+
+
+ans =
+
+Malawi-Mwanza, Neno
+
+
+ans =
+
+Malawi-Lake Malawi
+
+
+ans =
+
+Mexico-Aguascalientes
+
+
+ans =
+
+Mexico-Baja California
+
+
+ans =
+
+Mexico-Baja California Sur
+
+
+ans =
+
+Mexico-Campeche
+
+
+ans =
+
+Mexico-Coahuila
+
+
+ans =
+
+Mexico-Colima
+
+
+ans =
+
+Mexico-Chiapas
+
+
+ans =
+
+Mexico-Chihuahua
+
+
+ans =
+
+Mexico-Distrito Federal
+
+
+ans =
+
+Mexico-Durango
+
+
+ans =
+
+Mexico-Guanajuato
+
+
+ans =
+
+Mexico-Guerrero
+
+
+ans =
+
+Mexico-Hidalgo
+
+
+ans =
+
+Mexico-Jalisco
+
+
+ans =
+
+Mexico-Mexico
+
+
+ans =
+
+Mexico-Michoac�n
+
+
+
+ans =
+
+Mexico-Morelos
+
+
+ans =
+
+Mexico-Nayarit
+
+
+ans =
+
+Mexico-Nuevo Le�n
+
+
+ans =
+
+Mexico-Oaxaca
+
+
+ans =
+
+Mexico-Puebla
+
+
+ans =
+
+Mexico-Quer�taro
+
+
+ans =
+
+Mexico-Quintana Roo
+
+
+ans =
+
+Mexico-San Luis Potos�
+
+
+ans =
+
+Mexico-Sinaloa
+
+
+ans =
+
+Mexico-Sonora
+
+
+ans =
+
+Mexico-Tabasco
+
+
+ans =
+
+Mexico-Tamaulipas
+
+
+ans =
+
+Mexico-Tlaxcala
+
+
+ans =
+
+Mexico-Veracruz
+
+
+ans =
+
+Mexico-Yucat�n
+
+
+ans =
+
+Mexico-Zacatecas
+
+
+ans =
+
+Mozambique-Niassa
+
+
+ans =
+
+Mozambique-Cabo Delgado
+
+
+ans =
+
+Mozambique-Nampula
+
+
+ans =
+
+Mozambique-Zamb�zia
+
+
+ans =
+
+Mozambique-Tete
+
+
+ans =
+
+Mozambique-Manica
+
+
+ans =
+
+Mozambique-Sofala
+
+
+ans =
+
+Mozambique-Inhambane
+
+
+ans =
+
+Mozambique-Gaza
+
+
+ans =
+
+Mozambique-Maputo province
+
+
+ans =
+
+Mozambique-Maputo city
+
+
+ans =
+
+Mozambique-Lake Malawi
+
+
+ans =
+
+Panama-Bocas de Toro, Chiriqu�, Comarca Ng�be Bugl�, Veraguas
+
+
+ans =
+
+Panama-Cocl�
+
+
+ans =
+
+Panama-Comarca Ember�, Dari�n
+
+
+ans =
+
+Panama-Los Santos
+
+
+ans =
+
+Panama-Panam�
+
+
+ans =
+
+Panama-Col�n, Comarca Kuna Yala (San Blas)
+
+
+ans =
+
+Panama-Waterbody
+
+
+ans =
+
+Panama-Herrera
+
+
+ans =
+
+Peru-Amazonas
+
+
+ans =
+
+Peru-Ancash
+
+
+ans =
+
+Peru-Apur�mac
+
+
+ans =
+
+Peru-Arequipa
+
+
+ans =
+
+Peru-Ayacucho
+
+
+ans =
+
+Peru-Cajamarca
+
+
+ans =
+
+Peru-Callao
+
+
+ans =
+
+Peru-Cusco
+
+
+ans =
+
+Peru-Huancavelica
+
+
+ans =
+
+Peru-Hu�nuco
+
+
+ans =
+
+Peru-Ica
+
+
+ans =
+
+Peru-Jun�n
+
+
+ans =
+
+Peru-La libertad
+
+
+ans =
+
+Peru-Lambayeque
+
+
+ans =
+
+Peru-Lima
+
+
+ans =
+
+Peru-Loreto
+
+
+ans =
+
+Peru-Madre de dios
+
+
+ans =
+
+Peru-Moquegua
+
+
+ans =
+
+Peru-Pasco
+
+
+ans =
+
+Peru-Piura
+
+
+ans =
+
+Peru-Puno
+
+
+ans =
+
+Peru-San Mart�n
+
+
+ans =
+
+Peru-Tacna
+
+
+ans =
+
+Peru-Tumbes
+
+
+ans =
+
+Peru-Ucayali
+
+
+ans =
+
+Peru-Lake Titicaca
+
+
+ans =
+
+Pakistan-North-West Frontier Province
+
+
+ans =
+
+Pakistan-Fata
+
+
+ans =
+
+Pakistan-Punjab, Islamabad
+
+
+ans =
+
+Pakistan-Sind
+
+
+ans =
+
+Pakistan-Baluchistan
+
+
+ans =
+
+Pakistan-Northern areas
+
+
+ans =
+
+Pakistan-Kashmir
+
+
+ans =
+
+Puerto Rico-G7201001
+
+
+ans =
+
+Puerto Rico-G7201002, G7201003, G7201004
+
+
+ans =
+
+Puerto Rico-G7201100
+
+
+ans =
+
+Puerto Rico-G7201800
+
+
+ans =
+
+Puerto Rico-G7202500
+
+
+ans =
+
+Puerto Rico-G7200100, G7200200, G7200300, G7200400, G7200500, G72000700, G7201200, G7201300, G7201400, G7201500, G7201600, G7201700, G7201900, G7202000, G7202100, G7202200, G7202300, G7202400, G7202600, G7200600, G7200801, G7200802, G7200900
+
+
+ans =
+
+Portugal-Baixo Vouga
+
+
+ans =
+
+Portugal-Other Center
+
+
+ans =
+
+Portugal-D�o-Laf�es
+
+
+ans =
+
+Portugal-Baixo Mondego
+
+
+ans =
+
+Portugal-Minho-Lima
+
+
+ans =
+
+Portugal-Grande Porto
+
+
+ans =
+
+Portugal-Alto Tr�s-os-Montes
+
+
+ans =
+
+Portugal-C�vado
+
+
+ans =
+
+Portugal-Ave
+
+
+ans =
+
+Portugal-T�mega
+
+
+
+ans =
+
+Portugal-Douro
+
+
+ans =
+
+Portugal-Entre Douro e Vouga
+
+
+ans =
+
+Portugal-Regi�o Aut�noma dos A�ores
+
+
+ans =
+
+Portugal-Algarve
+
+
+ans =
+
+Portugal-Regi�o Aut�noma da Madeira
+
+
+ans =
+
+Portugal-Pinhal Litoral
+
+
+ans =
+
+Portugal-M�dio Tejo
+
+
+ans =
+
+Portugal-Oeste
+
+
+ans =
+
+Portugal-Other Alentejo
+
+
+ans =
+
+Portugal-Lez�ria do Tejo
+
+
+ans =
+
+Portugal-Grande Lisboa
+
+
+ans =
+
+Portugal-Pen�nsula de Set�bal
+
+
+ans =
+
+Romania-Alba
+
+
+ans =
+
+Romania-Arad
+
+
+ans =
+
+Romania-Arges
+
+
+ans =
+
+Romania-Bacau
+
+
+ans =
+
+Romania-Bihor
+
+
+ans =
+
+Romania-Bistrita Nasaud
+
+
+ans =
+
+Romania-Botosani
+
+
+ans =
+
+Romania-Brasov
+
+
+ans =
+
+Romania-Braila
+
+
+ans =
+
+Romania-Buzau
+
+
+ans =
+
+Romania-Caras Severin
+
+
+ans =
+
+Romania-Cluj
+
+
+ans =
+
+Romania-Constanta
+
+
+ans =
+
+Romania-Covasna
+
+
+ans =
+
+Romania-Dimbovita
+
+
+ans =
+
+Romania-Dolj
+
+
+ans =
+
+Romania-Galati
+
+
+ans =
+
+Romania-Gorj
+
+
+ans =
+
+Romania-Harghita
+
+
+ans =
+
+Romania-Hunedoara
+
+
+ans =
+
+Romania-Calarasi, Giurgiu, Ialomita, Ilfov
+
+
+ans =
+
+Romania-Lasi
+
+
+ans =
+
+Romania-Maramures
+
+
+ans =
+
+Romania-Mehedinti
+
+
+ans =
+
+Romania-Mures
+
+
+ans =
+
+Romania-Neamt
+
+
+ans =
+
+Romania-Olt
+
+
+ans =
+
+Romania-Prahova
+
+
+ans =
+
+Romania-Satu Mare
+
+
+ans =
+
+Romania-Salaj
+
+
+ans =
+
+Romania-Sibiu
+
+
+ans =
+
+Romania-Suceava
+
+
+ans =
+
+Romania-Teleorman
+
+
+ans =
+
+Romania-Timis
+
+
+ans =
+
+Romania-Vaslui
+
+
+ans =
+
+Romania-V�lcea
+
+
+ans =
+
+Romania-Vrancea
+
+
+ans =
+
+Romania-Bucharest Sector 1 to 6
+
+
+ans =
+
+Romania-Tulcea
+
+
+ans =
+
+Slovenia-Gorenjska
+
+
+ans =
+
+Slovenia-Gori�ka
+
+
+ans =
+
+Slovenia-Jugovzhodna Slovenija
+
+
+ans =
+
+Slovenia-Koro�ka
+
+
+ans =
+
+Slovenia-Notranjsko-kra�ka
+
+
+ans =
+
+Slovenia-Obalno-kra�ka
+
+
+ans =
+
+Slovenia-Osrednjeslovenska
+
+
+ans =
+
+Slovenia-Podravska
+
+
+ans =
+
+Slovenia-Pomurska
+
+
+ans =
+
+Slovenia-Savinjska
+
+
+ans =
+
+Slovenia-Spodnjeposavska
+
+
+ans =
+
+Slovenia-Zasavska
+
+
+ans =
+
+Senegal-Dakar
+
+
+ans =
+
+Senegal-Diourbel
+
+
+ans =
+
+Senegal-Fatick
+
+
+ans =
+
+Senegal-Kaolack
+
+
+ans =
+
+Senegal-Kolda
+
+
+ans =
+
+Senegal-Louga, Saint Louis, Matam
+
+
+
+ans =
+
+Senegal-Tambacounda
+
+
+ans =
+
+Senegal-Thi�s
+
+
+ans =
+
+Senegal-Ziguinchor
+
+
+ans =
+
+El Salvador-Ahuachap�n
+
+
+
+ans =
+
+El Salvador-Santa Ana
+
+
+ans =
+
+El Salvador-Sonsonate
+
+
+ans =
+
+El Salvador-Chalatenango
+
+
+ans =
+
+El Salvador-La Libertad
+
+
+ans =
+
+El Salvador-San Salvador
+
+
+ans =
+
+El Salvador-Cuscatl�n
+
+
+
+ans =
+
+El Salvador-La Paz
+
+
+ans =
+
+El Salvador-Caba�as
+
+
+
+ans =
+
+El Salvador-San Vicente
+
+
+ans =
+
+El Salvador-San Miguel
+
+
+ans =
+
+El Salvador-Moraz�n
+
+
+ans =
+
+El Salvador-La Uni�n
+
+
+ans =
+
+El Salvador-Usulut�n
+
+
+ans =
+
+Tanzania-Dodoma
+
+
+ans =
+
+Tanzania-Arusha and Manyara
+
+
+ans =
+
+Tanzania-Kilimanjaro
+
+
+ans =
+
+Tanzania-Tanga
+
+
+ans =
+
+Tanzania-Morogoro
+
+
+ans =
+
+Tanzania-Pwani
+
+
+ans =
+
+Tanzania-Dar es Salaam
+
+
+ans =
+
+Tanzania-Lindi
+
+
+ans =
+
+Tanzania-Mtwara
+
+
+ans =
+
+Tanzania-Ruvuma
+
+
+ans =
+
+Tanzania-Mbeya
+
+
+ans =
+
+Tanzania-Singida
+
+
+ans =
+
+Tanzania-Tabora
+
+
+ans =
+
+Tanzania-Rukwa
+
+
+ans =
+
+Tanzania-Kigoma
+
+
+ans =
+
+Tanzania-Shinyanga
+
+
+ans =
+
+Tanzania-Kagera
+
+
+ans =
+
+Tanzania-Mwanza
+
+
+ans =
+
+Tanzania-Mara
+
+
+ans =
+
+Tanzania-Zanzibar North
+
+
+ans =
+
+Tanzania-Zanzibar South
+
+
+ans =
+
+Tanzania-Zanzibar Town/West
+
+
+ans =
+
+Tanzania-Pemba North
+
+
+ans =
+
+Tanzania-Pemba South
+
+
+ans =
+
+Tanzania-Iringa
+
+
+ans =
+
+Tanzania-Waterbody
+
+
+ans =
+
+Venezuela-Federal District, Vargas
+
+
+ans =
+
+Venezuela-Amazonas Federal Territory
+
+
+ans =
+
+Venezuela-Anzo�tegui
+
+
+ans =
+
+Venezuela-Apure
+
+
+ans =
+
+Venezuela-Aragua
+
+
+ans =
+
+Venezuela-Barinas, M�rida
+
+
+ans =
+
+Venezuela-Bol�var
+
+
+ans =
+
+Venezuela-Carabobo
+
+
+ans =
+
+Venezuela-Cojedes
+
+
+ans =
+
+Venezuela-Amacuros Delta Federal Territory
+
+
+ans =
+
+Venezuela-Falc�n
+
+
+ans =
+
+Venezuela-Gu�rico
+
+
+ans =
+
+Venezuela-Lara
+
+
+ans =
+
+Venezuela-Miranda
+
+
+ans =
+
+Venezuela-Monagas
+
+
+ans =
+
+Venezuela-Nueva Esparta, Federal Dependencies
+
+
+ans =
+
+Venezuela-Portuguesa
+
+
+ans =
+
+Venezuela-Sucre
+
+
+ans =
+
+Venezuela-T�chira
+
+
+ans =
+
+Venezuela-Trujillo
+
+
+ans =
+
+Venezuela-Yaracuy
+
+
+ans =
+
+Venezuela-Zulia
+
+
+ans =
+
+Venezuela-Lake Valencia
+
+
+ans =
+
+South Africa-Free State
+
+
+ans =
+
+South Africa-Unknown
+
+
+ans =
+
+South Africa-Western Cape
+
+
+ans =
+
+South Africa-Eastern Cape, KwaZulu-Natal
+
+
+ans =
+
+South Africa-Gauteng, Limpopo, Mpumalanga, North West, Northern Cape
+
+
+ans =
+
+Brazil-Acre
+
+
+ans =
+
+Brazil-Amazonas
+
+
+ans =
+
+Brazil-Maranh�o
+
+
+ans =
+
+Brazil-Par�
+
+
+ans =
+
+Brazil-Rond�nia
+
+
+ans =
+
+Brazil-Goi�s and Tocantins
+
+
+ans =
+
+Brazil-Distrito Federal
+
+
+ans =
+
+Brazil-Mato Grosso and Mato Grosso do Sul
+
+
+ans =
+
+Brazil-Minas Gerais
+
+
+ans =
+
+Brazil-Rio Grande do Sul
+
+
+ans =
+
+Brazil-S�o Paulo
+
+
+ans =
+
+Brazil-Paran�
+
+
+ans =
+
+Brazil-Santa Catarina
+
+
+ans =
+
+Brazil-Cear�
+
+
+ans =
+
+Brazil-Piau�
+
+
+ans =
+
+Brazil-Alagoas
+
+
+ans =
+
+Brazil-Bahia
+
+
+ans =
+
+Brazil-Esp�rito Santo
+
+
+ans =
+
+Brazil-Para�ba
+
+
+ans =
+
+Brazil-Pernambuco
+
+
+ans =
+
+Brazil-Rio de Janeiro
+
+
+ans =
+
+Brazil-Rio Grande do Norte
+
+
+ans =
+
+Brazil-Sergipe
+
+
+ans =
+
+Brazil-Roraima
+
+
+ans =
+
+Brazil-Amap�
+
+
+ans =
+
+Canada-Manitoba
+
+
+ans =
+
+Canada-Saskatchewan
+
+
+ans =
+
+Canada-Alberta
+
+
+ans =
+
+Canada-British Columbia
+
+
+ans =
+
+Canada-Prince Edward Island, Yukon, Northwest Territories, and Nunavut
+
+
+ans =
+
+Canada-Ontario
+
+
+ans =
+
+Canada-Quebec
+
+
+ans =
+
+Canada-New Brunswick
+
+
+ans =
+
+Canada-Nova Scotia
+
+
+ans =
+
+Canada-Newfoundland, Labrador
+
+
+ans =
+
+Chile-Aysen del Gral Carlos Ib��ez del Campo and Los Lagos
+
+
+ans =
+
+Chile-Magallanes and La Ant�rtica Chilena
+
+
+ans =
+
+Chile-Antofagasta and Tarapac�
+
+
+ans =
+
+Chile-Atacama and Coquimbo
+
+
+ans =
+
+Chile-Libertador General Bernardo O"Higgins, Metropolitana de Santiago, and Valparaiso
+
+
+ans =
+
+Chile-La Araucan�a
+
+
+ans =
+
+Chile-Del Biobio
+
+
+ans =
+
+Chile-Del Maule
+
+
+ans =
+
+China-Tibet
+
+
+ans =
+
+China-Gansu
+
+
+ans =
+
+China-Ningxia
+
+
+ans =
+
+China-Qinghai
+
+
+ans =
+
+China-Shaanxi
+
+
+ans =
+
+China-Shanxi
+
+
+ans =
+
+China-Guangxi
+
+
+ans =
+
+China-Guizhou
+
+
+ans =
+
+China-Hubei
+
+
+ans =
+
+China-Hunan
+
+
+ans =
+
+China-Sichuan
+
+
+ans =
+
+China-Yunnan
+
+
+ans =
+
+China-Beijing (municipality)
+
+
+
+ans =
+
+China-Hebei
+
+
+ans =
+
+China-Henan
+
+
+ans =
+
+China-Liaoning
+
+
+ans =
+
+China-Shangdong
+
+
+ans =
+
+China-Tianjin (municipality)
+
+
+ans =
+
+China-Fujian
+
+
+ans =
+
+China-Anhui
+
+
+ans =
+
+China-Jiangxi
+
+
+ans =
+
+China-Jiangsu
+
+
+ans =
+
+China-Shanghai (municipality)
+
+
+
+ans =
+
+China-Zhejiang
+
+
+ans =
+
+China-Jilin
+
+
+ans =
+
+China-Inner Mongolia
+
+
+
+ans =
+
+China-Heilongjiang
+
+
+ans =
+
+China-Guangdong and Hainan
+
+
+ans =
+
+China-Xinjiang
+
+
+ans =
+
+Colombia-Amazonas
+
+
+ans =
+
+Colombia-Antioquia
+
+
+ans =
+
+Colombia-Boyac� and Casanare
+
+
+ans =
+
+Colombia-C�rdoba
+
+
+
+ans =
+
+Colombia-Santander
+
+
+ans =
+
+Colombia-La Guajira
+
+
+ans =
+
+Colombia-San Andr�s
+
+
+ans =
+
+Colombia-Cundinamarca
+
+
+ans =
+
+Colombia-Bogot�
+
+
+ans =
+
+Colombia-Caldas, Quind�o, and Risaralda
+
+
+ans =
+
+Colombia-Tolima
+
+
+ans =
+
+Colombia-Caquet�
+
+
+ans =
+
+Colombia-Cauca
+
+
+ans =
+
+Colombia-Huila
+
+
+ans =
+
+Colombia-Nari�o
+
+
+ans =
+
+Colombia-Putumayo
+
+
+ans =
+
+Colombia-Atl�ntico
+
+
+ans =
+
+Colombia-Bol�var and Sucre
+
+
+
+ans =
+
+Colombia-Cesar and Magdalena
+
+
+ans =
+
+Colombia-Choc�
+
+
+ans =
+
+Colombia-Arauca
+
+
+ans =
+
+Colombia-Norte de Santander
+
+
+ans =
+
+Colombia-Guaviare, Vaup�s, and Guain�a
+
+
+
+ans =
+
+Colombia-Meta and Vichada
+
+
+ans =
+
+Colombia-Valle
+
+
+ans =
+
+Cuba-Cienfuegos
+
+
+ans =
+
+Cuba-Isla de la Juventud
+
+
+ans =
+
+Cuba-Pinar del R�o
+
+
+
+ans =
+
+Cuba-Sancti Spiritus
+
+
+ans =
+
+Cuba-Ciego de Avila
+
+
+ans =
+
+Cuba-Camag�ey
+
+
+ans =
+
+Cuba-Guant�namo
+
+
+ans =
+
+Cuba-Granma
+
+
+ans =
+
+Cuba-Holgu�n
+
+
+ans =
+
+Cuba-Las Tunas
+
+
+ans =
+
+Cuba-Santiago de Cuba
+
+
+ans =
+
+Cuba-Ciudad de la Habana
+
+
+ans =
+
+Cuba-La Habana
+
+
+ans =
+
+Cuba-Matanzas
+
+
+ans =
+
+Cuba-Villa Clara
+
+
+ans =
+
+Germany-Nordrhein-Westfalen
+
+
+ans =
+
+Germany-Baden-Wurttemberg
+
+
+ans =
+
+Germany-Hessen
+
+
+ans =
+
+Germany-Bremen
+
+
+ans =
+
+Germany-Niedersachsen
+
+
+ans =
+
+Germany-Thuringia
+
+
+ans =
+
+Germany-Hamburg
+
+
+ans =
+
+Germany-Schleswig-Holstein
+
+
+ans =
+
+Germany-Rheinland-Pfalz
+
+
+ans =
+
+Germany-Saarland
+
+
+ans =
+
+Germany-Bayern
+
+
+ans =
+
+Germany-West Berlin
+
+
+ans =
+
+Germany-Brandenburg
+
+
+ans =
+
+Germany-Saxony-Anhalt
+
+
+ans =
+
+Germany-Saxony
+
+
+ans =
+
+Germany-Mecklenburg-West Pomerania
+
+
+ans =
+
+Germany-East Berlin
+
+
+ans =
+
+Dominican Republic-Monte Cristi
+
+
+ans =
+
+Dominican Republic-Puerto Plata
+
+
+ans =
+
+Dominican Republic-Dajab�n
+
+
+ans =
+
+Dominican Republic-Espaillat
+
+
+ans =
+
+Dominican Republic-Hermanas Mirabal
+
+
+ans =
+
+Dominican Republic-Santiago
+
+
+ans =
+
+Dominican Republic-Santiago Rodr�guez
+
+
+ans =
+
+Dominican Republic-Valverde
+
+
+ans =
+
+Dominican Republic-Baoruco
+
+
+ans =
+
+Dominican Republic-Barahona
+
+
+ans =
+
+Dominican Republic-Independencia
+
+
+ans =
+
+Dominican Republic-El�as Pi�a
+
+
+ans =
+
+Dominican Republic-Pedernales
+
+
+ans =
+
+Dominican Republic-San Juan
+
+
+ans =
+
+Dominican Republic-Azua
+
+
+ans =
+
+Dominican Republic-La Vega and Monse�or Nouel
+
+
+ans =
+
+Dominican Republic-Duarte
+
+
+ans =
+
+Dominican Republic-Mar�a Trinidad S�nchez and Saman�
+
+
+ans =
+
+Dominican Republic-San Crist�bal and Monte Plata
+
+
+ans =
+
+Dominican Republic-S�nchez Ram�rez
+
+
+ans =
+
+Dominican Republic-El Seibo and Hato Mayor
+
+
+ans =
+
+Dominican Republic-La Altagracia and La Romana
+
+
+ans =
+
+Dominican Republic-San Pedro de Macor�s
+
+
+ans =
+
+Dominican Republic-Peravia and San Jos� de Ocoa
+
+
+ans =
+
+Dominican Republic-Federal district and Santo Domingo
+
+
+ans =
+
+Egypt-Gharbia
+
+
+ans =
+
+Egypt-Ismailia
+
+
+ans =
+
+Egypt-Menoufia
+
+
+ans =
+
+Egypt-Kaliobia
+
+
+ans =
+
+Egypt-Sharkia
+
+
+ans =
+
+Egypt-Suez
+
+
+ans =
+
+Egypt-Dakahlia
+
+
+ans =
+
+Egypt-Port Said
+
+
+ans =
+
+Egypt-Damietta
+
+
+ans =
+
+Egypt-Marsa Matroh
+
+
+ans =
+
+Egypt-Behera
+
+
+ans =
+
+Egypt-Fayoum
+
+
+ans =
+
+Egypt-Alexandria
+
+
+ans =
+
+Egypt-Menia
+
+
+ans =
+
+Egypt-Bani Swif
+
+
+ans =
+
+Egypt-Kafr Sheikh
+
+
+ans =
+
+Egypt-Aswan
+
+
+ans =
+
+Egypt-Asiut
+
+
+ans =
+
+Egypt-New Valley
+
+
+ans =
+
+Egypt-Qena
+
+
+ans =
+
+Egypt-Sohag
+
+
+ans =
+
+Egypt-Red Sea
+
+
+ans =
+
+Egypt-South Sinai
+
+
+ans =
+
+Egypt-North Sinai
+
+
+ans =
+
+Egypt-Luxor
+
+
+ans =
+
+Egypt-Cairo
+
+
+ans =
+
+Egypt-Giza
+
+
+ans =
+
+Fiji-Ba
+
+
+ans =
+
+Fiji-Nadroha
+
+
+ans =
+
+Fiji-Tailevu
+
+
+ans =
+
+Fiji-Ships, unknown
+
+
+ans =
+
+Fiji-Naitasiri, Rewa
+
+
+ans =
+
+Fiji-Serua, Namosi
+
+
+ans =
+
+Fiji-Kadavu, Lau, Lomaiviti, Rotuma
+
+
+ans =
+
+Fiji-Bua, Cakaudrove
+
+
+ans =
+
+Fiji-Ra
+
+
+ans =
+
+Fiji-Macuata
+
+
+ans =
+
+Guinea-Bok�
+
+
+ans =
+
+Guinea-Conakry
+
+
+ans =
+
+Guinea-Faranah
+
+
+ans =
+
+Guinea-Kankan
+
+
+ans =
+
+Guinea-Kindia, Labe, Mamou
+
+
+
+ans =
+
+Guinea-N'zerekore
+
+
+ans =
+
+Greece-Lakonia
+
+
+ans =
+
+Greece-Trikala
+
+
+ans =
+
+Greece-Loannina
+
+
+ans =
+
+Greece-Fthiotida
+
+
+ans =
+
+Greece-Chania
+
+
+ans =
+
+Greece-Kozani
+
+
+ans =
+
+Greece-Rodopi
+
+
+ans =
+
+Greece-Evros
+
+
+ans =
+
+Greece-Xanthi
+
+
+ans =
+
+Greece-Kavala
+
+
+ans =
+
+Greece-Drama
+
+
+ans =
+
+Greece-Serres
+
+
+ans =
+
+Greece-Chalkidiki and Aghion Oros
+
+
+ans =
+
+Greece-Kilkis
+
+
+ans =
+
+Greece-Thessaloniki
+
+
+ans =
+
+Greece-Pieria
+
+
+ans =
+
+Greece-Imathia
+
+
+ans =
+
+Greece-Florina
+
+
+ans =
+
+Greece-Pella
+
+
+ans =
+
+Greece-Kastoria
+
+
+ans =
+
+Greece-Arta
+
+
+ans =
+
+Greece-Preveza
+
+
+ans =
+
+Greece-Thesprotia
+
+
+ans =
+
+Greece-Magnissia
+
+
+ans =
+
+Greece-Karditsa
+
+
+ans =
+
+Greece-Larissa
+
+
+ans =
+
+Greece-Etolia and Akarnania
+
+
+ans =
+
+Greece-Viotia
+
+
+ans =
+
+Greece-Fokida
+
+
+ans =
+
+Greece-Prefecture of East Attiki
+
+
+ans =
+
+Greece-Prefecture of West Attiki
+
+
+ans =
+
+Greece-Prefecture of Athens
+
+
+ans =
+
+Greece-Prefecture of Pireas
+
+
+ans =
+
+Greece-Korinthia
+
+
+ans =
+
+Greece-Argolida
+
+
+ans =
+
+Greece-Arkadia
+
+
+ans =
+
+Greece-Achaia
+
+
+ans =
+
+Greece-Messinia
+
+
+ans =
+
+Greece-Ilia
+
+
+ans =
+
+Greece-Lassithi
+
+
+ans =
+
+Greece-Iraklio
+
+
+ans =
+
+Greece-Rethymno
+
+
+ans =
+
+Greece-Evia
+
+
+ans =
+
+Greece-Evrytania
+
+
+ans =
+
+Greece-Grevena
+
+
+ans =
+
+Greece-Kerkyra
+
+
+ans =
+
+Greece-Zakynthos
+
+
+ans =
+
+Greece-Lefkada
+
+
+ans =
+
+Greece-Kefallinia
+
+
+ans =
+
+Greece-Lesvos
+
+
+ans =
+
+Greece-Dodekanissos
+
+
+ans =
+
+Greece-Chios
+
+
+ans =
+
+Greece-Samos
+
+
+ans =
+
+Greece-Kyklades
+
+
+ans =
+
+Indonesia-Nanggroe Aceh Darussalam
+
+
+ans =
+
+Indonesia-Sumatera Utara
+
+
+ans =
+
+Indonesia-Sumatera Barat
+
+
+ans =
+
+Indonesia-Riau and Kepulauan Riau
+
+
+ans =
+
+Indonesia-Jambi
+
+
+ans =
+
+Indonesia-Sumatera Selatan and Bangka Belitung
+
+
+ans =
+
+Indonesia-Bengkulu
+
+
+ans =
+
+Indonesia-Lampung
+
+
+ans =
+
+Indonesia-DKI Jakarta
+
+
+ans =
+
+Indonesia-West Java and Banten
+
+
+ans =
+
+Indonesia-Jawa Tengah
+
+
+ans =
+
+Indonesia-DKI Yogyakarta
+
+
+ans =
+
+Indonesia-Jawa Timur
+
+
+ans =
+
+Indonesia-Bali
+
+
+ans =
+
+Indonesia-Nusa Tenggara Barat
+
+
+ans =
+
+Indonesia-East Nusa Tenggara
+
+
+ans =
+
+Indonesia-Kalimantan Barat
+
+
+ans =
+
+Indonesia-Kalimantan Tengah
+
+
+ans =
+
+Indonesia-Kalimantan Selatan
+
+
+ans =
+
+Indonesia-Kalimantan Timur
+
+
+ans =
+
+Indonesia-Sulawesi Utara  and Gorontalo
+
+
+
+
+ans =
+
+Indonesia-Sulawesi Tengah
+
+
+ans =
+
+Indonesia-Sulawesi Selatan, Sulawesi Tenggara and Sulawesi Barat
+
+
+
+ans =
+
+Indonesia-Maluku and Maluku Utara
+
+
+
+ans =
+
+Indonesia-Lake Toba
+
+
+ans =
+
+Indonesia-Papua and Papua Barat
+
+
+ans =
+
+Israel-Southern
+
+
+ans =
+
+Israel-Northern
+
+
+ans =
+
+Israel-Haifa
+
+
+ans =
+
+Israel-Tel-Aviv
+
+
+ans =
+
+Israel-Central
+
+
+ans =
+
+Israel-Jerusalem
+
+
+ans =
+
+India-Chandigarh
+
+
+ans =
+
+India-Delhi
+
+
+ans =
+
+India-Himachal Pradesh
+
+
+ans =
+
+India-Haryana
+
+
+ans =
+
+India-Jammu and Kashmir
+
+
+ans =
+
+India-Punjab
+
+
+ans =
+
+India-Rajasthan
+
+
+ans =
+
+India-Uttar Pradesh and Uttaranchal
+
+
+ans =
+
+India-Bihar and Jharkhand
+
+
+ans =
+
+India-West Bengal
+
+
+ans =
+
+India-Sikkim
+
+
+ans =
+
+India-Andhra Pradesh
+
+
+ans =
+
+India-Kerala
+
+
+ans =
+
+India-Chhattisgarh and Madhya Pradesh
+
+
+ans =
+
+India-Orissa
+
+
+ans =
+
+India-Pondicherry
+
+
+ans =
+
+India-Tamil Nadu
+
+
+ans =
+
+India-Lakshadweep
+
+
+ans =
+
+India-Daman and Diu and Goa
+
+
+ans =
+
+India-Dadra and Nagar Haveli
+
+
+ans =
+
+India-Gujarat
+
+
+ans =
+
+India-Karnataka
+
+
+ans =
+
+India-Maharashtra
+
+
+ans =
+
+India-Andaman and Nicobar Islands
+
+
+ans =
+
+India-Arunachal Pradesh
+
+
+ans =
+
+India-Assam
+
+
+ans =
+
+India-Manipur
+
+
+ans =
+
+India-Mizoram
+
+
+ans =
+
+India-Nagaland
+
+
+ans =
+
+India-Tripura
+
+
+ans =
+
+India-Meghalaya
+
+
+ans =
+
+Jordan-Mafraq
+
+
+ans =
+
+Jordan-Amman
+
+
+ans =
+
+Jordan-Tafilah
+
+
+ans =
+
+Jordan-Ma'an
+
+
+ans =
+
+Jordan-Irbid
+
+
+ans =
+
+Jordan-Balqa
+
+
+ans =
+
+Jordan-Karak
+
+
+ans =
+
+Jordan-Zarqa
+
+
+ans =
+
+Jordan-Madaba
+
+
+ans =
+
+Jordan-Ajlun
+
+
+ans =
+
+Jordan-Jarash
+
+
+ans =
+
+Jordan-Aqaba
+
+
+ans =
+
+Kenya-Eastern Province
+
+
+ans =
+
+Kenya-Rift Valley Province
+
+
+ans =
+
+Kenya-Western Province
+
+
+ans =
+
+Kenya-North-Eastern Province
+
+
+ans =
+
+Kenya-Coast Province
+
+
+
+ans =
+
+Kenya-Central Province
+
+
+ans =
+
+Kenya-Nairobi
+
+
+ans =
+
+Kenya-Nyanza Province
+
+
+ans =
+
+Kyrgyz Republic-Chuya
+
+
+ans =
+
+Kyrgyz Republic-Issyk-Kul
+
+
+ans =
+
+Kyrgyz Republic-Naryn
+
+
+ans =
+
+Kyrgyz Republic-Oshskaya
+
+
+ans =
+
+Kyrgyz Republic-Talasskaya
+
+
+ans =
+
+Kyrgyz Republic-Batken
+
+
+ans =
+
+Kyrgyz Republic-Dzhalal-Abad
+
+
+ans =
+
+Kyrgyz Republic-Gorkenesh Bishkek
+
+
+ans =
+
+Liberia-Maryland and Grand Kru
+
+
+ans =
+
+Liberia-Sinoe
+
+
+ans =
+
+Liberia-Bong
+
+
+ans =
+
+Liberia-Grand Bassa and Rivercess
+
+
+ans =
+
+Liberia-Grand Cape Mount
+
+
+ans =
+
+Liberia-Lofa and Gbarpolu
+
+
+ans =
+
+Liberia-Nimba
+
+
+ans =
+
+Liberia-Grand Gedeh and River Gee
+
+
+ans =
+
+Liberia-Montserrado, Bomi, and Margibi
+
+
+ans =
+
+Mongolia-Bayan-Olgii
+
+
+ans =
+
+Mongolia-Dornogovi
+
+
+ans =
+
+Mongolia-�mn�govi
+
+
+ans =
+
+Mongolia-Khentii
+
+
+ans =
+
+Mongolia-Arkhangai
+
+
+ans =
+
+Mongolia-Bayankhongor
+
+
+ans =
+
+Mongolia-Zavkhan
+
+
+ans =
+
+Mongolia-Govi-Altai
+
+
+ans =
+
+Mongolia-Khovd
+
+
+ans =
+
+Mongolia-Kh�vsg�l
+
+
+ans =
+
+Mongolia-Uvs
+
+
+ans =
+
+Mongolia-Bulgan
+
+
+ans =
+
+Mongolia-Dundgovi and Govisumber
+
+
+ans =
+
+Mongolia-�v�rkhangai
+
+
+ans =
+
+Mongolia-Selenge
+
+
+ans =
+
+Mongolia-T�v
+
+
+ans =
+
+Mongolia-Dornod
+
+
+ans =
+
+Mongolia-S�khbaatar
+
+
+ans =
+
+Mongolia-Ulaanbaatar
+
+
+ans =
+
+Mongolia-Orkhon
+
+
+ans =
+
+Mongolia-Darkhan-Uul
+
+
+ans =
+
+Malaysia-Perak
+
+
+ans =
+
+Malaysia-Pulau Pinang
+
+
+ans =
+
+Malaysia-Kedah
+
+
+ans =
+
+Malaysia-Perlis
+
+
+ans =
+
+Malaysia-Johor
+
+
+ans =
+
+Malaysia-Kelantan
+
+
+ans =
+
+Malaysia-Melaka
+
+
+ans =
+
+Malaysia-Negeri Sembilan
+
+
+ans =
+
+Malaysia-Pahang
+
+
+ans =
+
+Malaysia-Selangor and Kuala Lumpur Federal Territory
+
+
+ans =
+
+Malaysia-Trengganu
+
+
+ans =
+
+Malaysia-Sabah and Labuan Federal Territory
+
+
+ans =
+
+Malaysia-Sarawak
+
+
+ans =
+
+Nigeria-Delta
+
+
+ans =
+
+Nigeria-Sokoto
+
+
+ans =
+
+Nigeria-Kebbi
+
+
+ans =
+
+Nigeria-Zamfara
+
+
+ans =
+
+Nigeria-Katsina
+
+
+ans =
+
+Nigeria-Kano
+
+
+ans =
+
+Nigeria-Borno
+
+
+ans =
+
+Nigeria-Yobe
+
+
+ans =
+
+Nigeria-Jigawa
+
+
+ans =
+
+Nigeria-Gombe
+
+
+ans =
+
+Nigeria-Adamawa
+
+
+ans =
+
+Nigeria-Taraba
+
+
+ans =
+
+Nigeria-Benue
+
+
+ans =
+
+Nigeria-Bauchi
+
+
+ans =
+
+Nigeria-Plateau
+
+
+ans =
+
+Nigeria-Nasarawa
+
+
+ans =
+
+Nigeria-Federal Capital Territory Abuja
+
+
+
+ans =
+
+Nigeria-Kaduna
+
+
+ans =
+
+Nigeria-Niger
+
+
+ans =
+
+Nigeria-Kwara
+
+
+ans =
+
+Nigeria-Oyo
+
+
+ans =
+
+Nigeria-Ogun
+
+
+ans =
+
+Nigeria-Osun
+
+
+ans =
+
+Nigeria-Ekiti
+
+
+ans =
+
+Nigeria-Ondo
+
+
+ans =
+
+Nigeria-Kogi
+
+
+ans =
+
+Nigeria-Enugu
+
+
+ans =
+
+Nigeria-Anambra
+
+
+ans =
+
+Nigeria-Imo
+
+
+ans =
+
+Nigeria-Ebonyi
+
+
+ans =
+
+Nigeria-Abia
+
+
+ans =
+
+Nigeria-Cross River
+
+
+ans =
+
+Nigeria-Edo
+
+
+ans =
+
+Nigeria-Rivers
+
+
+ans =
+
+Nigeria-Bayelsa
+
+
+ans =
+
+Nigeria-Lagos
+
+
+ans =
+
+Nigeria-Akwa Ibom
+
+
+ans =
+
+Nicaragua-Atl�ntico Norte and Atl�ntico Sur
+
+
+ans =
+
+Nicaragua-Carazo
+
+
+ans =
+
+Nicaragua-Granada
+
+
+ans =
+
+Nicaragua-Jinotega
+
+
+ans =
+
+Nicaragua-Leon and Esteli
+
+
+ans =
+
+Nicaragua-Managua
+
+
+ans =
+
+Nicaragua-Masaya
+
+
+ans =
+
+Nicaragua-Rivas
+
+
+ans =
+
+Nicaragua-Chinandega
+
+
+ans =
+
+Nicaragua-Madr�z
+
+
+ans =
+
+Nicaragua-Matagalpa
+
+
+ans =
+
+Nicaragua-Nueva Segovia
+
+
+ans =
+
+Nicaragua-Boaco
+
+
+ans =
+
+Nicaragua-Chontales
+
+
+ans =
+
+Nicaragua-R�o San Juan
+
+
+ans =
+
+Nepal-Dhawalagiri
+
+
+ans =
+
+Nepal-Bagmati
+
+
+ans =
+
+Nepal-Mechi
+
+
+ans =
+
+Nepal-Koshi
+
+
+ans =
+
+Nepal-Sagarmatha
+
+
+ans =
+
+Nepal-Janakpur
+
+
+ans =
+
+Nepal-Narayani
+
+
+ans =
+
+Nepal-Lumbini
+
+
+ans =
+
+Nepal-Rapti
+
+
+ans =
+
+Nepal-Bheri
+
+
+ans =
+
+Nepal-Mahakali
+
+
+ans =
+
+Nepal-Gandaki
+
+
+ans =
+
+Nepal-Seti
+
+
+ans =
+
+Nepal-Karnali
+
+
+ans =
+
+Philippines-Central Visayas
+
+
+ans =
+
+Philippines-Western Visayas
+
+
+ans =
+
+Philippines-Bicol
+
+
+ans =
+
+Philippines-Cordillera Administrative Region
+
+
+ans =
+
+Philippines-Cagayan Valley
+
+
+ans =
+
+Philippines-Central Luzon
+
+
+ans =
+
+Philippines-Ilocos
+
+
+ans =
+
+Philippines-National Capital Region
+
+
+ans =
+
+Philippines-Central Mindanao and Autonomous Region of Muslim Mindanao
+
+
+ans =
+
+Philippines-Eastern Visayas
+
+
+ans =
+
+Philippines-Northern Mindanao, Southern Mindanao, and Caraga
+
+
+ans =
+
+Philippines-Western Mindanao
+
+
+ans =
+
+Philippines-Southern Tagalog
+
+
+ans =
+
+Palestine-Khan Yunis
+
+
+ans =
+
+Palestine-Nablus
+
+
+ans =
+
+Palestine-North Gaza
+
+
+ans =
+
+Palestine-Gaza
+
+
+ans =
+
+Palestine-Dier Al-Balah
+
+
+ans =
+
+Palestine-Rafah
+
+
+ans =
+
+Palestine-Hebron
+
+
+ans =
+
+Palestine-Bethlehem
+
+
+ans =
+
+Palestine-Jerusalem
+
+
+ans =
+
+Palestine-Jericho
+
+
+ans =
+
+Palestine-Ramallah and Al-Bireh
+
+
+ans =
+
+Palestine-Tubas
+
+
+ans =
+
+Palestine-Jenin
+
+
+ans =
+
+Palestine-Salfit
+
+
+ans =
+
+Palestine-Qalqiliya
+
+
+ans =
+
+Palestine-Tulkarm
+
+
+ans =
+
+Paraguay-Presidente Hayes, Boqueron, and Alto Paraguay
+
+
+ans =
+
+Paraguay-Cordillera, Caaguaz�, Alto Paran�, and Canindey�
+
+
+ans =
+
+Paraguay-Amambay
+
+
+ans =
+
+Paraguay-Guair�, Caazap�, and Paraguar�
+
+
+ans =
+
+Paraguay-Central
+
+
+ans =
+
+Paraguay-Asunci�n
+
+
+ans =
+
+Paraguay-Concepci�n
+
+
+
+ans =
+
+Paraguay-Itap�a
+
+
+
+ans =
+
+Paraguay-Misiones and �eembuc�
+
+
+ans =
+
+Paraguay-San Pedro
+
+
+ans =
+
+Rwanda-Butare
+
+
+ans =
+
+Rwanda-Cyangugu
+
+
+ans =
+
+Rwanda-Gikongoro
+
+
+ans =
+
+Rwanda-Gisenyi
+
+
+ans =
+
+Rwanda-Gitarama
+
+
+ans =
+
+Rwanda-Kibuye
+
+
+ans =
+
+Rwanda-Kigali Ngali
+
+
+ans =
+
+Rwanda-Ruhengeri
+
+
+ans =
+
+Rwanda-Byumba, Kibungo and Umutara
+
+
+ans =
+
+Rwanda-Kigali city
+
+
+ans =
+
+Sudan-Northern
+
+
+ans =
+
+Sudan-Nahr El Nil
+
+
+ans =
+
+Sudan-Red Sea
+
+
+ans =
+
+Sudan-Kassala
+
+
+ans =
+
+Sudan-Al Gedarif
+
+
+ans =
+
+Sudan-Khartoum
+
+
+ans =
+
+Sudan-Al Gezira
+
+
+ans =
+
+Sudan-White Nile
+
+
+ans =
+
+Sudan-Sinnar
+
+
+ans =
+
+Sudan-Blue Nile
+
+
+ans =
+
+Sudan-North Kordofan
+
+
+ans =
+
+Sudan-South Kordofan
+
+
+ans =
+
+Sudan-North Darfur
+
+
+ans =
+
+Sudan-West Darfur
+
+
+ans =
+
+Sudan-South Darfur
+
+
+ans =
+
+Sierra Leone-Kailahun
+
+
+ans =
+
+Sierra Leone-Kenema
+
+
+ans =
+
+Sierra Leone-Kono
+
+
+ans =
+
+Sierra Leone-Bombali
+
+
+ans =
+
+Sierra Leone-Kambia
+
+
+ans =
+
+Sierra Leone-Koinadugu
+
+
+ans =
+
+Sierra Leone-Port Loko
+
+
+ans =
+
+Sierra Leone-Tonkolili
+
+
+ans =
+
+Sierra Leone-Bo
+
+
+ans =
+
+Sierra Leone-Bonthe
+
+
+ans =
+
+Sierra Leone-Pujehun
+
+
+ans =
+
+Sierra Leone-Western - urban
+
+
+ans =
+
+Sierra Leone-Moyamba
+
+
+ans =
+
+Sierra Leone-Western - rural
+
+
+ans =
+
+South Sudan-Western Equatoria
+
+
+ans =
+
+South Sudan-Jonglei
+
+
+ans =
+
+South Sudan-Western Bahr El Ghazal
+
+
+ans =
+
+South Sudan-Unity
+
+
+ans =
+
+South Sudan-Upper Nile
+
+
+ans =
+
+South Sudan-Eastern Equatoria
+
+
+ans =
+
+South Sudan-Central Equatoria
+
+
+ans =
+
+South Sudan-Lakes
+
+
+ans =
+
+South Sudan-Warrap
+
+
+ans =
+
+South Sudan-Northern Bahr El Ghazal
+
+
+ans =
+
+Thailand-Mae Hong Son
+
+
+ans =
+
+Thailand-Chumphon
+
+
+ans =
+
+Thailand-Nakhon Si Thammarat
+
+
+ans =
+
+Thailand-Phuket
+
+
+ans =
+
+Thailand-Phangnga
+
+
+ans =
+
+Thailand-Ranong
+
+
+ans =
+
+Thailand-Surat Thani
+
+
+ans =
+
+Thailand-Krabi
+
+
+ans =
+
+Thailand-Phatthalung
+
+
+ans =
+
+Thailand-Satun
+
+
+ans =
+
+Thailand-Songkhla
+
+
+ans =
+
+Thailand-Trang
+
+
+ans =
+
+Thailand-Yala
+
+
+ans =
+
+Thailand-Chiang Rai and Phayao
+
+
+ans =
+
+Thailand-Chiang Mai
+
+
+ans =
+
+Thailand-Lampang
+
+
+ans =
+
+Thailand-Lamphun
+
+
+ans =
+
+Thailand-Nan
+
+
+ans =
+
+Thailand-Phrae
+
+
+ans =
+
+Thailand-Phitsanulok
+
+
+ans =
+
+Thailand-Sukhothai
+
+
+ans =
+
+Thailand-Uttaradit
+
+
+ans =
+
+Thailand-Kanchanaburi
+
+
+ans =
+
+Thailand-Kamphaeng Phet
+
+
+ans =
+
+Thailand-Phichit
+
+
+ans =
+
+Thailand-Phetchabun
+
+
+ans =
+
+Thailand-Suphanburi
+
+
+ans =
+
+Thailand-Tak
+
+
+ans =
+
+Thailand-Uthai Thani
+
+
+ans =
+
+Thailand-Ang Thong
+
+
+ans =
+
+Thailand-Chai Nat
+
+
+ans =
+
+Thailand-Lop Buri
+
+
+ans =
+
+Thailand-Nakhon Nayok
+
+
+ans =
+
+Thailand-Nakhon Sawan
+
+
+ans =
+
+Thailand-Phra Nakhon si Ayutthaya
+
+
+ans =
+
+Thailand-Pathum Thani
+
+
+ans =
+
+Thailand-Sing Buri
+
+
+ans =
+
+Thailand-Saraburi
+
+
+ans =
+
+Thailand-Bangkok
+
+
+ans =
+
+Thailand-Nonthaburi
+
+
+ans =
+
+Thailand-Nakhon Pathom
+
+
+ans =
+
+Thailand-Phetchaburi
+
+
+ans =
+
+Thailand-Prachuap Khiri Khan
+
+
+ans =
+
+Thailand-Ratchaburi
+
+
+ans =
+
+Thailand-Samut Prakan
+
+
+ans =
+
+Thailand-Samut Sakhon
+
+
+ans =
+
+Thailand-Samut Songkhram
+
+
+ans =
+
+Thailand-Si Sa Ket
+
+
+ans =
+
+Thailand-Ubon Ratchathani, Yasothon and Amnat Charoen
+
+
+ans =
+
+Thailand-Chon buri
+
+
+ans =
+
+Thailand-Chachoengsao
+
+
+ans =
+
+Thailand-Chanthaburi
+
+
+ans =
+
+Thailand-Prachin Buri and Sa Kaeo
+
+
+ans =
+
+Thailand-Rayong
+
+
+ans =
+
+Thailand-Trat
+
+
+ans =
+
+Thailand-Buri Ram
+
+
+ans =
+
+Thailand-Chaiyaphum
+
+
+ans =
+
+Thailand-Khon Kaen
+
+
+ans =
+
+Thailand-Kalasin
+
+
+ans =
+
+Thailand-Maha Sarakham
+
+
+ans =
+
+Thailand-Nakhon Ratchasima
+
+
+ans =
+
+Thailand-Roi Et
+
+
+ans =
+
+Thailand-Surin
+
+
+ans =
+
+Thailand-Loei
+
+
+ans =
+
+Thailand-Nong Khai
+
+
+ans =
+
+Thailand-Sakon Nakhon
+
+
+ans =
+
+Thailand-Udon Thani and Nong Bua Lam Phu
+
+
+ans =
+
+Thailand-Nakhon Phanom and Mukdahan
+
+
+ans =
+
+Thailand-Narathiwat
+
+
+ans =
+
+Thailand-Pattani
+
+
+ans =
+
+Turkey-Balikesir
+
+
+
+ans =
+
+Turkey-Kars, Ardahan and Igdir
+
+
+ans =
+
+Turkey-Artvin
+
+
+ans =
+
+Turkey-Agri
+
+
+ans =
+
+Turkey-Van
+
+
+ans =
+
+Turkey-Trabzon
+
+
+ans =
+
+Turkey-Rize
+
+
+ans =
+
+Turkey-Erzurum
+
+
+ans =
+
+Turkey-G�m�shane and Bayburt
+
+
+ans =
+
+Turkey-Erzincan
+
+
+
+ans =
+
+Turkey-Elazig
+
+
+ans =
+
+Turkey-Tunceli
+
+
+ans =
+
+Turkey-Mus
+
+
+ans =
+
+Turkey-Bitlis
+
+
+ans =
+
+Turkey-Bing�l
+
+
+ans =
+
+Turkey-Diyarbakir
+
+
+ans =
+
+Turkey-Konya and Karaman
+
+
+ans =
+
+Turkey-Adiyaman
+
+
+ans =
+
+Turkey-Malatya
+
+
+ans =
+
+Turkey-Mardin, Hakkari, Siirt, Batman and Sirnak
+
+
+ans =
+
+Turkey-Sanliurfa
+
+
+ans =
+
+Turkey-Antalya
+
+
+ans =
+
+Turkey-Giresun
+
+
+ans =
+
+Turkey-Sivas
+
+
+ans =
+
+Turkey-�orum
+
+
+ans =
+
+Turkey-Samsun
+
+
+ans =
+
+Turkey-Ordu
+
+
+ans =
+
+Turkey-Amasya
+
+
+ans =
+
+Turkey-Nevsehir
+
+
+ans =
+
+Turkey-Kirsehir
+
+
+ans =
+
+Turkey-Eskisehir
+
+
+ans =
+
+Turkey-Ankara and Kirikkale
+
+
+ans =
+
+Turkey-Afyon
+
+
+ans =
+
+Turkey-Sakarya
+
+
+ans =
+
+Turkey-Zonguldak, �ankiri, Karabuk and Bartin
+
+
+ans =
+
+Turkey-Tokat
+
+
+ans =
+
+Turkey-Yozgat
+
+
+ans =
+
+Turkey-Kahramanmaras
+
+
+ans =
+
+Turkey-Kayseri
+
+
+ans =
+
+Turkey-Nigde and Aksaray
+
+
+
+ans =
+
+Turkey-Adana, Gaziantep, Osmaniye and Kilis
+
+
+ans =
+
+Turkey-Hatay
+
+
+ans =
+
+Turkey-Kastamonu
+
+
+ans =
+
+Turkey-Bilecik
+
+
+ans =
+
+Turkey-Bolu and D�zce
+
+
+
+ans =
+
+Turkey-Edirne
+
+
+ans =
+
+Turkey-Tekirdag
+
+
+ans =
+
+Turkey-Isparta
+
+
+ans =
+
+Turkey-Burdur
+
+
+
+ans =
+
+Turkey-Istanbul, Bursa, Kocaeli and Yalova
+
+
+ans =
+
+Turkey-�anakkale
+
+
+ans =
+
+Turkey-Izmir
+
+
+ans =
+
+Turkey-Usak
+
+
+ans =
+
+Turkey-K�tahya
+
+
+ans =
+
+Turkey-Denizli
+
+
+ans =
+
+Turkey-Manisa
+
+
+ans =
+
+Turkey-Aydin
+
+
+ans =
+
+Turkey-Mugla
+
+
+ans =
+
+Turkey-Mersin (i�el)
+
+
+ans =
+
+Turkey-Kirklareli
+
+
+ans =
+
+Turkey-Sinop
+
+
+ans =
+
+Ukraine-The Autonomous Republic of Crimea
+
+
+ans =
+
+Ukraine-Luhanska oblast
+
+
+ans =
+
+Ukraine-Donetska oblast
+
+
+ans =
+
+Ukraine-Zaporizka oblast
+
+
+ans =
+
+Ukraine-Kharkivska oblast
+
+
+ans =
+
+Ukraine-Sumska oblast
+
+
+ans =
+
+Ukraine-Poltavska oblast
+
+
+ans =
+
+Ukraine-Chernihivska oblast
+
+
+ans =
+
+Ukraine-Kyivska oblast
+
+
+ans =
+
+Ukraine-Zhytomyrska oblast
+
+
+ans =
+
+Ukraine-Volynska oblast
+
+
+ans =
+
+Ukraine-Rivnenska oblast
+
+
+ans =
+
+Ukraine-Zakarpatska oblast
+
+
+ans =
+
+Ukraine-Lvivska oblast
+
+
+ans =
+
+Ukraine-Ivano-Frankivska oblast
+
+
+ans =
+
+Ukraine-Chernivetska oblast
+
+
+ans =
+
+Ukraine-Ternopilska oblast
+
+
+ans =
+
+Ukraine-Khmelnytska oblast
+
+
+ans =
+
+Ukraine-Vinnytska oblast
+
+
+ans =
+
+Ukraine-Cherkaska oblast
+
+
+ans =
+
+Ukraine-Kirovohradska oblast
+
+
+ans =
+
+Ukraine-Dnipropetrovska oblast
+
+
+ans =
+
+Ukraine-Odeska oblast
+
+
+ans =
+
+Ukraine-Mykolaivska oblast
+
+
+ans =
+
+Ukraine-Kyiv
+
+
+ans =
+
+Ukraine-Khersonska oblast
+
+
+ans =
+
+Ukraine-Sevastopol
+
+
+ans =
+
+Uganda-Arua and Yumbe
+
+
+ans =
+
+Uganda-Mukono and Kayunga
+
+
+ans =
+
+Uganda-Lira
+
+
+ans =
+
+Uganda-Kasese
+
+
+ans =
+
+Uganda-Busia and Tororo
+
+
+ans =
+
+Uganda-Moroto and Nakapiripirit
+
+
+ans =
+
+Uganda-Rakai
+
+
+ans =
+
+Uganda-Kabale
+
+
+ans =
+
+Uganda-Moyo and Adjumani
+
+
+ans =
+
+Uganda-Nebbi
+
+
+ans =
+
+Uganda-Kotido
+
+
+ans =
+
+Uganda-Kitgum and Pader
+
+
+ans =
+
+Uganda-Gulu
+
+
+ans =
+
+Uganda-Apac
+
+
+ans =
+
+Uganda-Soroti, Katakwi, and Kaberamaido
+
+
+ans =
+
+Uganda-Kapchorwa
+
+
+ans =
+
+Uganda-Kumi
+
+
+ans =
+
+Uganda-Pallisa
+
+
+ans =
+
+Uganda-Mbale and Sironko
+
+
+ans =
+
+Uganda-Kamuli
+
+
+ans =
+
+Uganda-Jinja
+
+
+ans =
+
+Uganda-Iganga, Buguri, and Mayuge
+
+
+ans =
+
+Uganda-Bushenyi, Mbarara, and Ntungamo
+
+
+ans =
+
+Uganda-Rukungiri and Kanungu
+
+
+ans =
+
+Uganda-Masindi
+
+
+ans =
+
+Uganda-Kibaale
+
+
+ans =
+
+Uganda-Bundibugyo
+
+
+ans =
+
+Uganda-Kabarole, Kamwenge, and Kyenjojo
+
+
+ans =
+
+Uganda-Kiboga
+
+
+ans =
+
+Uganda-Mubende
+
+
+ans =
+
+Uganda-Luwero and Nakasongola
+
+
+ans =
+
+Uganda-Hoima
+
+
+ans =
+
+Uganda-Kampala
+
+
+ans =
+
+Uganda-Mpigi and Wakiso
+
+
+ans =
+
+Uganda-Kalangala
+
+
+ans =
+
+Uganda-Masaka and Sembabule
+
+
+ans =
+
+Uganda-Kisoro
+
+
+ans =
+
+United Kingdom-Scotland
+
+
+ans =
+
+United Kingdom-South East and London
+
+
+ans =
+
+United Kingdom-Northern Ireland
+
+
+ans =
+
+United Kingdom-Wales
+
+
+ans =
+
+United Kingdom-North West
+
+
+ans =
+
+United Kingdom-South West
+
+
+ans =
+
+United Kingdom-West Midlands
+
+
+ans =
+
+United Kingdom-East Midlands
+
+
+ans =
+
+United Kingdom-East of England
+
+
+ans =
+
+United Kingdom-North East
+
+
+ans =
+
+United Kingdom-Yorkshire and the Humber
+
+
+ans =
+
+United States-Minnesota
+
+
+ans =
+
+United States-Montana
+
+
+ans =
+
+United States-North Dakota
+
+
+ans =
+
+United States-Hawaii
+
+
+ans =
+
+United States-Idaho
+
+
+ans =
+
+United States-Washington
+
+
+ans =
+
+United States-Arizona
+
+
+ans =
+
+United States-California
+
+
+ans =
+
+United States-Colorado
+
+
+ans =
+
+United States-Nevada
+
+
+ans =
+
+United States-New Mexico
+
+
+ans =
+
+United States-Oregon
+
+
+ans =
+
+United States-Utah
+
+
+ans =
+
+United States-Wyoming
+
+
+ans =
+
+United States-Arkansas
+
+
+ans =
+
+United States-Iowa
+
+
+ans =
+
+United States-Kansas
+
+
+ans =
+
+United States-Missouri
+
+
+ans =
+
+United States-Nebraska
+
+
+ans =
+
+United States-Oklahoma
+
+
+ans =
+
+United States-South Dakota
+
+
+ans =
+
+United States-Louisiana
+
+
+ans =
+
+United States-Texas
+
+
+ans =
+
+United States-Guantanamo Bay
+
+
+ans =
+
+United States-Connecticut
+
+
+ans =
+
+United States-Massachusetts
+
+
+ans =
+
+United States-New Hampshire
+
+
+ans =
+
+United States-Rhode Island
+
+
+ans =
+
+United States-Vermont
+
+
+ans =
+
+United States-Alabama
+
+
+ans =
+
+United States-Florida
+
+
+ans =
+
+United States-Georgia
+
+
+ans =
+
+United States-Mississippi
+
+
+ans =
+
+United States-South Carolina
+
+
+ans =
+
+United States-Illinois
+
+
+ans =
+
+United States-Indiana
+
+
+ans =
+
+United States-Kentucky
+
+
+ans =
+
+United States-North Carolina
+
+
+ans =
+
+United States-Ohio
+
+
+ans =
+
+United States-Tennessee
+
+
+ans =
+
+United States-Virginia
+
+
+ans =
+
+United States-Wisconsin
+
+
+ans =
+
+United States-West Virginia
+
+
+ans =
+
+United States-Delaware
+
+
+ans =
+
+United States-District of Columbia
+
+
+ans =
+
+United States-Maryland
+
+
+ans =
+
+United States-New Jersey
+
+
+ans =
+
+United States-New York
+
+
+ans =
+
+United States-Pennsylvania
+
+
+ans =
+
+United States-Maine
+
+
+ans =
+
+United States-Michigan
+
+
+ans =
+
+United States-Alaska
+
+
+ans =
+
+Uruguay-Colonia
+
+
+ans =
+
+Uruguay-San Jose
+
+
+ans =
+
+Uruguay-Artigas
+
+
+ans =
+
+Uruguay-Flores
+
+
+ans =
+
+Uruguay-Paysand�
+
+
+ans =
+
+Uruguay-R�o Negro
+
+
+ans =
+
+Uruguay-Salto
+
+
+ans =
+
+Uruguay-Soriano
+
+
+ans =
+
+Uruguay-Cerro Largo
+
+
+ans =
+
+Uruguay-Durazno
+
+
+ans =
+
+Uruguay-Rivera
+
+
+ans =
+
+Uruguay-Tacuaremb�
+
+
+ans =
+
+Uruguay-Treinta y Tres
+
+
+ans =
+
+Uruguay-Canelones
+
+
+ans =
+
+Uruguay-Florida
+
+
+ans =
+
+Uruguay-Lavalleja
+
+
+ans =
+
+Uruguay-Maldonado
+
+
+ans =
+
+Uruguay-Montevideo
+
+
+ans =
+
+Uruguay-Rocha
+
+
+ans =
+
+Vietnam-Quang Ninh
+
+
+ans =
+
+Vietnam-Tay Ninh
+
+
+ans =
+
+Vietnam-Lai Chau, Dien Bien, Lao Cai, and Yen Bai
+
+
+ans =
+
+Vietnam-Bac Kan, and Thai Nguyen
+
+
+ans =
+
+Vietnam-Lang Son
+
+
+ans =
+
+Vietnam-Son La
+
+
+ans =
+
+Vietnam-Thanh Hoa
+
+
+ans =
+
+Vietnam-Ha Giang, and Tuyen Quang
+
+
+ans =
+
+Vietnam-Ninh Binh, Hoa Binh, Ha Noi, Phu Tho, Vinh Phuc, Ha Nam, and Nam Dinh
+
+
+ans =
+
+Vietnam-Hai Duong, and Hung Yen
+
+
+ans =
+
+Vietnam-Bac Giang, and Bac Ninh
+
+
+ans =
+
+Vietnam-Hai Phong
+
+
+ans =
+
+Vietnam-Thai Binh
+
+
+ans =
+
+Vietnam-Nghe An, and  Ha Tinh
+
+
+ans =
+
+Vietnam-Quang Binh, Quang Tri, and Thua Thien - Hue
+
+
+ans =
+
+Vietnam-Dak Lak and Dak Nong
+
+
+ans =
+
+Vietnam-Gia Lai, and Kon Tum
+
+
+ans =
+
+Vietnam-Phu Yen and Khanh Hoa
+
+
+ans =
+
+Vietnam-Lam Dong
+
+
+ans =
+
+Vietnam-Thuan Hai, Ninh Thuan, and Binh Thuan
+
+
+ans =
+
+Vietnam-Binh Duong, and Binh Phuoc
+
+
+ans =
+
+Vietnam-Binh Dinh and Quang Ngai
+
+
+ans =
+
+Vietnam-Da Nang, and Quang Nam
+
+
+ans =
+
+Vietnam-Dong Nai and Ba Ria - Vung Tau
+
+
+ans =
+
+Vietnam-An Giang
+
+
+ans =
+
+Vietnam-Dong Thap
+
+
+ans =
+
+Vietnam-Ho Chi Minh City
+
+
+ans =
+
+Vietnam-Kien Giang
+
+
+ans =
+
+Vietnam-Long An
+
+
+ans =
+
+Vietnam-Tien Giang
+
+
+ans =
+
+Vietnam-Ben Tre
+
+
+ans =
+
+Vietnam-Hau Giang, Can Tho city, and Soc Trang
+
+
+ans =
+
+Vietnam-Bac Lieu, and Ca Mau
+
+
+ans =
+
+Vietnam-Vinh Long, and Tra Vinh
+
+
+ans =
+
+Vietnam-Cao Bang
+
+
+ans =
+
+Zambia-Luapula
+
+
+ans =
+
+Zambia-Central
+
+
+ans =
+
+Zambia-Eastern, Muchinga, and Northern
+
+
+ans =
+
+Zambia-Western
+
+
+ans =
+
+Zambia-Southern
+
+
+ans =
+
+Zambia-Lusaka
+
+
+ans =
+
+Zambia-Copperbelt
+
+
+ans =
+
+Zambia-North Western
+
+
+
+
+class(a.CNTRY_NAME_ADMIN_NAME)
+{Error using class
+The CLASS function must be called from a class constructor.
+} 
+c = class(a.CNTRY_NAME_ADMIN_NAME)
+{Error using class
+The CLASS function must be called from a class constructor.
+} 
+cntry = a.CNTRY_NAME_ADMIN_NAME;
+class(cntry)
+
+ans =
+
+char
+
+cntry(1:4)
+
+ans =
+
+Alge
+
+size(cntry)
+
+ans =
+
+     1     8
+
+cntry(1)
+
+ans =
+
+A
+
+cntry(2)
+
+ans =
+
+l
+
+cntry
+
+cntry =
+
+Algeria-
+
+a
+
+a = 
+
+1680x1 struct array with fields:
+
+    CNTRY_NAME_ADMIN_NAME
+
+a(1)
+
+ans = 
+
+    CNTRY_NAME_ADMIN_NAME: 'Algeria-'
+
+a(2)
+
+ans = 
+
+    CNTRY_NAME_ADMIN_NAME: 'Angola-'
+
+a(3)
+
+ans = 
+
+    CNTRY_NAME_ADMIN_NAME: 'In dispute South Sudan/Sudan-'
+
+a(1,1)
+
+ans = 
+
+    CNTRY_NAME_ADMIN_NAME: 'Algeria-'
+
+a(1,2)
+{Index exceeds matrix dimensions.
+} 
+a2 = a;
+[s,a] = shaperead(shapeFile,'UseGeoCoords',true);
+{Error using openShapeFiles>checkSHP (line 67)
+Unable to open both world_geolev1.shp and world_geolev1.SHP.
+
+Error in openShapeFiles (line 18)
+[basename, ext] = checkSHP(basename,shapeExtensionProvided);
+
+Error in shaperead (line 206)
+[shpFileId, shxFileId, dbfFileId, headerTypeCode] ...
+} 
+cd shapeDir
+{Error using cd
+Cannot CD to shapeDir (Name is nonexistent or not a directory).
+} 
+shapeDir
+
+shapeDir =
+
+/mnt/norgay/Datasets/SHAPEFILES/IPUMS/world_geolev1
+
+cd /mnt/norgay/Datasets/SHAPEFILES/IPUMS/world_geolev1
+[s,a] = shaperead(shapeFile,'UseGeoCoords',true);
+a
+
+a = 
+
+1680x1 struct array with fields:
+
+    CNTRY_NAME
+    ADMIN_NAME
+    CNTRY_CODE
+    GEOLEVEL1
+    BPL_CODE
+
+a(1)
+
+ans = 
+
+    CNTRY_NAME: 'Algeria'
+    ADMIN_NAME: ''
+    CNTRY_CODE: '012'
+     GEOLEVEL1: '999999'
+      BPL_CODE: '13010'
+
+a(1,1)
+
+ans = 
+
+    CNTRY_NAME: 'Algeria'
+    ADMIN_NAME: ''
+    CNTRY_CODE: '012'
+     GEOLEVEL1: '999999'
+      BPL_CODE: '13010'
+
+class(a(1))
+
+ans =
+
+struct
+
+s
+
+s = 
+
+1680x1 struct array with fields:
+
+    Geometry
+    BoundingBox
+    Lon
+    Lat
+
+:q
+ :q
+ |
+{Error: Unexpected MATLAB operator.
+} 
+s
+
+s = 
+
+1680x1 struct array with fields:
+
+    Geometry
+    BoundingBox
+    Lon
+    Lat
+
+a
+
+a = 
+
+1680x1 struct array with fields:
+
+    CNTRY_NAME
+    ADMIN_NAME
+    CNTRY_CODE
+    GEOLEVEL1
+    BPL_CODE
+
+[s, a] = drop_by_attribute(s, a, 'BPL_CODE', '99999')
+
+s = 
+
+1626x1 struct array with fields:
+
+    Geometry
+    BoundingBox
+    Lon
+    Lat
+
+
+a = 
+
+1626x1 struct array with fields:
+
+    CNTRY_NAME
+    ADMIN_NAME
+    CNTRY_CODE
+    GEOLEVEL1
+    BPL_CODE
+
+a = combine_attributes(a, 'CNTRY_NAME', 'ADMIN_NAME')
+
+a = 
+
+1626x1 struct array with fields:
+
+    CNTRY_NAME_ADMIN_NAME
+
+a(1)
+
+ans = 
+
+    CNTRY_NAME_ADMIN_NAME: 'Algeria-'
+
+a(2)
+
+ans = 
+
+    CNTRY_NAME_ADMIN_NAME: 'Angola-'
+
+a(3
+ a(3
+    |
+{Error: Expression or statement is incorrect--possibly unbalanced (, {, or [.
+} 
+a(3)
+
+ans = 
+
+    CNTRY_NAME_ADMIN_NAME: 'Benin-'
+
+a(50)
+
+ans = 
+
+    CNTRY_NAME_ADMIN_NAME: 'Tajikistan-'
+
+a(30)
+
+ans = 
+
+    CNTRY_NAME_ADMIN_NAME: 'St. Helena-'
+
+a(40)
+
+ans = 
+
+    CNTRY_NAME_ADMIN_NAME: 'Japan-'
+
+a(39)
+
+ans = 
+
+    CNTRY_NAME_ADMIN_NAME: 'Hong Kong (China)-'
+
+strrep(a(39),' (*)','')
+[Warning: Inputs must be character arrays or cell arrays of strings.] 
+{Error using strrep
+Conversion to double from struct is not possible.
+} 
+class(a(39))
+
+ans =
+
+struct
+
+a(39).CNTRY_NAME_ADMIN_NAME
+
+ans =
+
+Hong Kong (China)-
+
+strrep(a(39).CNTRY_NAME_ADMIN_NAME,' (*)','')
+
+ans =
+
+Hong Kong (China)-
+
+s = a(39).CNTRY_NAME_ADMIN_NAME
+
+s =
+
+Hong Kong (China)-
+
+s(1:4)
+
+ans =
+
+Hong
+
+s
+
+s =
+
+Hong Kong (China)-
+
+strrep(s,' (*)','')
+
+ans =
+
+Hong Kong (China)-
+
+regexprep(s,' (*)','')
+
+ans =
+
+Hong Kong (China)-
+
+regexprep(s,' (.*)','')
+
+ans =
+
+Hong
+
+s
+
+s =
+
+Hong Kong (China)-
+
+regexprep(s,' \(.*\)','')
+
+ans =
+
+Hong Kong-
+
+anew = regexprep(a,' \(.*\)','');
+{Undefined function 'regexprep' for input arguments of type 'struct'.
+} 
+anew = regexprep(a.CNTRY_NAME_ADMIN_NAME,' \(.*\)','');
+{Error using regexprep
+Invalid option for regexprep: botswana-.
+} 
+length(a)
+
+ans =
+
+        1626
+
+fieldnames(a)
+
+ans = 
+
+    'CNTRY_NAME_ADMIN_NAME'
+
+a(1)
+
+ans = 
+
+    CNTRY_NAME_ADMIN_NAME: 'Algeria-'
+
+a(1).CNTRY_NAME_ADMIN_NAME
+
+ans =
+
+Algeria-
+
+a(1).CNTRY_NAME_ADMIN_NAME = 'poop';
+a(1)
+
+ans = 
+
+    CNTRY_NAME_ADMIN_NAME: 'poop'
+
+exit
+IPUMS_projection_all_poly
+
+newpath =
+
+/mnt/norgay/Computation/sol_matlab_toolbox
+
+[Warning: Directory already exists.] 
+[> In IPUMS_projection_all_poly at 58] 
+SOL: FOR GREATER SPEED, CONSIDER OPENING THE MATLAB WORKER POOL
+{Error using cell2table (line 69)
+'Congo,_DRC_' is not a valid variable name.
+
+Error in cell2table2csv (line 50)
+T = cell2table(CELL_DATA(2:end,:),'VariableNames', CELL_DATA(1,:));
+
+Error in IPUMS_projection_all_poly (line 208)
+    cell2table2csv(output_area, [sample '_' num2str(sample_first_year) '_daily_' var '_area_weights_poly_'
+    num2str(power)])
+} 
+clear all
+IPUMS_projection_all_poly
+{Undefined function or variable 'IPUMS_projection_all_poly'.
+} 
+exit

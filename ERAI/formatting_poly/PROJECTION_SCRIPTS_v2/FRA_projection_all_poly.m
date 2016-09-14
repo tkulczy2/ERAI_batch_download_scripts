@@ -21,12 +21,9 @@ path(currentpath, newpath)
 
 %set climate data name
 CLIM = 'ERAI';
-%CLIM = 'BEST';
-if strcmp(CLIM, 'ERAI')
-    climateDir = 'ERA_Interim';
-elseif strcmp(CLIM, 'BEST')
-    climateDir = 'Berkeley_Earth';
-end
+var = 'precip';
+climateDir = 'ERA_Interim';
+
 %obtain shapefile
 sample = 'FRA';
 shapeDir = ['/mnt/norgay/Datasets/SHAPEFILES/' sample '/' sample '_adm'];
@@ -47,7 +44,7 @@ baseDir = ['/mnt/norgay/Datasets/Climate/' climateDir];
 command = ['cd ' baseDir '/Matlab_projected_DAILY_polynomials'];
 eval(command) 
 
-outputDir = [sample '_daily_' CLIM '_polynomials_.25deg'];
+outputDir = ['/home/tkulczycki/temporary_climate_data/' CLIM '/sample_' CLIM '_daily_polynomials'];
 
 command = ['mkdir ' outputDir];
 eval(command)
@@ -55,34 +52,34 @@ command = ['cd ' outputDir];
 eval(command)
 label = 'NAME_1';
 
+mkdir(var);
+cd(var);
 
 for sample_first_year = 1990:2009
     
-    for var = {'precip'}%,'tavg','tmax','tmin'}
-        command = ['load ' baseDir '/Matlab_.25deg_x_.25deg_polynomials/' upper(char(var)) '/' char(var) '_' num2str(sample_first_year) '_raw_polynomials;'];
-        eval(command) 
-    end
-
+    
+    command = ['load ' baseDir '/Matlab_.25deg_x_.25deg_polynomials/' upper(var) '/' var '_' num2str(sample_first_year) '_raw_polynomials;'];
+    eval(command) 
+    
     % Choose a max. polynomial power
     maxpower = 5;
 
     %%
     N = length(s);
-    density = 1; %1 degree resolution
-    % CAUTION - I'M DROPPING THE -90 LATITUDE OBSERVATION AND SHIFTING BY 0.5 DEGREES TO CONFORM WITH BEST WEIGHT GRID
-    % lat = flip(precip_poly_1.lat(1:end-1)-0.5);
-    % lon = precip_poly_1.lon;
-    % ixlon = find(lon==180);
-    % lon = [-360+lon(ixlon:end); lon(1:ixlon-1)] + 0.5;
+    density = 4; % 0.25 degree resolution
+    
     lat = precip_poly_1.lat;
+    % catch for ERA-Interim, which has -90 and 90 latitude values (but this
+    % breaks vector2matrix later)
+    lat = lat(mod(lat, 90)~=0);
     lon = precip_poly_1.lon;
-    latlim = double([lat(1) lat(end)]);
-    lonlim = double([lon(1) lon(end)]);
+    latlim = double([min(lat) max(lat)]);
+    lonlim = double([min(lon) max(lon)]);
 
     %%
     % cross sectional data for weighting BEST data
-    load '/mnt/norgay/Computation/sol_matlab_toolbox/global_data/population_BEST'
-    load '/mnt/norgay/Computation/sol_matlab_toolbox/global_data/crops_BEST'
+    load(['/mnt/norgay/Computation/climate_projection_system_2016_2_10/global_data/population_' CLIM])
+    load(['/mnt/norgay/Computation/climate_projection_system_2016_2_10/global_data/crops_' CLIM])
 
     % make an ID map set (works well for fewer than 150 districts)
     ID = generate_ID_maps_par(s, a, label, density, latlim, lonlim);
@@ -119,13 +116,13 @@ for sample_first_year = 1990:2009
         eval(command)
         var = 'tmin';
     elseif T == 4
-        % CAUTION - I'M DROPPING THE -90 LATITUDE DATA TO CONFORM WITH BEST GRID
-        %command = ['temp_actual = cat(2, precip_poly_' num2str(power) '.precip_actual_poly(1:end-1,ixlon:end,:), precip_poly_' num2str(power) '.precip_actual_poly(1:end-1,1:ixlon-1,:));'];
-        %eval(command)
-        %command = ['temp_actual = flip(temp_actual, 1);'];
-        command = ['temp_actual = precip_poly_' num2str(power) '.precip_actual_poly;'];
+        if strcmp(CLIM, 'ERAI')
+            var = 'precip';
+        else
+            var = 'prcp';
+        end
+        command = ['temp_actual = ' var '_poly_' num2str(power) '.' var '_actual_poly;'];
         eval(command)
-        var = 'precip';
     end
 
     %generate the output table with headers and dates, columns are districts
@@ -200,9 +197,9 @@ for sample_first_year = 1990:2009
     end
 
     %output
-    cell2table2csv(output_area, [sample '_' num2str(sample_first_year) '_daily_' var '_area_weights_poly_' num2str(power)])
-    cell2table2csv(output_pop, [sample  '_' num2str(sample_first_year) '_daily_' var '_pop_weights_poly_' num2str(power)])
-    cell2table2csv(output_crop, [sample  '_' num2str(sample_first_year) '_daily_' var '_crop_weights_poly_' num2str(power)])
+    cell2table2csv(output_area, [sample '_' num2str(sample_first_year) '_' CLIM '_daily_' var '_area_weights_poly_' num2str(power)])
+    cell2table2csv(output_pop, [sample  '_' num2str(sample_first_year) '_' CLIM '_daily_' var '_pop_weights_poly_' num2str(power)])
+    cell2table2csv(output_crop, [sample  '_' num2str(sample_first_year) '_' CLIM '_daily_' var '_crop_weights_poly_' num2str(power)])
 
     disp(['-----------------------------finished with ' var ' for polynomial power ' num2str(power)])
 

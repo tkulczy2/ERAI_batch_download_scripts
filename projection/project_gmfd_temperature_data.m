@@ -14,13 +14,13 @@ clc
 
 %% custom functions path
 addpath('/mnt/norgay/Computation/climate_projection_system_2016_2_10')
-addpath('/mnt/norgay/Datasets/Climate/ERA_Interim/erai_download_formatting_projection/projection');
+addpath('/mnt/norgay/Datasets/Climate/GMFD/climate_download_formatting_projection/projection');
 
 %% THIS SECTION CONTAINS ALL VARIABLE FUNCTION NAMES
 
 %set climate data name
-CLIM = 'NCEP';
-climateDir = 'NCEP_CDAS';
+CLIM = 'GMFD';
+
 %obtain shapefile
 sample = 'USA';
 % for s = {'BRA' 'CHN' 'FRA' 'IND' 'MEX' 'USA'}
@@ -33,9 +33,9 @@ sample = 'USA';
     a = combine_attributes(a, 'NAME_1', 'NAME_2');
     label = 'NAME_1_NAME_2';
     
-    outputDir = {'/mnt/norgay/Datasets/Climate/NCEP_CDAS/NCEP_CDAS1_daily_v2/Binned_temperature'};
+    outputDir = {'/mnt/norgay/Datasets/Climate/GMFD/Binned_temperature'};
 
-    project_erai_weather_data_folder(s, a, label, outputDir)
+    project_new_weather_data_folder(s, a, label, outputDir)
 % end
 disp('----DONE----')
 toc

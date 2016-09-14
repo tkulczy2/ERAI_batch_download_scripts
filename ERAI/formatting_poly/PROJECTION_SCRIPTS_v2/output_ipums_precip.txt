@@ -1,0 +1,130 @@
+
+IPUMS_projection_all_poly  
+IPUMS_projection_all_poly
+
+newpath =
+
+/mnt/norgay/Computation/sol_matlab_toolbox
+
+[Warning: Directory already exists.] 
+[> In IPUMS_projection_all_poly at 60] 
+SOL: FOR GREATER SPEED, CONSIDER OPENING THE MATLAB WORKER POOL
+{Error using cell2table (line 69)
+'Palestine_Territories:_Gaza_Strip_' is not a valid variable name.
+
+Error in cell2table2csv_alt (line 52)
+T = cell2table(CELL_DATA(2:end,:),'VariableNames', CELL_DATA(1,:));
+
+Error in IPUMS_projection_all_poly (line 210)
+    cell2table2csv_alt(output_area, [sample '_' num2str(sample_first_year) '_daily_' var '_area_weights_poly_'
+    num2str(power)])
+} 
+clear all
+pwd
+
+ans =
+
+/mnt/norgay/Datasets/Climate/ERA_Interim/Matlab_projected_DAILY_polynomials/IPUMS_daily_ERAI_polynomials
+
+exit
+IPUMS_projection_all_poly
+
+newpath =
+
+/mnt/norgay/Computation/sol_matlab_toolbox
+
+[Warning: Directory already exists.] 
+[> In IPUMS_projection_all_poly at 60] 
+SOL: FOR GREATER SPEED, CONSIDER OPENING THE MATLAB WORKER POOL
+{Error using cell2table (line 69)
+'Argentina_Cardoba
+
+Cardoba
+
+Cardoba' is not a valid variable name.
+
+Error in cell2table2csv_alt (line 53)
+T = cell2table(CELL_DATA(2:end,:),'VariableNames', CELL_DATA(1,:));
+
+Error in IPUMS_projection_all_poly (line 210)
+    cell2table2csv_alt(output_area, [sample '_' num2str(sample_first_year) '_daily_' var '_area_weights_poly_'
+    num2str(power)])
+} 
+s = "asdf\nasdf"
+ s = "asdf\nasdf"
+     |
+{Error: The input character is not valid in MATLAB statements or expressions.
+} 
+s = 'asdf\nasdf'
+
+s =
+
+asdf\nasdf
+
+s = 'asdfasdf'
+
+s =
+
+asdfasdf
+
+s = 'asdf\nasdf'
+
+s =
+
+asdf\nasdf
+
+sprintf(s)
+
+ans =
+
+asdf
+asdf
+
+st = springf(s)
+{Undefined function 'springf' for input arguments of type 'char'.
+} 
+st = sprintf(s)
+
+st =
+
+asdf
+asdf
+
+st
+
+st =
+
+asdf
+asdf
+
+s
+
+s =
+
+asdf\nasdf
+
+exit
+IPUMS_projection_all_poly
+
+newpath =
+
+/mnt/norgay/Computation/sol_matlab_toolbox
+
+[Warning: Directory already exists.] 
+[> In IPUMS_projection_all_poly at 60] 
+SOL: FOR GREATER SPEED, CONSIDER OPENING THE MATLAB WORKER POOL
+{Error using cell2table (line 69)
+'Argentina_Cardoba
+
+Cardoba
+
+Cardoba' is not a valid variable name.
+
+Error in cell2table2csv_alt (line 54)
+T = cell2table(CELL_DATA(2:end,:),'VariableNames', CELL_DATA(1,:));
+
+Error in IPUMS_projection_all_poly (line 210)
+    cell2table2csv_alt(output_area, [sample '_' num2str(sample_first_year) '_daily_' var '_area_weights_poly_'
+    num2str(power)])
+} 
+exit

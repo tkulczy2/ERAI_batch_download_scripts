@@ -5,32 +5,30 @@
 
 %%
 
-cd '/mnt/norgay/Datasets/Climate/ERA_Interim/'
+cd '/mnt/norgay/Datasets/Climate/GMFD/'
 mkdir Matlab_4d_stack_by_temp_bin
 mkdir Matlab_4d_stack_by_temp_bin/TAVG
-mkdir Matlab_4d_stack_by_temp_bin/PRECIP
+mkdir Matlab_4d_stack_by_temp_bin/PRCP
 
 %%
 
-
-
 tic
 clear
-total_years = (2015-1978);
+start_year = 1948;
+end_year = 2010;
+year_inc = 1;
+total_years = (end_year-start_year + 1);
+n_lat = 720;
+n_lon = 1440;
 
 %--------------------------------------------
 %-----------interior bins -40C to 34C
 
-%for T = -3:3  
-%for T = -41:-39
-%for T = 33:35
-
-for v = {'precip'}
-% for v = {'tavg','precip'}
+for v = {'tavg', 'prcp'}
     var = char(v);
     VAR = upper(var);
 
-    if strcmp(var, 'precip')
+    if strcmp(var, 'prcp')
         bot_bin = 5;
         top_bin = 200;
         inc = 5;
@@ -50,27 +48,27 @@ for v = {'precip'}
         if T==(bot_bin-inc) %bottom bin
             varname = ['bin_nInf_' strrep(num2str(T+inc),'-','n') unit '_mask_monthly'];
             new_varname = [var '_bin_nInf_' strrep(num2str(T+inc),'-','n') unit '_daily_count_monthly'];
-            new_filename = [var '_bin_nInf_' strrep(num2str(T+inc),'-','n') unit '_ERAI_1979_2015'];
+            new_filename = [var '_bin_nInf_' strrep(num2str(T+inc),'-','n') unit '_GMFD_1948_2010'];
         elseif T==top_bin %top bin
             varname = ['bin_' num2str(T) unit '_Inf_mask_monthly'];
             new_varname = [var '_bin_' num2str(T) unit '_Inf_daily_count_monthly'];
-            new_filename = [var '_bin_' num2str(T) unit '_Inf_ERAI_1979_2015'];
+            new_filename = [var '_bin_' num2str(T) unit '_Inf_GMFD_1948_2010'];
         else
             varname = ['bin_' strrep(num2str(T),'-','n') unit '_' strrep(num2str(T+inc),'-','n') unit '_mask_monthly'];
             new_varname = [var '_bin_' strrep(num2str(T),'-','n') unit '_' strrep(num2str(T+inc),'-','n') unit '_daily_count_monthly'];
-            new_filename = [var '_bin_' strrep(num2str(T),'-','n') unit '_' strrep(num2str(T+inc),'-','n') unit '_ERAI_1979_2015'];
+            new_filename = [var '_bin_' strrep(num2str(T),'-','n') unit '_' strrep(num2str(T+inc),'-','n') unit '_GMFD_1948_2010'];
         end
 
         %create a large monthly array to encompass all years in the dataset
         %(for a specific temp bin)
-        monthly_field_all = nan(180, 360, total_years, 12);
+        monthly_field_all = nan(n_lat, n_lon, total_years, 12);
         year = nan(total_years, 1);
         month = [1:12]';
 
         %add specific decades of data to the complete montly stack
 
         %----------complete decades of data
-        for y = 1979:1:2015
+        for y = start_year:year_inc:end_year
 
             disp(['decade: ' num2str(y)])
             command = ['load Matlab_4d_stack_by_decade/' VAR '/' var '_' num2str(y) '_raw_bin_counts ' varname];
@@ -78,9 +76,7 @@ for v = {'precip'}
             command = ['data = ' varname ';'];
             eval(command)
 
-
-            i1 = (y-1979)+1;
-            %i2 = (y-1880)+10;
+            i1 = (y-start_year)+year_inc;
 
             monthly_field_all(:,:,i1,:) = data.monthly_field;
             year(i1) = data.year;
@@ -96,14 +92,13 @@ for v = {'precip'}
 
         command = [new_varname ' = new_data;'];
         eval(command)
-        command = ['save(''Matlab_4d_stack_by_temp_bin/' VAR '/' new_filename ''', ''' new_varname ''', ''-v7.3'');' ];
+        command = ['save(''Matlab_4d_stack_by_bin/' VAR '/' new_filename ''', ''' new_varname ''', ''-v7.3'');' ];
         eval(command)
 
         clearvars y year tavg_* month* i1 lat lon command bin_* data new_* varname
 
     end
 
-    clearvars T total_years
 end
 disp('-----------DONE------------')
 toc

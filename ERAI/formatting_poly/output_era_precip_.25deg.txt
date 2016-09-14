@@ -1,0 +1,2048 @@
+----------- YEAR 1979 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1980 -----------
+
+data_raw = 
+
+    precip: [1440x721x366 double]
+         T: [366x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1981 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1982 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1983 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1984 -----------
+
+data_raw = 
+
+    precip: [1440x721x366 double]
+         T: [366x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1985 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1986 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1987 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1988 -----------
+
+data_raw = 
+
+    precip: [1440x721x366 double]
+         T: [366x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1989 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1990 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1991 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1992 -----------
+
+data_raw = 
+
+    precip: [1440x721x366 double]
+         T: [366x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1993 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1994 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1995 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1996 -----------
+
+data_raw = 
+
+    precip: [1440x721x366 double]
+         T: [366x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1997 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1998 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1999 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2000 -----------
+
+data_raw = 
+
+    precip: [1440x721x366 double]
+         T: [366x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2001 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2002 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2003 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2004 -----------
+
+data_raw = 
+
+    precip: [1440x721x366 double]
+         T: [366x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2005 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2006 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2007 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2008 -----------
+
+data_raw = 
+
+    precip: [1440x721x366 double]
+         T: [366x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2009 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2010 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2011 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2012 -----------
+
+data_raw = 
+
+    precip: [1440x721x366 double]
+         T: [366x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2013 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2014 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2015 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----DONE WITH PRECIP ----
+----------- YEAR 1979 -----------
+
+data_raw = 
+
+    tavg: [1440x721x365 double]
+       T: [365x1 double]
+     lat: [721x1 single]
+     lon: [1440x1 single]
+
+kelvin-to-celcius conversion
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1980 -----------
+
+data_raw = 
+
+    tavg: [1440x721x366 double]
+       T: [366x1 double]
+     lat: [721x1 single]
+     lon: [1440x1 single]
+
+kelvin-to-celcius conversion
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1981 -----------
+{Error using load
+Unable to read file 'Matlab_.25deg_x_.25deg/TAVG/ERAI_DAILY_TAVG_1981.mat'. No such file or directory.
+
+Error in format_ERAI_daily_polynomials_annual (line 42)
+        eval(command)
+} 
+clear
+exit
+[Warning: Directory already exists.] 
+[> In format_daily_polynomials (line 25)] 
+[Warning: Directory already exists.] 
+[> In format_daily_polynomials (line 26)] 
+[Warning: Directory already exists.] 
+[> In format_daily_polynomials (line 27)] 
+----------- YEAR 1979 -----------
+
+data_raw = 
+
+    tavg: [1440x721x365 double]
+       T: [365x1 double]
+     lat: [721x1 single]
+     lon: [1440x1 single]
+
+kelvin-to-celcius conversion
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+[Warning: Variable 'tavg_poly_1' cannot be saved to a MAT-file whose version is older than 7.3.
+To save this variable, use the -v7.3 switch.
+Skipping...] 
+[> In format_daily_polynomials (line 95)] 
+[Warning: Variable 'tavg_poly_2' cannot be saved to a MAT-file whose version is older than 7.3.
+To save this variable, use the -v7.3 switch.
+Skipping...] 
+[> In format_daily_polynomials (line 95)] 
+[Warning: Variable 'tavg_poly_3' cannot be saved to a MAT-file whose version is older than 7.3.
+To save this variable, use the -v7.3 switch.
+Skipping...] 
+[> In format_daily_polynomials (line 95)] 
+[Warning: Variable 'tavg_poly_4' cannot be saved to a MAT-file whose version is older than 7.3.
+To save this variable, use the -v7.3 switch.
+Skipping...] 
+[> In format_daily_polynomials (line 95)] 
+[Warning: Variable 'tavg_poly_5' cannot be saved to a MAT-file whose version is older than 7.3.
+To save this variable, use the -v7.3 switch.
+Skipping...] 
+[> In format_daily_polynomials (line 95)] 
+[Warning: Variable 'tavg_poly_6' cannot be saved to a MAT-file whose version is older than 7.3.
+To save this variable, use the -v7.3 switch.
+Skipping...] 
+[> In format_daily_polynomials (line 95)] 
+[Warning: Variable 'tavg_poly_7' cannot be saved to a MAT-file whose version is older than 7.3.
+To save this variable, use the -v7.3 switch.
+Skipping...] 
+[> In format_daily_polynomials (line 95)] 
+[Warning: Variable 'tavg_poly_8' cannot be saved to a MAT-file whose version is older than 7.3.
+To save this variable, use the -v7.3 switch.
+Skipping...] 
+[> In format_daily_polynomials (line 95)] 
+----------- YEAR 1980 -----------
+{Undefined function or variable 'clim'.
+
+Error in format_daily_polynomials (line 43)
+        command = ['load Matlab_.25deg_x_.25deg/' VAR '/' clim '_DAILY_' VAR '_' num2str(base_year) '.mat'];
+} 
+format_daily_polynomials
+{Undefined function or variable 'format_daily_polynomials'.
+} 
+cd('~/Dropbox/ChicagoRAs_Reanalysis/temporary_sharing/climate_download_formatting_projection/ERAI/formatting_poly/')
+format_daily_polynomials
+[Warning: Directory already exists.] 
+[> In format_daily_polynomials (line 25)] 
+[Warning: Directory already exists.] 
+[> In format_daily_polynomials (line 26)] 
+[Warning: Directory already exists.] 
+[> In format_daily_polynomials (line 27)] 
+----------- YEAR 1979 -----------
+
+data_raw = 
+
+    tavg: [1440x721x365 double]
+       T: [365x1 double]
+     lat: [721x1 single]
+     lon: [1440x1 single]
+
+kelvin-to-celcius conversion
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1980 -----------
+
+data_raw = 
+
+    tavg: [1440x721x366 double]
+       T: [366x1 double]
+     lat: [721x1 single]
+     lon: [1440x1 single]
+
+kelvin-to-celcius conversion
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+{Operation terminated by user during format_daily_polynomials (line 95)
+
+} 
+exit
+----------- YEAR 1979 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1980 -----------
+
+data_raw = 
+
+    precip: [1440x721x366 double]
+         T: [366x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1981 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1982 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1983 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1984 -----------
+
+data_raw = 
+
+    precip: [1440x721x366 double]
+         T: [366x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1985 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1986 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1987 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1988 -----------
+
+data_raw = 
+
+    precip: [1440x721x366 double]
+         T: [366x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1989 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1990 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1991 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1992 -----------
+
+data_raw = 
+
+    precip: [1440x721x366 double]
+         T: [366x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1993 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1994 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1995 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1996 -----------
+
+data_raw = 
+
+    precip: [1440x721x366 double]
+         T: [366x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1997 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1998 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1999 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2000 -----------
+
+data_raw = 
+
+    precip: [1440x721x366 double]
+         T: [366x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2001 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2002 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2003 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2004 -----------
+
+data_raw = 
+
+    precip: [1440x721x366 double]
+         T: [366x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2005 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2006 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2007 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2008 -----------
+
+data_raw = 
+
+    precip: [1440x721x366 double]
+         T: [366x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2009 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2010 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2011 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2012 -----------
+
+data_raw = 
+
+    precip: [1440x721x366 double]
+         T: [366x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2013 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2014 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2015 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----DONE WITH PRECIP ----
+----------- YEAR 1979 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1980 -----------
+
+data_raw = 
+
+    precip: [1440x721x366 double]
+         T: [366x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1981 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1982 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1983 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1984 -----------
+
+data_raw = 
+
+    precip: [1440x721x366 double]
+         T: [366x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1985 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1986 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1987 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1988 -----------
+
+data_raw = 
+
+    precip: [1440x721x366 double]
+         T: [366x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1989 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1990 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1991 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1992 -----------
+
+data_raw = 
+
+    precip: [1440x721x366 double]
+         T: [366x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1993 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1994 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1995 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1996 -----------
+
+data_raw = 
+
+    precip: [1440x721x366 double]
+         T: [366x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1997 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1998 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 1999 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2000 -----------
+
+data_raw = 
+
+    precip: [1440x721x366 double]
+         T: [366x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2001 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2002 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2003 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2004 -----------
+
+data_raw = 
+
+    precip: [1440x721x366 double]
+         T: [366x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2005 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2006 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2007 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2008 -----------
+
+data_raw = 
+
+    precip: [1440x721x366 double]
+         T: [366x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2009 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2010 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2011 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2012 -----------
+
+data_raw = 
+
+    precip: [1440x721x366 double]
+         T: [366x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2013 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2014 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----------- YEAR 2015 -----------
+
+data_raw = 
+
+    precip: [1440x721x365 double]
+         T: [365x1 double]
+       lat: [721x1 single]
+       lon: [1440x1 single]
+
+----------- POLYNOMIAL 1 -----------
+----------- POLYNOMIAL 2 -----------
+----------- POLYNOMIAL 3 -----------
+----------- POLYNOMIAL 4 -----------
+----------- POLYNOMIAL 5 -----------
+----------- POLYNOMIAL 6 -----------
+----------- POLYNOMIAL 7 -----------
+----------- POLYNOMIAL 8 -----------
+----DONE WITH PRECIP ----

@@ -159,7 +159,7 @@ if binned_variable == true
         %
         %project 1596 observations (up to Dec 2012, inclusive)
         
-        pathname = '''/mnt/norgay/Datasets/Climate/ERA_Interim/Matlab_4d_stack_by_temp_bin/';
+        pathname = '''/mnt/norgay/Datasets/Climate/ERA_Interim/Matlab_4d_stack_by_bin/';
         if strcmp(clim_variable,'tavg')
             varname = 'average temperature';
             filename = [clim_variable '_bin_' bin_lower_bound '_' bin_upper_bound '_' datasample '_1979_2015'];
@@ -171,7 +171,7 @@ if binned_variable == true
         elseif strcmp(clim_variable,'tmin')
             disp('------------------not formatted yet'); Q = false; return
         elseif strcmp(clim_variabl,'precip')
-            pathname = '''/mnt/norgay/Datasets/Climate/ERA_Interim/Matlab_4d_stack_by_precip_bin/';
+            pathname = '''/mnt/norgay/Datasets/Climate/ERA_Interim/Matlab_4d_stack_by_bin/';
             varname = 'average precipitation';
             filename = [clim_variable '_bin_' bin_lower_bound '_' bin_upper_bound '_' datasample '_1979_2015'];
             command = ['load ' pathname 'PRECIP/' filename ''''];
@@ -179,16 +179,16 @@ if binned_variable == true
             structure_name = [clim_variable '_bin_' bin_lower_bound '_' bin_upper_bound '_daily_count_monthly'];            
         end
         
-        density = 1; %1 degree resolution
+        density = 4; %1 degree resolution
         M = 12; %resolution is monthly   
         variable = [clim_variable '_bin_' bin_lower_bound '_' bin_upper_bound]; %string used to name outcome variables
         command = ['structure_x = ' structure_name '; clear ' structure_name];
         eval(command)
         
-        lat = structure_x.lat;
+        lat = structure_x.lat(2:end-1);
         lon = structure_x.lon;
-        latlim = double([lat(1) lat(end)]);
-        lonlim = double([lon(1) lon(end)]);
+        latlim = double([min(lat) max(lat)]);
+        lonlim = double([min(lon) max(lon)]);
         
         %--------USE THIS SECTION FOR REDUCED SAMPLE
         
@@ -200,15 +200,68 @@ if binned_variable == true
 %         years_total = length(structure_x.year(year_ID_for_starting:end));
         %
         %--------USE THIS SECTION FOR FULL SAMPLE 1880-2012 (COMMENT ABOVE)
+        data = structure_x.monthly_field(2:end-1,:,:,:);  
+        start_year = structure_x.year(1);
+        years_total = length(structure_x.year);
+        %------------------------------------------------------------------
+        K = 150; % limit memory usage
+        clear structure_x year_ID_for_starting first_year_set
+        source = 'ERA-INTERIM DATA';
+        %---------------------------------------------------------------------|
+    elseif strcmp(datasample,'GMFD') 
+        %---------------------------------------------------------------------|
+        % GMFD TEMPERATURE AND PRECIPITATION DATA
+        %
+        % PERIOD: 1948-2010
+        % TEMP UNITS: count of days in temperature bin (1C wide)
+        % PRECIP UNITS: count of days in precip bin (varying width)
+        % 0.25 deg resolution (lat-lon)
+        % lat lim ~ [-89.875 89.875]
+        % lon lim ~ [-179.875 179.875]
+        %
+        % NOTES:
+        % 
+        
+        pathname = '''/mnt/norgay/Datasets/Climate/GMFD/Matlab_4d_stack_by_temp_bin/';
+        if strcmp(clim_variable,'tavg')
+            varname = 'average temperature';
+            filename = [clim_variable '_bin_' bin_lower_bound '_' bin_upper_bound '_' datasample '_1948_2010'];
+            command = ['load ' pathname 'TAVG/' filename ''''];
+            eval(command)
+            structure_name = [clim_variable '_bin_' bin_lower_bound '_' bin_upper_bound '_daily_count_monthly'];
+        elseif strcmp(clim_variable,'tmax')
+            disp('------------------not formatted yet'); Q = false; return
+        elseif strcmp(clim_variable,'tmin')
+            disp('------------------not formatted yet'); Q = false; return
+        elseif strcmp(clim_variabl,'precip')
+            pathname = '''/mnt/norgay/Datasets/Climate/GMFD/Matlab_4d_stack_by_prcp_bin/';
+            varname = 'average precipitation';
+            filename = [clim_variable '_bin_' bin_lower_bound '_' bin_upper_bound '_' datasample '_1948_2010'];
+            command = ['load ' pathname 'PRCP/' filename ''''];
+            eval(command)
+            structure_name = [clim_variable '_bin_' bin_lower_bound '_' bin_upper_bound '_daily_count_monthly'];            
+        end
+        
+        density = 4; %1 degree resolution
+        M = 12; %resolution is monthly   
+        variable = [clim_variable '_bin_' bin_lower_bound '_' bin_upper_bound]; %string used to name outcome variables
+        command = ['structure_x = ' structure_name '; clear ' structure_name];
+        eval(command)
+        
+        lat = structure_x.lat;
+        lon = structure_x.lon;
+        latlim = double([min(lat) max(lat)]);
+        lonlim = double([min(lon) max(lon)]);
+        %--------USE THIS SECTION FOR FULL SAMPLE 1880-2012 (COMMENT ABOVE)
         data = structure_x.monthly_field;  
         start_year = structure_x.year(1);
         years_total = length(structure_x.year);
         %------------------------------------------------------------------
-        
+        K = 10; % limit memory usage
         clear structure_x year_ID_for_starting first_year_set
-        source = 'ERA-INTERIM DATA';
+        source = 'GMFD DATA';
         %---------------------------------------------------------------------|
-        
+                
 %-----Original if cases began here
     elseif strcmp(datasample,'BEST') 
         %---------------------------------------------------------------------|
@@ -234,7 +287,7 @@ if binned_variable == true
             eval(command)
             structure_name = [clim_variable '_bin_' bin_lower_bound '_' bin_upper_bound '_daily_count_monthly'];
         elseif strcmp(clim_variable,'tmax')
-            disp('------------------not formatted yet'); Q = false; returni
+            disp('------------------not formatted yet'); Q = false; return
         elseif strcmp(clim_variable,'tmin')
             disp('------------------not formatted yet'); Q = false; return
         end
@@ -512,6 +565,33 @@ elseif polynomial_variable == true
             disp('------------------not formatted yet'); Q = false; return          
         end
         %---------------------------------------------------------------------|
+
+    elseif strcmp(datasample, 'ERAI')
+        %---------------------------------------------------------------------|
+        if strcmp(clim_variable,'tavg')
+            disp('------------------not formatted yet'); Q = false; return
+        elseif strcmp(clim_variable,'tmax')
+            disp('------------------not formatted yet'); Q = false; return
+        elseif strcmp(clim_variable,'tmin')
+            disp('------------------not formatted yet'); Q = false; return
+        elseif strcmp(clim_variabl,'precip')
+            disp('------------------not formatted yet'); Q = false; return          
+        end
+        %---------------------------------------------------------------------|
+
+    elseif strcmp(datasample, 'GMFD')
+        %---------------------------------------------------------------------|
+        if strcmp(clim_variable,'tavg')
+            disp('------------------not formatted yet'); Q = false; return
+        elseif strcmp(clim_variable,'tmax')
+            disp('------------------not formatted yet'); Q = false; return
+        elseif strcmp(clim_variable,'tmin')
+            disp('------------------not formatted yet'); Q = false; return
+        elseif strcmp(clim_variabl,'precip')
+            disp('------------------not formatted yet'); Q = false; return          
+        end
+        %---------------------------------------------------------------------|
+
     end
 
     
@@ -2682,7 +2762,8 @@ for i = 1:number_of_steps
     % -----------------------------------
     
     parfor t = 1:years_total
-        if mod(t,10)==mod(years_total,10)
+        
+        if mod(t, 10)==0
             disp(['year ' num2str(t) ' of ' num2str(years_total)])
         end
         
@@ -2722,13 +2803,13 @@ for i = 1:number_of_steps
         elseif M == 1
             
                 % area-weights
-                output_t(:,2+1) = num2cell(weight_means(data_t(:,:,1), ID.masks, 'area', lat, lon));
+                output_t(:,2+1) = num2cell(weight_means_par(data_t(:,:,1), ID.masks, 'area', lat, lon));
 
                 % population-weights
-                %output_t(:,2+2) = num2cell(weight_means(data_t(:,:,1), ID.masks, 'population', lat, lon));
+                %output_t(:,2+2) = num2cell(weight_means_par(data_t(:,:,1), ID.masks, 'population', lat, lon));
 
                 % crop-weights
-                %output_t(:,2+3) = num2cell(weight_means(data_t(:,:,1), ID.masks, 'crops', lat, lon));
+                %output_t(:,2+3) = num2cell(weight_means_par(data_t(:,:,1), ID.masks, 'crops', lat, lon));
 
         else
             disp('SOL: check that temporal resolution parameter M is 1 or 12')

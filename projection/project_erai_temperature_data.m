@@ -35,7 +35,7 @@ sample = 'USA';
     
     outputDir = {'/mnt/norgay/Datasets/Climate/ERA_Interim/Binned_temperature'};
 
-    project_erai_weather_data_folder(s, a, label, outputDir)
+    project_new_weather_data_folder(s, a, label, outputDir)
 % end
 disp('----DONE----')
 toc

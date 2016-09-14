@@ -1,0 +1,6 @@
+addpath('/home/tkulczycki/ERA_Interim/ERAI_batch_download_scripts');
+addpath('/home/tkulczycki/ERA_Interim/ERAI_batch_download_scripts/formatting_scripts_daily_polynomials');
+
+compile_daily_to_decades_precip
+
+format_ERAI_daily_polynomials_decadal_precip
